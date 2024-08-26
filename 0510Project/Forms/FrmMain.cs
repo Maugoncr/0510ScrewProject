@@ -67,11 +67,113 @@ namespace _0510Project
             picLengthSunk.Visible = false;
             picLengthTorx.Visible = false;
 
-            panel1.Visible = false;
-            panel2.Visible = false;
+            panel1.Visible = true;
+            panel2.Visible = true;
 
-            btnPDF.Visible = false;
+            btnPDF.Visible = true;
             btnSTP.Visible = false;
+
+            LoadDataGridView();
+            ConfigureDataGridView();
+        }
+
+        private void LoadDataGridView()
+        {
+          
+                // Primero, asegúrate de que tu DataGridView está configurado con las columnas necesarias.
+                dgvLength.Columns.Clear();
+                dgvLength.Columns.Add("Measurement", "Measurement");
+                dgvLength.Columns.Add("1", "1");
+                dgvLength.Columns.Add("2", "2");
+                dgvLength.Columns.Add("3", "3");
+                dgvLength.Columns.Add("4", "4");
+                dgvLength.Columns.Add("5", "5");
+                dgvLength.Columns.Add("6", "6");
+                dgvLength.Columns.Add("7", "7");
+                dgvLength.Columns.Add("8", "8");
+                dgvLength.Columns.Add("9", "9");
+                dgvLength.Columns.Add("10", "10");
+                dgvLength.Columns.Add("11", "11");
+                dgvLength.Columns.Add("12", "12");
+                dgvLength.Columns.Add("13", "13");
+                dgvLength.Columns.Add("14", "14");
+                dgvLength.Columns.Add("15", "15");
+                dgvLength.Columns.Add("16", "16");
+                
+
+            // Suponiendo que 'dataGridView1' ya tiene las columnas configuradas correctamente.
+            string[,] data = new string[,]
+            {
+        {"Inches", "1/8\"", "1/4\"", "3/8\"", "1/2\"", "5/8\"", "3/4\"", "7/8\"", "1\"", "1 1/8\"", "1 1/4\"", "1 3/8\"", "1 1/2\"", "1 5/8\"", "1 3/4\"", "1 7/8\"", "2\""},
+        {"Decimal", "0.125\"", "0.250\"", "0.375\"", "0.500\"", "0.625\"", "0.750\"", "0.875\"", "1.000\"", "1.125\"", "1.250\"", "1.375\"", "1.500\"", "1.625\"", "1.750\"", "1.875\"", "2.000\""},
+        {"Metric", "3.175 mm", "6.35 mm", "9.525 mm", "12.7 mm", "15.875 mm", "19.05 mm", "22.225 mm", "25.4 mm", "28.575 mm", "31.75 mm", "34.925 mm", "38.1 mm", "41.275 mm", "44.45 mm", "47.625 mm", "50.8 mm"}
+        
+            };
+
+            // Añadir las filas al DataGridView
+            for (int i = 0; i < data.GetLength(0); i++)
+            {
+                DataGridViewRow row = new DataGridViewRow();
+                row.CreateCells(dgvLength);  // Crear las celdas para la fila basadas en la configuración de DataGridView
+
+                for (int j = 0; j < data.GetLength(1); j++)
+                {
+                    row.Cells[j].Value = data[i, j];  // '+1' porque la primera celda (j=0) se dejará para el encabezado de fila si se usa
+                }
+
+                dgvLength.Rows.Add(row);
+            }
+
+            foreach (DataGridViewColumn column in dgvLength.Columns)
+            {
+                column.SortMode = DataGridViewColumnSortMode.NotSortable;
+            }
+
+            dgvLength.SelectionMode = DataGridViewSelectionMode.FullColumnSelect;
+            dgvLength.MultiSelect = false;
+        }
+
+        private void ConfigureDataGridView()
+        {
+            foreach (DataGridViewRow row in dgvLength.Rows)
+            {
+                row.Resizable = DataGridViewTriState.False;
+            }
+
+            foreach (DataGridViewColumn column in dgvLength.Columns)
+            {
+                column.Resizable = DataGridViewTriState.False;
+            }
+
+
+
+            foreach (DataGridViewColumn column in dgvLength.Columns)
+            {
+                column.Width = 110; // Establece el ancho de todas las columnas a 100 píxeles
+            }
+
+            foreach (DataGridViewRow row in dgvLength.Rows)
+            {
+                row.Height = 50; // Establece el alto de todas las filas a 30 píxeles
+            }
+
+            // Configuración de la primera columna para usar el espacio restante
+            dgvLength.Columns["Measurement"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dgvLength.ColumnHeadersVisible = false;
+
+
+
+            // Cambiar la fuente y tamaño para todas las celdas
+            dgvLength.DefaultCellStyle.Font = new Font("Arial", 12, FontStyle.Regular);
+
+            // Centrar el texto en todas las celdas y encabezados
+            dgvLength.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgvLength.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgvLength.ColumnHeadersDefaultCellStyle.Font = new Font("Arial", 12, FontStyle.Regular);
+            dgvLength.RowHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+            // Asegúrate de que el DataGridView no muestra la cabecera de filas si aún no lo has configurado
+            dgvLength.RowHeadersVisible = false;
         }
 
         private void cbDriveType_SelectionChangeCommitted(object sender, EventArgs e)
@@ -240,5 +342,7 @@ namespace _0510Project
             }
 
         }
+
+    
     }
 }

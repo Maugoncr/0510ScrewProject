@@ -117,6 +117,8 @@
   <ItemGroup>
     <None Include="Resources\LengthTorx.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\TorxScrewISO&amp;TOP.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
