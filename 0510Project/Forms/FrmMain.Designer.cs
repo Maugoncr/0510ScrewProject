@@ -47,17 +47,14 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtSearchLength = new System.Windows.Forms.TextBox();
             this.listLength = new System.Windows.Forms.ListBox();
-            this.picLengthTorx = new System.Windows.Forms.PictureBox();
-            this.picLengthSunk = new System.Windows.Forms.PictureBox();
-            this.picLengthSocketHead = new System.Windows.Forms.PictureBox();
-            this.picTorx = new System.Windows.Forms.PictureBox();
-            this.picSocket = new System.Windows.Forms.PictureBox();
-            this.picSunk = new System.Windows.Forms.PictureBox();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnPDF = new FontAwesome.Sharp.IconButton();
-            this.btnSTP = new FontAwesome.Sharp.IconButton();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnSTP = new FontAwesome.Sharp.IconButton();
+            this.picLengthSocketHead = new System.Windows.Forms.PictureBox();
+            this.picLengthSunk = new System.Windows.Forms.PictureBox();
+            this.btnPDF = new FontAwesome.Sharp.IconButton();
+            this.picLengthTorx = new System.Windows.Forms.PictureBox();
             this.pSizeSelect = new System.Windows.Forms.Panel();
             this.radioButton10 = new System.Windows.Forms.RadioButton();
             this.radioButton9 = new System.Windows.Forms.RadioButton();
@@ -86,23 +83,74 @@
             this.label18 = new System.Windows.Forms.Label();
             this.lbAbbreviation = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
+            this.lbMaterial = new System.Windows.Forms.Label();
+            this.lbNToolc = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
+            this.picISOView = new System.Windows.Forms.PictureBox();
+            this.picTopView = new System.Windows.Forms.PictureBox();
+            this.pLengths = new System.Windows.Forms.Panel();
+            this.c16b = new System.Windows.Forms.Label();
+            this.c15b = new System.Windows.Forms.Label();
+            this.c14b = new System.Windows.Forms.Label();
+            this.c13b = new System.Windows.Forms.Label();
+            this.c12b = new System.Windows.Forms.Label();
+            this.c11b = new System.Windows.Forms.Label();
+            this.c10b = new System.Windows.Forms.Label();
+            this.c9b = new System.Windows.Forms.Label();
+            this.c8b = new System.Windows.Forms.Label();
+            this.c7b = new System.Windows.Forms.Label();
+            this.c6b = new System.Windows.Forms.Label();
+            this.c5b = new System.Windows.Forms.Label();
+            this.c4b = new System.Windows.Forms.Label();
+            this.c3b = new System.Windows.Forms.Label();
+            this.c2b = new System.Windows.Forms.Label();
+            this.c1b = new System.Windows.Forms.Label();
+            this.c16a = new System.Windows.Forms.Label();
+            this.c15a = new System.Windows.Forms.Label();
+            this.c14a = new System.Windows.Forms.Label();
+            this.c13a = new System.Windows.Forms.Label();
+            this.c12a = new System.Windows.Forms.Label();
+            this.c11a = new System.Windows.Forms.Label();
+            this.c10a = new System.Windows.Forms.Label();
+            this.c9a = new System.Windows.Forms.Label();
+            this.c8a = new System.Windows.Forms.Label();
+            this.c7a = new System.Windows.Forms.Label();
+            this.c6a = new System.Windows.Forms.Label();
+            this.c5a = new System.Windows.Forms.Label();
+            this.c4a = new System.Windows.Forms.Label();
+            this.c3a = new System.Windows.Forms.Label();
+            this.c2a = new System.Windows.Forms.Label();
+            this.c1a = new System.Windows.Forms.Label();
+            this.c16 = new System.Windows.Forms.Label();
+            this.c15 = new System.Windows.Forms.Label();
+            this.c14 = new System.Windows.Forms.Label();
+            this.c13 = new System.Windows.Forms.Label();
+            this.c12 = new System.Windows.Forms.Label();
+            this.c11 = new System.Windows.Forms.Label();
+            this.c10 = new System.Windows.Forms.Label();
+            this.c9 = new System.Windows.Forms.Label();
+            this.c8 = new System.Windows.Forms.Label();
+            this.c7 = new System.Windows.Forms.Label();
+            this.c6 = new System.Windows.Forms.Label();
+            this.c5 = new System.Windows.Forms.Label();
+            this.c4 = new System.Windows.Forms.Label();
+            this.c3 = new System.Windows.Forms.Label();
+            this.c2 = new System.Windows.Forms.Label();
+            this.c1 = new System.Windows.Forms.Label();
             this.pNavBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picLengthTorx)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picLengthSunk)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picLengthSocketHead)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picTorx)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picSocket)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picSunk)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picLengthSocketHead)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLengthSunk)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLengthTorx)).BeginInit();
             this.pSizeSelect.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLength)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picISOView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picTopView)).BeginInit();
+            this.pLengths.SuspendLayout();
             this.SuspendLayout();
             // 
             // cbDriveType
@@ -347,65 +395,6 @@
             this.listLength.TabIndex = 14;
             this.listLength.SelectedIndexChanged += new System.EventHandler(this.listLength_SelectedIndexChanged);
             // 
-            // picLengthTorx
-            // 
-            this.picLengthTorx.Image = global::_0510Project.Properties.Resources.LengthTorx;
-            this.picLengthTorx.Location = new System.Drawing.Point(267, 281);
-            this.picLengthTorx.Name = "picLengthTorx";
-            this.picLengthTorx.Size = new System.Drawing.Size(68, 49);
-            this.picLengthTorx.TabIndex = 17;
-            this.picLengthTorx.TabStop = false;
-            // 
-            // picLengthSunk
-            // 
-            this.picLengthSunk.Image = global::_0510Project.Properties.Resources.LengthSunk;
-            this.picLengthSunk.Location = new System.Drawing.Point(267, 281);
-            this.picLengthSunk.Name = "picLengthSunk";
-            this.picLengthSunk.Size = new System.Drawing.Size(68, 49);
-            this.picLengthSunk.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picLengthSunk.TabIndex = 16;
-            this.picLengthSunk.TabStop = false;
-            // 
-            // picLengthSocketHead
-            // 
-            this.picLengthSocketHead.Image = global::_0510Project.Properties.Resources.LengthSocketHead;
-            this.picLengthSocketHead.Location = new System.Drawing.Point(267, 281);
-            this.picLengthSocketHead.Name = "picLengthSocketHead";
-            this.picLengthSocketHead.Size = new System.Drawing.Size(68, 49);
-            this.picLengthSocketHead.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picLengthSocketHead.TabIndex = 12;
-            this.picLengthSocketHead.TabStop = false;
-            // 
-            // picTorx
-            // 
-            this.picTorx.Image = global::_0510Project.Properties.Resources.TorxScrewISO_TOP;
-            this.picTorx.Location = new System.Drawing.Point(1194, 114);
-            this.picTorx.Name = "picTorx";
-            this.picTorx.Size = new System.Drawing.Size(174, 107);
-            this.picTorx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picTorx.TabIndex = 7;
-            this.picTorx.TabStop = false;
-            // 
-            // picSocket
-            // 
-            this.picSocket.Image = global::_0510Project.Properties.Resources.SocketHeadScrew;
-            this.picSocket.Location = new System.Drawing.Point(1647, 199);
-            this.picSocket.Name = "picSocket";
-            this.picSocket.Size = new System.Drawing.Size(129, 88);
-            this.picSocket.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picSocket.TabIndex = 6;
-            this.picSocket.TabStop = false;
-            // 
-            // picSunk
-            // 
-            this.picSunk.Image = global::_0510Project.Properties.Resources.CountersunkScrew;
-            this.picSunk.Location = new System.Drawing.Point(1538, 235);
-            this.picSunk.Name = "picSunk";
-            this.picSunk.Size = new System.Drawing.Size(90, 52);
-            this.picSunk.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picSunk.TabIndex = 5;
-            this.picSunk.TabStop = false;
-            // 
             // webBrowser1
             // 
             this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -418,31 +407,28 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.webBrowser1);
-            this.panel1.Location = new System.Drawing.Point(690, 560);
+            this.panel1.Location = new System.Drawing.Point(690, 1033);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(877, 497);
             this.panel1.TabIndex = 19;
             // 
-            // btnPDF
+            // panel2
             // 
-            this.btnPDF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            this.btnPDF.FlatAppearance.BorderSize = 0;
-            this.btnPDF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPDF.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPDF.ForeColor = System.Drawing.Color.White;
-            this.btnPDF.IconChar = FontAwesome.Sharp.IconChar.FilePdf;
-            this.btnPDF.IconColor = System.Drawing.Color.White;
-            this.btnPDF.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.btnPDF.IconSize = 25;
-            this.btnPDF.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPDF.Location = new System.Drawing.Point(141, 473);
-            this.btnPDF.Name = "btnPDF";
-            this.btnPDF.Size = new System.Drawing.Size(75, 33);
-            this.btnPDF.TabIndex = 356;
-            this.btnPDF.Text = "PDF";
-            this.btnPDF.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPDF.UseVisualStyleBackColor = false;
-            this.btnPDF.Click += new System.EventHandler(this.iconButton4_Click);
+            this.panel2.Controls.Add(this.btnSTP);
+            this.panel2.Controls.Add(this.picLengthSocketHead);
+            this.panel2.Controls.Add(this.picLengthSunk);
+            this.panel2.Controls.Add(this.listLength);
+            this.panel2.Controls.Add(this.btnPDF);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.listSize);
+            this.panel2.Controls.Add(this.picLengthTorx);
+            this.panel2.Controls.Add(this.txtSearchSize);
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.txtSearchLength);
+            this.panel2.Location = new System.Drawing.Point(1590, 560);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(512, 525);
+            this.panel2.TabIndex = 358;
             // 
             // btnSTP
             // 
@@ -465,23 +451,52 @@
             this.btnSTP.UseVisualStyleBackColor = false;
             this.btnSTP.Click += new System.EventHandler(this.btnSTP_Click);
             // 
-            // panel2
+            // picLengthSocketHead
             // 
-            this.panel2.Controls.Add(this.btnSTP);
-            this.panel2.Controls.Add(this.picLengthSocketHead);
-            this.panel2.Controls.Add(this.picLengthSunk);
-            this.panel2.Controls.Add(this.listLength);
-            this.panel2.Controls.Add(this.btnPDF);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.listSize);
-            this.panel2.Controls.Add(this.picLengthTorx);
-            this.panel2.Controls.Add(this.txtSearchSize);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.txtSearchLength);
-            this.panel2.Location = new System.Drawing.Point(1590, 560);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(512, 525);
-            this.panel2.TabIndex = 358;
+            this.picLengthSocketHead.Location = new System.Drawing.Point(250, 199);
+            this.picLengthSocketHead.Name = "picLengthSocketHead";
+            this.picLengthSocketHead.Size = new System.Drawing.Size(68, 49);
+            this.picLengthSocketHead.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picLengthSocketHead.TabIndex = 12;
+            this.picLengthSocketHead.TabStop = false;
+            // 
+            // picLengthSunk
+            // 
+            this.picLengthSunk.Location = new System.Drawing.Point(250, 125);
+            this.picLengthSunk.Name = "picLengthSunk";
+            this.picLengthSunk.Size = new System.Drawing.Size(68, 49);
+            this.picLengthSunk.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picLengthSunk.TabIndex = 16;
+            this.picLengthSunk.TabStop = false;
+            // 
+            // btnPDF
+            // 
+            this.btnPDF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
+            this.btnPDF.FlatAppearance.BorderSize = 0;
+            this.btnPDF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPDF.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPDF.ForeColor = System.Drawing.Color.White;
+            this.btnPDF.IconChar = FontAwesome.Sharp.IconChar.FilePdf;
+            this.btnPDF.IconColor = System.Drawing.Color.White;
+            this.btnPDF.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.btnPDF.IconSize = 25;
+            this.btnPDF.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPDF.Location = new System.Drawing.Point(141, 473);
+            this.btnPDF.Name = "btnPDF";
+            this.btnPDF.Size = new System.Drawing.Size(75, 33);
+            this.btnPDF.TabIndex = 356;
+            this.btnPDF.Text = "PDF";
+            this.btnPDF.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPDF.UseVisualStyleBackColor = false;
+            this.btnPDF.Click += new System.EventHandler(this.iconButton4_Click);
+            // 
+            // picLengthTorx
+            // 
+            this.picLengthTorx.Location = new System.Drawing.Point(250, 255);
+            this.picLengthTorx.Name = "picLengthTorx";
+            this.picLengthTorx.Size = new System.Drawing.Size(68, 49);
+            this.picLengthTorx.TabIndex = 17;
+            this.picLengthTorx.TabStop = false;
             // 
             // pSizeSelect
             // 
@@ -754,10 +769,10 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Roboto", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Font = new System.Drawing.Font("Roboto", 16F);
             this.label16.Location = new System.Drawing.Point(12, 348);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(266, 33);
+            this.label16.Size = new System.Drawing.Size(216, 27);
             this.label16.TabIndex = 361;
             this.label16.Text = "Select Screw Length:";
             // 
@@ -766,7 +781,7 @@
             this.dgvLength.AllowUserToAddRows = false;
             this.dgvLength.AllowUserToDeleteRows = false;
             this.dgvLength.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvLength.Location = new System.Drawing.Point(18, 396);
+            this.dgvLength.Location = new System.Drawing.Point(17, 665);
             this.dgvLength.Name = "dgvLength";
             this.dgvLength.ReadOnly = true;
             this.dgvLength.Size = new System.Drawing.Size(1890, 155);
@@ -815,31 +830,31 @@
             this.label21.TabIndex = 367;
             this.label21.Text = "Tool:";
             // 
-            // label20
+            // lbMaterial
             // 
-            this.label20.BackColor = System.Drawing.Color.LightGray;
-            this.label20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label20.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(633, 150);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(176, 46);
-            this.label20.TabIndex = 370;
-            this.label20.Text = "SST";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbMaterial.BackColor = System.Drawing.Color.LightGray;
+            this.lbMaterial.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbMaterial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lbMaterial.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMaterial.Location = new System.Drawing.Point(633, 150);
+            this.lbMaterial.Name = "lbMaterial";
+            this.lbMaterial.Size = new System.Drawing.Size(176, 46);
+            this.lbMaterial.TabIndex = 370;
+            this.lbMaterial.Text = "SST";
+            this.lbMaterial.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label19
+            // lbNToolc
             // 
-            this.label19.BackColor = System.Drawing.Color.LightGray;
-            this.label19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label19.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(833, 149);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(176, 46);
-            this.label19.TabIndex = 371;
-            this.label19.Text = "N° ---";
-            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbNToolc.BackColor = System.Drawing.Color.LightGray;
+            this.lbNToolc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbNToolc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lbNToolc.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNToolc.Location = new System.Drawing.Point(833, 149);
+            this.lbNToolc.Name = "lbNToolc";
+            this.lbNToolc.Size = new System.Drawing.Size(176, 46);
+            this.lbNToolc.TabIndex = 371;
+            this.lbNToolc.Text = "N° ---";
+            this.lbNToolc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label22
             // 
@@ -861,15 +876,669 @@
             this.label23.TabIndex = 373;
             this.label23.Text = "Top View:";
             // 
+            // picISOView
+            // 
+            this.picISOView.Image = global::_0510Project.Properties.Resources.SocketISO;
+            this.picISOView.Location = new System.Drawing.Point(1194, 114);
+            this.picISOView.Name = "picISOView";
+            this.picISOView.Size = new System.Drawing.Size(174, 107);
+            this.picISOView.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picISOView.TabIndex = 7;
+            this.picISOView.TabStop = false;
+            // 
+            // picTopView
+            // 
+            this.picTopView.Image = global::_0510Project.Properties.Resources.SocketTop;
+            this.picTopView.Location = new System.Drawing.Point(1501, 114);
+            this.picTopView.Name = "picTopView";
+            this.picTopView.Size = new System.Drawing.Size(76, 59);
+            this.picTopView.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picTopView.TabIndex = 374;
+            this.picTopView.TabStop = false;
+            // 
+            // pLengths
+            // 
+            this.pLengths.BackColor = System.Drawing.Color.DarkGray;
+            this.pLengths.Controls.Add(this.c16b);
+            this.pLengths.Controls.Add(this.c15b);
+            this.pLengths.Controls.Add(this.c14b);
+            this.pLengths.Controls.Add(this.c13b);
+            this.pLengths.Controls.Add(this.c12b);
+            this.pLengths.Controls.Add(this.c11b);
+            this.pLengths.Controls.Add(this.c10b);
+            this.pLengths.Controls.Add(this.c9b);
+            this.pLengths.Controls.Add(this.c8b);
+            this.pLengths.Controls.Add(this.c7b);
+            this.pLengths.Controls.Add(this.c6b);
+            this.pLengths.Controls.Add(this.c5b);
+            this.pLengths.Controls.Add(this.c4b);
+            this.pLengths.Controls.Add(this.c3b);
+            this.pLengths.Controls.Add(this.c2b);
+            this.pLengths.Controls.Add(this.c1b);
+            this.pLengths.Controls.Add(this.c16a);
+            this.pLengths.Controls.Add(this.c15a);
+            this.pLengths.Controls.Add(this.c14a);
+            this.pLengths.Controls.Add(this.c13a);
+            this.pLengths.Controls.Add(this.c12a);
+            this.pLengths.Controls.Add(this.c11a);
+            this.pLengths.Controls.Add(this.c10a);
+            this.pLengths.Controls.Add(this.c9a);
+            this.pLengths.Controls.Add(this.c8a);
+            this.pLengths.Controls.Add(this.c7a);
+            this.pLengths.Controls.Add(this.c6a);
+            this.pLengths.Controls.Add(this.c5a);
+            this.pLengths.Controls.Add(this.c4a);
+            this.pLengths.Controls.Add(this.c3a);
+            this.pLengths.Controls.Add(this.c2a);
+            this.pLengths.Controls.Add(this.c1a);
+            this.pLengths.Controls.Add(this.c16);
+            this.pLengths.Controls.Add(this.c15);
+            this.pLengths.Controls.Add(this.c14);
+            this.pLengths.Controls.Add(this.c13);
+            this.pLengths.Controls.Add(this.c12);
+            this.pLengths.Controls.Add(this.c11);
+            this.pLengths.Controls.Add(this.c10);
+            this.pLengths.Controls.Add(this.c9);
+            this.pLengths.Controls.Add(this.c8);
+            this.pLengths.Controls.Add(this.c7);
+            this.pLengths.Controls.Add(this.c6);
+            this.pLengths.Controls.Add(this.c5);
+            this.pLengths.Controls.Add(this.c4);
+            this.pLengths.Controls.Add(this.c3);
+            this.pLengths.Controls.Add(this.c2);
+            this.pLengths.Controls.Add(this.c1);
+            this.pLengths.Location = new System.Drawing.Point(13, 386);
+            this.pLengths.Name = "pLengths";
+            this.pLengths.Size = new System.Drawing.Size(1894, 182);
+            this.pLengths.TabIndex = 375;
+            // 
+            // c16b
+            // 
+            this.c16b.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.c16b.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c16b.ForeColor = System.Drawing.Color.Black;
+            this.c16b.Location = new System.Drawing.Point(1771, 124);
+            this.c16b.Name = "c16b";
+            this.c16b.Size = new System.Drawing.Size(106, 47);
+            this.c16b.TabIndex = 439;
+            this.c16b.Text = "50.8 mm";
+            this.c16b.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // c15b
+            // 
+            this.c15b.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.c15b.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c15b.ForeColor = System.Drawing.Color.Black;
+            this.c15b.Location = new System.Drawing.Point(1654, 124);
+            this.c15b.Name = "c15b";
+            this.c15b.Size = new System.Drawing.Size(106, 47);
+            this.c15b.TabIndex = 438;
+            this.c15b.Text = "47.625 mm";
+            this.c15b.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // c14b
+            // 
+            this.c14b.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.c14b.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c14b.ForeColor = System.Drawing.Color.Black;
+            this.c14b.Location = new System.Drawing.Point(1537, 124);
+            this.c14b.Name = "c14b";
+            this.c14b.Size = new System.Drawing.Size(106, 47);
+            this.c14b.TabIndex = 437;
+            this.c14b.Text = "44.45 mm";
+            this.c14b.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // c13b
+            // 
+            this.c13b.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.c13b.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c13b.ForeColor = System.Drawing.Color.Black;
+            this.c13b.Location = new System.Drawing.Point(1420, 124);
+            this.c13b.Name = "c13b";
+            this.c13b.Size = new System.Drawing.Size(106, 47);
+            this.c13b.TabIndex = 436;
+            this.c13b.Text = "41.275 mm";
+            this.c13b.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // c12b
+            // 
+            this.c12b.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.c12b.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c12b.ForeColor = System.Drawing.Color.Black;
+            this.c12b.Location = new System.Drawing.Point(1303, 124);
+            this.c12b.Name = "c12b";
+            this.c12b.Size = new System.Drawing.Size(106, 47);
+            this.c12b.TabIndex = 435;
+            this.c12b.Text = "38.1 mm";
+            this.c12b.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // c11b
+            // 
+            this.c11b.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.c11b.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c11b.ForeColor = System.Drawing.Color.Black;
+            this.c11b.Location = new System.Drawing.Point(1186, 124);
+            this.c11b.Name = "c11b";
+            this.c11b.Size = new System.Drawing.Size(106, 47);
+            this.c11b.TabIndex = 434;
+            this.c11b.Text = "34.925 mm";
+            this.c11b.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // c10b
+            // 
+            this.c10b.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.c10b.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c10b.ForeColor = System.Drawing.Color.Black;
+            this.c10b.Location = new System.Drawing.Point(1069, 124);
+            this.c10b.Name = "c10b";
+            this.c10b.Size = new System.Drawing.Size(106, 47);
+            this.c10b.TabIndex = 433;
+            this.c10b.Text = "31.75 mm";
+            this.c10b.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // c9b
+            // 
+            this.c9b.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.c9b.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c9b.ForeColor = System.Drawing.Color.Black;
+            this.c9b.Location = new System.Drawing.Point(952, 124);
+            this.c9b.Name = "c9b";
+            this.c9b.Size = new System.Drawing.Size(106, 47);
+            this.c9b.TabIndex = 432;
+            this.c9b.Text = "28.575 mm";
+            this.c9b.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // c8b
+            // 
+            this.c8b.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.c8b.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c8b.ForeColor = System.Drawing.Color.Black;
+            this.c8b.Location = new System.Drawing.Point(835, 124);
+            this.c8b.Name = "c8b";
+            this.c8b.Size = new System.Drawing.Size(106, 47);
+            this.c8b.TabIndex = 431;
+            this.c8b.Text = "25.4 mm";
+            this.c8b.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // c7b
+            // 
+            this.c7b.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.c7b.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c7b.ForeColor = System.Drawing.Color.Black;
+            this.c7b.Location = new System.Drawing.Point(718, 124);
+            this.c7b.Name = "c7b";
+            this.c7b.Size = new System.Drawing.Size(106, 47);
+            this.c7b.TabIndex = 430;
+            this.c7b.Text = "22.225 mm";
+            this.c7b.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // c6b
+            // 
+            this.c6b.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.c6b.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c6b.ForeColor = System.Drawing.Color.Black;
+            this.c6b.Location = new System.Drawing.Point(601, 124);
+            this.c6b.Name = "c6b";
+            this.c6b.Size = new System.Drawing.Size(106, 47);
+            this.c6b.TabIndex = 429;
+            this.c6b.Text = "19.05 mm";
+            this.c6b.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // c5b
+            // 
+            this.c5b.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.c5b.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c5b.ForeColor = System.Drawing.Color.Black;
+            this.c5b.Location = new System.Drawing.Point(484, 124);
+            this.c5b.Name = "c5b";
+            this.c5b.Size = new System.Drawing.Size(106, 47);
+            this.c5b.TabIndex = 428;
+            this.c5b.Text = "15.875 mm";
+            this.c5b.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // c4b
+            // 
+            this.c4b.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.c4b.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c4b.ForeColor = System.Drawing.Color.Black;
+            this.c4b.Location = new System.Drawing.Point(367, 124);
+            this.c4b.Name = "c4b";
+            this.c4b.Size = new System.Drawing.Size(106, 47);
+            this.c4b.TabIndex = 427;
+            this.c4b.Text = "12.7 mm";
+            this.c4b.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // c3b
+            // 
+            this.c3b.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.c3b.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c3b.ForeColor = System.Drawing.Color.Black;
+            this.c3b.Location = new System.Drawing.Point(250, 124);
+            this.c3b.Name = "c3b";
+            this.c3b.Size = new System.Drawing.Size(106, 47);
+            this.c3b.TabIndex = 426;
+            this.c3b.Text = "9.525 mm";
+            this.c3b.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // c2b
+            // 
+            this.c2b.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.c2b.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c2b.ForeColor = System.Drawing.Color.Black;
+            this.c2b.Location = new System.Drawing.Point(133, 124);
+            this.c2b.Name = "c2b";
+            this.c2b.Size = new System.Drawing.Size(106, 47);
+            this.c2b.TabIndex = 425;
+            this.c2b.Text = "6.35 mm";
+            this.c2b.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // c1b
+            // 
+            this.c1b.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.c1b.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c1b.ForeColor = System.Drawing.Color.Black;
+            this.c1b.Location = new System.Drawing.Point(16, 124);
+            this.c1b.Name = "c1b";
+            this.c1b.Size = new System.Drawing.Size(106, 47);
+            this.c1b.TabIndex = 424;
+            this.c1b.Text = "3.175 mm";
+            this.c1b.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // c16a
+            // 
+            this.c16a.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.c16a.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c16a.ForeColor = System.Drawing.Color.Black;
+            this.c16a.Location = new System.Drawing.Point(1771, 67);
+            this.c16a.Name = "c16a";
+            this.c16a.Size = new System.Drawing.Size(106, 47);
+            this.c16a.TabIndex = 423;
+            this.c16a.Text = "2.000\"";
+            this.c16a.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // c15a
+            // 
+            this.c15a.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.c15a.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c15a.ForeColor = System.Drawing.Color.Black;
+            this.c15a.Location = new System.Drawing.Point(1654, 67);
+            this.c15a.Name = "c15a";
+            this.c15a.Size = new System.Drawing.Size(106, 47);
+            this.c15a.TabIndex = 422;
+            this.c15a.Text = "1.875\"";
+            this.c15a.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // c14a
+            // 
+            this.c14a.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.c14a.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c14a.ForeColor = System.Drawing.Color.Black;
+            this.c14a.Location = new System.Drawing.Point(1537, 67);
+            this.c14a.Name = "c14a";
+            this.c14a.Size = new System.Drawing.Size(106, 47);
+            this.c14a.TabIndex = 421;
+            this.c14a.Text = "1.750\"";
+            this.c14a.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // c13a
+            // 
+            this.c13a.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.c13a.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c13a.ForeColor = System.Drawing.Color.Black;
+            this.c13a.Location = new System.Drawing.Point(1420, 67);
+            this.c13a.Name = "c13a";
+            this.c13a.Size = new System.Drawing.Size(106, 47);
+            this.c13a.TabIndex = 420;
+            this.c13a.Text = "1.625\"";
+            this.c13a.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // c12a
+            // 
+            this.c12a.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.c12a.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c12a.ForeColor = System.Drawing.Color.Black;
+            this.c12a.Location = new System.Drawing.Point(1303, 67);
+            this.c12a.Name = "c12a";
+            this.c12a.Size = new System.Drawing.Size(106, 47);
+            this.c12a.TabIndex = 419;
+            this.c12a.Text = "1.500\"";
+            this.c12a.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // c11a
+            // 
+            this.c11a.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.c11a.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c11a.ForeColor = System.Drawing.Color.Black;
+            this.c11a.Location = new System.Drawing.Point(1186, 67);
+            this.c11a.Name = "c11a";
+            this.c11a.Size = new System.Drawing.Size(106, 47);
+            this.c11a.TabIndex = 418;
+            this.c11a.Text = "1.375\"";
+            this.c11a.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // c10a
+            // 
+            this.c10a.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.c10a.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c10a.ForeColor = System.Drawing.Color.Black;
+            this.c10a.Location = new System.Drawing.Point(1069, 67);
+            this.c10a.Name = "c10a";
+            this.c10a.Size = new System.Drawing.Size(106, 47);
+            this.c10a.TabIndex = 417;
+            this.c10a.Text = "1.250\"";
+            this.c10a.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // c9a
+            // 
+            this.c9a.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.c9a.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c9a.ForeColor = System.Drawing.Color.Black;
+            this.c9a.Location = new System.Drawing.Point(952, 67);
+            this.c9a.Name = "c9a";
+            this.c9a.Size = new System.Drawing.Size(106, 47);
+            this.c9a.TabIndex = 416;
+            this.c9a.Text = "1.125\"";
+            this.c9a.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // c8a
+            // 
+            this.c8a.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.c8a.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c8a.ForeColor = System.Drawing.Color.Black;
+            this.c8a.Location = new System.Drawing.Point(835, 67);
+            this.c8a.Name = "c8a";
+            this.c8a.Size = new System.Drawing.Size(106, 47);
+            this.c8a.TabIndex = 415;
+            this.c8a.Text = "1.000\"";
+            this.c8a.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // c7a
+            // 
+            this.c7a.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.c7a.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c7a.ForeColor = System.Drawing.Color.Black;
+            this.c7a.Location = new System.Drawing.Point(718, 67);
+            this.c7a.Name = "c7a";
+            this.c7a.Size = new System.Drawing.Size(106, 47);
+            this.c7a.TabIndex = 414;
+            this.c7a.Text = "0.875\"";
+            this.c7a.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // c6a
+            // 
+            this.c6a.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.c6a.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c6a.ForeColor = System.Drawing.Color.Black;
+            this.c6a.Location = new System.Drawing.Point(601, 67);
+            this.c6a.Name = "c6a";
+            this.c6a.Size = new System.Drawing.Size(106, 47);
+            this.c6a.TabIndex = 413;
+            this.c6a.Text = "0.750\"";
+            this.c6a.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // c5a
+            // 
+            this.c5a.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.c5a.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c5a.ForeColor = System.Drawing.Color.Black;
+            this.c5a.Location = new System.Drawing.Point(484, 67);
+            this.c5a.Name = "c5a";
+            this.c5a.Size = new System.Drawing.Size(106, 47);
+            this.c5a.TabIndex = 412;
+            this.c5a.Text = "0.625\"";
+            this.c5a.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // c4a
+            // 
+            this.c4a.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.c4a.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c4a.ForeColor = System.Drawing.Color.Black;
+            this.c4a.Location = new System.Drawing.Point(367, 67);
+            this.c4a.Name = "c4a";
+            this.c4a.Size = new System.Drawing.Size(106, 47);
+            this.c4a.TabIndex = 411;
+            this.c4a.Text = "0.500\"";
+            this.c4a.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // c3a
+            // 
+            this.c3a.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.c3a.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c3a.ForeColor = System.Drawing.Color.Black;
+            this.c3a.Location = new System.Drawing.Point(250, 67);
+            this.c3a.Name = "c3a";
+            this.c3a.Size = new System.Drawing.Size(106, 47);
+            this.c3a.TabIndex = 410;
+            this.c3a.Text = "0.375\"";
+            this.c3a.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // c2a
+            // 
+            this.c2a.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.c2a.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c2a.ForeColor = System.Drawing.Color.Black;
+            this.c2a.Location = new System.Drawing.Point(133, 67);
+            this.c2a.Name = "c2a";
+            this.c2a.Size = new System.Drawing.Size(106, 47);
+            this.c2a.TabIndex = 409;
+            this.c2a.Text = "0.250\"";
+            this.c2a.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // c1a
+            // 
+            this.c1a.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.c1a.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c1a.ForeColor = System.Drawing.Color.Black;
+            this.c1a.Location = new System.Drawing.Point(16, 67);
+            this.c1a.Name = "c1a";
+            this.c1a.Size = new System.Drawing.Size(106, 47);
+            this.c1a.TabIndex = 408;
+            this.c1a.Text = "0.125\"";
+            this.c1a.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // c16
+            // 
+            this.c16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.c16.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c16.ForeColor = System.Drawing.Color.Black;
+            this.c16.Location = new System.Drawing.Point(1771, 10);
+            this.c16.Name = "c16";
+            this.c16.Size = new System.Drawing.Size(106, 47);
+            this.c16.TabIndex = 407;
+            this.c16.Text = "2\"";
+            this.c16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // c15
+            // 
+            this.c15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.c15.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c15.ForeColor = System.Drawing.Color.Black;
+            this.c15.Location = new System.Drawing.Point(1654, 10);
+            this.c15.Name = "c15";
+            this.c15.Size = new System.Drawing.Size(106, 47);
+            this.c15.TabIndex = 406;
+            this.c15.Text = "1 7/8\"";
+            this.c15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // c14
+            // 
+            this.c14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.c14.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c14.ForeColor = System.Drawing.Color.Black;
+            this.c14.Location = new System.Drawing.Point(1537, 10);
+            this.c14.Name = "c14";
+            this.c14.Size = new System.Drawing.Size(106, 47);
+            this.c14.TabIndex = 405;
+            this.c14.Text = "1 3/4\"";
+            this.c14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // c13
+            // 
+            this.c13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.c13.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c13.ForeColor = System.Drawing.Color.Black;
+            this.c13.Location = new System.Drawing.Point(1420, 10);
+            this.c13.Name = "c13";
+            this.c13.Size = new System.Drawing.Size(106, 47);
+            this.c13.TabIndex = 404;
+            this.c13.Text = "1 5/8\"";
+            this.c13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // c12
+            // 
+            this.c12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.c12.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c12.ForeColor = System.Drawing.Color.Black;
+            this.c12.Location = new System.Drawing.Point(1303, 10);
+            this.c12.Name = "c12";
+            this.c12.Size = new System.Drawing.Size(106, 47);
+            this.c12.TabIndex = 403;
+            this.c12.Text = "1 1/2\"";
+            this.c12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // c11
+            // 
+            this.c11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.c11.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c11.ForeColor = System.Drawing.Color.Black;
+            this.c11.Location = new System.Drawing.Point(1186, 10);
+            this.c11.Name = "c11";
+            this.c11.Size = new System.Drawing.Size(106, 47);
+            this.c11.TabIndex = 402;
+            this.c11.Text = "1 3/8\"";
+            this.c11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // c10
+            // 
+            this.c10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.c10.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c10.ForeColor = System.Drawing.Color.Black;
+            this.c10.Location = new System.Drawing.Point(1069, 10);
+            this.c10.Name = "c10";
+            this.c10.Size = new System.Drawing.Size(106, 47);
+            this.c10.TabIndex = 401;
+            this.c10.Text = "1 1/4\"";
+            this.c10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // c9
+            // 
+            this.c9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.c9.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c9.ForeColor = System.Drawing.Color.Black;
+            this.c9.Location = new System.Drawing.Point(952, 10);
+            this.c9.Name = "c9";
+            this.c9.Size = new System.Drawing.Size(106, 47);
+            this.c9.TabIndex = 400;
+            this.c9.Text = "1 1/8\"";
+            this.c9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // c8
+            // 
+            this.c8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.c8.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c8.ForeColor = System.Drawing.Color.Black;
+            this.c8.Location = new System.Drawing.Point(835, 10);
+            this.c8.Name = "c8";
+            this.c8.Size = new System.Drawing.Size(106, 47);
+            this.c8.TabIndex = 399;
+            this.c8.Text = "1\"";
+            this.c8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // c7
+            // 
+            this.c7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.c7.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c7.ForeColor = System.Drawing.Color.Black;
+            this.c7.Location = new System.Drawing.Point(718, 10);
+            this.c7.Name = "c7";
+            this.c7.Size = new System.Drawing.Size(106, 47);
+            this.c7.TabIndex = 398;
+            this.c7.Text = "7/8\"";
+            this.c7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // c6
+            // 
+            this.c6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.c6.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c6.ForeColor = System.Drawing.Color.Black;
+            this.c6.Location = new System.Drawing.Point(601, 10);
+            this.c6.Name = "c6";
+            this.c6.Size = new System.Drawing.Size(106, 47);
+            this.c6.TabIndex = 397;
+            this.c6.Text = "3/4\"";
+            this.c6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // c5
+            // 
+            this.c5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.c5.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c5.ForeColor = System.Drawing.Color.Black;
+            this.c5.Location = new System.Drawing.Point(484, 10);
+            this.c5.Name = "c5";
+            this.c5.Size = new System.Drawing.Size(106, 47);
+            this.c5.TabIndex = 396;
+            this.c5.Text = "5/8\"";
+            this.c5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // c4
+            // 
+            this.c4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.c4.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c4.ForeColor = System.Drawing.Color.Black;
+            this.c4.Location = new System.Drawing.Point(367, 10);
+            this.c4.Name = "c4";
+            this.c4.Size = new System.Drawing.Size(106, 47);
+            this.c4.TabIndex = 395;
+            this.c4.Text = "1/2\"";
+            this.c4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // c3
+            // 
+            this.c3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.c3.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c3.ForeColor = System.Drawing.Color.Black;
+            this.c3.Location = new System.Drawing.Point(250, 10);
+            this.c3.Name = "c3";
+            this.c3.Size = new System.Drawing.Size(106, 47);
+            this.c3.TabIndex = 394;
+            this.c3.Text = "3/8\"";
+            this.c3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // c2
+            // 
+            this.c2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.c2.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c2.ForeColor = System.Drawing.Color.Black;
+            this.c2.Location = new System.Drawing.Point(133, 10);
+            this.c2.Name = "c2";
+            this.c2.Size = new System.Drawing.Size(106, 47);
+            this.c2.TabIndex = 393;
+            this.c2.Text = "1/4\"";
+            this.c2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // c1
+            // 
+            this.c1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.c1.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c1.ForeColor = System.Drawing.Color.Black;
+            this.c1.Location = new System.Drawing.Point(16, 10);
+            this.c1.Name = "c1";
+            this.c1.Size = new System.Drawing.Size(106, 47);
+            this.c1.TabIndex = 392;
+            this.c1.Text = "1/8\"";
+            this.c1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1920, 1061);
+            this.Controls.Add(this.pLengths);
+            this.Controls.Add(this.picTopView);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.label22);
-            this.Controls.Add(this.label19);
-            this.Controls.Add(this.label20);
+            this.Controls.Add(this.lbNToolc);
+            this.Controls.Add(this.lbMaterial);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.lbAbbreviation);
             this.Controls.Add(this.label18);
@@ -879,9 +1548,7 @@
             this.Controls.Add(this.label15);
             this.Controls.Add(this.pSizeSelect);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.picTorx);
-            this.Controls.Add(this.picSocket);
-            this.Controls.Add(this.picSunk);
+            this.Controls.Add(this.picISOView);
             this.Controls.Add(this.pNavBar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cbDriveType);
@@ -897,18 +1564,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picLengthTorx)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picLengthSunk)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picLengthSocketHead)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picTorx)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picSocket)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picSunk)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picLengthSocketHead)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLengthSunk)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLengthTorx)).EndInit();
             this.pSizeSelect.ResumeLayout(false);
             this.pSizeSelect.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLength)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picISOView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picTopView)).EndInit();
+            this.pLengths.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -927,9 +1594,7 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem informationToolStripMenuItem;
         private System.Windows.Forms.Timer tDateTime;
-        private System.Windows.Forms.PictureBox picSunk;
-        private System.Windows.Forms.PictureBox picSocket;
-        private System.Windows.Forms.PictureBox picTorx;
+        private System.Windows.Forms.PictureBox picISOView;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ListBox listSize;
         private System.Windows.Forms.TextBox txtSearchSize;
@@ -972,10 +1637,60 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label lbAbbreviation;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label lbMaterial;
+        private System.Windows.Forms.Label lbNToolc;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.PictureBox picTopView;
+        private System.Windows.Forms.Panel pLengths;
+        private System.Windows.Forms.Label c6;
+        private System.Windows.Forms.Label c5;
+        private System.Windows.Forms.Label c4;
+        private System.Windows.Forms.Label c3;
+        private System.Windows.Forms.Label c2;
+        private System.Windows.Forms.Label c1;
+        private System.Windows.Forms.Label c16a;
+        private System.Windows.Forms.Label c15a;
+        private System.Windows.Forms.Label c14a;
+        private System.Windows.Forms.Label c13a;
+        private System.Windows.Forms.Label c12a;
+        private System.Windows.Forms.Label c11a;
+        private System.Windows.Forms.Label c10a;
+        private System.Windows.Forms.Label c9a;
+        private System.Windows.Forms.Label c8a;
+        private System.Windows.Forms.Label c7a;
+        private System.Windows.Forms.Label c6a;
+        private System.Windows.Forms.Label c5a;
+        private System.Windows.Forms.Label c4a;
+        private System.Windows.Forms.Label c3a;
+        private System.Windows.Forms.Label c2a;
+        private System.Windows.Forms.Label c1a;
+        private System.Windows.Forms.Label c16;
+        private System.Windows.Forms.Label c15;
+        private System.Windows.Forms.Label c14;
+        private System.Windows.Forms.Label c13;
+        private System.Windows.Forms.Label c12;
+        private System.Windows.Forms.Label c11;
+        private System.Windows.Forms.Label c10;
+        private System.Windows.Forms.Label c9;
+        private System.Windows.Forms.Label c8;
+        private System.Windows.Forms.Label c7;
+        private System.Windows.Forms.Label c16b;
+        private System.Windows.Forms.Label c15b;
+        private System.Windows.Forms.Label c14b;
+        private System.Windows.Forms.Label c13b;
+        private System.Windows.Forms.Label c12b;
+        private System.Windows.Forms.Label c11b;
+        private System.Windows.Forms.Label c10b;
+        private System.Windows.Forms.Label c9b;
+        private System.Windows.Forms.Label c8b;
+        private System.Windows.Forms.Label c7b;
+        private System.Windows.Forms.Label c6b;
+        private System.Windows.Forms.Label c5b;
+        private System.Windows.Forms.Label c4b;
+        private System.Windows.Forms.Label c3b;
+        private System.Windows.Forms.Label c2b;
+        private System.Windows.Forms.Label c1b;
     }
 }
 

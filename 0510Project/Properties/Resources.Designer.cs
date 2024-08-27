@@ -63,16 +63,6 @@ namespace _0510Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap CountersunkScrew {
-            get {
-                object obj = ResourceManager.GetObject("CountersunkScrew", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap LengthSocketHead {
             get {
                 object obj = ResourceManager.GetObject("LengthSocketHead", resourceCulture);
@@ -103,9 +93,9 @@ namespace _0510Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap SocketHeadScrew {
+        internal static System.Drawing.Bitmap SocketISO {
             get {
-                object obj = ResourceManager.GetObject("SocketHeadScrew", resourceCulture);
+                object obj = ResourceManager.GetObject("SocketISO", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +103,9 @@ namespace _0510Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap SSNE_GROUP {
+        internal static System.Drawing.Bitmap SocketTop {
             get {
-                object obj = ResourceManager.GetObject("SSNE GROUP", resourceCulture);
+                object obj = ResourceManager.GetObject("SocketTop", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,9 +123,9 @@ namespace _0510Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap TorxScrew {
+        internal static System.Drawing.Bitmap SunkISO {
             get {
-                object obj = ResourceManager.GetObject("TorxScrew", resourceCulture);
+                object obj = ResourceManager.GetObject("SunkISO", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,9 +133,9 @@ namespace _0510Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap TorxScrew2 {
+        internal static System.Drawing.Bitmap SunkTop {
             get {
-                object obj = ResourceManager.GetObject("TorxScrew2", resourceCulture);
+                object obj = ResourceManager.GetObject("SunkTop", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,9 +143,39 @@ namespace _0510Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap TorxScrewISO_TOP {
+        internal static System.Drawing.Bitmap TorxISO {
             get {
-                object obj = ResourceManager.GetObject("TorxScrewISO&TOP", resourceCulture);
+                object obj = ResourceManager.GetObject("TorxISO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TorxTop {
+            get {
+                object obj = ResourceManager.GetObject("TorxTop", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap VentISO {
+            get {
+                object obj = ResourceManager.GetObject("VentISO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap VentTop {
+            get {
+                object obj = ResourceManager.GetObject("VentTop", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

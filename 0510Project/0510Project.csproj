@@ -66,14 +66,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="FilesPDF\200-21165.STEP" />
     <None Include="FilesPDF\Test.pdf" />
     <None Include="packages.config" />
@@ -81,6 +76,11 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -91,22 +91,31 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\SSNE GROUP.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\SSNE Just Logo.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\CountersunkScrew.png" />
+    <None Include="Resources\SocketISO.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\SocketHeadScrew.png" />
+    <None Include="Resources\SunkISO.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\TorxScrew.png" />
+    <None Include="Resources\TorxISO.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\TorxScrew2.png" />
+    <None Include="Resources\VentISO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SocketTop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SunkTop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TorxTop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VentTop.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\LengthSocketHead.png" />
@@ -116,9 +125,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\LengthTorx.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\TorxScrewISO&amp;TOP.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

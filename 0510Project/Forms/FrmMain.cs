@@ -12,6 +12,8 @@ using System.Threading.Tasks;
 using System.Windows.Controls;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using Control = System.Windows.Forms.Control;
+using Label = System.Windows.Forms.Label;
 
 namespace _0510Project
 {
@@ -26,6 +28,10 @@ namespace _0510Project
         public FrmMain()
         {
             InitializeComponent();
+
+            InitializeLabelEvents();
+
+
         }
 
         private void tDateTime_Tick(object sender, EventArgs e)
@@ -59,9 +65,12 @@ namespace _0510Project
         private void FrmMain_Load(object sender, EventArgs e)
         {
             btnExit.IconChar = IconChar.ArrowRightFromBracket;
-            picSocket.Visible = false;
-            picSunk.Visible = false;
-            picTorx.Visible = false;
+            picISOView.Visible = false;
+            picTopView.Visible = false;
+
+            lbAbbreviation.Text = "---";
+            lbMaterial.Text = "---";
+            lbNToolc.Text = "---";
 
             picLengthSocketHead.Visible = false;
             picLengthSunk.Visible = false;
@@ -75,7 +84,14 @@ namespace _0510Project
 
             LoadDataGridView();
             ConfigureDataGridView();
+
+         
+
         }
+
+        
+        
+
 
         private void LoadDataGridView()
         {
@@ -176,13 +192,26 @@ namespace _0510Project
             dgvLength.RowHeadersVisible = false;
         }
 
+      
+
+      
+
         private void cbDriveType_SelectionChangeCommitted(object sender, EventArgs e)
         {
             if (cbDriveType.SelectedItem.ToString() == "Socket Head Screw")
             {
-                picSocket.Visible = true;
-                picSunk.Visible = false;
-                picTorx.Visible = false;
+                picISOView.Visible = true;
+                picISOView.Image = Properties.Resources.SocketISO;
+
+                picTopView.Visible = true;
+                picTopView.Image = Properties.Resources.SocketTop;
+
+                lbAbbreviation.Text = "SOC HD";
+
+                lbMaterial.Text = "SST";
+
+                lbNToolc.Text = "N° ---";
+
 
                 picLengthSocketHead.Visible = true;
                 picLengthSunk.Visible = false;
@@ -196,9 +225,17 @@ namespace _0510Project
 
             if (cbDriveType.SelectedItem.ToString() == "Countersunk Screw")
             {
-                picSocket.Visible = false;
-                picSunk.Visible = true;
-                picTorx.Visible = false;
+                picISOView.Visible = true;
+                picISOView.Image = Properties.Resources.SunkISO;
+
+                picTopView.Visible = true;
+                picTopView.Image = Properties.Resources.SunkTop;
+
+                lbAbbreviation.Text = "CS";
+
+                lbMaterial.Text = "SST";
+
+                lbNToolc.Text = "N° ---";
 
                 picLengthSocketHead.Visible = false;
                 picLengthSunk.Visible = true;
@@ -212,9 +249,17 @@ namespace _0510Project
 
             if (cbDriveType.SelectedItem.ToString() == "Torx Screw")
             {
-                picSocket.Visible = false;
-                picSunk.Visible = false;
-                picTorx.Visible = true;
+                picISOView.Visible = true;
+                picISOView.Image = Properties.Resources.TorxISO;
+
+                picTopView.Visible = true;
+                picTopView.Image = Properties.Resources.TorxTop;
+
+                lbAbbreviation.Text = "T";
+
+                lbMaterial.Text = "SST";
+
+                lbNToolc.Text = "N° ---";
 
                 picLengthSocketHead.Visible = false;
                 picLengthSunk.Visible = false;
@@ -226,6 +271,29 @@ namespace _0510Project
                 panel2.Visible = true;
             }
 
+            if (cbDriveType.SelectedItem.ToString() == "Vent Socket Head Screw")
+            {
+                picISOView.Visible = true;
+                picISOView.Image = Properties.Resources.VentISO;
+
+                picTopView.Visible = true;
+                picTopView.Image = Properties.Resources.VentTop;
+
+                lbAbbreviation.Text = "V SOC HD";
+
+                lbMaterial.Text = "SST";
+
+                lbNToolc.Text = "N° ---";
+
+                picLengthSocketHead.Visible = false;
+                picLengthSunk.Visible = false;
+                picLengthTorx.Visible = true;
+
+                btnPDF.Visible = true;
+                btnSTP.Visible = true;
+
+                panel2.Visible = true;
+            }
         }
 
         private void txtSearchSize_TextChanged(object sender, EventArgs e)
@@ -343,6 +411,57 @@ namespace _0510Project
 
         }
 
-    
+        private void InitializeLabelEvents()
+        {
+            for (int i = 1; i <= 16; i++)
+            {
+                // Encontrar los labels por su nombre y asociar el evento
+                var label = pLengths.Controls.Find($"c{i}", true).FirstOrDefault() as Label;
+                if (label != null) label.Click += SelectColumnLength;
+
+                var labelA = pLengths.Controls.Find($"c{i}a", true).FirstOrDefault() as Label;
+                if (labelA != null) labelA.Click += SelectColumnLength;
+
+                var labelB = pLengths.Controls.Find($"c{i}b", true).FirstOrDefault() as Label;
+                if (labelB != null) labelB.Click += SelectColumnLength;
+            }
+        }
+
+        private void SelectColumnLength(object sender, EventArgs e)
+        {
+            Label clickedLabel = sender as Label;
+
+            if (clickedLabel != null)
+            {
+                string input = clickedLabel.Name.Trim('a', 'b');
+
+                PaintSelectedColumn(input);
+                DeselectOtherLength(input);
+            }
+        }
+
+        private void PaintSelectedColumn(string inputColumn)
+        {
+            foreach ( Control control in pLengths.Controls)
+            {
+                if (control is Label && (control.Name == inputColumn || control.Name == $"{inputColumn}a" || control.Name == $"{inputColumn}b"))
+                {
+                    control.BackColor = Color.Yellow;
+                }
+            }
+        }
+
+        private void DeselectOtherLength(string baseName)
+        {
+            string result = baseName.Replace("c", "");
+
+            foreach (Control control in pLengths.Controls)
+            {
+                if (control is Label && control.Name.StartsWith("c") && !(control.Name == $"c{result}" || control.Name == $"c{result}a" || control.Name == $"c{result}b"))
+                {
+                    control.BackColor = Color.White;
+                }
+            }
+        }
     }
 }

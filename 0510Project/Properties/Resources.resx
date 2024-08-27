@@ -121,31 +121,37 @@
   <data name="SSNE Just Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SSNE Just Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="CountersunkScrew" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CountersunkScrew.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="SocketISO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SocketISO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LengthTorx" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LengthTorx.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SocketHeadScrew" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SocketHeadScrew.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LengthSunk" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LengthSunk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="TorxScrew" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TorxScrew.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="VentISO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VentISO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LengthSocketHead" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LengthSocketHead.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="SSNE GROUP" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SSNE GROUP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="SunkISO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SunkISO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TorxScrew2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TorxScrew2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="TorxTop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TorxTop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TorxScrewISO&amp;TOP" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TorxScrewISO&amp;TOP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="SunkTop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SunkTop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SocketTop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SocketTop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LengthSunk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LengthSunk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TorxISO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TorxISO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VentTop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VentTop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LengthTorx" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LengthTorx.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
