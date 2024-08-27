@@ -33,9 +33,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pNavBar = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnFormSize = new FontAwesome.Sharp.IconButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnExit = new FontAwesome.Sharp.IconButton();
             this.lbDateTime = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -50,32 +47,17 @@
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnSTP = new FontAwesome.Sharp.IconButton();
-            this.picLengthSocketHead = new System.Windows.Forms.PictureBox();
-            this.picLengthSunk = new System.Windows.Forms.PictureBox();
-            this.btnPDF = new FontAwesome.Sharp.IconButton();
-            this.picLengthTorx = new System.Windows.Forms.PictureBox();
             this.pSizeSelect = new System.Windows.Forms.Panel();
-            this.radioButton10 = new System.Windows.Forms.RadioButton();
-            this.radioButton9 = new System.Windows.Forms.RadioButton();
-            this.radioButton8 = new System.Windows.Forms.RadioButton();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.lbAVGZ5 = new System.Windows.Forms.Label();
+            this.s10 = new System.Windows.Forms.Label();
+            this.s9 = new System.Windows.Forms.Label();
+            this.s8 = new System.Windows.Forms.Label();
+            this.s7 = new System.Windows.Forms.Label();
+            this.s6 = new System.Windows.Forms.Label();
+            this.s5 = new System.Windows.Forms.Label();
+            this.s4 = new System.Windows.Forms.Label();
+            this.s3 = new System.Windows.Forms.Label();
+            this.s2 = new System.Windows.Forms.Label();
+            this.s1 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.dgvLength = new System.Windows.Forms.DataGridView();
@@ -87,8 +69,6 @@
             this.lbNToolc = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
-            this.picISOView = new System.Windows.Forms.PictureBox();
-            this.picTopView = new System.Windows.Forms.PictureBox();
             this.pLengths = new System.Windows.Forms.Panel();
             this.c16b = new System.Windows.Forms.Label();
             this.c15b = new System.Windows.Forms.Label();
@@ -138,19 +118,25 @@
             this.c3 = new System.Windows.Forms.Label();
             this.c2 = new System.Windows.Forms.Label();
             this.c1 = new System.Windows.Forms.Label();
+            this.picTopView = new System.Windows.Forms.PictureBox();
+            this.picLength = new System.Windows.Forms.PictureBox();
+            this.picISOView = new System.Windows.Forms.PictureBox();
+            this.btnFormSize = new FontAwesome.Sharp.IconButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnExit = new FontAwesome.Sharp.IconButton();
+            this.btnSTP = new FontAwesome.Sharp.IconButton();
+            this.btnPDF = new FontAwesome.Sharp.IconButton();
             this.pNavBar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picLengthSocketHead)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picLengthSunk)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picLengthTorx)).BeginInit();
             this.pSizeSelect.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLength)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picISOView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picTopView)).BeginInit();
             this.pLengths.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picTopView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLength)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picISOView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // cbDriveType
@@ -207,51 +193,11 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "0510 Project";
             // 
-            // btnFormSize
-            // 
-            this.btnFormSize.FlatAppearance.BorderSize = 0;
-            this.btnFormSize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFormSize.IconChar = FontAwesome.Sharp.IconChar.ExpandAlt;
-            this.btnFormSize.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(254)))), ((int)(((byte)(251)))));
-            this.btnFormSize.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnFormSize.IconSize = 30;
-            this.btnFormSize.Location = new System.Drawing.Point(1822, 3);
-            this.btnFormSize.Name = "btnFormSize";
-            this.btnFormSize.Size = new System.Drawing.Size(41, 46);
-            this.btnFormSize.TabIndex = 1;
-            this.btnFormSize.UseVisualStyleBackColor = true;
-            this.btnFormSize.Click += new System.EventHandler(this.btnFormSize_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::_0510Project.Properties.Resources.SSNE_Just_Logo;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(57, 53);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnExit
-            // 
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.IconChar = FontAwesome.Sharp.IconChar.Code;
-            this.btnExit.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(254)))), ((int)(((byte)(251)))));
-            this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnExit.IconSize = 35;
-            this.btnExit.Location = new System.Drawing.Point(1869, 3);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(48, 46);
-            this.btnExit.TabIndex = 0;
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
             // lbDateTime
             // 
             this.lbDateTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.lbDateTime.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDateTime.ForeColor = System.Drawing.Color.White;
+            this.lbDateTime.ForeColor = System.Drawing.Color.Black;
             this.lbDateTime.Location = new System.Drawing.Point(1611, 73);
             this.lbDateTime.Name = "lbDateTime";
             this.lbDateTime.Size = new System.Drawing.Size(299, 13);
@@ -415,13 +361,10 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.btnSTP);
-            this.panel2.Controls.Add(this.picLengthSocketHead);
-            this.panel2.Controls.Add(this.picLengthSunk);
             this.panel2.Controls.Add(this.listLength);
             this.panel2.Controls.Add(this.btnPDF);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.listSize);
-            this.panel2.Controls.Add(this.picLengthTorx);
             this.panel2.Controls.Add(this.txtSearchSize);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.txtSearchLength);
@@ -430,331 +373,143 @@
             this.panel2.Size = new System.Drawing.Size(512, 525);
             this.panel2.TabIndex = 358;
             // 
-            // btnSTP
-            // 
-            this.btnSTP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            this.btnSTP.FlatAppearance.BorderSize = 0;
-            this.btnSTP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSTP.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSTP.ForeColor = System.Drawing.Color.White;
-            this.btnSTP.IconChar = FontAwesome.Sharp.IconChar.FileArchive;
-            this.btnSTP.IconColor = System.Drawing.Color.White;
-            this.btnSTP.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.btnSTP.IconSize = 25;
-            this.btnSTP.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSTP.Location = new System.Drawing.Point(15, 473);
-            this.btnSTP.Name = "btnSTP";
-            this.btnSTP.Size = new System.Drawing.Size(75, 33);
-            this.btnSTP.TabIndex = 357;
-            this.btnSTP.Text = "STP";
-            this.btnSTP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSTP.UseVisualStyleBackColor = false;
-            this.btnSTP.Click += new System.EventHandler(this.btnSTP_Click);
-            // 
-            // picLengthSocketHead
-            // 
-            this.picLengthSocketHead.Location = new System.Drawing.Point(250, 199);
-            this.picLengthSocketHead.Name = "picLengthSocketHead";
-            this.picLengthSocketHead.Size = new System.Drawing.Size(68, 49);
-            this.picLengthSocketHead.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picLengthSocketHead.TabIndex = 12;
-            this.picLengthSocketHead.TabStop = false;
-            // 
-            // picLengthSunk
-            // 
-            this.picLengthSunk.Location = new System.Drawing.Point(250, 125);
-            this.picLengthSunk.Name = "picLengthSunk";
-            this.picLengthSunk.Size = new System.Drawing.Size(68, 49);
-            this.picLengthSunk.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picLengthSunk.TabIndex = 16;
-            this.picLengthSunk.TabStop = false;
-            // 
-            // btnPDF
-            // 
-            this.btnPDF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            this.btnPDF.FlatAppearance.BorderSize = 0;
-            this.btnPDF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPDF.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPDF.ForeColor = System.Drawing.Color.White;
-            this.btnPDF.IconChar = FontAwesome.Sharp.IconChar.FilePdf;
-            this.btnPDF.IconColor = System.Drawing.Color.White;
-            this.btnPDF.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.btnPDF.IconSize = 25;
-            this.btnPDF.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPDF.Location = new System.Drawing.Point(141, 473);
-            this.btnPDF.Name = "btnPDF";
-            this.btnPDF.Size = new System.Drawing.Size(75, 33);
-            this.btnPDF.TabIndex = 356;
-            this.btnPDF.Text = "PDF";
-            this.btnPDF.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPDF.UseVisualStyleBackColor = false;
-            this.btnPDF.Click += new System.EventHandler(this.iconButton4_Click);
-            // 
-            // picLengthTorx
-            // 
-            this.picLengthTorx.Location = new System.Drawing.Point(250, 255);
-            this.picLengthTorx.Name = "picLengthTorx";
-            this.picLengthTorx.Size = new System.Drawing.Size(68, 49);
-            this.picLengthTorx.TabIndex = 17;
-            this.picLengthTorx.TabStop = false;
-            // 
             // pSizeSelect
             // 
             this.pSizeSelect.BackColor = System.Drawing.Color.DarkGray;
-            this.pSizeSelect.Controls.Add(this.radioButton10);
-            this.pSizeSelect.Controls.Add(this.radioButton9);
-            this.pSizeSelect.Controls.Add(this.radioButton8);
-            this.pSizeSelect.Controls.Add(this.radioButton7);
-            this.pSizeSelect.Controls.Add(this.radioButton6);
-            this.pSizeSelect.Controls.Add(this.radioButton5);
-            this.pSizeSelect.Controls.Add(this.radioButton4);
-            this.pSizeSelect.Controls.Add(this.radioButton3);
-            this.pSizeSelect.Controls.Add(this.radioButton2);
-            this.pSizeSelect.Controls.Add(this.radioButton1);
-            this.pSizeSelect.Controls.Add(this.label14);
-            this.pSizeSelect.Controls.Add(this.label13);
-            this.pSizeSelect.Controls.Add(this.label12);
-            this.pSizeSelect.Controls.Add(this.label11);
-            this.pSizeSelect.Controls.Add(this.label10);
-            this.pSizeSelect.Controls.Add(this.label9);
-            this.pSizeSelect.Controls.Add(this.label8);
-            this.pSizeSelect.Controls.Add(this.label7);
-            this.pSizeSelect.Controls.Add(this.label6);
-            this.pSizeSelect.Controls.Add(this.lbAVGZ5);
+            this.pSizeSelect.Controls.Add(this.s10);
+            this.pSizeSelect.Controls.Add(this.s9);
+            this.pSizeSelect.Controls.Add(this.s8);
+            this.pSizeSelect.Controls.Add(this.s7);
+            this.pSizeSelect.Controls.Add(this.s6);
+            this.pSizeSelect.Controls.Add(this.s5);
+            this.pSizeSelect.Controls.Add(this.s4);
+            this.pSizeSelect.Controls.Add(this.s3);
+            this.pSizeSelect.Controls.Add(this.s2);
+            this.pSizeSelect.Controls.Add(this.s1);
             this.pSizeSelect.Location = new System.Drawing.Point(13, 260);
             this.pSizeSelect.Name = "pSizeSelect";
             this.pSizeSelect.Size = new System.Drawing.Size(1456, 72);
             this.pSizeSelect.TabIndex = 359;
             // 
-            // radioButton10
+            // s10
             // 
-            this.radioButton10.AutoSize = true;
-            this.radioButton10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.radioButton10.Location = new System.Drawing.Point(1422, 14);
-            this.radioButton10.Name = "radioButton10";
-            this.radioButton10.Size = new System.Drawing.Size(14, 13);
-            this.radioButton10.TabIndex = 365;
-            this.radioButton10.TabStop = true;
-            this.radioButton10.UseVisualStyleBackColor = false;
+            this.s10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.s10.Font = new System.Drawing.Font("Roboto", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.s10.ForeColor = System.Drawing.Color.Black;
+            this.s10.Location = new System.Drawing.Point(1312, 12);
+            this.s10.Name = "s10";
+            this.s10.Size = new System.Drawing.Size(125, 47);
+            this.s10.TabIndex = 359;
+            this.s10.Text = "3/8 - 24";
+            this.s10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // radioButton9
+            // s9
             // 
-            this.radioButton9.AutoSize = true;
-            this.radioButton9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.radioButton9.Location = new System.Drawing.Point(1278, 14);
-            this.radioButton9.Name = "radioButton9";
-            this.radioButton9.Size = new System.Drawing.Size(14, 13);
-            this.radioButton9.TabIndex = 365;
-            this.radioButton9.TabStop = true;
-            this.radioButton9.UseVisualStyleBackColor = false;
+            this.s9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.s9.Font = new System.Drawing.Font("Roboto", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.s9.ForeColor = System.Drawing.Color.Black;
+            this.s9.Location = new System.Drawing.Point(1168, 12);
+            this.s9.Name = "s9";
+            this.s9.Size = new System.Drawing.Size(125, 47);
+            this.s9.TabIndex = 358;
+            this.s9.Text = "3/8 - 16";
+            this.s9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // radioButton8
+            // s8
             // 
-            this.radioButton8.AutoSize = true;
-            this.radioButton8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.radioButton8.Location = new System.Drawing.Point(1134, 14);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(14, 13);
-            this.radioButton8.TabIndex = 364;
-            this.radioButton8.TabStop = true;
-            this.radioButton8.UseVisualStyleBackColor = false;
+            this.s8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.s8.Font = new System.Drawing.Font("Roboto", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.s8.ForeColor = System.Drawing.Color.Black;
+            this.s8.Location = new System.Drawing.Point(1024, 12);
+            this.s8.Name = "s8";
+            this.s8.Size = new System.Drawing.Size(125, 47);
+            this.s8.TabIndex = 357;
+            this.s8.Text = "5/16 -24";
+            this.s8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // radioButton7
+            // s7
             // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.radioButton7.Location = new System.Drawing.Point(991, 14);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(14, 13);
-            this.radioButton7.TabIndex = 362;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.UseVisualStyleBackColor = false;
+            this.s7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.s7.Font = new System.Drawing.Font("Roboto", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.s7.ForeColor = System.Drawing.Color.Black;
+            this.s7.Location = new System.Drawing.Point(881, 12);
+            this.s7.Name = "s7";
+            this.s7.Size = new System.Drawing.Size(125, 47);
+            this.s7.TabIndex = 356;
+            this.s7.Text = "5/16 - 18";
+            this.s7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // radioButton6
+            // s6
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.radioButton6.Location = new System.Drawing.Point(847, 14);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(14, 13);
-            this.radioButton6.TabIndex = 363;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.UseVisualStyleBackColor = false;
+            this.s6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.s6.Font = new System.Drawing.Font("Roboto", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.s6.ForeColor = System.Drawing.Color.Black;
+            this.s6.Location = new System.Drawing.Point(737, 12);
+            this.s6.Name = "s6";
+            this.s6.Size = new System.Drawing.Size(125, 47);
+            this.s6.TabIndex = 355;
+            this.s6.Text = "1/4 - 28";
+            this.s6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // radioButton5
+            // s5
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.radioButton5.Location = new System.Drawing.Point(703, 14);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(14, 13);
-            this.radioButton5.TabIndex = 362;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.UseVisualStyleBackColor = false;
+            this.s5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.s5.Font = new System.Drawing.Font("Roboto", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.s5.ForeColor = System.Drawing.Color.Black;
+            this.s5.Location = new System.Drawing.Point(593, 12);
+            this.s5.Name = "s5";
+            this.s5.Size = new System.Drawing.Size(125, 47);
+            this.s5.TabIndex = 354;
+            this.s5.Text = "1/4 - 20";
+            this.s5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // radioButton4
+            // s4
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.radioButton4.Location = new System.Drawing.Point(559, 14);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(14, 13);
-            this.radioButton4.TabIndex = 362;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.UseVisualStyleBackColor = false;
+            this.s4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.s4.Font = new System.Drawing.Font("Roboto", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.s4.ForeColor = System.Drawing.Color.Black;
+            this.s4.Location = new System.Drawing.Point(449, 12);
+            this.s4.Name = "s4";
+            this.s4.Size = new System.Drawing.Size(125, 47);
+            this.s4.TabIndex = 353;
+            this.s4.Text = "10 - 32";
+            this.s4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // radioButton3
+            // s3
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.radioButton3.Location = new System.Drawing.Point(416, 14);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(14, 13);
-            this.radioButton3.TabIndex = 361;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.UseVisualStyleBackColor = false;
+            this.s3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.s3.Font = new System.Drawing.Font("Roboto", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.s3.ForeColor = System.Drawing.Color.Black;
+            this.s3.Location = new System.Drawing.Point(306, 12);
+            this.s3.Name = "s3";
+            this.s3.Size = new System.Drawing.Size(125, 47);
+            this.s3.TabIndex = 352;
+            this.s3.Text = "8 - 32";
+            this.s3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // radioButton2
+            // s2
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.radioButton2.Location = new System.Drawing.Point(272, 14);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(14, 13);
-            this.radioButton2.TabIndex = 361;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.UseVisualStyleBackColor = false;
+            this.s2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.s2.Font = new System.Drawing.Font("Roboto", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.s2.ForeColor = System.Drawing.Color.Black;
+            this.s2.Location = new System.Drawing.Point(162, 12);
+            this.s2.Name = "s2";
+            this.s2.Size = new System.Drawing.Size(125, 47);
+            this.s2.TabIndex = 351;
+            this.s2.Text = "6 - 32";
+            this.s2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // radioButton1
+            // s1
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.radioButton1.Location = new System.Drawing.Point(128, 14);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(14, 13);
-            this.radioButton1.TabIndex = 360;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.UseVisualStyleBackColor = false;
-            // 
-            // label14
-            // 
-            this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.label14.Font = new System.Drawing.Font("Roboto", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(1312, 12);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(125, 47);
-            this.label14.TabIndex = 359;
-            this.label14.Text = "3/8 - 24";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label13
-            // 
-            this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.label13.Font = new System.Drawing.Font("Roboto", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(1168, 12);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(125, 47);
-            this.label13.TabIndex = 358;
-            this.label13.Text = "3/8 - 16";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label12
-            // 
-            this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.label12.Font = new System.Drawing.Font("Roboto", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(1024, 12);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(125, 47);
-            this.label12.TabIndex = 357;
-            this.label12.Text = "5/16 -24";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label11
-            // 
-            this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.label11.Font = new System.Drawing.Font("Roboto", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(881, 12);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(125, 47);
-            this.label11.TabIndex = 356;
-            this.label11.Text = "5/16 - 18";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label10
-            // 
-            this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.label10.Font = new System.Drawing.Font("Roboto", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(737, 12);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(125, 47);
-            this.label10.TabIndex = 355;
-            this.label10.Text = "1/4 - 28";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label9
-            // 
-            this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.label9.Font = new System.Drawing.Font("Roboto", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(593, 12);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(125, 47);
-            this.label9.TabIndex = 354;
-            this.label9.Text = "1/4 - 20";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label8
-            // 
-            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.label8.Font = new System.Drawing.Font("Roboto", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(449, 12);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(125, 47);
-            this.label8.TabIndex = 353;
-            this.label8.Text = "10 - 32";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label7
-            // 
-            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.label7.Font = new System.Drawing.Font("Roboto", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(306, 12);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(125, 47);
-            this.label7.TabIndex = 352;
-            this.label7.Text = "8 - 32";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label6
-            // 
-            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.label6.Font = new System.Drawing.Font("Roboto", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(162, 12);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(125, 47);
-            this.label6.TabIndex = 351;
-            this.label6.Text = "6 - 32";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbAVGZ5
-            // 
-            this.lbAVGZ5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.lbAVGZ5.Font = new System.Drawing.Font("Roboto", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAVGZ5.ForeColor = System.Drawing.Color.Black;
-            this.lbAVGZ5.Location = new System.Drawing.Point(18, 12);
-            this.lbAVGZ5.Name = "lbAVGZ5";
-            this.lbAVGZ5.Size = new System.Drawing.Size(125, 47);
-            this.lbAVGZ5.TabIndex = 349;
-            this.lbAVGZ5.Text = "4 - 40";
-            this.lbAVGZ5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.s1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.s1.Font = new System.Drawing.Font("Roboto", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.s1.ForeColor = System.Drawing.Color.Black;
+            this.s1.Location = new System.Drawing.Point(18, 12);
+            this.s1.Name = "s1";
+            this.s1.Size = new System.Drawing.Size(125, 47);
+            this.s1.TabIndex = 349;
+            this.s1.Text = "4 - 40";
+            this.s1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label15
             // 
@@ -781,11 +536,12 @@
             this.dgvLength.AllowUserToAddRows = false;
             this.dgvLength.AllowUserToDeleteRows = false;
             this.dgvLength.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvLength.Location = new System.Drawing.Point(17, 665);
+            this.dgvLength.Location = new System.Drawing.Point(3, 902);
             this.dgvLength.Name = "dgvLength";
             this.dgvLength.ReadOnly = true;
-            this.dgvLength.Size = new System.Drawing.Size(1890, 155);
+            this.dgvLength.Size = new System.Drawing.Size(118, 155);
             this.dgvLength.TabIndex = 362;
+            this.dgvLength.Visible = false;
             // 
             // label17
             // 
@@ -809,7 +565,7 @@
             // 
             // lbAbbreviation
             // 
-            this.lbAbbreviation.BackColor = System.Drawing.Color.LightGray;
+            this.lbAbbreviation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(226)))), ((int)(((byte)(227)))));
             this.lbAbbreviation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbAbbreviation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbAbbreviation.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -832,7 +588,7 @@
             // 
             // lbMaterial
             // 
-            this.lbMaterial.BackColor = System.Drawing.Color.LightGray;
+            this.lbMaterial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(226)))), ((int)(((byte)(227)))));
             this.lbMaterial.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbMaterial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbMaterial.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -845,11 +601,11 @@
             // 
             // lbNToolc
             // 
-            this.lbNToolc.BackColor = System.Drawing.Color.LightGray;
+            this.lbNToolc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(226)))), ((int)(((byte)(227)))));
             this.lbNToolc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbNToolc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbNToolc.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNToolc.Location = new System.Drawing.Point(833, 149);
+            this.lbNToolc.Location = new System.Drawing.Point(833, 150);
             this.lbNToolc.Name = "lbNToolc";
             this.lbNToolc.Size = new System.Drawing.Size(176, 46);
             this.lbNToolc.TabIndex = 371;
@@ -875,26 +631,6 @@
             this.label23.Size = new System.Drawing.Size(107, 27);
             this.label23.TabIndex = 373;
             this.label23.Text = "Top View:";
-            // 
-            // picISOView
-            // 
-            this.picISOView.Image = global::_0510Project.Properties.Resources.SocketISO;
-            this.picISOView.Location = new System.Drawing.Point(1194, 114);
-            this.picISOView.Name = "picISOView";
-            this.picISOView.Size = new System.Drawing.Size(174, 107);
-            this.picISOView.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picISOView.TabIndex = 7;
-            this.picISOView.TabStop = false;
-            // 
-            // picTopView
-            // 
-            this.picTopView.Image = global::_0510Project.Properties.Resources.SocketTop;
-            this.picTopView.Location = new System.Drawing.Point(1501, 114);
-            this.picTopView.Name = "picTopView";
-            this.picTopView.Size = new System.Drawing.Size(76, 59);
-            this.picTopView.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picTopView.TabIndex = 374;
-            this.picTopView.TabStop = false;
             // 
             // pLengths
             // 
@@ -1528,6 +1264,117 @@
             this.c1.Text = "1/8\"";
             this.c1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // picTopView
+            // 
+            this.picTopView.Image = global::_0510Project.Properties.Resources.PlaceHolderImage;
+            this.picTopView.Location = new System.Drawing.Point(1501, 114);
+            this.picTopView.Name = "picTopView";
+            this.picTopView.Size = new System.Drawing.Size(76, 59);
+            this.picTopView.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picTopView.TabIndex = 374;
+            this.picTopView.TabStop = false;
+            // 
+            // picLength
+            // 
+            this.picLength.Location = new System.Drawing.Point(234, 333);
+            this.picLength.Name = "picLength";
+            this.picLength.Size = new System.Drawing.Size(85, 51);
+            this.picLength.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picLength.TabIndex = 16;
+            this.picLength.TabStop = false;
+            // 
+            // picISOView
+            // 
+            this.picISOView.Image = global::_0510Project.Properties.Resources.PlaceHolderImage;
+            this.picISOView.Location = new System.Drawing.Point(1194, 114);
+            this.picISOView.Name = "picISOView";
+            this.picISOView.Size = new System.Drawing.Size(174, 107);
+            this.picISOView.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picISOView.TabIndex = 7;
+            this.picISOView.TabStop = false;
+            // 
+            // btnFormSize
+            // 
+            this.btnFormSize.FlatAppearance.BorderSize = 0;
+            this.btnFormSize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFormSize.IconChar = FontAwesome.Sharp.IconChar.ExpandAlt;
+            this.btnFormSize.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(254)))), ((int)(((byte)(251)))));
+            this.btnFormSize.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnFormSize.IconSize = 30;
+            this.btnFormSize.Location = new System.Drawing.Point(1822, 3);
+            this.btnFormSize.Name = "btnFormSize";
+            this.btnFormSize.Size = new System.Drawing.Size(41, 46);
+            this.btnFormSize.TabIndex = 1;
+            this.btnFormSize.UseVisualStyleBackColor = true;
+            this.btnFormSize.Click += new System.EventHandler(this.btnFormSize_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::_0510Project.Properties.Resources.SSNE_Just_Logo;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(57, 53);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnExit
+            // 
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.IconChar = FontAwesome.Sharp.IconChar.Code;
+            this.btnExit.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(254)))), ((int)(((byte)(251)))));
+            this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnExit.IconSize = 35;
+            this.btnExit.Location = new System.Drawing.Point(1869, 3);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(48, 46);
+            this.btnExit.TabIndex = 0;
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // btnSTP
+            // 
+            this.btnSTP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
+            this.btnSTP.FlatAppearance.BorderSize = 0;
+            this.btnSTP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSTP.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSTP.ForeColor = System.Drawing.Color.White;
+            this.btnSTP.IconChar = FontAwesome.Sharp.IconChar.FileArchive;
+            this.btnSTP.IconColor = System.Drawing.Color.White;
+            this.btnSTP.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.btnSTP.IconSize = 25;
+            this.btnSTP.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSTP.Location = new System.Drawing.Point(15, 473);
+            this.btnSTP.Name = "btnSTP";
+            this.btnSTP.Size = new System.Drawing.Size(75, 33);
+            this.btnSTP.TabIndex = 357;
+            this.btnSTP.Text = "STP";
+            this.btnSTP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSTP.UseVisualStyleBackColor = false;
+            this.btnSTP.Click += new System.EventHandler(this.btnSTP_Click);
+            // 
+            // btnPDF
+            // 
+            this.btnPDF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
+            this.btnPDF.FlatAppearance.BorderSize = 0;
+            this.btnPDF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPDF.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPDF.ForeColor = System.Drawing.Color.White;
+            this.btnPDF.IconChar = FontAwesome.Sharp.IconChar.FilePdf;
+            this.btnPDF.IconColor = System.Drawing.Color.White;
+            this.btnPDF.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.btnPDF.IconSize = 25;
+            this.btnPDF.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPDF.Location = new System.Drawing.Point(141, 473);
+            this.btnPDF.Name = "btnPDF";
+            this.btnPDF.Size = new System.Drawing.Size(75, 33);
+            this.btnPDF.TabIndex = 356;
+            this.btnPDF.Text = "PDF";
+            this.btnPDF.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPDF.UseVisualStyleBackColor = false;
+            this.btnPDF.Click += new System.EventHandler(this.iconButton4_Click);
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -1535,6 +1382,7 @@
             this.ClientSize = new System.Drawing.Size(1920, 1061);
             this.Controls.Add(this.pLengths);
             this.Controls.Add(this.picTopView);
+            this.Controls.Add(this.picLength);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.lbNToolc);
@@ -1561,21 +1409,18 @@
             this.Text = "bu";
             this.Load += new System.EventHandler(this.FrmMain_Load);
             this.pNavBar.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picLengthSocketHead)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picLengthSunk)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picLengthTorx)).EndInit();
             this.pSizeSelect.ResumeLayout(false);
-            this.pSizeSelect.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLength)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picISOView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picTopView)).EndInit();
             this.pLengths.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picTopView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLength)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picISOView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1598,38 +1443,26 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ListBox listSize;
         private System.Windows.Forms.TextBox txtSearchSize;
-        private System.Windows.Forms.PictureBox picLengthSocketHead;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtSearchLength;
         private System.Windows.Forms.ListBox listLength;
-        private System.Windows.Forms.PictureBox picLengthSunk;
-        private System.Windows.Forms.PictureBox picLengthTorx;
+        private System.Windows.Forms.PictureBox picLength;
         private System.Windows.Forms.WebBrowser webBrowser1;
         private System.Windows.Forms.Panel panel1;
         private FontAwesome.Sharp.IconButton btnPDF;
         private FontAwesome.Sharp.IconButton btnSTP;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel pSizeSelect;
-        private System.Windows.Forms.Label lbAVGZ5;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton10;
-        private System.Windows.Forms.RadioButton radioButton9;
-        private System.Windows.Forms.RadioButton radioButton8;
-        private System.Windows.Forms.RadioButton radioButton7;
-        private System.Windows.Forms.RadioButton radioButton6;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.Label s1;
+        private System.Windows.Forms.Label s10;
+        private System.Windows.Forms.Label s9;
+        private System.Windows.Forms.Label s8;
+        private System.Windows.Forms.Label s7;
+        private System.Windows.Forms.Label s6;
+        private System.Windows.Forms.Label s5;
+        private System.Windows.Forms.Label s4;
+        private System.Windows.Forms.Label s3;
+        private System.Windows.Forms.Label s2;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.DataGridView dgvLength;

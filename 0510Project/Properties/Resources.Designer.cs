@@ -93,6 +93,26 @@ namespace _0510Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap LengthVent {
+            get {
+                object obj = ResourceManager.GetObject("LengthVent", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PlaceHolderImage {
+            get {
+                object obj = ResourceManager.GetObject("PlaceHolderImage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap SocketISO {
             get {
                 object obj = ResourceManager.GetObject("SocketISO", resourceCulture);
@@ -166,6 +186,16 @@ namespace _0510Project.Properties {
         internal static System.Drawing.Bitmap VentISO {
             get {
                 object obj = ResourceManager.GetObject("VentISO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap VentISO2 {
+            get {
+                object obj = ResourceManager.GetObject("VentISO2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

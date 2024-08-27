@@ -64,34 +64,31 @@ namespace _0510Project
 
         private void FrmMain_Load(object sender, EventArgs e)
         {
+            ResetAppereance();
+
+            LoadDataGridView();
+            ConfigureDataGridView();
+        }
+
+        private void ResetAppereance()
+        {
+            lbDateTime.Text = DateTime.Now.ToString("MM/dd/yyyy HH:mm");
             btnExit.IconChar = IconChar.ArrowRightFromBracket;
-            picISOView.Visible = false;
-            picTopView.Visible = false;
+
+            picISOView.Image = Properties.Resources.PlaceHolderImage;
+            picTopView.Image = Properties.Resources.PlaceHolderImage;
+            picLength.Image = null;
 
             lbAbbreviation.Text = "---";
             lbMaterial.Text = "---";
             lbNToolc.Text = "---";
 
-            picLengthSocketHead.Visible = false;
-            picLengthSunk.Visible = false;
-            picLengthTorx.Visible = false;
+            pSizeSelect.Enabled = false;
+            pLengths.Enabled = false;
 
-            panel1.Visible = true;
-            panel2.Visible = true;
-
-            btnPDF.Visible = true;
-            btnSTP.Visible = false;
-
-            LoadDataGridView();
-            ConfigureDataGridView();
-
-         
-
+            btnPDF.Enabled = false;
+            btnSTP.Enabled = false;
         }
-
-        
-        
-
 
         private void LoadDataGridView()
         {
@@ -212,15 +209,7 @@ namespace _0510Project
 
                 lbNToolc.Text = "N° ---";
 
-
-                picLengthSocketHead.Visible = true;
-                picLengthSunk.Visible = false;
-                picLengthTorx.Visible = false;
-
-                btnPDF.Visible = true;
-                btnSTP.Visible = true;
-
-                panel2.Visible = true;
+                picLength.Image = Properties.Resources.LengthSocketHead;
             }
 
             if (cbDriveType.SelectedItem.ToString() == "Countersunk Screw")
@@ -237,14 +226,7 @@ namespace _0510Project
 
                 lbNToolc.Text = "N° ---";
 
-                picLengthSocketHead.Visible = false;
-                picLengthSunk.Visible = true;
-                picLengthTorx.Visible = false;
-
-                btnPDF.Visible = true;
-                btnSTP.Visible = true;
-
-                panel2.Visible = true;
+                picLength.Image = Properties.Resources.LengthSunk;
             }
 
             if (cbDriveType.SelectedItem.ToString() == "Torx Screw")
@@ -261,14 +243,7 @@ namespace _0510Project
 
                 lbNToolc.Text = "N° ---";
 
-                picLengthSocketHead.Visible = false;
-                picLengthSunk.Visible = false;
-                picLengthTorx.Visible = true;
-
-                btnPDF.Visible = true;
-                btnSTP.Visible = true;
-
-                panel2.Visible = true;
+                picLength.Image = Properties.Resources.LengthTorx;
             }
 
             if (cbDriveType.SelectedItem.ToString() == "Vent Socket Head Screw")
@@ -285,15 +260,11 @@ namespace _0510Project
 
                 lbNToolc.Text = "N° ---";
 
-                picLengthSocketHead.Visible = false;
-                picLengthSunk.Visible = false;
-                picLengthTorx.Visible = true;
-
-                btnPDF.Visible = true;
-                btnSTP.Visible = true;
-
-                panel2.Visible = true;
+                picLength.Image = Properties.Resources.LengthVent;
             }
+
+            pSizeSelect.Enabled = true;
+
         }
 
         private void txtSearchSize_TextChanged(object sender, EventArgs e)
@@ -411,11 +382,11 @@ namespace _0510Project
 
         }
 
+        // Manera rapida de asociar controles al evento click que necesitamos para realizar la funcionalidad de selección
         private void InitializeLabelEvents()
         {
             for (int i = 1; i <= 16; i++)
             {
-                // Encontrar los labels por su nombre y asociar el evento
                 var label = pLengths.Controls.Find($"c{i}", true).FirstOrDefault() as Label;
                 if (label != null) label.Click += SelectColumnLength;
 
@@ -424,6 +395,34 @@ namespace _0510Project
 
                 var labelB = pLengths.Controls.Find($"c{i}b", true).FirstOrDefault() as Label;
                 if (labelB != null) labelB.Click += SelectColumnLength;
+            }
+
+            for (int i = 0; i <= 10; i++)
+            {
+                var label = pSizeSelect.Controls.Find($"s{i}", true).FirstOrDefault() as Label;
+                if (label != null) label.Click += SelectColumnSize;
+            }
+        }
+
+        // Función que recibe un control label, este se pinta de amarillo y posteriormente se pintan de blanco todos los demás controles label para mostrar un
+        // esencia de estar seleccionando labels
+        private void SelectColumnSize(object sender, EventArgs e)
+        {
+            Label clickedLabel = sender as Label;
+
+            if (clickedLabel != null)
+            {
+                clickedLabel.BackColor = Color.Yellow;
+
+                pLengths.Enabled = true;
+
+                foreach (Control control in pSizeSelect.Controls)
+                {
+                    if (control is Label && control.Name.Contains("s") && control.Name != clickedLabel.Name)
+                    {
+                        control.BackColor = Color.White;
+                    }
+                }
             }
         }
 

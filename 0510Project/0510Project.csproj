@@ -126,5 +126,14 @@
   <ItemGroup>
     <None Include="Resources\LengthTorx.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LengthVent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlaceHolderImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VentISO2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
