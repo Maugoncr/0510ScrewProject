@@ -33,6 +33,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pNavBar = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnFormSize = new FontAwesome.Sharp.IconButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnExit = new FontAwesome.Sharp.IconButton();
             this.lbDateTime = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -118,15 +121,27 @@
             this.c3 = new System.Windows.Forms.Label();
             this.c2 = new System.Windows.Forms.Label();
             this.c1 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.btnReset = new FontAwesome.Sharp.IconButton();
+            this.btnSTP = new FontAwesome.Sharp.IconButton();
+            this.btnPDF = new FontAwesome.Sharp.IconButton();
             this.picTopView = new System.Windows.Forms.PictureBox();
             this.picLength = new System.Windows.Forms.PictureBox();
             this.picISOView = new System.Windows.Forms.PictureBox();
-            this.btnFormSize = new FontAwesome.Sharp.IconButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnExit = new FontAwesome.Sharp.IconButton();
-            this.btnSTP = new FontAwesome.Sharp.IconButton();
-            this.btnPDF = new FontAwesome.Sharp.IconButton();
+            this.txtID = new System.Windows.Forms.TextBox();
+            this.txtPrueba = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.dgvTest = new System.Windows.Forms.DataGridView();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
             this.pNavBar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -136,7 +151,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picTopView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLength)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picISOView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTest)).BeginInit();
             this.SuspendLayout();
             // 
             // cbDriveType
@@ -192,6 +207,46 @@
             this.label2.Size = new System.Drawing.Size(124, 20);
             this.label2.TabIndex = 4;
             this.label2.Text = "0510 Project";
+            // 
+            // btnFormSize
+            // 
+            this.btnFormSize.FlatAppearance.BorderSize = 0;
+            this.btnFormSize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFormSize.IconChar = FontAwesome.Sharp.IconChar.ExpandAlt;
+            this.btnFormSize.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(254)))), ((int)(((byte)(251)))));
+            this.btnFormSize.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnFormSize.IconSize = 30;
+            this.btnFormSize.Location = new System.Drawing.Point(1822, 3);
+            this.btnFormSize.Name = "btnFormSize";
+            this.btnFormSize.Size = new System.Drawing.Size(41, 46);
+            this.btnFormSize.TabIndex = 1;
+            this.btnFormSize.UseVisualStyleBackColor = true;
+            this.btnFormSize.Click += new System.EventHandler(this.btnFormSize_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::_0510Project.Properties.Resources.SSNE_Just_Logo;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(57, 53);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnExit
+            // 
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.IconChar = FontAwesome.Sharp.IconChar.Code;
+            this.btnExit.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(254)))), ((int)(((byte)(251)))));
+            this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnExit.IconSize = 35;
+            this.btnExit.Location = new System.Drawing.Point(1869, 3);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(48, 46);
+            this.btnExit.TabIndex = 0;
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // lbDateTime
             // 
@@ -360,15 +415,13 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.btnSTP);
             this.panel2.Controls.Add(this.listLength);
-            this.panel2.Controls.Add(this.btnPDF);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.listSize);
             this.panel2.Controls.Add(this.txtSearchSize);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.txtSearchLength);
-            this.panel2.Location = new System.Drawing.Point(1590, 560);
+            this.panel2.Location = new System.Drawing.Point(1590, 1005);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(512, 525);
             this.panel2.TabIndex = 358;
@@ -626,7 +679,7 @@
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Roboto", 16F);
-            this.label23.Location = new System.Drawing.Point(1388, 114);
+            this.label23.Location = new System.Drawing.Point(1514, 114);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(107, 27);
             this.label23.TabIndex = 373;
@@ -1264,74 +1317,78 @@
             this.c1.Text = "1/8\"";
             this.c1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // picTopView
+            // label6
             // 
-            this.picTopView.Image = global::_0510Project.Properties.Resources.PlaceHolderImage;
-            this.picTopView.Location = new System.Drawing.Point(1501, 114);
-            this.picTopView.Name = "picTopView";
-            this.picTopView.Size = new System.Drawing.Size(76, 59);
-            this.picTopView.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picTopView.TabIndex = 374;
-            this.picTopView.TabStop = false;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Roboto", 16F);
+            this.label6.Location = new System.Drawing.Point(12, 605);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(121, 27);
+            this.label6.TabIndex = 376;
+            this.label6.Text = "SSNE P/N: ";
             // 
-            // picLength
+            // label7
             // 
-            this.picLength.Location = new System.Drawing.Point(234, 333);
-            this.picLength.Name = "picLength";
-            this.picLength.Size = new System.Drawing.Size(85, 51);
-            this.picLength.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picLength.TabIndex = 16;
-            this.picLength.TabStop = false;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Roboto", 16F);
+            this.label7.Location = new System.Drawing.Point(379, 605);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(152, 27);
+            this.label7.TabIndex = 377;
+            this.label7.Text = "VENDOR P/N: ";
             // 
-            // picISOView
+            // label8
             // 
-            this.picISOView.Image = global::_0510Project.Properties.Resources.PlaceHolderImage;
-            this.picISOView.Location = new System.Drawing.Point(1194, 114);
-            this.picISOView.Name = "picISOView";
-            this.picISOView.Size = new System.Drawing.Size(174, 107);
-            this.picISOView.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picISOView.TabIndex = 7;
-            this.picISOView.TabStop = false;
+            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(226)))), ((int)(((byte)(227)))));
+            this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label8.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(133, 605);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(236, 46);
+            this.label8.TabIndex = 378;
+            this.label8.Text = "-------------";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnFormSize
+            // label9
             // 
-            this.btnFormSize.FlatAppearance.BorderSize = 0;
-            this.btnFormSize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFormSize.IconChar = FontAwesome.Sharp.IconChar.ExpandAlt;
-            this.btnFormSize.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(254)))), ((int)(((byte)(251)))));
-            this.btnFormSize.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnFormSize.IconSize = 30;
-            this.btnFormSize.Location = new System.Drawing.Point(1822, 3);
-            this.btnFormSize.Name = "btnFormSize";
-            this.btnFormSize.Size = new System.Drawing.Size(41, 46);
-            this.btnFormSize.TabIndex = 1;
-            this.btnFormSize.UseVisualStyleBackColor = true;
-            this.btnFormSize.Click += new System.EventHandler(this.btnFormSize_Click);
+            this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(226)))), ((int)(((byte)(227)))));
+            this.label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label9.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(532, 605);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(236, 46);
+            this.label9.TabIndex = 379;
+            this.label9.Text = "-------------";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox1
+            // label10
             // 
-            this.pictureBox1.Image = global::_0510Project.Properties.Resources.SSNE_Just_Logo;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(57, 53);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Roboto", 16F);
+            this.label10.Location = new System.Drawing.Point(12, 699);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(129, 27);
+            this.label10.TabIndex = 380;
+            this.label10.Text = "Documents:";
             // 
-            // btnExit
+            // btnReset
             // 
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.IconChar = FontAwesome.Sharp.IconChar.Code;
-            this.btnExit.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(254)))), ((int)(((byte)(251)))));
-            this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnExit.IconSize = 35;
-            this.btnExit.Location = new System.Drawing.Point(1869, 3);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(48, 46);
-            this.btnExit.TabIndex = 0;
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            this.btnReset.BackColor = System.Drawing.Color.DarkGray;
+            this.btnReset.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReset.Font = new System.Drawing.Font("Roboto", 12F);
+            this.btnReset.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnReset.IconColor = System.Drawing.Color.Black;
+            this.btnReset.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnReset.Location = new System.Drawing.Point(1833, 605);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(75, 27);
+            this.btnReset.TabIndex = 381;
+            this.btnReset.Text = "Reset";
+            this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // btnSTP
             // 
@@ -1345,7 +1402,7 @@
             this.btnSTP.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.btnSTP.IconSize = 25;
             this.btnSTP.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSTP.Location = new System.Drawing.Point(15, 473);
+            this.btnSTP.Location = new System.Drawing.Point(244, 699);
             this.btnSTP.Name = "btnSTP";
             this.btnSTP.Size = new System.Drawing.Size(75, 33);
             this.btnSTP.TabIndex = 357;
@@ -1366,20 +1423,133 @@
             this.btnPDF.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.btnPDF.IconSize = 25;
             this.btnPDF.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPDF.Location = new System.Drawing.Point(141, 473);
+            this.btnPDF.Location = new System.Drawing.Point(153, 699);
             this.btnPDF.Name = "btnPDF";
             this.btnPDF.Size = new System.Drawing.Size(75, 33);
             this.btnPDF.TabIndex = 356;
             this.btnPDF.Text = "PDF";
             this.btnPDF.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPDF.UseVisualStyleBackColor = false;
-            this.btnPDF.Click += new System.EventHandler(this.iconButton4_Click);
+            this.btnPDF.Click += new System.EventHandler(this.btnPDF_Click);
+            // 
+            // picTopView
+            // 
+            this.picTopView.Image = global::_0510Project.Properties.Resources.PlaceHolderImage;
+            this.picTopView.Location = new System.Drawing.Point(1627, 114);
+            this.picTopView.Name = "picTopView";
+            this.picTopView.Size = new System.Drawing.Size(129, 108);
+            this.picTopView.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picTopView.TabIndex = 374;
+            this.picTopView.TabStop = false;
+            // 
+            // picLength
+            // 
+            this.picLength.Location = new System.Drawing.Point(234, 333);
+            this.picLength.Name = "picLength";
+            this.picLength.Size = new System.Drawing.Size(85, 51);
+            this.picLength.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picLength.TabIndex = 16;
+            this.picLength.TabStop = false;
+            // 
+            // picISOView
+            // 
+            this.picISOView.Image = global::_0510Project.Properties.Resources.PlaceHolderImage;
+            this.picISOView.Location = new System.Drawing.Point(1194, 103);
+            this.picISOView.Name = "picISOView";
+            this.picISOView.Size = new System.Drawing.Size(292, 151);
+            this.picISOView.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picISOView.TabIndex = 7;
+            this.picISOView.TabStop = false;
+            // 
+            // txtID
+            // 
+            this.txtID.Location = new System.Drawing.Point(501, 781);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(100, 23);
+            this.txtID.TabIndex = 382;
+            // 
+            // txtPrueba
+            // 
+            this.txtPrueba.Location = new System.Drawing.Point(661, 782);
+            this.txtPrueba.Name = "txtPrueba";
+            this.txtPrueba.Size = new System.Drawing.Size(176, 23);
+            this.txtPrueba.TabIndex = 383;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(501, 747);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(20, 15);
+            this.label11.TabIndex = 384;
+            this.label11.Text = "ID";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(661, 749);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(83, 15);
+            this.label12.TabIndex = 385;
+            this.label12.Text = "Prueba String";
+            // 
+            // dgvTest
+            // 
+            this.dgvTest.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTest.Location = new System.Drawing.Point(501, 830);
+            this.dgvTest.Name = "dgvTest";
+            this.dgvTest.Size = new System.Drawing.Size(661, 184);
+            this.dgvTest.TabIndex = 386;
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Location = new System.Drawing.Point(887, 781);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(75, 23);
+            this.btnGuardar.TabIndex = 387;
+            this.btnGuardar.Text = "Save";
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.Location = new System.Drawing.Point(986, 781);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(75, 23);
+            this.btnEditar.TabIndex = 388;
+            this.btnEditar.Text = "Update";
+            this.btnEditar.UseVisualStyleBackColor = true;
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.Location = new System.Drawing.Point(1086, 781);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(75, 23);
+            this.btnEliminar.TabIndex = 389;
+            this.btnEliminar.Text = "Delete";
+            this.btnEliminar.UseVisualStyleBackColor = true;
             // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1920, 1061);
+            this.Controls.Add(this.btnEliminar);
+            this.Controls.Add(this.btnEditar);
+            this.Controls.Add(this.btnGuardar);
+            this.Controls.Add(this.dgvTest);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.txtPrueba);
+            this.Controls.Add(this.txtID);
+            this.Controls.Add(this.btnReset);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.btnSTP);
+            this.Controls.Add(this.btnPDF);
             this.Controls.Add(this.pLengths);
             this.Controls.Add(this.picTopView);
             this.Controls.Add(this.picLength);
@@ -1409,6 +1579,7 @@
             this.Text = "bu";
             this.Load += new System.EventHandler(this.FrmMain_Load);
             this.pNavBar.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -1420,7 +1591,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picTopView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLength)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picISOView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTest)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1524,6 +1695,20 @@
         private System.Windows.Forms.Label c3b;
         private System.Windows.Forms.Label c2b;
         private System.Windows.Forms.Label c1b;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private FontAwesome.Sharp.IconButton btnReset;
+        private System.Windows.Forms.TextBox txtID;
+        private System.Windows.Forms.TextBox txtPrueba;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.DataGridView dgvTest;
+        private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.Button btnEliminar;
     }
 }
 

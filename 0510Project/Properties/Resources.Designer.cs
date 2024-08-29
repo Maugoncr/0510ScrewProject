@@ -193,16 +193,6 @@ namespace _0510Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap VentISO2 {
-            get {
-                object obj = ResourceManager.GetObject("VentISO2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap VentTop {
             get {
                 object obj = ResourceManager.GetObject("VentTop", resourceCulture);

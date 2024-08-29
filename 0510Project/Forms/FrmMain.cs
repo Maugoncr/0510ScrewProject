@@ -1,4 +1,5 @@
-﻿using FontAwesome.Sharp;
+﻿using _0510Project.Forms;
+using FontAwesome.Sharp;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,10 +11,13 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
+using System.Windows.Documents;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using Control = System.Windows.Forms.Control;
 using Label = System.Windows.Forms.Label;
+using Logica.Models;
+using Logica.Logic;
 
 namespace _0510Project
 {
@@ -24,14 +28,11 @@ namespace _0510Project
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(IntPtr hWnd, int wMsg, int wParam, int lParam);
 
-
         public FrmMain()
         {
             InitializeComponent();
 
             InitializeLabelEvents();
-
-
         }
 
         private void tDateTime_Tick(object sender, EventArgs e)
@@ -88,6 +89,16 @@ namespace _0510Project
 
             btnPDF.Enabled = false;
             btnSTP.Enabled = false;
+
+            foreach (Control control in pSizeSelect.Controls)
+            {
+                if (control is Label && control.Name.StartsWith("s"))
+                {
+                    control.BackColor = Color.White;
+                }
+            }
+
+
         }
 
         private void LoadDataGridView()
@@ -325,23 +336,7 @@ namespace _0510Project
             }
         }
 
-        bool first = true;
-        private void iconButton4_Click(object sender, EventArgs e)
-        {
-
-            if (first)
-            {
-                panel1.Visible = true;
-
-                webBrowser1.Navigate("C:\\Users\\maugo\\source\\repos\\0510Project\\0510Project\\FilesPDF\\Test.pdf");
-                first = false;
-            }
-            else
-            {
-                panel1.Visible = false;
-                first = true;
-            }
-        }
+        
 
         private void btnSTP_Click(object sender, EventArgs e)
         {
@@ -378,7 +373,7 @@ namespace _0510Project
                         MessageBox.Show("Error al guardar el archivo: " + ex.Message);
                     }
                 
-            }
+                }
 
         }
 
@@ -436,6 +431,9 @@ namespace _0510Project
 
                 PaintSelectedColumn(input);
                 DeselectOtherLength(input);
+
+                btnPDF.Enabled = true;
+                btnSTP.Enabled = true;
             }
         }
 
@@ -462,5 +460,39 @@ namespace _0510Project
                 }
             }
         }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            ResetAppereance();
+        }
+
+        private void btnPDF_Click(object sender, EventArgs e)
+        {
+            FrmViewPDF frmScale = new FrmViewPDF("https://drive.google.com/file/d/14ZVIqs6Lp-E-Qg7wtM1tgMs1xVekFcEn/view?usp=drive_link");
+            frmScale.ShowDialog();
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            Test objeto = new Test()
+            { 
+                Prueba = txtPrueba.Text
+            };
+
+            bool respuesta = TestLogic.Instancia.Guardar(objeto);
+
+            if (respuesta)
+            {
+                mostrar_Test();
+            }
+        }
+
+
+        public void mostrar_Test()
+        {
+            dgvTest.DataSource = null;
+            dgvTest.DataSource = TestLogic.Instancia.Listar();
+        }
+
     }
 }
