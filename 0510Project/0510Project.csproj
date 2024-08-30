@@ -95,10 +95,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <None Include="Resources\Driver1.png" />
-    <None Include="Resources\T-Handle1.png" />
-    <None Include="Resources\Allen-Wrenches1.png" />
-    <None Include="Resources\Socket1.png" />
     <EmbeddedResource Include="Forms\FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -133,52 +129,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\SSNE Just Logo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\SocketISO.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\SunkISO.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\TorxISO.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\SocketTop.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\SunkTop.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\TorxTop.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\LengthSocketHead.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\LengthSunk.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\LengthTorx.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\LengthVent.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\PlaceHolderImage.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\VentISO.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\VentTop.png" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\Logica\Logica.csproj">
       <Project>{b9294295-9961-4286-b197-f2f48e0a4247}</Project>
       <Name>Logica</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Web.WebView2.1.0.2739.15\build\Microsoft.Web.WebView2.targets" Condition="Exists('..\packages\Microsoft.Web.WebView2.1.0.2739.15\build\Microsoft.Web.WebView2.targets')" />

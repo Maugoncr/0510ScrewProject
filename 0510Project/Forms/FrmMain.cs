@@ -76,8 +76,8 @@ namespace _0510Project
             lbDateTime.Text = DateTime.Now.ToString("MM/dd/yyyy HH:mm");
             btnExit.IconChar = IconChar.ArrowRightFromBracket;
 
-            picISOView.Image = Properties.Resources.PlaceHolderImage;
-            picTopView.Image = Properties.Resources.PlaceHolderImage;
+           // picISOView.Image = Properties.Resources.PlaceHolderImage;
+           // picTopView.Image = Properties.Resources.PlaceHolderImage;
             picLength.Image = null;
 
             lbAbbreviation.Text = "---";
@@ -209,27 +209,27 @@ namespace _0510Project
             if (cbDriveType.SelectedItem.ToString() == "Socket Head Screw")
             {
                 picISOView.Visible = true;
-                picISOView.Image = Properties.Resources.Socket;
+               // picISOView.Image = Properties.Resources.Socket;
 
                 picTopView.Visible = true;
-                picTopView.Image = Properties.Resources.SocketTop;
+               // picTopView.Image = Properties.Resources.SocketTop;
 
                 lbAbbreviation.Text = "SOC HD";
 
                 lbMaterial.Text = "SST";
 
-                lbNToolc.Text = "N° ---";
+                lbNToolc.Text = "--- Number";
 
-                picLength.Image = Properties.Resources.LengthSocketHead;
+               // picLength.Image = Properties.Resources.LengthSocketHead;
             }
 
             if (cbDriveType.SelectedItem.ToString() == "Countersunk Screw")
             {
                 picISOView.Visible = true;
-                picISOView.Image = Properties.Resources.SunkISO;
+              //  picISOView.Image = Properties.Resources.SunkISO;
 
                 picTopView.Visible = true;
-                picTopView.Image = Properties.Resources.SunkTop;
+              //  picTopView.Image = Properties.Resources.SunkTop;
 
                 lbAbbreviation.Text = "CS";
 
@@ -237,16 +237,16 @@ namespace _0510Project
 
                 lbNToolc.Text = "N° ---";
 
-                picLength.Image = Properties.Resources.LengthSunk;
+               // picLength.Image = Properties.Resources.LengthSunk;
             }
 
             if (cbDriveType.SelectedItem.ToString() == "Torx Screw")
             {
                 picISOView.Visible = true;
-                picISOView.Image = Properties.Resources.TorxISO;
+//picISOView.Image = Properties.Resources.TorxISO;
 
                 picTopView.Visible = true;
-                picTopView.Image = Properties.Resources.TorxTop;
+              //  picTopView.Image = Properties.Resources.TorxTop;
 
                 lbAbbreviation.Text = "T";
 
@@ -254,16 +254,16 @@ namespace _0510Project
 
                 lbNToolc.Text = "N° ---";
 
-                picLength.Image = Properties.Resources.LengthTorx;
+              //  picLength.Image = Properties.Resources.LengthTorx;
             }
 
             if (cbDriveType.SelectedItem.ToString() == "Vent Socket Head Screw")
             {
                 picISOView.Visible = true;
-                picISOView.Image = Properties.Resources.VentISO;
+              //  picISOView.Image = Properties.Resources.VentISO;
 
                 picTopView.Visible = true;
-                picTopView.Image = Properties.Resources.VentTop;
+              //  picTopView.Image = Properties.Resources.VentTop;
 
                 lbAbbreviation.Text = "V SOC HD";
 
@@ -271,7 +271,7 @@ namespace _0510Project
 
                 lbNToolc.Text = "N° ---";
 
-                picLength.Image = Properties.Resources.LengthVent;
+//picLength.Image = Properties.Resources.LengthVent;
             }
 
             pSizeSelect.Enabled = true;

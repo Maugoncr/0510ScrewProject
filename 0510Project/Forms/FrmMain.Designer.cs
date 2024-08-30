@@ -33,6 +33,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pNavBar = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnFormSize = new FontAwesome.Sharp.IconButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnExit = new FontAwesome.Sharp.IconButton();
             this.lbDateTime = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -44,8 +47,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtSearchLength = new System.Windows.Forms.TextBox();
             this.listLength = new System.Windows.Forms.ListBox();
-            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pSizeSelect = new System.Windows.Forms.Panel();
             this.s10 = new System.Windows.Forms.Label();
@@ -68,6 +69,8 @@
             this.lbMaterial = new System.Windows.Forms.Label();
             this.lbNToolc = new System.Windows.Forms.Label();
             this.pLengths = new System.Windows.Forms.Panel();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.c16b = new System.Windows.Forms.Label();
             this.c15b = new System.Windows.Forms.Label();
             this.c14b = new System.Windows.Forms.Label();
@@ -130,11 +133,11 @@
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -144,24 +147,22 @@
             this.picTopView = new System.Windows.Forms.PictureBox();
             this.picLength = new System.Windows.Forms.PictureBox();
             this.picISOView = new System.Windows.Forms.PictureBox();
-            this.btnFormSize = new FontAwesome.Sharp.IconButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnExit = new FontAwesome.Sharp.IconButton();
             this.pNavBar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.pSizeSelect.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLength)).BeginInit();
             this.pLengths.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTest)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picTopView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLength)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picISOView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // cbDriveType
@@ -217,6 +218,45 @@
             this.label2.Size = new System.Drawing.Size(124, 20);
             this.label2.TabIndex = 4;
             this.label2.Text = "0510 Project";
+            // 
+            // btnFormSize
+            // 
+            this.btnFormSize.FlatAppearance.BorderSize = 0;
+            this.btnFormSize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFormSize.IconChar = FontAwesome.Sharp.IconChar.ExpandAlt;
+            this.btnFormSize.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(254)))), ((int)(((byte)(251)))));
+            this.btnFormSize.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnFormSize.IconSize = 30;
+            this.btnFormSize.Location = new System.Drawing.Point(1822, 3);
+            this.btnFormSize.Name = "btnFormSize";
+            this.btnFormSize.Size = new System.Drawing.Size(41, 46);
+            this.btnFormSize.TabIndex = 1;
+            this.btnFormSize.UseVisualStyleBackColor = true;
+            this.btnFormSize.Click += new System.EventHandler(this.btnFormSize_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(57, 53);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnExit
+            // 
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.IconChar = FontAwesome.Sharp.IconChar.Code;
+            this.btnExit.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(254)))), ((int)(((byte)(251)))));
+            this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnExit.IconSize = 35;
+            this.btnExit.Location = new System.Drawing.Point(1869, 3);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(48, 46);
+            this.btnExit.TabIndex = 0;
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // lbDateTime
             // 
@@ -366,23 +406,6 @@
             this.listLength.TabIndex = 14;
             this.listLength.SelectedIndexChanged += new System.EventHandler(this.listLength_SelectedIndexChanged);
             // 
-            // webBrowser1
-            // 
-            this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.webBrowser1.Location = new System.Drawing.Point(0, 0);
-            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
-            this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(877, 497);
-            this.webBrowser1.TabIndex = 18;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.webBrowser1);
-            this.panel1.Location = new System.Drawing.Point(690, 1033);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(877, 497);
-            this.panel1.TabIndex = 19;
-            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.listLength);
@@ -391,7 +414,7 @@
             this.panel2.Controls.Add(this.txtSearchSize);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.txtSearchLength);
-            this.panel2.Location = new System.Drawing.Point(1590, 1005);
+            this.panel2.Location = new System.Drawing.Point(1889, 940);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(512, 525);
             this.panel2.TabIndex = 358;
@@ -559,7 +582,7 @@
             this.dgvLength.AllowUserToAddRows = false;
             this.dgvLength.AllowUserToDeleteRows = false;
             this.dgvLength.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvLength.Location = new System.Drawing.Point(3, 902);
+            this.dgvLength.Location = new System.Drawing.Point(1889, 746);
             this.dgvLength.Name = "dgvLength";
             this.dgvLength.ReadOnly = true;
             this.dgvLength.Size = new System.Drawing.Size(118, 155);
@@ -692,6 +715,26 @@
             this.pLengths.Name = "pLengths";
             this.pLengths.Size = new System.Drawing.Size(1894, 222);
             this.pLengths.TabIndex = 375;
+            // 
+            // label19
+            // 
+            this.label19.Font = new System.Drawing.Font("Roboto", 12F);
+            this.label19.Location = new System.Drawing.Point(17, 62);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(105, 22);
+            this.label19.TabIndex = 441;
+            this.label19.Text = "Decimal";
+            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label14
+            // 
+            this.label14.Font = new System.Drawing.Font("Roboto", 12F);
+            this.label14.Location = new System.Drawing.Point(17, 139);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(105, 22);
+            this.label14.TabIndex = 440;
+            this.label14.Text = "Metric";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // c16b
             // 
@@ -1327,14 +1370,14 @@
             // 
             // txtID
             // 
-            this.txtID.Location = new System.Drawing.Point(501, 781);
+            this.txtID.Location = new System.Drawing.Point(1259, 648);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(100, 23);
             this.txtID.TabIndex = 382;
             // 
             // txtPrueba
             // 
-            this.txtPrueba.Location = new System.Drawing.Point(661, 782);
+            this.txtPrueba.Location = new System.Drawing.Point(1419, 649);
             this.txtPrueba.Name = "txtPrueba";
             this.txtPrueba.Size = new System.Drawing.Size(176, 23);
             this.txtPrueba.TabIndex = 383;
@@ -1342,7 +1385,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(501, 747);
+            this.label11.Location = new System.Drawing.Point(1259, 614);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(20, 15);
             this.label11.TabIndex = 384;
@@ -1351,7 +1394,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(661, 749);
+            this.label12.Location = new System.Drawing.Point(1419, 616);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(83, 15);
             this.label12.TabIndex = 385;
@@ -1360,14 +1403,14 @@
             // dgvTest
             // 
             this.dgvTest.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTest.Location = new System.Drawing.Point(501, 830);
+            this.dgvTest.Location = new System.Drawing.Point(1259, 678);
             this.dgvTest.Name = "dgvTest";
-            this.dgvTest.Size = new System.Drawing.Size(661, 184);
+            this.dgvTest.Size = new System.Drawing.Size(661, 62);
             this.dgvTest.TabIndex = 386;
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(887, 781);
+            this.btnGuardar.Location = new System.Drawing.Point(1645, 648);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(75, 23);
             this.btnGuardar.TabIndex = 387;
@@ -1377,7 +1420,7 @@
             // 
             // btnEditar
             // 
-            this.btnEditar.Location = new System.Drawing.Point(986, 781);
+            this.btnEditar.Location = new System.Drawing.Point(1744, 648);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(75, 23);
             this.btnEditar.TabIndex = 388;
@@ -1386,7 +1429,7 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(1086, 781);
+            this.btnEliminar.Location = new System.Drawing.Point(1844, 648);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(75, 23);
             this.btnEliminar.TabIndex = 389;
@@ -1402,26 +1445,6 @@
             this.label13.Size = new System.Drawing.Size(158, 27);
             this.label13.TabIndex = 390;
             this.label13.Text = "Available Tools";
-            // 
-            // label14
-            // 
-            this.label14.Font = new System.Drawing.Font("Roboto", 12F);
-            this.label14.Location = new System.Drawing.Point(17, 139);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(105, 22);
-            this.label14.TabIndex = 440;
-            this.label14.Text = "Metric";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label19
-            // 
-            this.label19.Font = new System.Drawing.Font("Roboto", 12F);
-            this.label19.Location = new System.Drawing.Point(17, 62);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(105, 22);
-            this.label19.TabIndex = 441;
-            this.label19.Text = "Decimal";
-            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label20
             // 
@@ -1453,9 +1476,25 @@
             this.label23.Text = "Screw Driver";
             this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.pictureBox5);
+            this.panel1.Location = new System.Drawing.Point(106, 754);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(435, 262);
+            this.panel1.TabIndex = 450;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Location = new System.Drawing.Point(75, 49);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(237, 150);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 0;
+            this.pictureBox5.TabStop = false;
+            // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = global::_0510Project.Properties.Resources.Driver;
             this.pictureBox4.Location = new System.Drawing.Point(1215, 150);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(124, 74);
@@ -1465,7 +1504,6 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::_0510Project.Properties.Resources.T_Handle;
             this.pictureBox3.Location = new System.Drawing.Point(1362, 150);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(124, 74);
@@ -1475,7 +1513,6 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::_0510Project.Properties.Resources.Allen_Wrenches;
             this.pictureBox2.Location = new System.Drawing.Point(1073, 150);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(124, 74);
@@ -1492,7 +1529,7 @@
             this.btnReset.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnReset.IconColor = System.Drawing.Color.Black;
             this.btnReset.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnReset.Location = new System.Drawing.Point(1815, 947);
+            this.btnReset.Location = new System.Drawing.Point(1869, 907);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(75, 27);
             this.btnReset.TabIndex = 381;
@@ -1542,7 +1579,6 @@
             // 
             // picTopView
             // 
-            this.picTopView.Image = global::_0510Project.Properties.Resources.SocketTop;
             this.picTopView.Location = new System.Drawing.Point(1719, 303);
             this.picTopView.Name = "picTopView";
             this.picTopView.Size = new System.Drawing.Size(106, 72);
@@ -1552,7 +1588,6 @@
             // 
             // picLength
             // 
-            this.picLength.Image = global::_0510Project.Properties.Resources.LengthSocketHead;
             this.picLength.Location = new System.Drawing.Point(1586, 285);
             this.picLength.Name = "picLength";
             this.picLength.Size = new System.Drawing.Size(133, 90);
@@ -1562,59 +1597,19 @@
             // 
             // picISOView
             // 
-            this.picISOView.Image = global::_0510Project.Properties.Resources.Socket;
-            this.picISOView.Location = new System.Drawing.Point(1554, 98);
+            this.picISOView.Location = new System.Drawing.Point(1554, 83);
             this.picISOView.Name = "picISOView";
             this.picISOView.Size = new System.Drawing.Size(325, 208);
             this.picISOView.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picISOView.TabIndex = 7;
             this.picISOView.TabStop = false;
             // 
-            // btnFormSize
-            // 
-            this.btnFormSize.FlatAppearance.BorderSize = 0;
-            this.btnFormSize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFormSize.IconChar = FontAwesome.Sharp.IconChar.ExpandAlt;
-            this.btnFormSize.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(254)))), ((int)(((byte)(251)))));
-            this.btnFormSize.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnFormSize.IconSize = 30;
-            this.btnFormSize.Location = new System.Drawing.Point(1822, 3);
-            this.btnFormSize.Name = "btnFormSize";
-            this.btnFormSize.Size = new System.Drawing.Size(41, 46);
-            this.btnFormSize.TabIndex = 1;
-            this.btnFormSize.UseVisualStyleBackColor = true;
-            this.btnFormSize.Click += new System.EventHandler(this.btnFormSize_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::_0510Project.Properties.Resources.SSNE_Just_Logo;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(57, 53);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnExit
-            // 
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.IconChar = FontAwesome.Sharp.IconChar.Code;
-            this.btnExit.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(254)))), ((int)(((byte)(251)))));
-            this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnExit.IconSize = 35;
-            this.btnExit.Location = new System.Drawing.Point(1869, 3);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(48, 46);
-            this.btnExit.TabIndex = 0;
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1920, 1061);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.pictureBox3);
@@ -1650,37 +1645,37 @@
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.pSizeSelect);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.picISOView);
             this.Controls.Add(this.pNavBar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cbDriveType);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label10);
+            this.Controls.Add(this.picISOView);
             this.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "bu";
+            this.Text = "0510";
             this.Load += new System.EventHandler(this.FrmMain_Load);
             this.pNavBar.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.pSizeSelect.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvLength)).EndInit();
             this.pLengths.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTest)).EndInit();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picTopView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLength)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picISOView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1707,8 +1702,6 @@
         private System.Windows.Forms.TextBox txtSearchLength;
         private System.Windows.Forms.ListBox listLength;
         private System.Windows.Forms.PictureBox picLength;
-        private System.Windows.Forms.WebBrowser webBrowser1;
-        private System.Windows.Forms.Panel panel1;
         private FontAwesome.Sharp.IconButton btnPDF;
         private FontAwesome.Sharp.IconButton btnSTP;
         private System.Windows.Forms.Panel panel2;
@@ -1805,6 +1798,8 @@
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox5;
     }
 }
 
