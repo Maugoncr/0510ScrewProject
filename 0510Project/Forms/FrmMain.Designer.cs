@@ -1273,21 +1273,21 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Roboto", 16F);
-            this.label6.Location = new System.Drawing.Point(14, 659);
+            this.label6.Location = new System.Drawing.Point(8, 635);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(121, 27);
+            this.label6.Size = new System.Drawing.Size(111, 27);
             this.label6.TabIndex = 376;
-            this.label6.Text = "SSNE P/N: ";
+            this.label6.Text = "SSNE P/N";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Roboto", 16F);
-            this.label7.Location = new System.Drawing.Point(381, 659);
+            this.label7.Location = new System.Drawing.Point(363, 635);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(152, 27);
+            this.label7.Size = new System.Drawing.Size(142, 27);
             this.label7.TabIndex = 377;
-            this.label7.Text = "VENDOR P/N: ";
+            this.label7.Text = "VENDOR P/N";
             // 
             // label8
             // 
@@ -1295,7 +1295,7 @@
             this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label8.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(135, 659);
+            this.label8.Location = new System.Drawing.Point(121, 626);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(236, 46);
             this.label8.TabIndex = 378;
@@ -1308,7 +1308,7 @@
             this.label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label9.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(534, 659);
+            this.label9.Location = new System.Drawing.Point(507, 626);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(236, 46);
             this.label9.TabIndex = 379;
@@ -1319,11 +1319,11 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Roboto", 16F);
-            this.label10.Location = new System.Drawing.Point(14, 753);
+            this.label10.Location = new System.Drawing.Point(747, 635);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(129, 27);
+            this.label10.Size = new System.Drawing.Size(143, 27);
             this.label10.TabIndex = 380;
-            this.label10.Text = "Documents:";
+            this.label10.Text = "DOCUMENTS";
             // 
             // txtID
             // 
@@ -1492,7 +1492,7 @@
             this.btnReset.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnReset.IconColor = System.Drawing.Color.Black;
             this.btnReset.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnReset.Location = new System.Drawing.Point(1833, 605);
+            this.btnReset.Location = new System.Drawing.Point(1815, 947);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(75, 27);
             this.btnReset.TabIndex = 381;
@@ -1502,43 +1502,41 @@
             // 
             // btnSTP
             // 
-            this.btnSTP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            this.btnSTP.FlatAppearance.BorderSize = 0;
+            this.btnSTP.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnSTP.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnSTP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSTP.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSTP.Font = new System.Drawing.Font("Roboto", 20F, System.Drawing.FontStyle.Bold);
             this.btnSTP.ForeColor = System.Drawing.Color.White;
             this.btnSTP.IconChar = FontAwesome.Sharp.IconChar.FileArchive;
             this.btnSTP.IconColor = System.Drawing.Color.White;
             this.btnSTP.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.btnSTP.IconSize = 25;
+            this.btnSTP.IconSize = 35;
             this.btnSTP.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSTP.Location = new System.Drawing.Point(246, 753);
+            this.btnSTP.Location = new System.Drawing.Point(1063, 626);
             this.btnSTP.Name = "btnSTP";
-            this.btnSTP.Size = new System.Drawing.Size(75, 33);
+            this.btnSTP.Size = new System.Drawing.Size(160, 46);
             this.btnSTP.TabIndex = 357;
-            this.btnSTP.Text = "STP";
-            this.btnSTP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSTP.Text = "STEP";
             this.btnSTP.UseVisualStyleBackColor = false;
             this.btnSTP.Click += new System.EventHandler(this.btnSTP_Click);
             // 
             // btnPDF
             // 
-            this.btnPDF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            this.btnPDF.FlatAppearance.BorderSize = 0;
+            this.btnPDF.BackColor = System.Drawing.Color.Firebrick;
+            this.btnPDF.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnPDF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPDF.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPDF.Font = new System.Drawing.Font("Roboto", 20F, System.Drawing.FontStyle.Bold);
             this.btnPDF.ForeColor = System.Drawing.Color.White;
             this.btnPDF.IconChar = FontAwesome.Sharp.IconChar.FilePdf;
             this.btnPDF.IconColor = System.Drawing.Color.White;
             this.btnPDF.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.btnPDF.IconSize = 25;
+            this.btnPDF.IconSize = 35;
             this.btnPDF.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPDF.Location = new System.Drawing.Point(155, 753);
+            this.btnPDF.Location = new System.Drawing.Point(893, 626);
             this.btnPDF.Name = "btnPDF";
-            this.btnPDF.Size = new System.Drawing.Size(75, 33);
+            this.btnPDF.Size = new System.Drawing.Size(160, 46);
             this.btnPDF.TabIndex = 356;
             this.btnPDF.Text = "PDF";
-            this.btnPDF.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPDF.UseVisualStyleBackColor = false;
             this.btnPDF.Click += new System.EventHandler(this.btnPDF_Click);
             // 
@@ -1633,7 +1631,6 @@
             this.Controls.Add(this.txtPrueba);
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.btnReset);
-            this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -1659,6 +1656,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cbDriveType);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.label10);
             this.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);

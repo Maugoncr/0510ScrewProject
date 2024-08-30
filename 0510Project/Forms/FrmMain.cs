@@ -209,7 +209,7 @@ namespace _0510Project
             if (cbDriveType.SelectedItem.ToString() == "Socket Head Screw")
             {
                 picISOView.Visible = true;
-                picISOView.Image = Properties.Resources.SocketISO;
+                picISOView.Image = Properties.Resources.Socket;
 
                 picTopView.Visible = true;
                 picTopView.Image = Properties.Resources.SocketTop;
