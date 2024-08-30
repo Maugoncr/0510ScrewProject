@@ -63,6 +63,26 @@ namespace _0510Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Allen_Wrenches {
+            get {
+                object obj = ResourceManager.GetObject("Allen-Wrenches", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Driver {
+            get {
+                object obj = ResourceManager.GetObject("Driver", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LengthSocketHead {
             get {
                 object obj = ResourceManager.GetObject("LengthSocketHead", resourceCulture);
@@ -113,6 +133,16 @@ namespace _0510Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Socket {
+            get {
+                object obj = ResourceManager.GetObject("Socket", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap SocketISO {
             get {
                 object obj = ResourceManager.GetObject("SocketISO", resourceCulture);
@@ -156,6 +186,16 @@ namespace _0510Project.Properties {
         internal static System.Drawing.Bitmap SunkTop {
             get {
                 object obj = ResourceManager.GetObject("SunkTop", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap T_Handle {
+            get {
+                object obj = ResourceManager.GetObject("T-Handle", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

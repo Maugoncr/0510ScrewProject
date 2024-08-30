@@ -33,9 +33,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pNavBar = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnFormSize = new FontAwesome.Sharp.IconButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnExit = new FontAwesome.Sharp.IconButton();
             this.lbDateTime = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -70,8 +67,6 @@
             this.label21 = new System.Windows.Forms.Label();
             this.lbMaterial = new System.Windows.Forms.Label();
             this.lbNToolc = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
             this.pLengths = new System.Windows.Forms.Panel();
             this.c16b = new System.Windows.Forms.Label();
             this.c15b = new System.Windows.Forms.Label();
@@ -126,12 +121,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.btnReset = new FontAwesome.Sharp.IconButton();
-            this.btnSTP = new FontAwesome.Sharp.IconButton();
-            this.btnPDF = new FontAwesome.Sharp.IconButton();
-            this.picTopView = new System.Windows.Forms.PictureBox();
-            this.picLength = new System.Windows.Forms.PictureBox();
-            this.picISOView = new System.Windows.Forms.PictureBox();
             this.txtID = new System.Windows.Forms.TextBox();
             this.txtPrueba = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -140,18 +129,39 @@
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnReset = new FontAwesome.Sharp.IconButton();
+            this.btnSTP = new FontAwesome.Sharp.IconButton();
+            this.btnPDF = new FontAwesome.Sharp.IconButton();
+            this.picTopView = new System.Windows.Forms.PictureBox();
+            this.picLength = new System.Windows.Forms.PictureBox();
+            this.picISOView = new System.Windows.Forms.PictureBox();
+            this.btnFormSize = new FontAwesome.Sharp.IconButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnExit = new FontAwesome.Sharp.IconButton();
             this.pNavBar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.pSizeSelect.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLength)).BeginInit();
             this.pLengths.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTest)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picTopView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLength)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picISOView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTest)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // cbDriveType
@@ -175,11 +185,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 120);
+            this.label1.Location = new System.Drawing.Point(110, 120);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(195, 27);
+            this.label1.Size = new System.Drawing.Size(190, 27);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Select Screw Type:";
+            this.label1.Text = "Select Screw Type";
             // 
             // pNavBar
             // 
@@ -207,46 +217,6 @@
             this.label2.Size = new System.Drawing.Size(124, 20);
             this.label2.TabIndex = 4;
             this.label2.Text = "0510 Project";
-            // 
-            // btnFormSize
-            // 
-            this.btnFormSize.FlatAppearance.BorderSize = 0;
-            this.btnFormSize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFormSize.IconChar = FontAwesome.Sharp.IconChar.ExpandAlt;
-            this.btnFormSize.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(254)))), ((int)(((byte)(251)))));
-            this.btnFormSize.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnFormSize.IconSize = 30;
-            this.btnFormSize.Location = new System.Drawing.Point(1822, 3);
-            this.btnFormSize.Name = "btnFormSize";
-            this.btnFormSize.Size = new System.Drawing.Size(41, 46);
-            this.btnFormSize.TabIndex = 1;
-            this.btnFormSize.UseVisualStyleBackColor = true;
-            this.btnFormSize.Click += new System.EventHandler(this.btnFormSize_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::_0510Project.Properties.Resources.SSNE_Just_Logo;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(57, 53);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnExit
-            // 
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.IconChar = FontAwesome.Sharp.IconChar.Code;
-            this.btnExit.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(254)))), ((int)(((byte)(251)))));
-            this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnExit.IconSize = 35;
-            this.btnExit.Location = new System.Drawing.Point(1869, 3);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(48, 46);
-            this.btnExit.TabIndex = 0;
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // lbDateTime
             // 
@@ -570,9 +540,9 @@
             this.label15.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Location = new System.Drawing.Point(13, 221);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(190, 27);
+            this.label15.Size = new System.Drawing.Size(185, 27);
             this.label15.TabIndex = 360;
-            this.label15.Text = "Select Screw Size:";
+            this.label15.Text = "Select Screw Size";
             // 
             // label16
             // 
@@ -580,9 +550,9 @@
             this.label16.Font = new System.Drawing.Font("Roboto", 16F);
             this.label16.Location = new System.Drawing.Point(12, 348);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(216, 27);
+            this.label16.Size = new System.Drawing.Size(211, 27);
             this.label16.TabIndex = 361;
-            this.label16.Text = "Select Screw Length:";
+            this.label16.Text = "Select Screw Length";
             // 
             // dgvLength
             // 
@@ -600,21 +570,21 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(424, 114);
+            this.label17.Location = new System.Drawing.Point(453, 114);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(139, 27);
+            this.label17.Size = new System.Drawing.Size(134, 27);
             this.label17.TabIndex = 363;
-            this.label17.Text = "Abbreviation:";
+            this.label17.Text = "Abbreviation";
             // 
             // label18
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(627, 114);
+            this.label18.Location = new System.Drawing.Point(683, 114);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(92, 25);
+            this.label18.Size = new System.Drawing.Size(87, 25);
             this.label18.TabIndex = 364;
-            this.label18.Text = "Material:";
+            this.label18.Text = "Material";
             // 
             // lbAbbreviation
             // 
@@ -627,17 +597,17 @@
             this.lbAbbreviation.Size = new System.Drawing.Size(176, 46);
             this.lbAbbreviation.TabIndex = 366;
             this.lbAbbreviation.Text = "SOC HD";
-            this.lbAbbreviation.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbAbbreviation.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label21
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Roboto", 16F);
-            this.label21.Location = new System.Drawing.Point(828, 114);
+            this.label21.Location = new System.Drawing.Point(882, 114);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(60, 27);
+            this.label21.Size = new System.Drawing.Size(122, 27);
             this.label21.TabIndex = 367;
-            this.label21.Text = "Tool:";
+            this.label21.Text = "Tool to Use";
             // 
             // lbMaterial
             // 
@@ -650,7 +620,7 @@
             this.lbMaterial.Size = new System.Drawing.Size(176, 46);
             this.lbMaterial.TabIndex = 370;
             this.lbMaterial.Text = "SST";
-            this.lbMaterial.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbMaterial.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbNToolc
             // 
@@ -660,34 +630,16 @@
             this.lbNToolc.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNToolc.Location = new System.Drawing.Point(833, 150);
             this.lbNToolc.Name = "lbNToolc";
-            this.lbNToolc.Size = new System.Drawing.Size(176, 46);
+            this.lbNToolc.Size = new System.Drawing.Size(213, 46);
             this.lbNToolc.TabIndex = 371;
-            this.lbNToolc.Text = "N° ---";
-            this.lbNToolc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Roboto", 16F);
-            this.label22.Location = new System.Drawing.Point(1026, 114);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(162, 27);
-            this.label22.TabIndex = 372;
-            this.label22.Text = "Isometric View:";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Roboto", 16F);
-            this.label23.Location = new System.Drawing.Point(1514, 114);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(107, 27);
-            this.label23.TabIndex = 373;
-            this.label23.Text = "Top View:";
+            this.lbNToolc.Text = "--- Number";
+            this.lbNToolc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pLengths
             // 
             this.pLengths.BackColor = System.Drawing.Color.DarkGray;
+            this.pLengths.Controls.Add(this.label19);
+            this.pLengths.Controls.Add(this.label14);
             this.pLengths.Controls.Add(this.c16b);
             this.pLengths.Controls.Add(this.c15b);
             this.pLengths.Controls.Add(this.c14b);
@@ -738,207 +690,207 @@
             this.pLengths.Controls.Add(this.c1);
             this.pLengths.Location = new System.Drawing.Point(13, 386);
             this.pLengths.Name = "pLengths";
-            this.pLengths.Size = new System.Drawing.Size(1894, 182);
+            this.pLengths.Size = new System.Drawing.Size(1894, 222);
             this.pLengths.TabIndex = 375;
             // 
             // c16b
             // 
             this.c16b.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.c16b.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c16b.Font = new System.Drawing.Font("Roboto", 12F);
             this.c16b.ForeColor = System.Drawing.Color.Black;
-            this.c16b.Location = new System.Drawing.Point(1771, 124);
+            this.c16b.Location = new System.Drawing.Point(1771, 164);
             this.c16b.Name = "c16b";
             this.c16b.Size = new System.Drawing.Size(106, 47);
             this.c16b.TabIndex = 439;
-            this.c16b.Text = "50.8 mm";
+            this.c16b.Text = "50.8";
             this.c16b.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // c15b
             // 
             this.c15b.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.c15b.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c15b.Font = new System.Drawing.Font("Roboto", 12F);
             this.c15b.ForeColor = System.Drawing.Color.Black;
-            this.c15b.Location = new System.Drawing.Point(1654, 124);
+            this.c15b.Location = new System.Drawing.Point(1654, 164);
             this.c15b.Name = "c15b";
             this.c15b.Size = new System.Drawing.Size(106, 47);
             this.c15b.TabIndex = 438;
-            this.c15b.Text = "47.625 mm";
+            this.c15b.Text = "47.625";
             this.c15b.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // c14b
             // 
             this.c14b.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.c14b.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c14b.Font = new System.Drawing.Font("Roboto", 12F);
             this.c14b.ForeColor = System.Drawing.Color.Black;
-            this.c14b.Location = new System.Drawing.Point(1537, 124);
+            this.c14b.Location = new System.Drawing.Point(1537, 164);
             this.c14b.Name = "c14b";
             this.c14b.Size = new System.Drawing.Size(106, 47);
             this.c14b.TabIndex = 437;
-            this.c14b.Text = "44.45 mm";
+            this.c14b.Text = "44.45";
             this.c14b.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // c13b
             // 
             this.c13b.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.c13b.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c13b.Font = new System.Drawing.Font("Roboto", 12F);
             this.c13b.ForeColor = System.Drawing.Color.Black;
-            this.c13b.Location = new System.Drawing.Point(1420, 124);
+            this.c13b.Location = new System.Drawing.Point(1420, 164);
             this.c13b.Name = "c13b";
             this.c13b.Size = new System.Drawing.Size(106, 47);
             this.c13b.TabIndex = 436;
-            this.c13b.Text = "41.275 mm";
+            this.c13b.Text = "41.275";
             this.c13b.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // c12b
             // 
             this.c12b.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.c12b.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c12b.Font = new System.Drawing.Font("Roboto", 12F);
             this.c12b.ForeColor = System.Drawing.Color.Black;
-            this.c12b.Location = new System.Drawing.Point(1303, 124);
+            this.c12b.Location = new System.Drawing.Point(1303, 164);
             this.c12b.Name = "c12b";
             this.c12b.Size = new System.Drawing.Size(106, 47);
             this.c12b.TabIndex = 435;
-            this.c12b.Text = "38.1 mm";
+            this.c12b.Text = "38.1";
             this.c12b.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // c11b
             // 
             this.c11b.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.c11b.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c11b.Font = new System.Drawing.Font("Roboto", 12F);
             this.c11b.ForeColor = System.Drawing.Color.Black;
-            this.c11b.Location = new System.Drawing.Point(1186, 124);
+            this.c11b.Location = new System.Drawing.Point(1186, 164);
             this.c11b.Name = "c11b";
             this.c11b.Size = new System.Drawing.Size(106, 47);
             this.c11b.TabIndex = 434;
-            this.c11b.Text = "34.925 mm";
+            this.c11b.Text = "34.925";
             this.c11b.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // c10b
             // 
             this.c10b.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.c10b.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c10b.Font = new System.Drawing.Font("Roboto", 12F);
             this.c10b.ForeColor = System.Drawing.Color.Black;
-            this.c10b.Location = new System.Drawing.Point(1069, 124);
+            this.c10b.Location = new System.Drawing.Point(1069, 164);
             this.c10b.Name = "c10b";
             this.c10b.Size = new System.Drawing.Size(106, 47);
             this.c10b.TabIndex = 433;
-            this.c10b.Text = "31.75 mm";
+            this.c10b.Text = "31.75";
             this.c10b.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // c9b
             // 
             this.c9b.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.c9b.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c9b.Font = new System.Drawing.Font("Roboto", 12F);
             this.c9b.ForeColor = System.Drawing.Color.Black;
-            this.c9b.Location = new System.Drawing.Point(952, 124);
+            this.c9b.Location = new System.Drawing.Point(952, 164);
             this.c9b.Name = "c9b";
             this.c9b.Size = new System.Drawing.Size(106, 47);
             this.c9b.TabIndex = 432;
-            this.c9b.Text = "28.575 mm";
+            this.c9b.Text = "28.575";
             this.c9b.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // c8b
             // 
             this.c8b.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.c8b.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c8b.Font = new System.Drawing.Font("Roboto", 12F);
             this.c8b.ForeColor = System.Drawing.Color.Black;
-            this.c8b.Location = new System.Drawing.Point(835, 124);
+            this.c8b.Location = new System.Drawing.Point(835, 164);
             this.c8b.Name = "c8b";
             this.c8b.Size = new System.Drawing.Size(106, 47);
             this.c8b.TabIndex = 431;
-            this.c8b.Text = "25.4 mm";
+            this.c8b.Text = "25.4";
             this.c8b.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // c7b
             // 
             this.c7b.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.c7b.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c7b.Font = new System.Drawing.Font("Roboto", 12F);
             this.c7b.ForeColor = System.Drawing.Color.Black;
-            this.c7b.Location = new System.Drawing.Point(718, 124);
+            this.c7b.Location = new System.Drawing.Point(718, 164);
             this.c7b.Name = "c7b";
             this.c7b.Size = new System.Drawing.Size(106, 47);
             this.c7b.TabIndex = 430;
-            this.c7b.Text = "22.225 mm";
+            this.c7b.Text = "22.225";
             this.c7b.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // c6b
             // 
             this.c6b.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.c6b.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c6b.Font = new System.Drawing.Font("Roboto", 12F);
             this.c6b.ForeColor = System.Drawing.Color.Black;
-            this.c6b.Location = new System.Drawing.Point(601, 124);
+            this.c6b.Location = new System.Drawing.Point(601, 164);
             this.c6b.Name = "c6b";
             this.c6b.Size = new System.Drawing.Size(106, 47);
             this.c6b.TabIndex = 429;
-            this.c6b.Text = "19.05 mm";
+            this.c6b.Text = "19.05";
             this.c6b.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // c5b
             // 
             this.c5b.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.c5b.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c5b.Font = new System.Drawing.Font("Roboto", 12F);
             this.c5b.ForeColor = System.Drawing.Color.Black;
-            this.c5b.Location = new System.Drawing.Point(484, 124);
+            this.c5b.Location = new System.Drawing.Point(484, 164);
             this.c5b.Name = "c5b";
             this.c5b.Size = new System.Drawing.Size(106, 47);
             this.c5b.TabIndex = 428;
-            this.c5b.Text = "15.875 mm";
+            this.c5b.Text = "15.875";
             this.c5b.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // c4b
             // 
             this.c4b.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.c4b.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c4b.Font = new System.Drawing.Font("Roboto", 12F);
             this.c4b.ForeColor = System.Drawing.Color.Black;
-            this.c4b.Location = new System.Drawing.Point(367, 124);
+            this.c4b.Location = new System.Drawing.Point(367, 164);
             this.c4b.Name = "c4b";
             this.c4b.Size = new System.Drawing.Size(106, 47);
             this.c4b.TabIndex = 427;
-            this.c4b.Text = "12.7 mm";
+            this.c4b.Text = "12.7";
             this.c4b.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // c3b
             // 
             this.c3b.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.c3b.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c3b.Font = new System.Drawing.Font("Roboto", 12F);
             this.c3b.ForeColor = System.Drawing.Color.Black;
-            this.c3b.Location = new System.Drawing.Point(250, 124);
+            this.c3b.Location = new System.Drawing.Point(250, 164);
             this.c3b.Name = "c3b";
             this.c3b.Size = new System.Drawing.Size(106, 47);
             this.c3b.TabIndex = 426;
-            this.c3b.Text = "9.525 mm";
+            this.c3b.Text = "9.525";
             this.c3b.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // c2b
             // 
             this.c2b.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.c2b.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c2b.Font = new System.Drawing.Font("Roboto", 12F);
             this.c2b.ForeColor = System.Drawing.Color.Black;
-            this.c2b.Location = new System.Drawing.Point(133, 124);
+            this.c2b.Location = new System.Drawing.Point(133, 164);
             this.c2b.Name = "c2b";
             this.c2b.Size = new System.Drawing.Size(106, 47);
             this.c2b.TabIndex = 425;
-            this.c2b.Text = "6.35 mm";
+            this.c2b.Text = "6.35";
             this.c2b.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // c1b
             // 
             this.c1b.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.c1b.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c1b.Font = new System.Drawing.Font("Roboto", 12F);
             this.c1b.ForeColor = System.Drawing.Color.Black;
-            this.c1b.Location = new System.Drawing.Point(16, 124);
+            this.c1b.Location = new System.Drawing.Point(16, 164);
             this.c1b.Name = "c1b";
             this.c1b.Size = new System.Drawing.Size(106, 47);
             this.c1b.TabIndex = 424;
-            this.c1b.Text = "3.175 mm";
+            this.c1b.Text = "3.175";
             this.c1b.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // c16a
             // 
             this.c16a.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.c16a.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c16a.Font = new System.Drawing.Font("Roboto", 12F);
             this.c16a.ForeColor = System.Drawing.Color.Black;
-            this.c16a.Location = new System.Drawing.Point(1771, 67);
+            this.c16a.Location = new System.Drawing.Point(1771, 87);
             this.c16a.Name = "c16a";
             this.c16a.Size = new System.Drawing.Size(106, 47);
             this.c16a.TabIndex = 423;
@@ -948,9 +900,9 @@
             // c15a
             // 
             this.c15a.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.c15a.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c15a.Font = new System.Drawing.Font("Roboto", 12F);
             this.c15a.ForeColor = System.Drawing.Color.Black;
-            this.c15a.Location = new System.Drawing.Point(1654, 67);
+            this.c15a.Location = new System.Drawing.Point(1654, 87);
             this.c15a.Name = "c15a";
             this.c15a.Size = new System.Drawing.Size(106, 47);
             this.c15a.TabIndex = 422;
@@ -960,9 +912,9 @@
             // c14a
             // 
             this.c14a.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.c14a.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c14a.Font = new System.Drawing.Font("Roboto", 12F);
             this.c14a.ForeColor = System.Drawing.Color.Black;
-            this.c14a.Location = new System.Drawing.Point(1537, 67);
+            this.c14a.Location = new System.Drawing.Point(1537, 87);
             this.c14a.Name = "c14a";
             this.c14a.Size = new System.Drawing.Size(106, 47);
             this.c14a.TabIndex = 421;
@@ -972,9 +924,9 @@
             // c13a
             // 
             this.c13a.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.c13a.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c13a.Font = new System.Drawing.Font("Roboto", 12F);
             this.c13a.ForeColor = System.Drawing.Color.Black;
-            this.c13a.Location = new System.Drawing.Point(1420, 67);
+            this.c13a.Location = new System.Drawing.Point(1420, 87);
             this.c13a.Name = "c13a";
             this.c13a.Size = new System.Drawing.Size(106, 47);
             this.c13a.TabIndex = 420;
@@ -984,9 +936,9 @@
             // c12a
             // 
             this.c12a.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.c12a.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c12a.Font = new System.Drawing.Font("Roboto", 12F);
             this.c12a.ForeColor = System.Drawing.Color.Black;
-            this.c12a.Location = new System.Drawing.Point(1303, 67);
+            this.c12a.Location = new System.Drawing.Point(1303, 87);
             this.c12a.Name = "c12a";
             this.c12a.Size = new System.Drawing.Size(106, 47);
             this.c12a.TabIndex = 419;
@@ -996,9 +948,9 @@
             // c11a
             // 
             this.c11a.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.c11a.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c11a.Font = new System.Drawing.Font("Roboto", 12F);
             this.c11a.ForeColor = System.Drawing.Color.Black;
-            this.c11a.Location = new System.Drawing.Point(1186, 67);
+            this.c11a.Location = new System.Drawing.Point(1186, 87);
             this.c11a.Name = "c11a";
             this.c11a.Size = new System.Drawing.Size(106, 47);
             this.c11a.TabIndex = 418;
@@ -1008,9 +960,9 @@
             // c10a
             // 
             this.c10a.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.c10a.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c10a.Font = new System.Drawing.Font("Roboto", 12F);
             this.c10a.ForeColor = System.Drawing.Color.Black;
-            this.c10a.Location = new System.Drawing.Point(1069, 67);
+            this.c10a.Location = new System.Drawing.Point(1069, 87);
             this.c10a.Name = "c10a";
             this.c10a.Size = new System.Drawing.Size(106, 47);
             this.c10a.TabIndex = 417;
@@ -1020,9 +972,9 @@
             // c9a
             // 
             this.c9a.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.c9a.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c9a.Font = new System.Drawing.Font("Roboto", 12F);
             this.c9a.ForeColor = System.Drawing.Color.Black;
-            this.c9a.Location = new System.Drawing.Point(952, 67);
+            this.c9a.Location = new System.Drawing.Point(952, 87);
             this.c9a.Name = "c9a";
             this.c9a.Size = new System.Drawing.Size(106, 47);
             this.c9a.TabIndex = 416;
@@ -1032,9 +984,9 @@
             // c8a
             // 
             this.c8a.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.c8a.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c8a.Font = new System.Drawing.Font("Roboto", 12F);
             this.c8a.ForeColor = System.Drawing.Color.Black;
-            this.c8a.Location = new System.Drawing.Point(835, 67);
+            this.c8a.Location = new System.Drawing.Point(835, 87);
             this.c8a.Name = "c8a";
             this.c8a.Size = new System.Drawing.Size(106, 47);
             this.c8a.TabIndex = 415;
@@ -1044,9 +996,9 @@
             // c7a
             // 
             this.c7a.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.c7a.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c7a.Font = new System.Drawing.Font("Roboto", 12F);
             this.c7a.ForeColor = System.Drawing.Color.Black;
-            this.c7a.Location = new System.Drawing.Point(718, 67);
+            this.c7a.Location = new System.Drawing.Point(718, 87);
             this.c7a.Name = "c7a";
             this.c7a.Size = new System.Drawing.Size(106, 47);
             this.c7a.TabIndex = 414;
@@ -1056,9 +1008,9 @@
             // c6a
             // 
             this.c6a.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.c6a.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c6a.Font = new System.Drawing.Font("Roboto", 12F);
             this.c6a.ForeColor = System.Drawing.Color.Black;
-            this.c6a.Location = new System.Drawing.Point(601, 67);
+            this.c6a.Location = new System.Drawing.Point(601, 87);
             this.c6a.Name = "c6a";
             this.c6a.Size = new System.Drawing.Size(106, 47);
             this.c6a.TabIndex = 413;
@@ -1068,9 +1020,9 @@
             // c5a
             // 
             this.c5a.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.c5a.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c5a.Font = new System.Drawing.Font("Roboto", 12F);
             this.c5a.ForeColor = System.Drawing.Color.Black;
-            this.c5a.Location = new System.Drawing.Point(484, 67);
+            this.c5a.Location = new System.Drawing.Point(484, 87);
             this.c5a.Name = "c5a";
             this.c5a.Size = new System.Drawing.Size(106, 47);
             this.c5a.TabIndex = 412;
@@ -1080,9 +1032,9 @@
             // c4a
             // 
             this.c4a.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.c4a.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c4a.Font = new System.Drawing.Font("Roboto", 12F);
             this.c4a.ForeColor = System.Drawing.Color.Black;
-            this.c4a.Location = new System.Drawing.Point(367, 67);
+            this.c4a.Location = new System.Drawing.Point(367, 87);
             this.c4a.Name = "c4a";
             this.c4a.Size = new System.Drawing.Size(106, 47);
             this.c4a.TabIndex = 411;
@@ -1092,9 +1044,9 @@
             // c3a
             // 
             this.c3a.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.c3a.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c3a.Font = new System.Drawing.Font("Roboto", 12F);
             this.c3a.ForeColor = System.Drawing.Color.Black;
-            this.c3a.Location = new System.Drawing.Point(250, 67);
+            this.c3a.Location = new System.Drawing.Point(250, 87);
             this.c3a.Name = "c3a";
             this.c3a.Size = new System.Drawing.Size(106, 47);
             this.c3a.TabIndex = 410;
@@ -1104,9 +1056,9 @@
             // c2a
             // 
             this.c2a.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.c2a.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c2a.Font = new System.Drawing.Font("Roboto", 12F);
             this.c2a.ForeColor = System.Drawing.Color.Black;
-            this.c2a.Location = new System.Drawing.Point(133, 67);
+            this.c2a.Location = new System.Drawing.Point(133, 87);
             this.c2a.Name = "c2a";
             this.c2a.Size = new System.Drawing.Size(106, 47);
             this.c2a.TabIndex = 409;
@@ -1116,9 +1068,9 @@
             // c1a
             // 
             this.c1a.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.c1a.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c1a.Font = new System.Drawing.Font("Roboto", 12F);
             this.c1a.ForeColor = System.Drawing.Color.Black;
-            this.c1a.Location = new System.Drawing.Point(16, 67);
+            this.c1a.Location = new System.Drawing.Point(16, 87);
             this.c1a.Name = "c1a";
             this.c1a.Size = new System.Drawing.Size(106, 47);
             this.c1a.TabIndex = 408;
@@ -1128,7 +1080,7 @@
             // c16
             // 
             this.c16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.c16.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c16.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Bold);
             this.c16.ForeColor = System.Drawing.Color.Black;
             this.c16.Location = new System.Drawing.Point(1771, 10);
             this.c16.Name = "c16";
@@ -1140,7 +1092,7 @@
             // c15
             // 
             this.c15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.c15.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c15.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Bold);
             this.c15.ForeColor = System.Drawing.Color.Black;
             this.c15.Location = new System.Drawing.Point(1654, 10);
             this.c15.Name = "c15";
@@ -1152,7 +1104,7 @@
             // c14
             // 
             this.c14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.c14.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c14.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Bold);
             this.c14.ForeColor = System.Drawing.Color.Black;
             this.c14.Location = new System.Drawing.Point(1537, 10);
             this.c14.Name = "c14";
@@ -1164,7 +1116,7 @@
             // c13
             // 
             this.c13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.c13.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c13.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Bold);
             this.c13.ForeColor = System.Drawing.Color.Black;
             this.c13.Location = new System.Drawing.Point(1420, 10);
             this.c13.Name = "c13";
@@ -1176,7 +1128,7 @@
             // c12
             // 
             this.c12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.c12.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c12.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Bold);
             this.c12.ForeColor = System.Drawing.Color.Black;
             this.c12.Location = new System.Drawing.Point(1303, 10);
             this.c12.Name = "c12";
@@ -1188,7 +1140,7 @@
             // c11
             // 
             this.c11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.c11.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c11.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Bold);
             this.c11.ForeColor = System.Drawing.Color.Black;
             this.c11.Location = new System.Drawing.Point(1186, 10);
             this.c11.Name = "c11";
@@ -1200,7 +1152,7 @@
             // c10
             // 
             this.c10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.c10.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c10.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Bold);
             this.c10.ForeColor = System.Drawing.Color.Black;
             this.c10.Location = new System.Drawing.Point(1069, 10);
             this.c10.Name = "c10";
@@ -1212,7 +1164,7 @@
             // c9
             // 
             this.c9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.c9.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c9.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Bold);
             this.c9.ForeColor = System.Drawing.Color.Black;
             this.c9.Location = new System.Drawing.Point(952, 10);
             this.c9.Name = "c9";
@@ -1224,7 +1176,7 @@
             // c8
             // 
             this.c8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.c8.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c8.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Bold);
             this.c8.ForeColor = System.Drawing.Color.Black;
             this.c8.Location = new System.Drawing.Point(835, 10);
             this.c8.Name = "c8";
@@ -1236,7 +1188,7 @@
             // c7
             // 
             this.c7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.c7.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c7.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Bold);
             this.c7.ForeColor = System.Drawing.Color.Black;
             this.c7.Location = new System.Drawing.Point(718, 10);
             this.c7.Name = "c7";
@@ -1248,7 +1200,7 @@
             // c6
             // 
             this.c6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.c6.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c6.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Bold);
             this.c6.ForeColor = System.Drawing.Color.Black;
             this.c6.Location = new System.Drawing.Point(601, 10);
             this.c6.Name = "c6";
@@ -1260,7 +1212,7 @@
             // c5
             // 
             this.c5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.c5.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c5.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Bold);
             this.c5.ForeColor = System.Drawing.Color.Black;
             this.c5.Location = new System.Drawing.Point(484, 10);
             this.c5.Name = "c5";
@@ -1272,7 +1224,7 @@
             // c4
             // 
             this.c4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.c4.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c4.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Bold);
             this.c4.ForeColor = System.Drawing.Color.Black;
             this.c4.Location = new System.Drawing.Point(367, 10);
             this.c4.Name = "c4";
@@ -1284,7 +1236,7 @@
             // c3
             // 
             this.c3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.c3.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c3.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Bold);
             this.c3.ForeColor = System.Drawing.Color.Black;
             this.c3.Location = new System.Drawing.Point(250, 10);
             this.c3.Name = "c3";
@@ -1296,7 +1248,7 @@
             // c2
             // 
             this.c2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.c2.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Bold);
             this.c2.ForeColor = System.Drawing.Color.Black;
             this.c2.Location = new System.Drawing.Point(133, 10);
             this.c2.Name = "c2";
@@ -1308,7 +1260,7 @@
             // c1
             // 
             this.c1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.c1.Font = new System.Drawing.Font("Roboto", 13F);
+            this.c1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Bold);
             this.c1.ForeColor = System.Drawing.Color.Black;
             this.c1.Location = new System.Drawing.Point(16, 10);
             this.c1.Name = "c1";
@@ -1321,7 +1273,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Roboto", 16F);
-            this.label6.Location = new System.Drawing.Point(12, 605);
+            this.label6.Location = new System.Drawing.Point(14, 659);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(121, 27);
             this.label6.TabIndex = 376;
@@ -1331,7 +1283,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Roboto", 16F);
-            this.label7.Location = new System.Drawing.Point(379, 605);
+            this.label7.Location = new System.Drawing.Point(381, 659);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(152, 27);
             this.label7.TabIndex = 377;
@@ -1343,7 +1295,7 @@
             this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label8.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(133, 605);
+            this.label8.Location = new System.Drawing.Point(135, 659);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(236, 46);
             this.label8.TabIndex = 378;
@@ -1356,7 +1308,7 @@
             this.label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label9.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(532, 605);
+            this.label9.Location = new System.Drawing.Point(534, 659);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(236, 46);
             this.label9.TabIndex = 379;
@@ -1367,99 +1319,11 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Roboto", 16F);
-            this.label10.Location = new System.Drawing.Point(12, 699);
+            this.label10.Location = new System.Drawing.Point(14, 753);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(129, 27);
             this.label10.TabIndex = 380;
             this.label10.Text = "Documents:";
-            // 
-            // btnReset
-            // 
-            this.btnReset.BackColor = System.Drawing.Color.DarkGray;
-            this.btnReset.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReset.Font = new System.Drawing.Font("Roboto", 12F);
-            this.btnReset.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnReset.IconColor = System.Drawing.Color.Black;
-            this.btnReset.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnReset.Location = new System.Drawing.Point(1833, 605);
-            this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(75, 27);
-            this.btnReset.TabIndex = 381;
-            this.btnReset.Text = "Reset";
-            this.btnReset.UseVisualStyleBackColor = false;
-            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
-            // 
-            // btnSTP
-            // 
-            this.btnSTP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            this.btnSTP.FlatAppearance.BorderSize = 0;
-            this.btnSTP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSTP.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSTP.ForeColor = System.Drawing.Color.White;
-            this.btnSTP.IconChar = FontAwesome.Sharp.IconChar.FileArchive;
-            this.btnSTP.IconColor = System.Drawing.Color.White;
-            this.btnSTP.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.btnSTP.IconSize = 25;
-            this.btnSTP.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSTP.Location = new System.Drawing.Point(244, 699);
-            this.btnSTP.Name = "btnSTP";
-            this.btnSTP.Size = new System.Drawing.Size(75, 33);
-            this.btnSTP.TabIndex = 357;
-            this.btnSTP.Text = "STP";
-            this.btnSTP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSTP.UseVisualStyleBackColor = false;
-            this.btnSTP.Click += new System.EventHandler(this.btnSTP_Click);
-            // 
-            // btnPDF
-            // 
-            this.btnPDF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            this.btnPDF.FlatAppearance.BorderSize = 0;
-            this.btnPDF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPDF.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPDF.ForeColor = System.Drawing.Color.White;
-            this.btnPDF.IconChar = FontAwesome.Sharp.IconChar.FilePdf;
-            this.btnPDF.IconColor = System.Drawing.Color.White;
-            this.btnPDF.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.btnPDF.IconSize = 25;
-            this.btnPDF.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPDF.Location = new System.Drawing.Point(153, 699);
-            this.btnPDF.Name = "btnPDF";
-            this.btnPDF.Size = new System.Drawing.Size(75, 33);
-            this.btnPDF.TabIndex = 356;
-            this.btnPDF.Text = "PDF";
-            this.btnPDF.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPDF.UseVisualStyleBackColor = false;
-            this.btnPDF.Click += new System.EventHandler(this.btnPDF_Click);
-            // 
-            // picTopView
-            // 
-            this.picTopView.Image = global::_0510Project.Properties.Resources.PlaceHolderImage;
-            this.picTopView.Location = new System.Drawing.Point(1627, 114);
-            this.picTopView.Name = "picTopView";
-            this.picTopView.Size = new System.Drawing.Size(129, 108);
-            this.picTopView.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picTopView.TabIndex = 374;
-            this.picTopView.TabStop = false;
-            // 
-            // picLength
-            // 
-            this.picLength.Location = new System.Drawing.Point(234, 333);
-            this.picLength.Name = "picLength";
-            this.picLength.Size = new System.Drawing.Size(85, 51);
-            this.picLength.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picLength.TabIndex = 16;
-            this.picLength.TabStop = false;
-            // 
-            // picISOView
-            // 
-            this.picISOView.Image = global::_0510Project.Properties.Resources.PlaceHolderImage;
-            this.picISOView.Location = new System.Drawing.Point(1194, 103);
-            this.picISOView.Name = "picISOView";
-            this.picISOView.Size = new System.Drawing.Size(292, 151);
-            this.picISOView.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picISOView.TabIndex = 7;
-            this.picISOView.TabStop = false;
             // 
             // txtID
             // 
@@ -1529,11 +1393,237 @@
             this.btnEliminar.Text = "Delete";
             this.btnEliminar.UseVisualStyleBackColor = true;
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Roboto", 16F);
+            this.label13.Location = new System.Drawing.Point(1198, 114);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(158, 27);
+            this.label13.TabIndex = 390;
+            this.label13.Text = "Available Tools";
+            // 
+            // label14
+            // 
+            this.label14.Font = new System.Drawing.Font("Roboto", 12F);
+            this.label14.Location = new System.Drawing.Point(17, 139);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(105, 22);
+            this.label14.TabIndex = 440;
+            this.label14.Text = "Metric";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label19
+            // 
+            this.label19.Font = new System.Drawing.Font("Roboto", 12F);
+            this.label19.Location = new System.Drawing.Point(17, 62);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(105, 22);
+            this.label19.TabIndex = 441;
+            this.label19.Text = "Decimal";
+            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label20
+            // 
+            this.label20.Font = new System.Drawing.Font("Roboto", 12F);
+            this.label20.Location = new System.Drawing.Point(1073, 227);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(124, 22);
+            this.label20.TabIndex = 442;
+            this.label20.Text = "Allen Wrenches";
+            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label22
+            // 
+            this.label22.Font = new System.Drawing.Font("Roboto", 12F);
+            this.label22.Location = new System.Drawing.Point(1362, 227);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(124, 22);
+            this.label22.TabIndex = 446;
+            this.label22.Text = "T-Handle";
+            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label23
+            // 
+            this.label23.Font = new System.Drawing.Font("Roboto", 12F);
+            this.label23.Location = new System.Drawing.Point(1215, 227);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(124, 22);
+            this.label23.TabIndex = 448;
+            this.label23.Text = "Screw Driver";
+            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::_0510Project.Properties.Resources.Driver;
+            this.pictureBox4.Location = new System.Drawing.Point(1215, 150);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(124, 74);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 449;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::_0510Project.Properties.Resources.T_Handle;
+            this.pictureBox3.Location = new System.Drawing.Point(1362, 150);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(124, 74);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 447;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::_0510Project.Properties.Resources.Allen_Wrenches;
+            this.pictureBox2.Location = new System.Drawing.Point(1073, 150);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(124, 74);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 445;
+            this.pictureBox2.TabStop = false;
+            // 
+            // btnReset
+            // 
+            this.btnReset.BackColor = System.Drawing.Color.DarkGray;
+            this.btnReset.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReset.Font = new System.Drawing.Font("Roboto", 12F);
+            this.btnReset.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnReset.IconColor = System.Drawing.Color.Black;
+            this.btnReset.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnReset.Location = new System.Drawing.Point(1833, 605);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(75, 27);
+            this.btnReset.TabIndex = 381;
+            this.btnReset.Text = "Reset";
+            this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            // 
+            // btnSTP
+            // 
+            this.btnSTP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
+            this.btnSTP.FlatAppearance.BorderSize = 0;
+            this.btnSTP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSTP.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSTP.ForeColor = System.Drawing.Color.White;
+            this.btnSTP.IconChar = FontAwesome.Sharp.IconChar.FileArchive;
+            this.btnSTP.IconColor = System.Drawing.Color.White;
+            this.btnSTP.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.btnSTP.IconSize = 25;
+            this.btnSTP.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSTP.Location = new System.Drawing.Point(246, 753);
+            this.btnSTP.Name = "btnSTP";
+            this.btnSTP.Size = new System.Drawing.Size(75, 33);
+            this.btnSTP.TabIndex = 357;
+            this.btnSTP.Text = "STP";
+            this.btnSTP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSTP.UseVisualStyleBackColor = false;
+            this.btnSTP.Click += new System.EventHandler(this.btnSTP_Click);
+            // 
+            // btnPDF
+            // 
+            this.btnPDF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
+            this.btnPDF.FlatAppearance.BorderSize = 0;
+            this.btnPDF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPDF.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPDF.ForeColor = System.Drawing.Color.White;
+            this.btnPDF.IconChar = FontAwesome.Sharp.IconChar.FilePdf;
+            this.btnPDF.IconColor = System.Drawing.Color.White;
+            this.btnPDF.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.btnPDF.IconSize = 25;
+            this.btnPDF.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPDF.Location = new System.Drawing.Point(155, 753);
+            this.btnPDF.Name = "btnPDF";
+            this.btnPDF.Size = new System.Drawing.Size(75, 33);
+            this.btnPDF.TabIndex = 356;
+            this.btnPDF.Text = "PDF";
+            this.btnPDF.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPDF.UseVisualStyleBackColor = false;
+            this.btnPDF.Click += new System.EventHandler(this.btnPDF_Click);
+            // 
+            // picTopView
+            // 
+            this.picTopView.Image = global::_0510Project.Properties.Resources.SocketTop;
+            this.picTopView.Location = new System.Drawing.Point(1719, 303);
+            this.picTopView.Name = "picTopView";
+            this.picTopView.Size = new System.Drawing.Size(106, 72);
+            this.picTopView.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picTopView.TabIndex = 374;
+            this.picTopView.TabStop = false;
+            // 
+            // picLength
+            // 
+            this.picLength.Image = global::_0510Project.Properties.Resources.LengthSocketHead;
+            this.picLength.Location = new System.Drawing.Point(1586, 285);
+            this.picLength.Name = "picLength";
+            this.picLength.Size = new System.Drawing.Size(133, 90);
+            this.picLength.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picLength.TabIndex = 16;
+            this.picLength.TabStop = false;
+            // 
+            // picISOView
+            // 
+            this.picISOView.Image = global::_0510Project.Properties.Resources.Socket;
+            this.picISOView.Location = new System.Drawing.Point(1554, 98);
+            this.picISOView.Name = "picISOView";
+            this.picISOView.Size = new System.Drawing.Size(325, 208);
+            this.picISOView.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picISOView.TabIndex = 7;
+            this.picISOView.TabStop = false;
+            // 
+            // btnFormSize
+            // 
+            this.btnFormSize.FlatAppearance.BorderSize = 0;
+            this.btnFormSize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFormSize.IconChar = FontAwesome.Sharp.IconChar.ExpandAlt;
+            this.btnFormSize.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(254)))), ((int)(((byte)(251)))));
+            this.btnFormSize.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnFormSize.IconSize = 30;
+            this.btnFormSize.Location = new System.Drawing.Point(1822, 3);
+            this.btnFormSize.Name = "btnFormSize";
+            this.btnFormSize.Size = new System.Drawing.Size(41, 46);
+            this.btnFormSize.TabIndex = 1;
+            this.btnFormSize.UseVisualStyleBackColor = true;
+            this.btnFormSize.Click += new System.EventHandler(this.btnFormSize_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::_0510Project.Properties.Resources.SSNE_Just_Logo;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(57, 53);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnExit
+            // 
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.IconChar = FontAwesome.Sharp.IconChar.Code;
+            this.btnExit.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(254)))), ((int)(((byte)(251)))));
+            this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnExit.IconSize = 35;
+            this.btnExit.Location = new System.Drawing.Point(1869, 3);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(48, 46);
+            this.btnExit.TabIndex = 0;
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1920, 1061);
+            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.label23);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.label22);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.label20);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnGuardar);
@@ -1553,8 +1643,6 @@
             this.Controls.Add(this.pLengths);
             this.Controls.Add(this.picTopView);
             this.Controls.Add(this.picLength);
-            this.Controls.Add(this.label23);
-            this.Controls.Add(this.label22);
             this.Controls.Add(this.lbNToolc);
             this.Controls.Add(this.lbMaterial);
             this.Controls.Add(this.label21);
@@ -1579,7 +1667,6 @@
             this.Text = "bu";
             this.Load += new System.EventHandler(this.FrmMain_Load);
             this.pNavBar.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -1588,10 +1675,14 @@
             this.pSizeSelect.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvLength)).EndInit();
             this.pLengths.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTest)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picTopView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLength)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picISOView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTest)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1643,8 +1734,6 @@
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label lbMaterial;
         private System.Windows.Forms.Label lbNToolc;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label23;
         private System.Windows.Forms.PictureBox picTopView;
         private System.Windows.Forms.Panel pLengths;
         private System.Windows.Forms.Label c6;
@@ -1709,6 +1798,15 @@
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Label label23;
     }
 }
 

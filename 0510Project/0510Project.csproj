@@ -95,6 +95,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Resources\Driver1.png" />
+    <None Include="Resources\T-Handle1.png" />
+    <None Include="Resources\Allen-Wrenches1.png" />
+    <None Include="Resources\Socket1.png" />
     <EmbeddedResource Include="Forms\FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
