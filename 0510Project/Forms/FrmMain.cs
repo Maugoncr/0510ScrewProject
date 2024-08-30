@@ -209,10 +209,10 @@ namespace _0510Project
             if (cbDriveType.SelectedItem.ToString() == "Socket Head Screw")
             {
                 picISOView.Visible = true;
-               // picISOView.Image = Properties.Resources.Socket;
+                picISOView.Image = Properties.Resources.Socket;
 
                 picTopView.Visible = true;
-               // picTopView.Image = Properties.Resources.SocketTop;
+                picTopView.Image = Properties.Resources.SocketTop;
 
                 lbAbbreviation.Text = "SOC HD";
 
@@ -220,7 +220,7 @@ namespace _0510Project
 
                 lbNToolc.Text = "--- Number";
 
-               // picLength.Image = Properties.Resources.LengthSocketHead;
+                picLength.Image = Properties.Resources.LengthSocketHead;
             }
 
             if (cbDriveType.SelectedItem.ToString() == "Countersunk Screw")
@@ -494,5 +494,6 @@ namespace _0510Project
             dgvTest.DataSource = TestLogic.Instancia.Listar();
         }
 
+   
     }
 }

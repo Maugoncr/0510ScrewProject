@@ -95,6 +95,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Resources\SSNE Just Logo.png" />
+    <None Include="Resources\SocketTop.png" />
+    <None Include="Resources\LengthSocketHead.png" />
+    <None Include="Resources\Socket.png" />
+    <None Include="Resources\T-Handle.png" />
+    <None Include="Resources\Driver.png" />
+    <None Include="Resources\Allen-Wrenches.png" />
+    <None Include="Resources\Wedge Lock121.png" />
+    <None Include="Resources\91477A161p1-b01-digitall%401x_637104618588792597.png" />
+    <None Include="Resources\tooth.png" />
+    <None Include="Resources\Split Lock.png" />
     <None Include="Resources\Flat Flat.png" />
     <None Include="Resources\Crown.png" />
     <None Include="Resources\NutHex.png" />
