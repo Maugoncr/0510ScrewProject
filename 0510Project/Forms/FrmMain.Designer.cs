@@ -137,7 +137,6 @@
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -147,6 +146,16 @@
             this.picTopView = new System.Windows.Forms.PictureBox();
             this.picLength = new System.Windows.Forms.PictureBox();
             this.picISOView = new System.Windows.Forms.PictureBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label25 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.pNavBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -156,13 +165,14 @@
             this.pLengths.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTest)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picTopView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLength)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picISOView)).BeginInit();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // cbDriveType
@@ -1478,20 +1488,14 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.pictureBox5);
-            this.panel1.Location = new System.Drawing.Point(106, 754);
+            this.panel1.BackColor = System.Drawing.Color.DarkGray;
+            this.panel1.Controls.Add(this.iconButton1);
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(this.label24);
+            this.panel1.Location = new System.Drawing.Point(13, 694);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(435, 262);
+            this.panel1.Size = new System.Drawing.Size(435, 355);
             this.panel1.TabIndex = 450;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Location = new System.Drawing.Point(75, 49);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(237, 150);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 0;
-            this.pictureBox5.TabStop = false;
             // 
             // pictureBox4
             // 
@@ -1604,6 +1608,140 @@
             this.picISOView.TabIndex = 7;
             this.picISOView.TabStop = false;
             // 
+            // label24
+            // 
+            this.label24.BackColor = System.Drawing.Color.DimGray;
+            this.label24.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label24.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.White;
+            this.label24.Location = new System.Drawing.Point(0, 0);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(435, 28);
+            this.label24.TabIndex = 0;
+            this.label24.Text = "NUTS";
+            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.iconButton2);
+            this.panel3.Controls.Add(this.label29);
+            this.panel3.Controls.Add(this.label28);
+            this.panel3.Controls.Add(this.label27);
+            this.panel3.Controls.Add(this.label26);
+            this.panel3.Controls.Add(this.pictureBox5);
+            this.panel3.Controls.Add(this.label25);
+            this.panel3.Location = new System.Drawing.Point(11, 38);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(345, 294);
+            this.panel3.TabIndex = 1;
+            // 
+            // label25
+            // 
+            this.label25.BackColor = System.Drawing.Color.DimGray;
+            this.label25.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label25.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.Color.White;
+            this.label25.Location = new System.Drawing.Point(0, 0);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(345, 28);
+            this.label25.TabIndex = 1;
+            this.label25.Text = "Hex Nut";
+            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Location = new System.Drawing.Point(9, 31);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(324, 138);
+            this.pictureBox5.TabIndex = 2;
+            this.pictureBox5.TabStop = false;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(98, 183);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(72, 15);
+            this.label26.TabIndex = 3;
+            this.label26.Text = "SSNE P/N";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Location = new System.Drawing.Point(86, 236);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(92, 15);
+            this.label27.TabIndex = 4;
+            this.label27.Text = "VENDOR P/N";
+            // 
+            // label28
+            // 
+            this.label28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(226)))), ((int)(((byte)(227)))));
+            this.label28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label28.Font = new System.Drawing.Font("Roboto", 16F);
+            this.label28.Location = new System.Drawing.Point(13, 200);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(236, 31);
+            this.label28.TabIndex = 380;
+            this.label28.Text = "200-XXXXX";
+            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label29
+            // 
+            this.label29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(226)))), ((int)(((byte)(227)))));
+            this.label29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label29.Font = new System.Drawing.Font("Roboto", 16F);
+            this.label29.Location = new System.Drawing.Point(13, 253);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(236, 31);
+            this.label29.TabIndex = 381;
+            this.label29.Text = "200-XXXXX";
+            this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.BackColor = System.Drawing.Color.Firebrick;
+            this.iconButton1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.Font = new System.Drawing.Font("Roboto", 12F);
+            this.iconButton1.ForeColor = System.Drawing.Color.White;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.FilePdf;
+            this.iconButton1.IconColor = System.Drawing.Color.White;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.iconButton1.IconSize = 20;
+            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton1.Location = new System.Drawing.Point(271, 238);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(80, 31);
+            this.iconButton1.TabIndex = 451;
+            this.iconButton1.Text = "PDF";
+            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton1.UseVisualStyleBackColor = false;
+            // 
+            // iconButton2
+            // 
+            this.iconButton2.BackColor = System.Drawing.Color.DodgerBlue;
+            this.iconButton2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton2.Font = new System.Drawing.Font("Roboto", 12F);
+            this.iconButton2.ForeColor = System.Drawing.Color.White;
+            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.FileArchive;
+            this.iconButton2.IconColor = System.Drawing.Color.White;
+            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.iconButton2.IconSize = 20;
+            this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton2.Location = new System.Drawing.Point(260, 253);
+            this.iconButton2.Name = "iconButton2";
+            this.iconButton2.Size = new System.Drawing.Size(80, 31);
+            this.iconButton2.TabIndex = 452;
+            this.iconButton2.Text = "STEP";
+            this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton2.UseVisualStyleBackColor = false;
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -1669,13 +1807,15 @@
             this.pLengths.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTest)).EndInit();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picTopView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLength)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picISOView)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1799,7 +1939,16 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label24;
+        private FontAwesome.Sharp.IconButton iconButton1;
+        private FontAwesome.Sharp.IconButton iconButton2;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label26;
     }
 }
 
