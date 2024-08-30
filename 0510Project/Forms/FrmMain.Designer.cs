@@ -34,6 +34,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pNavBar = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnFormSize = new FontAwesome.Sharp.IconButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnExit = new FontAwesome.Sharp.IconButton();
             this.lbDateTime = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -136,73 +139,73 @@
             this.label23 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.iconButton3 = new FontAwesome.Sharp.IconButton();
+            this.iconButton4 = new FontAwesome.Sharp.IconButton();
             this.label30 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label34 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.iconButton2 = new FontAwesome.Sharp.IconButton();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.label29 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label25 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.iconButton5 = new FontAwesome.Sharp.IconButton();
+            this.iconButton6 = new FontAwesome.Sharp.IconButton();
             this.label35 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label39 = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.iconButton13 = new FontAwesome.Sharp.IconButton();
+            this.iconButton14 = new FontAwesome.Sharp.IconButton();
             this.label57 = new System.Windows.Forms.Label();
             this.label58 = new System.Windows.Forms.Label();
             this.label59 = new System.Windows.Forms.Label();
             this.label60 = new System.Windows.Forms.Label();
             this.label61 = new System.Windows.Forms.Label();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.iconButton11 = new FontAwesome.Sharp.IconButton();
+            this.iconButton12 = new FontAwesome.Sharp.IconButton();
             this.label52 = new System.Windows.Forms.Label();
             this.label53 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.label56 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.iconButton9 = new FontAwesome.Sharp.IconButton();
+            this.iconButton10 = new FontAwesome.Sharp.IconButton();
             this.label46 = new System.Windows.Forms.Label();
             this.label47 = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
             this.label49 = new System.Windows.Forms.Label();
             this.label50 = new System.Windows.Forms.Label();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.iconButton7 = new FontAwesome.Sharp.IconButton();
+            this.iconButton8 = new FontAwesome.Sharp.IconButton();
             this.label40 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
-            this.iconButton13 = new FontAwesome.Sharp.IconButton();
-            this.iconButton14 = new FontAwesome.Sharp.IconButton();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.iconButton11 = new FontAwesome.Sharp.IconButton();
-            this.iconButton12 = new FontAwesome.Sharp.IconButton();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.iconButton9 = new FontAwesome.Sharp.IconButton();
-            this.iconButton10 = new FontAwesome.Sharp.IconButton();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.iconButton7 = new FontAwesome.Sharp.IconButton();
-            this.iconButton8 = new FontAwesome.Sharp.IconButton();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.iconButton5 = new FontAwesome.Sharp.IconButton();
-            this.iconButton6 = new FontAwesome.Sharp.IconButton();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.iconButton3 = new FontAwesome.Sharp.IconButton();
-            this.iconButton4 = new FontAwesome.Sharp.IconButton();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.label51 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -211,11 +214,21 @@
             this.btnPDF = new FontAwesome.Sharp.IconButton();
             this.picTopView = new System.Windows.Forms.PictureBox();
             this.picLength = new System.Windows.Forms.PictureBox();
-            this.btnFormSize = new FontAwesome.Sharp.IconButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnExit = new FontAwesome.Sharp.IconButton();
             this.picISOView = new System.Windows.Forms.PictureBox();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.label62 = new System.Windows.Forms.Label();
+            this.label63 = new System.Windows.Forms.Label();
+            this.label64 = new System.Windows.Forms.Label();
+            this.label65 = new System.Windows.Forms.Label();
+            this.label66 = new System.Windows.Forms.Label();
+            this.label67 = new System.Windows.Forms.Label();
+            this.label68 = new System.Windows.Forms.Label();
+            this.label69 = new System.Windows.Forms.Label();
+            this.label70 = new System.Windows.Forms.Label();
+            this.label71 = new System.Windows.Forms.Label();
+            this.label72 = new System.Windows.Forms.Label();
             this.pNavBar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.pSizeSelect.SuspendLayout();
@@ -224,28 +237,28 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvTest)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel5.SuspendLayout();
             this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.panel6.SuspendLayout();
             this.panel11.SuspendLayout();
-            this.panel10.SuspendLayout();
-            this.panel9.SuspendLayout();
-            this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picTopView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLength)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picISOView)).BeginInit();
+            this.panel12.SuspendLayout();
             this.SuspendLayout();
             // 
             // cbDriveType
@@ -267,13 +280,13 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(110, 123);
+            this.label1.Location = new System.Drawing.Point(13, 123);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(190, 27);
+            this.label1.Size = new System.Drawing.Size(388, 27);
             this.label1.TabIndex = 3;
             this.label1.Text = "Select Screw Type";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pNavBar
             // 
@@ -301,6 +314,46 @@
             this.label2.Size = new System.Drawing.Size(124, 20);
             this.label2.TabIndex = 4;
             this.label2.Text = "0510 Project";
+            // 
+            // btnFormSize
+            // 
+            this.btnFormSize.FlatAppearance.BorderSize = 0;
+            this.btnFormSize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFormSize.IconChar = FontAwesome.Sharp.IconChar.ExpandAlt;
+            this.btnFormSize.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(254)))), ((int)(((byte)(251)))));
+            this.btnFormSize.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnFormSize.IconSize = 30;
+            this.btnFormSize.Location = new System.Drawing.Point(1822, 3);
+            this.btnFormSize.Name = "btnFormSize";
+            this.btnFormSize.Size = new System.Drawing.Size(41, 46);
+            this.btnFormSize.TabIndex = 1;
+            this.btnFormSize.UseVisualStyleBackColor = true;
+            this.btnFormSize.Click += new System.EventHandler(this.btnFormSize_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(57, 53);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnExit
+            // 
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.IconChar = FontAwesome.Sharp.IconChar.Code;
+            this.btnExit.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(254)))), ((int)(((byte)(251)))));
+            this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnExit.IconSize = 35;
+            this.btnExit.Location = new System.Drawing.Point(1869, 3);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(48, 46);
+            this.btnExit.TabIndex = 0;
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // lbDateTime
             // 
@@ -477,7 +530,7 @@
             this.pSizeSelect.Controls.Add(this.s3);
             this.pSizeSelect.Controls.Add(this.s2);
             this.pSizeSelect.Controls.Add(this.s1);
-            this.pSizeSelect.Location = new System.Drawing.Point(13, 304);
+            this.pSizeSelect.Location = new System.Drawing.Point(13, 262);
             this.pSizeSelect.Name = "pSizeSelect";
             this.pSizeSelect.Size = new System.Drawing.Size(1456, 72);
             this.pSizeSelect.TabIndex = 359;
@@ -606,7 +659,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(16, 274);
+            this.label15.Location = new System.Drawing.Point(16, 232);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(185, 27);
             this.label15.TabIndex = 360;
@@ -616,7 +669,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Roboto", 16F);
-            this.label16.Location = new System.Drawing.Point(16, 396);
+            this.label16.Location = new System.Drawing.Point(16, 351);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(211, 27);
             this.label16.TabIndex = 361;
@@ -636,23 +689,23 @@
             // 
             // label17
             // 
-            this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(453, 123);
+            this.label17.Location = new System.Drawing.Point(429, 123);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(134, 27);
+            this.label17.Size = new System.Drawing.Size(176, 27);
             this.label17.TabIndex = 363;
             this.label17.Text = "Abbreviation";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label18
             // 
-            this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(683, 123);
+            this.label18.Location = new System.Drawing.Point(633, 123);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(87, 25);
+            this.label18.Size = new System.Drawing.Size(176, 25);
             this.label18.TabIndex = 364;
             this.label18.Text = "Material";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbAbbreviation
             // 
@@ -669,13 +722,13 @@
             // 
             // label21
             // 
-            this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Roboto", 16F);
-            this.label21.Location = new System.Drawing.Point(882, 123);
+            this.label21.Location = new System.Drawing.Point(833, 123);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(122, 27);
+            this.label21.Size = new System.Drawing.Size(213, 27);
             this.label21.TabIndex = 367;
             this.label21.Text = "Tool to Use";
+            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbMaterial
             // 
@@ -756,7 +809,7 @@
             this.pLengths.Controls.Add(this.c3);
             this.pLengths.Controls.Add(this.c2);
             this.pLengths.Controls.Add(this.c1);
-            this.pLengths.Location = new System.Drawing.Point(13, 426);
+            this.pLengths.Location = new System.Drawing.Point(13, 381);
             this.pLengths.Name = "pLengths";
             this.pLengths.Size = new System.Drawing.Size(1894, 222);
             this.pLengths.TabIndex = 375;
@@ -1361,7 +1414,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Roboto", 16F);
-            this.label6.Location = new System.Drawing.Point(9, 677);
+            this.label6.Location = new System.Drawing.Point(16, 637);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(111, 27);
             this.label6.TabIndex = 376;
@@ -1371,7 +1424,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Roboto", 16F);
-            this.label7.Location = new System.Drawing.Point(364, 677);
+            this.label7.Location = new System.Drawing.Point(371, 637);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(142, 27);
             this.label7.TabIndex = 377;
@@ -1383,7 +1436,7 @@
             this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label8.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(122, 668);
+            this.label8.Location = new System.Drawing.Point(129, 628);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(236, 46);
             this.label8.TabIndex = 378;
@@ -1396,7 +1449,7 @@
             this.label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label9.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(508, 668);
+            this.label9.Location = new System.Drawing.Point(515, 628);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(236, 46);
             this.label9.TabIndex = 379;
@@ -1407,7 +1460,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Roboto", 16F);
-            this.label10.Location = new System.Drawing.Point(748, 677);
+            this.label10.Location = new System.Drawing.Point(755, 637);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(143, 27);
             this.label10.TabIndex = 380;
@@ -1491,13 +1544,13 @@
             // 
             // label13
             // 
-            this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Roboto", 16F);
-            this.label13.Location = new System.Drawing.Point(1198, 123);
+            this.label13.Location = new System.Drawing.Point(1073, 123);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(158, 27);
+            this.label13.Size = new System.Drawing.Size(412, 27);
             this.label13.TabIndex = 390;
             this.label13.Text = "Available Tools";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label20
             // 
@@ -1535,9 +1588,9 @@
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.label24);
-            this.panel1.Location = new System.Drawing.Point(14, 734);
+            this.panel1.Location = new System.Drawing.Point(14, 796);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(523, 259);
+            this.panel1.Size = new System.Drawing.Size(523, 248);
             this.panel1.TabIndex = 450;
             // 
             // panel4
@@ -1553,8 +1606,48 @@
             this.panel4.Controls.Add(this.label34);
             this.panel4.Location = new System.Drawing.Point(266, 38);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(245, 211);
+            this.panel4.Size = new System.Drawing.Size(245, 200);
             this.panel4.TabIndex = 453;
+            // 
+            // iconButton3
+            // 
+            this.iconButton3.BackColor = System.Drawing.Color.DodgerBlue;
+            this.iconButton3.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton3.Font = new System.Drawing.Font("Roboto", 12F);
+            this.iconButton3.ForeColor = System.Drawing.Color.White;
+            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.FileArchive;
+            this.iconButton3.IconColor = System.Drawing.Color.White;
+            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.iconButton3.IconSize = 20;
+            this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton3.Location = new System.Drawing.Point(151, 156);
+            this.iconButton3.Name = "iconButton3";
+            this.iconButton3.Size = new System.Drawing.Size(80, 31);
+            this.iconButton3.TabIndex = 452;
+            this.iconButton3.Text = "STEP";
+            this.iconButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton3.UseVisualStyleBackColor = false;
+            // 
+            // iconButton4
+            // 
+            this.iconButton4.BackColor = System.Drawing.Color.Firebrick;
+            this.iconButton4.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton4.Font = new System.Drawing.Font("Roboto", 12F);
+            this.iconButton4.ForeColor = System.Drawing.Color.White;
+            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.FilePdf;
+            this.iconButton4.IconColor = System.Drawing.Color.White;
+            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.iconButton4.IconSize = 20;
+            this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton4.Location = new System.Drawing.Point(151, 103);
+            this.iconButton4.Name = "iconButton4";
+            this.iconButton4.Size = new System.Drawing.Size(80, 31);
+            this.iconButton4.TabIndex = 451;
+            this.iconButton4.Text = "PDF";
+            this.iconButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton4.UseVisualStyleBackColor = false;
             // 
             // label30
             // 
@@ -1562,7 +1655,7 @@
             this.label30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label30.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label30.Font = new System.Drawing.Font("Roboto", 14F);
-            this.label30.Location = new System.Drawing.Point(13, 169);
+            this.label30.Location = new System.Drawing.Point(13, 156);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(128, 31);
             this.label30.TabIndex = 381;
@@ -1575,7 +1668,7 @@
             this.label31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label31.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label31.Font = new System.Drawing.Font("Roboto", 14F);
-            this.label31.Location = new System.Drawing.Point(13, 116);
+            this.label31.Location = new System.Drawing.Point(13, 103);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(128, 31);
             this.label31.TabIndex = 380;
@@ -1586,7 +1679,7 @@
             // 
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(45, 152);
+            this.label32.Location = new System.Drawing.Point(45, 139);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(92, 15);
             this.label32.TabIndex = 4;
@@ -1596,11 +1689,21 @@
             // 
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(55, 99);
+            this.label33.Location = new System.Drawing.Point(55, 86);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(72, 15);
             this.label33.TabIndex = 3;
             this.label33.Text = "SSNE P/N";
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::_0510Project.Properties.Resources.Crown;
+            this.pictureBox6.Location = new System.Drawing.Point(13, 31);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(218, 45);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 2;
+            this.pictureBox6.TabStop = false;
             // 
             // label34
             // 
@@ -1628,8 +1731,48 @@
             this.panel3.Controls.Add(this.label25);
             this.panel3.Location = new System.Drawing.Point(11, 38);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(245, 211);
+            this.panel3.Size = new System.Drawing.Size(245, 200);
             this.panel3.TabIndex = 1;
+            // 
+            // iconButton2
+            // 
+            this.iconButton2.BackColor = System.Drawing.Color.DodgerBlue;
+            this.iconButton2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton2.Font = new System.Drawing.Font("Roboto", 12F);
+            this.iconButton2.ForeColor = System.Drawing.Color.White;
+            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.FileArchive;
+            this.iconButton2.IconColor = System.Drawing.Color.White;
+            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.iconButton2.IconSize = 20;
+            this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton2.Location = new System.Drawing.Point(151, 156);
+            this.iconButton2.Name = "iconButton2";
+            this.iconButton2.Size = new System.Drawing.Size(80, 31);
+            this.iconButton2.TabIndex = 452;
+            this.iconButton2.Text = "STEP";
+            this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton2.UseVisualStyleBackColor = false;
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.BackColor = System.Drawing.Color.Firebrick;
+            this.iconButton1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.Font = new System.Drawing.Font("Roboto", 12F);
+            this.iconButton1.ForeColor = System.Drawing.Color.White;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.FilePdf;
+            this.iconButton1.IconColor = System.Drawing.Color.White;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.iconButton1.IconSize = 20;
+            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton1.Location = new System.Drawing.Point(151, 103);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(80, 31);
+            this.iconButton1.TabIndex = 451;
+            this.iconButton1.Text = "PDF";
+            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton1.UseVisualStyleBackColor = false;
             // 
             // label29
             // 
@@ -1637,7 +1780,7 @@
             this.label29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label29.Font = new System.Drawing.Font("Roboto", 14F);
-            this.label29.Location = new System.Drawing.Point(13, 169);
+            this.label29.Location = new System.Drawing.Point(13, 156);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(128, 31);
             this.label29.TabIndex = 381;
@@ -1650,7 +1793,7 @@
             this.label28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label28.Font = new System.Drawing.Font("Roboto", 14F);
-            this.label28.Location = new System.Drawing.Point(13, 116);
+            this.label28.Location = new System.Drawing.Point(13, 103);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(128, 31);
             this.label28.TabIndex = 380;
@@ -1661,7 +1804,7 @@
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(45, 152);
+            this.label27.Location = new System.Drawing.Point(45, 139);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(92, 15);
             this.label27.TabIndex = 4;
@@ -1671,11 +1814,21 @@
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(55, 99);
+            this.label26.Location = new System.Drawing.Point(55, 86);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(72, 15);
             this.label26.TabIndex = 3;
             this.label26.Text = "SSNE P/N";
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(13, 31);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(218, 45);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 2;
+            this.pictureBox5.TabStop = false;
             // 
             // label25
             // 
@@ -1708,9 +1861,9 @@
             this.panel5.BackColor = System.Drawing.Color.DarkGray;
             this.panel5.Controls.Add(this.panel7);
             this.panel5.Controls.Add(this.label45);
-            this.panel5.Location = new System.Drawing.Point(547, 734);
+            this.panel5.Location = new System.Drawing.Point(547, 796);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(270, 259);
+            this.panel5.Size = new System.Drawing.Size(270, 248);
             this.panel5.TabIndex = 454;
             // 
             // panel7
@@ -1719,15 +1872,55 @@
             this.panel7.Controls.Add(this.iconButton5);
             this.panel7.Controls.Add(this.iconButton6);
             this.panel7.Controls.Add(this.label35);
+            this.panel7.Controls.Add(this.pictureBox7);
             this.panel7.Controls.Add(this.label36);
             this.panel7.Controls.Add(this.label37);
             this.panel7.Controls.Add(this.label38);
-            this.panel7.Controls.Add(this.pictureBox7);
             this.panel7.Controls.Add(this.label39);
             this.panel7.Location = new System.Drawing.Point(11, 38);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(245, 211);
+            this.panel7.Size = new System.Drawing.Size(245, 200);
             this.panel7.TabIndex = 454;
+            // 
+            // iconButton5
+            // 
+            this.iconButton5.BackColor = System.Drawing.Color.DodgerBlue;
+            this.iconButton5.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton5.Font = new System.Drawing.Font("Roboto", 12F);
+            this.iconButton5.ForeColor = System.Drawing.Color.White;
+            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.FileArchive;
+            this.iconButton5.IconColor = System.Drawing.Color.White;
+            this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.iconButton5.IconSize = 20;
+            this.iconButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton5.Location = new System.Drawing.Point(151, 156);
+            this.iconButton5.Name = "iconButton5";
+            this.iconButton5.Size = new System.Drawing.Size(80, 31);
+            this.iconButton5.TabIndex = 452;
+            this.iconButton5.Text = "STEP";
+            this.iconButton5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton5.UseVisualStyleBackColor = false;
+            // 
+            // iconButton6
+            // 
+            this.iconButton6.BackColor = System.Drawing.Color.Firebrick;
+            this.iconButton6.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.iconButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton6.Font = new System.Drawing.Font("Roboto", 12F);
+            this.iconButton6.ForeColor = System.Drawing.Color.White;
+            this.iconButton6.IconChar = FontAwesome.Sharp.IconChar.FilePdf;
+            this.iconButton6.IconColor = System.Drawing.Color.White;
+            this.iconButton6.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.iconButton6.IconSize = 20;
+            this.iconButton6.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton6.Location = new System.Drawing.Point(151, 103);
+            this.iconButton6.Name = "iconButton6";
+            this.iconButton6.Size = new System.Drawing.Size(80, 31);
+            this.iconButton6.TabIndex = 451;
+            this.iconButton6.Text = "PDF";
+            this.iconButton6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton6.UseVisualStyleBackColor = false;
             // 
             // label35
             // 
@@ -1735,7 +1928,7 @@
             this.label35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label35.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label35.Font = new System.Drawing.Font("Roboto", 14F);
-            this.label35.Location = new System.Drawing.Point(13, 169);
+            this.label35.Location = new System.Drawing.Point(13, 156);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(128, 31);
             this.label35.TabIndex = 381;
@@ -1748,7 +1941,7 @@
             this.label36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label36.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label36.Font = new System.Drawing.Font("Roboto", 14F);
-            this.label36.Location = new System.Drawing.Point(13, 116);
+            this.label36.Location = new System.Drawing.Point(13, 103);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(128, 31);
             this.label36.TabIndex = 380;
@@ -1759,7 +1952,7 @@
             // 
             this.label37.AutoSize = true;
             this.label37.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.Location = new System.Drawing.Point(45, 152);
+            this.label37.Location = new System.Drawing.Point(45, 139);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(92, 15);
             this.label37.TabIndex = 4;
@@ -1769,11 +1962,21 @@
             // 
             this.label38.AutoSize = true;
             this.label38.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.Location = new System.Drawing.Point(55, 99);
+            this.label38.Location = new System.Drawing.Point(55, 86);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(72, 15);
             this.label38.TabIndex = 3;
             this.label38.Text = "SSNE P/N";
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::_0510Project.Properties.Resources.Flat_Flat;
+            this.pictureBox7.Location = new System.Drawing.Point(13, 38);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(219, 29);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 2;
+            this.pictureBox7.TabStop = false;
             // 
             // label39
             // 
@@ -1809,9 +2012,9 @@
             this.panel6.Controls.Add(this.panel9);
             this.panel6.Controls.Add(this.panel8);
             this.panel6.Controls.Add(this.label51);
-            this.panel6.Location = new System.Drawing.Point(827, 734);
+            this.panel6.Location = new System.Drawing.Point(827, 796);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1032, 259);
+            this.panel6.Size = new System.Drawing.Size(1032, 248);
             this.panel6.TabIndex = 454;
             // 
             // panel11
@@ -1827,8 +2030,48 @@
             this.panel11.Controls.Add(this.pictureBox11);
             this.panel11.Location = new System.Drawing.Point(776, 38);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(245, 211);
+            this.panel11.Size = new System.Drawing.Size(245, 200);
             this.panel11.TabIndex = 458;
+            // 
+            // iconButton13
+            // 
+            this.iconButton13.BackColor = System.Drawing.Color.DodgerBlue;
+            this.iconButton13.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.iconButton13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton13.Font = new System.Drawing.Font("Roboto", 12F);
+            this.iconButton13.ForeColor = System.Drawing.Color.White;
+            this.iconButton13.IconChar = FontAwesome.Sharp.IconChar.FileArchive;
+            this.iconButton13.IconColor = System.Drawing.Color.White;
+            this.iconButton13.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.iconButton13.IconSize = 20;
+            this.iconButton13.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton13.Location = new System.Drawing.Point(151, 156);
+            this.iconButton13.Name = "iconButton13";
+            this.iconButton13.Size = new System.Drawing.Size(80, 31);
+            this.iconButton13.TabIndex = 452;
+            this.iconButton13.Text = "STEP";
+            this.iconButton13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton13.UseVisualStyleBackColor = false;
+            // 
+            // iconButton14
+            // 
+            this.iconButton14.BackColor = System.Drawing.Color.Firebrick;
+            this.iconButton14.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.iconButton14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton14.Font = new System.Drawing.Font("Roboto", 12F);
+            this.iconButton14.ForeColor = System.Drawing.Color.White;
+            this.iconButton14.IconChar = FontAwesome.Sharp.IconChar.FilePdf;
+            this.iconButton14.IconColor = System.Drawing.Color.White;
+            this.iconButton14.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.iconButton14.IconSize = 20;
+            this.iconButton14.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton14.Location = new System.Drawing.Point(151, 103);
+            this.iconButton14.Name = "iconButton14";
+            this.iconButton14.Size = new System.Drawing.Size(80, 31);
+            this.iconButton14.TabIndex = 451;
+            this.iconButton14.Text = "PDF";
+            this.iconButton14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton14.UseVisualStyleBackColor = false;
             // 
             // label57
             // 
@@ -1836,7 +2079,7 @@
             this.label57.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label57.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label57.Font = new System.Drawing.Font("Roboto", 14F);
-            this.label57.Location = new System.Drawing.Point(13, 169);
+            this.label57.Location = new System.Drawing.Point(13, 156);
             this.label57.Name = "label57";
             this.label57.Size = new System.Drawing.Size(128, 31);
             this.label57.TabIndex = 381;
@@ -1849,7 +2092,7 @@
             this.label58.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label58.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label58.Font = new System.Drawing.Font("Roboto", 14F);
-            this.label58.Location = new System.Drawing.Point(13, 116);
+            this.label58.Location = new System.Drawing.Point(13, 103);
             this.label58.Name = "label58";
             this.label58.Size = new System.Drawing.Size(128, 31);
             this.label58.TabIndex = 380;
@@ -1860,7 +2103,7 @@
             // 
             this.label59.AutoSize = true;
             this.label59.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label59.Location = new System.Drawing.Point(45, 152);
+            this.label59.Location = new System.Drawing.Point(45, 139);
             this.label59.Name = "label59";
             this.label59.Size = new System.Drawing.Size(92, 15);
             this.label59.TabIndex = 4;
@@ -1870,7 +2113,7 @@
             // 
             this.label60.AutoSize = true;
             this.label60.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label60.Location = new System.Drawing.Point(55, 99);
+            this.label60.Location = new System.Drawing.Point(55, 86);
             this.label60.Name = "label60";
             this.label60.Size = new System.Drawing.Size(72, 15);
             this.label60.TabIndex = 3;
@@ -1889,6 +2132,16 @@
             this.label61.Text = "Wedge Lock";
             this.label61.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = global::_0510Project.Properties.Resources.Wedge_Lock121;
+            this.pictureBox11.Location = new System.Drawing.Point(13, 33);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(218, 51);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox11.TabIndex = 2;
+            this.pictureBox11.TabStop = false;
+            // 
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.LightGray;
@@ -1902,8 +2155,48 @@
             this.panel10.Controls.Add(this.label56);
             this.panel10.Location = new System.Drawing.Point(521, 38);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(245, 211);
+            this.panel10.Size = new System.Drawing.Size(245, 200);
             this.panel10.TabIndex = 457;
+            // 
+            // iconButton11
+            // 
+            this.iconButton11.BackColor = System.Drawing.Color.DodgerBlue;
+            this.iconButton11.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.iconButton11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton11.Font = new System.Drawing.Font("Roboto", 12F);
+            this.iconButton11.ForeColor = System.Drawing.Color.White;
+            this.iconButton11.IconChar = FontAwesome.Sharp.IconChar.FileArchive;
+            this.iconButton11.IconColor = System.Drawing.Color.White;
+            this.iconButton11.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.iconButton11.IconSize = 20;
+            this.iconButton11.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton11.Location = new System.Drawing.Point(151, 156);
+            this.iconButton11.Name = "iconButton11";
+            this.iconButton11.Size = new System.Drawing.Size(80, 31);
+            this.iconButton11.TabIndex = 452;
+            this.iconButton11.Text = "STEP";
+            this.iconButton11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton11.UseVisualStyleBackColor = false;
+            // 
+            // iconButton12
+            // 
+            this.iconButton12.BackColor = System.Drawing.Color.Firebrick;
+            this.iconButton12.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.iconButton12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton12.Font = new System.Drawing.Font("Roboto", 12F);
+            this.iconButton12.ForeColor = System.Drawing.Color.White;
+            this.iconButton12.IconChar = FontAwesome.Sharp.IconChar.FilePdf;
+            this.iconButton12.IconColor = System.Drawing.Color.White;
+            this.iconButton12.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.iconButton12.IconSize = 20;
+            this.iconButton12.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton12.Location = new System.Drawing.Point(151, 103);
+            this.iconButton12.Name = "iconButton12";
+            this.iconButton12.Size = new System.Drawing.Size(80, 31);
+            this.iconButton12.TabIndex = 451;
+            this.iconButton12.Text = "PDF";
+            this.iconButton12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton12.UseVisualStyleBackColor = false;
             // 
             // label52
             // 
@@ -1911,7 +2204,7 @@
             this.label52.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label52.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label52.Font = new System.Drawing.Font("Roboto", 14F);
-            this.label52.Location = new System.Drawing.Point(13, 169);
+            this.label52.Location = new System.Drawing.Point(13, 156);
             this.label52.Name = "label52";
             this.label52.Size = new System.Drawing.Size(128, 31);
             this.label52.TabIndex = 381;
@@ -1924,7 +2217,7 @@
             this.label53.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label53.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label53.Font = new System.Drawing.Font("Roboto", 14F);
-            this.label53.Location = new System.Drawing.Point(13, 116);
+            this.label53.Location = new System.Drawing.Point(13, 103);
             this.label53.Name = "label53";
             this.label53.Size = new System.Drawing.Size(128, 31);
             this.label53.TabIndex = 380;
@@ -1935,7 +2228,7 @@
             // 
             this.label54.AutoSize = true;
             this.label54.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label54.Location = new System.Drawing.Point(45, 152);
+            this.label54.Location = new System.Drawing.Point(45, 139);
             this.label54.Name = "label54";
             this.label54.Size = new System.Drawing.Size(92, 15);
             this.label54.TabIndex = 4;
@@ -1945,11 +2238,21 @@
             // 
             this.label55.AutoSize = true;
             this.label55.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label55.Location = new System.Drawing.Point(55, 99);
+            this.label55.Location = new System.Drawing.Point(55, 86);
             this.label55.Name = "label55";
             this.label55.Size = new System.Drawing.Size(72, 15);
             this.label55.TabIndex = 3;
             this.label55.Text = "SSNE P/N";
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = global::_0510Project.Properties.Resources._91477A161p1_b01_digitall_1x_637104618588792597;
+            this.pictureBox10.Location = new System.Drawing.Point(13, 41);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(218, 29);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox10.TabIndex = 2;
+            this.pictureBox10.TabStop = false;
             // 
             // label56
             // 
@@ -1977,255 +2280,8 @@
             this.panel9.Controls.Add(this.pictureBox9);
             this.panel9.Location = new System.Drawing.Point(266, 38);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(245, 211);
+            this.panel9.Size = new System.Drawing.Size(245, 200);
             this.panel9.TabIndex = 456;
-            // 
-            // label46
-            // 
-            this.label46.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(226)))), ((int)(((byte)(227)))));
-            this.label46.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label46.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label46.Font = new System.Drawing.Font("Roboto", 14F);
-            this.label46.Location = new System.Drawing.Point(13, 169);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(128, 31);
-            this.label46.TabIndex = 381;
-            this.label46.Text = "XXXXXXX";
-            this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label47
-            // 
-            this.label47.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(226)))), ((int)(((byte)(227)))));
-            this.label47.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label47.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label47.Font = new System.Drawing.Font("Roboto", 14F);
-            this.label47.Location = new System.Drawing.Point(13, 116);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(128, 31);
-            this.label47.TabIndex = 380;
-            this.label47.Text = "200-XXXXX";
-            this.label47.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label48.Location = new System.Drawing.Point(45, 152);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(92, 15);
-            this.label48.TabIndex = 4;
-            this.label48.Text = "VENDOR P/N";
-            // 
-            // label49
-            // 
-            this.label49.AutoSize = true;
-            this.label49.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label49.Location = new System.Drawing.Point(55, 99);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(72, 15);
-            this.label49.TabIndex = 3;
-            this.label49.Text = "SSNE P/N";
-            // 
-            // label50
-            // 
-            this.label50.BackColor = System.Drawing.Color.DimGray;
-            this.label50.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label50.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label50.ForeColor = System.Drawing.Color.White;
-            this.label50.Location = new System.Drawing.Point(0, 0);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(245, 28);
-            this.label50.TabIndex = 1;
-            this.label50.Text = "Tooth Lock";
-            this.label50.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.LightGray;
-            this.panel8.Controls.Add(this.iconButton7);
-            this.panel8.Controls.Add(this.iconButton8);
-            this.panel8.Controls.Add(this.label40);
-            this.panel8.Controls.Add(this.label41);
-            this.panel8.Controls.Add(this.label42);
-            this.panel8.Controls.Add(this.label43);
-            this.panel8.Controls.Add(this.label44);
-            this.panel8.Controls.Add(this.pictureBox8);
-            this.panel8.Location = new System.Drawing.Point(11, 38);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(245, 211);
-            this.panel8.TabIndex = 455;
-            // 
-            // label40
-            // 
-            this.label40.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(226)))), ((int)(((byte)(227)))));
-            this.label40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label40.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label40.Font = new System.Drawing.Font("Roboto", 14F);
-            this.label40.Location = new System.Drawing.Point(13, 169);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(128, 31);
-            this.label40.TabIndex = 381;
-            this.label40.Text = "XXXXXXX";
-            this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label41
-            // 
-            this.label41.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(226)))), ((int)(((byte)(227)))));
-            this.label41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label41.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label41.Font = new System.Drawing.Font("Roboto", 14F);
-            this.label41.Location = new System.Drawing.Point(13, 116);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(128, 31);
-            this.label41.TabIndex = 380;
-            this.label41.Text = "200-XXXXX";
-            this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.Location = new System.Drawing.Point(45, 152);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(92, 15);
-            this.label42.TabIndex = 4;
-            this.label42.Text = "VENDOR P/N";
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.Location = new System.Drawing.Point(55, 99);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(72, 15);
-            this.label43.TabIndex = 3;
-            this.label43.Text = "SSNE P/N";
-            // 
-            // label44
-            // 
-            this.label44.BackColor = System.Drawing.Color.DimGray;
-            this.label44.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label44.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.ForeColor = System.Drawing.Color.White;
-            this.label44.Location = new System.Drawing.Point(0, 0);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(245, 28);
-            this.label44.TabIndex = 1;
-            this.label44.Text = "Split Lock";
-            this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label51
-            // 
-            this.label51.BackColor = System.Drawing.Color.DimGray;
-            this.label51.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label51.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label51.ForeColor = System.Drawing.Color.White;
-            this.label51.Location = new System.Drawing.Point(0, 0);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(1032, 28);
-            this.label51.TabIndex = 0;
-            this.label51.Text = "LOCK WASHERS";
-            this.label51.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // iconButton13
-            // 
-            this.iconButton13.BackColor = System.Drawing.Color.DodgerBlue;
-            this.iconButton13.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.iconButton13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton13.Font = new System.Drawing.Font("Roboto", 12F);
-            this.iconButton13.ForeColor = System.Drawing.Color.White;
-            this.iconButton13.IconChar = FontAwesome.Sharp.IconChar.FileArchive;
-            this.iconButton13.IconColor = System.Drawing.Color.White;
-            this.iconButton13.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.iconButton13.IconSize = 20;
-            this.iconButton13.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton13.Location = new System.Drawing.Point(151, 169);
-            this.iconButton13.Name = "iconButton13";
-            this.iconButton13.Size = new System.Drawing.Size(80, 31);
-            this.iconButton13.TabIndex = 452;
-            this.iconButton13.Text = "STEP";
-            this.iconButton13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton13.UseVisualStyleBackColor = false;
-            // 
-            // iconButton14
-            // 
-            this.iconButton14.BackColor = System.Drawing.Color.Firebrick;
-            this.iconButton14.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.iconButton14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton14.Font = new System.Drawing.Font("Roboto", 12F);
-            this.iconButton14.ForeColor = System.Drawing.Color.White;
-            this.iconButton14.IconChar = FontAwesome.Sharp.IconChar.FilePdf;
-            this.iconButton14.IconColor = System.Drawing.Color.White;
-            this.iconButton14.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.iconButton14.IconSize = 20;
-            this.iconButton14.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton14.Location = new System.Drawing.Point(151, 116);
-            this.iconButton14.Name = "iconButton14";
-            this.iconButton14.Size = new System.Drawing.Size(80, 31);
-            this.iconButton14.TabIndex = 451;
-            this.iconButton14.Text = "PDF";
-            this.iconButton14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton14.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Image = global::_0510Project.Properties.Resources.Wedge_Lock121;
-            this.pictureBox11.Location = new System.Drawing.Point(10, 19);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(221, 95);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox11.TabIndex = 2;
-            this.pictureBox11.TabStop = false;
-            // 
-            // iconButton11
-            // 
-            this.iconButton11.BackColor = System.Drawing.Color.DodgerBlue;
-            this.iconButton11.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.iconButton11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton11.Font = new System.Drawing.Font("Roboto", 12F);
-            this.iconButton11.ForeColor = System.Drawing.Color.White;
-            this.iconButton11.IconChar = FontAwesome.Sharp.IconChar.FileArchive;
-            this.iconButton11.IconColor = System.Drawing.Color.White;
-            this.iconButton11.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.iconButton11.IconSize = 20;
-            this.iconButton11.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton11.Location = new System.Drawing.Point(151, 169);
-            this.iconButton11.Name = "iconButton11";
-            this.iconButton11.Size = new System.Drawing.Size(80, 31);
-            this.iconButton11.TabIndex = 452;
-            this.iconButton11.Text = "STEP";
-            this.iconButton11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton11.UseVisualStyleBackColor = false;
-            // 
-            // iconButton12
-            // 
-            this.iconButton12.BackColor = System.Drawing.Color.Firebrick;
-            this.iconButton12.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.iconButton12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton12.Font = new System.Drawing.Font("Roboto", 12F);
-            this.iconButton12.ForeColor = System.Drawing.Color.White;
-            this.iconButton12.IconChar = FontAwesome.Sharp.IconChar.FilePdf;
-            this.iconButton12.IconColor = System.Drawing.Color.White;
-            this.iconButton12.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.iconButton12.IconSize = 20;
-            this.iconButton12.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton12.Location = new System.Drawing.Point(151, 116);
-            this.iconButton12.Name = "iconButton12";
-            this.iconButton12.Size = new System.Drawing.Size(80, 31);
-            this.iconButton12.TabIndex = 451;
-            this.iconButton12.Text = "PDF";
-            this.iconButton12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton12.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = global::_0510Project.Properties.Resources._91477A161p1_b01_digitall_1x_637104618588792597;
-            this.pictureBox10.Location = new System.Drawing.Point(10, 39);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(221, 56);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox10.TabIndex = 2;
-            this.pictureBox10.TabStop = false;
             // 
             // iconButton9
             // 
@@ -2239,7 +2295,7 @@
             this.iconButton9.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.iconButton9.IconSize = 20;
             this.iconButton9.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton9.Location = new System.Drawing.Point(151, 169);
+            this.iconButton9.Location = new System.Drawing.Point(151, 156);
             this.iconButton9.Name = "iconButton9";
             this.iconButton9.Size = new System.Drawing.Size(80, 31);
             this.iconButton9.TabIndex = 452;
@@ -2259,7 +2315,7 @@
             this.iconButton10.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.iconButton10.IconSize = 20;
             this.iconButton10.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton10.Location = new System.Drawing.Point(151, 116);
+            this.iconButton10.Location = new System.Drawing.Point(151, 103);
             this.iconButton10.Name = "iconButton10";
             this.iconButton10.Size = new System.Drawing.Size(80, 31);
             this.iconButton10.TabIndex = 451;
@@ -2267,15 +2323,90 @@
             this.iconButton10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton10.UseVisualStyleBackColor = false;
             // 
+            // label46
+            // 
+            this.label46.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(226)))), ((int)(((byte)(227)))));
+            this.label46.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label46.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label46.Font = new System.Drawing.Font("Roboto", 14F);
+            this.label46.Location = new System.Drawing.Point(13, 156);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(128, 31);
+            this.label46.TabIndex = 381;
+            this.label46.Text = "XXXXXXX";
+            this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label47
+            // 
+            this.label47.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(226)))), ((int)(((byte)(227)))));
+            this.label47.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label47.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label47.Font = new System.Drawing.Font("Roboto", 14F);
+            this.label47.Location = new System.Drawing.Point(13, 103);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(128, 31);
+            this.label47.TabIndex = 380;
+            this.label47.Text = "200-XXXXX";
+            this.label47.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label48.Location = new System.Drawing.Point(45, 139);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(92, 15);
+            this.label48.TabIndex = 4;
+            this.label48.Text = "VENDOR P/N";
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label49.Location = new System.Drawing.Point(55, 86);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(72, 15);
+            this.label49.TabIndex = 3;
+            this.label49.Text = "SSNE P/N";
+            // 
+            // label50
+            // 
+            this.label50.BackColor = System.Drawing.Color.DimGray;
+            this.label50.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label50.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label50.ForeColor = System.Drawing.Color.White;
+            this.label50.Location = new System.Drawing.Point(0, 0);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(245, 28);
+            this.label50.TabIndex = 1;
+            this.label50.Text = "Tooth Lock";
+            this.label50.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // pictureBox9
             // 
             this.pictureBox9.Image = global::_0510Project.Properties.Resources.tooth;
-            this.pictureBox9.Location = new System.Drawing.Point(10, 27);
+            this.pictureBox9.Location = new System.Drawing.Point(11, 33);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(221, 81);
+            this.pictureBox9.Size = new System.Drawing.Size(220, 45);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox9.TabIndex = 2;
             this.pictureBox9.TabStop = false;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.LightGray;
+            this.panel8.Controls.Add(this.iconButton7);
+            this.panel8.Controls.Add(this.iconButton8);
+            this.panel8.Controls.Add(this.label40);
+            this.panel8.Controls.Add(this.label41);
+            this.panel8.Controls.Add(this.label42);
+            this.panel8.Controls.Add(this.label43);
+            this.panel8.Controls.Add(this.label44);
+            this.panel8.Controls.Add(this.pictureBox8);
+            this.panel8.Location = new System.Drawing.Point(11, 38);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(245, 200);
+            this.panel8.TabIndex = 455;
             // 
             // iconButton7
             // 
@@ -2289,7 +2420,7 @@
             this.iconButton7.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.iconButton7.IconSize = 20;
             this.iconButton7.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton7.Location = new System.Drawing.Point(151, 169);
+            this.iconButton7.Location = new System.Drawing.Point(151, 156);
             this.iconButton7.Name = "iconButton7";
             this.iconButton7.Size = new System.Drawing.Size(80, 31);
             this.iconButton7.TabIndex = 452;
@@ -2309,7 +2440,7 @@
             this.iconButton8.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.iconButton8.IconSize = 20;
             this.iconButton8.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton8.Location = new System.Drawing.Point(151, 116);
+            this.iconButton8.Location = new System.Drawing.Point(151, 103);
             this.iconButton8.Name = "iconButton8";
             this.iconButton8.Size = new System.Drawing.Size(80, 31);
             this.iconButton8.TabIndex = 451;
@@ -2317,165 +2448,87 @@
             this.iconButton8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton8.UseVisualStyleBackColor = false;
             // 
+            // label40
+            // 
+            this.label40.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(226)))), ((int)(((byte)(227)))));
+            this.label40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label40.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label40.Font = new System.Drawing.Font("Roboto", 14F);
+            this.label40.Location = new System.Drawing.Point(13, 156);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(128, 31);
+            this.label40.TabIndex = 381;
+            this.label40.Text = "XXXXXXX";
+            this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label41
+            // 
+            this.label41.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(226)))), ((int)(((byte)(227)))));
+            this.label41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label41.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label41.Font = new System.Drawing.Font("Roboto", 14F);
+            this.label41.Location = new System.Drawing.Point(13, 103);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(128, 31);
+            this.label41.TabIndex = 380;
+            this.label41.Text = "200-XXXXX";
+            this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.Location = new System.Drawing.Point(45, 139);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(92, 15);
+            this.label42.TabIndex = 4;
+            this.label42.Text = "VENDOR P/N";
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.Location = new System.Drawing.Point(55, 86);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(72, 15);
+            this.label43.TabIndex = 3;
+            this.label43.Text = "SSNE P/N";
+            // 
+            // label44
+            // 
+            this.label44.BackColor = System.Drawing.Color.DimGray;
+            this.label44.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label44.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.ForeColor = System.Drawing.Color.White;
+            this.label44.Location = new System.Drawing.Point(0, 0);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(245, 28);
+            this.label44.TabIndex = 1;
+            this.label44.Text = "Split Lock";
+            this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // pictureBox8
             // 
             this.pictureBox8.Image = global::_0510Project.Properties.Resources.Split_Lock;
-            this.pictureBox8.Location = new System.Drawing.Point(10, 18);
+            this.pictureBox8.Location = new System.Drawing.Point(14, 27);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(221, 93);
+            this.pictureBox8.Size = new System.Drawing.Size(217, 56);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox8.TabIndex = 2;
             this.pictureBox8.TabStop = false;
             // 
-            // iconButton5
+            // label51
             // 
-            this.iconButton5.BackColor = System.Drawing.Color.DodgerBlue;
-            this.iconButton5.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton5.Font = new System.Drawing.Font("Roboto", 12F);
-            this.iconButton5.ForeColor = System.Drawing.Color.White;
-            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.FileArchive;
-            this.iconButton5.IconColor = System.Drawing.Color.White;
-            this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.iconButton5.IconSize = 20;
-            this.iconButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton5.Location = new System.Drawing.Point(151, 169);
-            this.iconButton5.Name = "iconButton5";
-            this.iconButton5.Size = new System.Drawing.Size(80, 31);
-            this.iconButton5.TabIndex = 452;
-            this.iconButton5.Text = "STEP";
-            this.iconButton5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton5.UseVisualStyleBackColor = false;
-            // 
-            // iconButton6
-            // 
-            this.iconButton6.BackColor = System.Drawing.Color.Firebrick;
-            this.iconButton6.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.iconButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton6.Font = new System.Drawing.Font("Roboto", 12F);
-            this.iconButton6.ForeColor = System.Drawing.Color.White;
-            this.iconButton6.IconChar = FontAwesome.Sharp.IconChar.FilePdf;
-            this.iconButton6.IconColor = System.Drawing.Color.White;
-            this.iconButton6.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.iconButton6.IconSize = 20;
-            this.iconButton6.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton6.Location = new System.Drawing.Point(151, 116);
-            this.iconButton6.Name = "iconButton6";
-            this.iconButton6.Size = new System.Drawing.Size(80, 31);
-            this.iconButton6.TabIndex = 451;
-            this.iconButton6.Text = "PDF";
-            this.iconButton6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton6.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::_0510Project.Properties.Resources.Flat_Flat;
-            this.pictureBox7.Location = new System.Drawing.Point(10, 32);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(221, 64);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 2;
-            this.pictureBox7.TabStop = false;
-            // 
-            // iconButton3
-            // 
-            this.iconButton3.BackColor = System.Drawing.Color.DodgerBlue;
-            this.iconButton3.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton3.Font = new System.Drawing.Font("Roboto", 12F);
-            this.iconButton3.ForeColor = System.Drawing.Color.White;
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.FileArchive;
-            this.iconButton3.IconColor = System.Drawing.Color.White;
-            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.iconButton3.IconSize = 20;
-            this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton3.Location = new System.Drawing.Point(151, 169);
-            this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Size = new System.Drawing.Size(80, 31);
-            this.iconButton3.TabIndex = 452;
-            this.iconButton3.Text = "STEP";
-            this.iconButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton3.UseVisualStyleBackColor = false;
-            // 
-            // iconButton4
-            // 
-            this.iconButton4.BackColor = System.Drawing.Color.Firebrick;
-            this.iconButton4.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton4.Font = new System.Drawing.Font("Roboto", 12F);
-            this.iconButton4.ForeColor = System.Drawing.Color.White;
-            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.FilePdf;
-            this.iconButton4.IconColor = System.Drawing.Color.White;
-            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.iconButton4.IconSize = 20;
-            this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton4.Location = new System.Drawing.Point(151, 116);
-            this.iconButton4.Name = "iconButton4";
-            this.iconButton4.Size = new System.Drawing.Size(80, 31);
-            this.iconButton4.TabIndex = 451;
-            this.iconButton4.Text = "PDF";
-            this.iconButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton4.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::_0510Project.Properties.Resources.Crown;
-            this.pictureBox6.Location = new System.Drawing.Point(10, 32);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(221, 64);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 2;
-            this.pictureBox6.TabStop = false;
-            // 
-            // iconButton2
-            // 
-            this.iconButton2.BackColor = System.Drawing.Color.DodgerBlue;
-            this.iconButton2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton2.Font = new System.Drawing.Font("Roboto", 12F);
-            this.iconButton2.ForeColor = System.Drawing.Color.White;
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.FileArchive;
-            this.iconButton2.IconColor = System.Drawing.Color.White;
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.iconButton2.IconSize = 20;
-            this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton2.Location = new System.Drawing.Point(151, 169);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(80, 31);
-            this.iconButton2.TabIndex = 452;
-            this.iconButton2.Text = "STEP";
-            this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.UseVisualStyleBackColor = false;
-            // 
-            // iconButton1
-            // 
-            this.iconButton1.BackColor = System.Drawing.Color.Firebrick;
-            this.iconButton1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.Font = new System.Drawing.Font("Roboto", 12F);
-            this.iconButton1.ForeColor = System.Drawing.Color.White;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.FilePdf;
-            this.iconButton1.IconColor = System.Drawing.Color.White;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.iconButton1.IconSize = 20;
-            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton1.Location = new System.Drawing.Point(151, 116);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(80, 31);
-            this.iconButton1.TabIndex = 451;
-            this.iconButton1.Text = "PDF";
-            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(10, 32);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(221, 64);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 2;
-            this.pictureBox5.TabStop = false;
+            this.label51.BackColor = System.Drawing.Color.DimGray;
+            this.label51.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label51.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label51.ForeColor = System.Drawing.Color.White;
+            this.label51.Location = new System.Drawing.Point(0, 0);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(1032, 28);
+            this.label51.TabIndex = 0;
+            this.label51.Text = "LOCK WASHERS";
+            this.label51.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox4
             // 
@@ -2537,7 +2590,7 @@
             this.btnSTP.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.btnSTP.IconSize = 35;
             this.btnSTP.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSTP.Location = new System.Drawing.Point(1064, 668);
+            this.btnSTP.Location = new System.Drawing.Point(1071, 628);
             this.btnSTP.Name = "btnSTP";
             this.btnSTP.Size = new System.Drawing.Size(160, 46);
             this.btnSTP.TabIndex = 357;
@@ -2557,7 +2610,7 @@
             this.btnPDF.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.btnPDF.IconSize = 35;
             this.btnPDF.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPDF.Location = new System.Drawing.Point(894, 668);
+            this.btnPDF.Location = new System.Drawing.Point(901, 628);
             this.btnPDF.Name = "btnPDF";
             this.btnPDF.Size = new System.Drawing.Size(160, 46);
             this.btnPDF.TabIndex = 356;
@@ -2568,7 +2621,7 @@
             // picTopView
             // 
             this.picTopView.Image = ((System.Drawing.Image)(resources.GetObject("picTopView.Image")));
-            this.picTopView.Location = new System.Drawing.Point(1719, 334);
+            this.picTopView.Location = new System.Drawing.Point(1737, 283);
             this.picTopView.Name = "picTopView";
             this.picTopView.Size = new System.Drawing.Size(106, 72);
             this.picTopView.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -2578,68 +2631,178 @@
             // picLength
             // 
             this.picLength.Image = ((System.Drawing.Image)(resources.GetObject("picLength.Image")));
-            this.picLength.Location = new System.Drawing.Point(1586, 316);
+            this.picLength.Location = new System.Drawing.Point(1604, 265);
             this.picLength.Name = "picLength";
             this.picLength.Size = new System.Drawing.Size(133, 90);
             this.picLength.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picLength.TabIndex = 16;
             this.picLength.TabStop = false;
             // 
-            // btnFormSize
-            // 
-            this.btnFormSize.FlatAppearance.BorderSize = 0;
-            this.btnFormSize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFormSize.IconChar = FontAwesome.Sharp.IconChar.ExpandAlt;
-            this.btnFormSize.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(254)))), ((int)(((byte)(251)))));
-            this.btnFormSize.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnFormSize.IconSize = 30;
-            this.btnFormSize.Location = new System.Drawing.Point(1822, 3);
-            this.btnFormSize.Name = "btnFormSize";
-            this.btnFormSize.Size = new System.Drawing.Size(41, 46);
-            this.btnFormSize.TabIndex = 1;
-            this.btnFormSize.UseVisualStyleBackColor = true;
-            this.btnFormSize.Click += new System.EventHandler(this.btnFormSize_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(57, 53);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnExit
-            // 
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.IconChar = FontAwesome.Sharp.IconChar.Code;
-            this.btnExit.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(254)))), ((int)(((byte)(251)))));
-            this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnExit.IconSize = 35;
-            this.btnExit.Location = new System.Drawing.Point(1869, 3);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(48, 46);
-            this.btnExit.TabIndex = 0;
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
             // picISOView
             // 
             this.picISOView.Image = ((System.Drawing.Image)(resources.GetObject("picISOView.Image")));
-            this.picISOView.Location = new System.Drawing.Point(1554, 114);
+            this.picISOView.Location = new System.Drawing.Point(1569, 100);
             this.picISOView.Name = "picISOView";
-            this.picISOView.Size = new System.Drawing.Size(325, 208);
+            this.picISOView.Size = new System.Drawing.Size(294, 173);
             this.picISOView.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picISOView.TabIndex = 7;
             this.picISOView.TabStop = false;
+            // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.Color.DarkGray;
+            this.panel12.Controls.Add(this.label63);
+            this.panel12.Controls.Add(this.label64);
+            this.panel12.Controls.Add(this.label65);
+            this.panel12.Controls.Add(this.label66);
+            this.panel12.Controls.Add(this.label67);
+            this.panel12.Controls.Add(this.label68);
+            this.panel12.Controls.Add(this.label69);
+            this.panel12.Controls.Add(this.label70);
+            this.panel12.Controls.Add(this.label71);
+            this.panel12.Controls.Add(this.label72);
+            this.panel12.Location = new System.Drawing.Point(14, 724);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(990, 57);
+            this.panel12.TabIndex = 455;
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Font = new System.Drawing.Font("Roboto", 14F);
+            this.label62.Location = new System.Drawing.Point(17, 700);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(102, 23);
+            this.label62.TabIndex = 456;
+            this.label62.Text = "Select Size";
+            // 
+            // label63
+            // 
+            this.label63.BackColor = System.Drawing.Color.White;
+            this.label63.Font = new System.Drawing.Font("Roboto", 12F);
+            this.label63.ForeColor = System.Drawing.Color.Black;
+            this.label63.Location = new System.Drawing.Point(890, 11);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(80, 35);
+            this.label63.TabIndex = 369;
+            this.label63.Text = "3/8 - 24";
+            this.label63.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label64
+            // 
+            this.label64.BackColor = System.Drawing.Color.White;
+            this.label64.Font = new System.Drawing.Font("Roboto", 12F);
+            this.label64.ForeColor = System.Drawing.Color.Black;
+            this.label64.Location = new System.Drawing.Point(793, 11);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(80, 35);
+            this.label64.TabIndex = 368;
+            this.label64.Text = "3/8 - 16";
+            this.label64.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label65
+            // 
+            this.label65.BackColor = System.Drawing.Color.White;
+            this.label65.Font = new System.Drawing.Font("Roboto", 12F);
+            this.label65.ForeColor = System.Drawing.Color.Black;
+            this.label65.Location = new System.Drawing.Point(696, 11);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(80, 35);
+            this.label65.TabIndex = 367;
+            this.label65.Text = "5/16 -24";
+            this.label65.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label66
+            // 
+            this.label66.BackColor = System.Drawing.Color.White;
+            this.label66.Font = new System.Drawing.Font("Roboto", 12F);
+            this.label66.ForeColor = System.Drawing.Color.Black;
+            this.label66.Location = new System.Drawing.Point(599, 11);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(80, 35);
+            this.label66.TabIndex = 366;
+            this.label66.Text = "5/16 - 18";
+            this.label66.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label67
+            // 
+            this.label67.BackColor = System.Drawing.Color.White;
+            this.label67.Font = new System.Drawing.Font("Roboto", 12F);
+            this.label67.ForeColor = System.Drawing.Color.Black;
+            this.label67.Location = new System.Drawing.Point(502, 11);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(80, 35);
+            this.label67.TabIndex = 365;
+            this.label67.Text = "1/4 - 28";
+            this.label67.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label68
+            // 
+            this.label68.BackColor = System.Drawing.Color.White;
+            this.label68.Font = new System.Drawing.Font("Roboto", 12F);
+            this.label68.ForeColor = System.Drawing.Color.Black;
+            this.label68.Location = new System.Drawing.Point(405, 11);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(80, 35);
+            this.label68.TabIndex = 364;
+            this.label68.Text = "1/4 - 20";
+            this.label68.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label69
+            // 
+            this.label69.BackColor = System.Drawing.Color.White;
+            this.label69.Font = new System.Drawing.Font("Roboto", 12F);
+            this.label69.ForeColor = System.Drawing.Color.Black;
+            this.label69.Location = new System.Drawing.Point(308, 11);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(80, 35);
+            this.label69.TabIndex = 363;
+            this.label69.Text = "10 - 32";
+            this.label69.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label70
+            // 
+            this.label70.BackColor = System.Drawing.Color.White;
+            this.label70.Font = new System.Drawing.Font("Roboto", 12F);
+            this.label70.ForeColor = System.Drawing.Color.Black;
+            this.label70.Location = new System.Drawing.Point(211, 11);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(80, 35);
+            this.label70.TabIndex = 362;
+            this.label70.Text = "8 - 32";
+            this.label70.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label71
+            // 
+            this.label71.BackColor = System.Drawing.Color.White;
+            this.label71.Font = new System.Drawing.Font("Roboto", 12F);
+            this.label71.ForeColor = System.Drawing.Color.Black;
+            this.label71.Location = new System.Drawing.Point(114, 11);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(80, 35);
+            this.label71.TabIndex = 361;
+            this.label71.Text = "6 - 32";
+            this.label71.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label72
+            // 
+            this.label72.BackColor = System.Drawing.Color.Yellow;
+            this.label72.Font = new System.Drawing.Font("Roboto", 12F);
+            this.label72.ForeColor = System.Drawing.Color.Black;
+            this.label72.Location = new System.Drawing.Point(17, 11);
+            this.label72.Name = "label72";
+            this.label72.Size = new System.Drawing.Size(80, 35);
+            this.label72.TabIndex = 360;
+            this.label72.Text = "4 - 40";
+            this.label72.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1920, 1061);
+            this.Controls.Add(this.label62);
+            this.Controls.Add(this.panel12);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel1);
@@ -2692,6 +2855,7 @@
             this.Text = "0510";
             this.Load += new System.EventHandler(this.FrmMain_Load);
             this.pNavBar.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -2703,34 +2867,34 @@
             this.panel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picTopView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLength)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picISOView)).EndInit();
+            this.panel12.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2922,6 +3086,18 @@
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Label label63;
+        private System.Windows.Forms.Label label64;
+        private System.Windows.Forms.Label label65;
+        private System.Windows.Forms.Label label66;
+        private System.Windows.Forms.Label label67;
+        private System.Windows.Forms.Label label68;
+        private System.Windows.Forms.Label label69;
+        private System.Windows.Forms.Label label70;
+        private System.Windows.Forms.Label label71;
+        private System.Windows.Forms.Label label72;
+        private System.Windows.Forms.Label label62;
     }
 }
 
