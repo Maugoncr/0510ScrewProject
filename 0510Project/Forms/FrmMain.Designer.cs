@@ -125,14 +125,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.txtID = new System.Windows.Forms.TextBox();
-            this.txtPrueba = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.dgvTest = new System.Windows.Forms.DataGridView();
-            this.btnGuardar = new System.Windows.Forms.Button();
-            this.btnEditar = new System.Windows.Forms.Button();
-            this.btnEliminar = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
@@ -162,10 +154,10 @@
             this.iconButton5 = new FontAwesome.Sharp.IconButton();
             this.iconButton6 = new FontAwesome.Sharp.IconButton();
             this.label35 = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label36 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label39 = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -216,7 +208,6 @@
             this.picLength = new System.Windows.Forms.PictureBox();
             this.picISOView = new System.Windows.Forms.PictureBox();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.label62 = new System.Windows.Forms.Label();
             this.label63 = new System.Windows.Forms.Label();
             this.label64 = new System.Windows.Forms.Label();
             this.label65 = new System.Windows.Forms.Label();
@@ -227,6 +218,7 @@
             this.label70 = new System.Windows.Forms.Label();
             this.label71 = new System.Windows.Forms.Label();
             this.label72 = new System.Windows.Forms.Label();
+            this.label62 = new System.Windows.Forms.Label();
             this.pNavBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -234,7 +226,6 @@
             this.pSizeSelect.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLength)).BeginInit();
             this.pLengths.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTest)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -1466,82 +1457,6 @@
             this.label10.TabIndex = 380;
             this.label10.Text = "DOCUMENTS";
             // 
-            // txtID
-            // 
-            this.txtID.Location = new System.Drawing.Point(1259, 648);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(100, 23);
-            this.txtID.TabIndex = 382;
-            this.txtID.Visible = false;
-            // 
-            // txtPrueba
-            // 
-            this.txtPrueba.Location = new System.Drawing.Point(1419, 649);
-            this.txtPrueba.Name = "txtPrueba";
-            this.txtPrueba.Size = new System.Drawing.Size(176, 23);
-            this.txtPrueba.TabIndex = 383;
-            this.txtPrueba.Visible = false;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(1259, 614);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(20, 15);
-            this.label11.TabIndex = 384;
-            this.label11.Text = "ID";
-            this.label11.Visible = false;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(1419, 616);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(83, 15);
-            this.label12.TabIndex = 385;
-            this.label12.Text = "Prueba String";
-            this.label12.Visible = false;
-            // 
-            // dgvTest
-            // 
-            this.dgvTest.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTest.Location = new System.Drawing.Point(1259, 678);
-            this.dgvTest.Name = "dgvTest";
-            this.dgvTest.Size = new System.Drawing.Size(661, 62);
-            this.dgvTest.TabIndex = 386;
-            this.dgvTest.Visible = false;
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.Location = new System.Drawing.Point(1645, 648);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(75, 23);
-            this.btnGuardar.TabIndex = 387;
-            this.btnGuardar.Text = "Save";
-            this.btnGuardar.UseVisualStyleBackColor = true;
-            this.btnGuardar.Visible = false;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
-            // 
-            // btnEditar
-            // 
-            this.btnEditar.Location = new System.Drawing.Point(1744, 648);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(75, 23);
-            this.btnEditar.TabIndex = 388;
-            this.btnEditar.Text = "Update";
-            this.btnEditar.UseVisualStyleBackColor = true;
-            this.btnEditar.Visible = false;
-            // 
-            // btnEliminar
-            // 
-            this.btnEliminar.Location = new System.Drawing.Point(1844, 648);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(75, 23);
-            this.btnEliminar.TabIndex = 389;
-            this.btnEliminar.Text = "Delete";
-            this.btnEliminar.UseVisualStyleBackColor = true;
-            this.btnEliminar.Visible = false;
-            // 
             // label13
             // 
             this.label13.Font = new System.Drawing.Font("Roboto", 16F);
@@ -1935,6 +1850,16 @@
             this.label35.Text = "XXXXXXX";
             this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::_0510Project.Properties.Resources.Flat_Flat;
+            this.pictureBox7.Location = new System.Drawing.Point(13, 38);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(219, 29);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 2;
+            this.pictureBox7.TabStop = false;
+            // 
             // label36
             // 
             this.label36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(226)))), ((int)(((byte)(227)))));
@@ -1967,16 +1892,6 @@
             this.label38.Size = new System.Drawing.Size(72, 15);
             this.label38.TabIndex = 3;
             this.label38.Text = "SSNE P/N";
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::_0510Project.Properties.Resources.Flat_Flat;
-            this.pictureBox7.Location = new System.Drawing.Point(13, 38);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(219, 29);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 2;
-            this.pictureBox7.TabStop = false;
             // 
             // label39
             // 
@@ -2666,16 +2581,6 @@
             this.panel12.Size = new System.Drawing.Size(990, 57);
             this.panel12.TabIndex = 455;
             // 
-            // label62
-            // 
-            this.label62.AutoSize = true;
-            this.label62.Font = new System.Drawing.Font("Roboto", 14F);
-            this.label62.Location = new System.Drawing.Point(17, 700);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(102, 23);
-            this.label62.TabIndex = 456;
-            this.label62.Text = "Select Size";
-            // 
             // label63
             // 
             this.label63.BackColor = System.Drawing.Color.White;
@@ -2796,6 +2701,16 @@
             this.label72.Text = "4 - 40";
             this.label72.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Font = new System.Drawing.Font("Roboto", 14F);
+            this.label62.Location = new System.Drawing.Point(17, 700);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(102, 23);
+            this.label62.TabIndex = 456;
+            this.label62.Text = "Select Size";
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -2813,14 +2728,6 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.btnEliminar);
-            this.Controls.Add(this.btnEditar);
-            this.Controls.Add(this.btnGuardar);
-            this.Controls.Add(this.dgvTest);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.txtPrueba);
-            this.Controls.Add(this.txtID);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -2863,7 +2770,6 @@
             this.pSizeSelect.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvLength)).EndInit();
             this.pLengths.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTest)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
@@ -3000,14 +2906,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private FontAwesome.Sharp.IconButton btnReset;
-        private System.Windows.Forms.TextBox txtID;
-        private System.Windows.Forms.TextBox txtPrueba;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.DataGridView dgvTest;
-        private System.Windows.Forms.Button btnGuardar;
-        private System.Windows.Forms.Button btnEditar;
-        private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label14;

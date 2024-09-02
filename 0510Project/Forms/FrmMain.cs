@@ -471,29 +471,6 @@ namespace _0510Project
             FrmViewPDF frmScale = new FrmViewPDF("https://drive.google.com/file/d/14ZVIqs6Lp-E-Qg7wtM1tgMs1xVekFcEn/view?usp=drive_link");
             frmScale.ShowDialog();
         }
-
-        private void btnGuardar_Click(object sender, EventArgs e)
-        {
-            Test objeto = new Test()
-            { 
-                Prueba = txtPrueba.Text
-            };
-
-            bool respuesta = TestLogic.Instancia.Guardar(objeto);
-
-            if (respuesta)
-            {
-                mostrar_Test();
-            }
-        }
-
-
-        public void mostrar_Test()
-        {
-            dgvTest.DataSource = null;
-            dgvTest.DataSource = TestLogic.Instancia.Listar();
-        }
-
    
     }
 }

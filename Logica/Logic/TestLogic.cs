@@ -86,5 +86,55 @@ namespace Logica.Logic
             return oLista;
         }
 
+
+        public bool Editar(Test obj)
+        {
+            bool respuesta = true;
+
+            using (SQLiteConnection conexion = new SQLiteConnection(cadena))
+            {
+                conexion.Open();
+
+                string query = "Update Test set Prueba = @Prueba WHERE ID = @ID";
+
+                SQLiteCommand cmd = new SQLiteCommand(query, conexion);
+
+                cmd.Parameters.Add(new SQLiteParameter("@Prueba", obj.Prueba));
+                cmd.Parameters.Add(new SQLiteParameter("@ID", obj.ID));
+                cmd.CommandType = System.Data.CommandType.Text;
+
+                if (cmd.ExecuteNonQuery() < 1)
+                {
+                    respuesta = false;
+                }
+            }
+
+            return respuesta;
+        }
+
+        public bool Eliminar(Test obj)
+        {
+            bool respuesta = true;
+
+            using (SQLiteConnection conexion = new SQLiteConnection(cadena))
+            {
+                conexion.Open();
+
+                string query = "Delete from Test WHERE ID = @ID";
+
+                SQLiteCommand cmd = new SQLiteCommand(query, conexion);
+
+                cmd.Parameters.Add(new SQLiteParameter("@ID", obj.ID));
+                cmd.CommandType = System.Data.CommandType.Text;
+
+                if (cmd.ExecuteNonQuery() < 1)
+                {
+                    respuesta = false;
+                }
+            }
+
+            return respuesta;
+        }
+
     }
 }
