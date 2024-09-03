@@ -311,13 +311,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1100, 610);
+            this.Controls.Add(this.dgvScrewSizes);
             this.Controls.Add(this.btnDisable);
             this.Controls.Add(this.checkActives);
             this.Controls.Add(this.txtFilter);
             this.Controls.Add(this.btnClean);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.dgvScrewSizes);
             this.Controls.Add(this.txtSizeName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtIDScrewSize);

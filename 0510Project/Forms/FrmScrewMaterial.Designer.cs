@@ -28,16 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pNavBar = new System.Windows.Forms.Panel();
             this.btnClose = new System.Windows.Forms.Button();
             this.checkActives = new System.Windows.Forms.CheckBox();
             this.txtFilter = new System.Windows.Forms.TextBox();
             this.dgvScrewMaterials = new System.Windows.Forms.DataGridView();
+            this.CIDScrewMaterial = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CMaterialName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtMaterialName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtIDScrewMaterial = new System.Windows.Forms.TextBox();
@@ -47,8 +49,6 @@
             this.btnClean = new FontAwesome.Sharp.IconButton();
             this.btnUpdate = new FontAwesome.Sharp.IconButton();
             this.btnSave = new FontAwesome.Sharp.IconButton();
-            this.CIDScrewMaterial = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CMaterialName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pNavBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvScrewMaterials)).BeginInit();
             this.SuspendLayout();
@@ -93,6 +93,7 @@
             this.checkActives.TabIndex = 143;
             this.checkActives.Text = "See Actives";
             this.checkActives.UseVisualStyleBackColor = true;
+            this.checkActives.CheckedChanged += new System.EventHandler(this.checkActives_CheckedChanged);
             // 
             // txtFilter
             // 
@@ -103,6 +104,8 @@
             this.txtFilter.TabIndex = 142;
             this.txtFilter.Text = "Search...";
             this.txtFilter.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtFilter.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtFilter_MouseClick);
+            this.txtFilter.TextChanged += new System.EventHandler(this.txtFilter_TextChanged);
             // 
             // dgvScrewMaterials
             // 
@@ -110,42 +113,64 @@
             this.dgvScrewMaterials.AllowUserToDeleteRows = false;
             this.dgvScrewMaterials.AllowUserToResizeColumns = false;
             this.dgvScrewMaterials.AllowUserToResizeRows = false;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvScrewMaterials.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle26.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle26.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle26.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvScrewMaterials.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle26;
             this.dgvScrewMaterials.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvScrewMaterials.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.CIDScrewMaterial,
             this.CMaterialName});
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvScrewMaterials.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle29.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle29.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle29.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvScrewMaterials.DefaultCellStyle = dataGridViewCellStyle29;
             this.dgvScrewMaterials.Location = new System.Drawing.Point(35, 166);
             this.dgvScrewMaterials.MultiSelect = false;
             this.dgvScrewMaterials.Name = "dgvScrewMaterials";
             this.dgvScrewMaterials.ReadOnly = true;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvScrewMaterials.RowHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle30.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle30.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle30.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvScrewMaterials.RowHeadersDefaultCellStyle = dataGridViewCellStyle30;
             this.dgvScrewMaterials.RowHeadersVisible = false;
             this.dgvScrewMaterials.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvScrewMaterials.Size = new System.Drawing.Size(1030, 244);
             this.dgvScrewMaterials.TabIndex = 138;
+            this.dgvScrewMaterials.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvScrewMaterials_CellClick);
+            // 
+            // CIDScrewMaterial
+            // 
+            this.CIDScrewMaterial.DataPropertyName = "IDScrewMaterial";
+            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CIDScrewMaterial.DefaultCellStyle = dataGridViewCellStyle27;
+            this.CIDScrewMaterial.HeaderText = "ID Screw Material";
+            this.CIDScrewMaterial.Name = "CIDScrewMaterial";
+            this.CIDScrewMaterial.ReadOnly = true;
+            this.CIDScrewMaterial.Width = 200;
+            // 
+            // CMaterialName
+            // 
+            this.CMaterialName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CMaterialName.DataPropertyName = "MaterialName";
+            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CMaterialName.DefaultCellStyle = dataGridViewCellStyle28;
+            this.CMaterialName.HeaderText = "Material Name";
+            this.CMaterialName.Name = "CMaterialName";
+            this.CMaterialName.ReadOnly = true;
+            this.CMaterialName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // txtMaterialName
             // 
@@ -216,6 +241,7 @@
             this.btnDisable.Text = "     Disable";
             this.btnDisable.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDisable.UseVisualStyleBackColor = false;
+            this.btnDisable.Click += new System.EventHandler(this.btnDisable_Click);
             // 
             // btnClean
             // 
@@ -236,6 +262,7 @@
             this.btnClean.Text = "     Clean";
             this.btnClean.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnClean.UseVisualStyleBackColor = false;
+            this.btnClean.Click += new System.EventHandler(this.btnClean_Click);
             // 
             // btnUpdate
             // 
@@ -256,6 +283,7 @@
             this.btnUpdate.Text = "  Update";
             this.btnUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnSave
             // 
@@ -276,27 +304,7 @@
             this.btnSave.Text = "     Save";
             this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSave.UseVisualStyleBackColor = false;
-            // 
-            // CIDScrewMaterial
-            // 
-            this.CIDScrewMaterial.DataPropertyName = "IDScrewMaterial";
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CIDScrewMaterial.DefaultCellStyle = dataGridViewCellStyle7;
-            this.CIDScrewMaterial.HeaderText = "ID Screw Material";
-            this.CIDScrewMaterial.Name = "CIDScrewMaterial";
-            this.CIDScrewMaterial.ReadOnly = true;
-            this.CIDScrewMaterial.Width = 200;
-            // 
-            // CMaterialName
-            // 
-            this.CMaterialName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.CMaterialName.DataPropertyName = "MaterialName";
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CMaterialName.DefaultCellStyle = dataGridViewCellStyle8;
-            this.CMaterialName.HeaderText = "Material Name";
-            this.CMaterialName.Name = "CMaterialName";
-            this.CMaterialName.ReadOnly = true;
-            this.CMaterialName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // FrmScrewMaterial
             // 
