@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pNavBar = new System.Windows.Forms.Panel();
             this.btnClose = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -40,6 +40,8 @@
             this.txtTypeName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.dgvScrewTypes = new System.Windows.Forms.DataGridView();
+            this.CIDScrewType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CTypeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnSave = new FontAwesome.Sharp.IconButton();
             this.btnClean = new FontAwesome.Sharp.IconButton();
             this.btnUpdate = new FontAwesome.Sharp.IconButton();
@@ -47,8 +49,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.checkActives = new System.Windows.Forms.CheckBox();
             this.btnDisable = new FontAwesome.Sharp.IconButton();
-            this.CIDScrewType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CTypeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pNavBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvScrewTypes)).BeginInit();
             this.SuspendLayout();
@@ -60,8 +60,9 @@
             this.pNavBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.pNavBar.Location = new System.Drawing.Point(0, 0);
             this.pNavBar.Name = "pNavBar";
-            this.pNavBar.Size = new System.Drawing.Size(1076, 42);
+            this.pNavBar.Size = new System.Drawing.Size(1100, 42);
             this.pNavBar.TabIndex = 0;
+            this.pNavBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pNavBar_MouseDown);
             // 
             // btnClose
             // 
@@ -72,7 +73,7 @@
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(1030, 0);
+            this.btnClose.Location = new System.Drawing.Point(1054, 0);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(46, 42);
             this.btnClose.TabIndex = 0;
@@ -125,43 +126,64 @@
             this.dgvScrewTypes.AllowUserToDeleteRows = false;
             this.dgvScrewTypes.AllowUserToResizeColumns = false;
             this.dgvScrewTypes.AllowUserToResizeRows = false;
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvScrewTypes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvScrewTypes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvScrewTypes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvScrewTypes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.CIDScrewType,
             this.CTypeName});
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle19.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle19.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle19.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvScrewTypes.DefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvScrewTypes.DefaultCellStyle = dataGridViewCellStyle4;
             this.dgvScrewTypes.Location = new System.Drawing.Point(24, 163);
             this.dgvScrewTypes.MultiSelect = false;
             this.dgvScrewTypes.Name = "dgvScrewTypes";
             this.dgvScrewTypes.ReadOnly = true;
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle20.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle20.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvScrewTypes.RowHeadersDefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvScrewTypes.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvScrewTypes.RowHeadersVisible = false;
             this.dgvScrewTypes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvScrewTypes.Size = new System.Drawing.Size(1030, 244);
             this.dgvScrewTypes.TabIndex = 5;
             this.dgvScrewTypes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvScrewTypes_CellClick);
+            // 
+            // CIDScrewType
+            // 
+            this.CIDScrewType.DataPropertyName = "IDScrewType";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CIDScrewType.DefaultCellStyle = dataGridViewCellStyle2;
+            this.CIDScrewType.HeaderText = "ID Screw Type";
+            this.CIDScrewType.Name = "CIDScrewType";
+            this.CIDScrewType.ReadOnly = true;
+            this.CIDScrewType.Width = 200;
+            // 
+            // CTypeName
+            // 
+            this.CTypeName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CTypeName.DataPropertyName = "TypeName";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CTypeName.DefaultCellStyle = dataGridViewCellStyle3;
+            this.CTypeName.HeaderText = "Type Name";
+            this.CTypeName.Name = "CTypeName";
+            this.CTypeName.ReadOnly = true;
+            this.CTypeName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // btnSave
             // 
@@ -284,32 +306,11 @@
             this.btnDisable.UseVisualStyleBackColor = false;
             this.btnDisable.Click += new System.EventHandler(this.btnDisable_Click);
             // 
-            // CIDScrewType
-            // 
-            this.CIDScrewType.DataPropertyName = "IDScrewType";
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CIDScrewType.DefaultCellStyle = dataGridViewCellStyle17;
-            this.CIDScrewType.HeaderText = "ID Screw Type";
-            this.CIDScrewType.Name = "CIDScrewType";
-            this.CIDScrewType.ReadOnly = true;
-            this.CIDScrewType.Width = 200;
-            // 
-            // CTypeName
-            // 
-            this.CTypeName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.CTypeName.DataPropertyName = "TypeName";
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CTypeName.DefaultCellStyle = dataGridViewCellStyle18;
-            this.CTypeName.HeaderText = "Type Name";
-            this.CTypeName.Name = "CTypeName";
-            this.CTypeName.ReadOnly = true;
-            this.CTypeName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
             // FrmScrewType
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1076, 608);
+            this.ClientSize = new System.Drawing.Size(1100, 610);
             this.Controls.Add(this.btnDisable);
             this.Controls.Add(this.checkActives);
             this.Controls.Add(this.label7);
