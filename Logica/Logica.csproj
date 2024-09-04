@@ -61,12 +61,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Logic\ScrewAbbreviationLogic.cs" />
     <Compile Include="Logic\ScrewMaterialLogic.cs" />
+    <Compile Include="Logic\ScrewNToolLogic.cs" />
     <Compile Include="Logic\ScrewSizeLogic.cs" />
     <Compile Include="Logic\ScrewTypeLogic.cs" />
     <Compile Include="Logic\TestLogic.cs" />
     <Compile Include="Models\Screw.cs" />
+    <Compile Include="Models\ScrewAbbreviation.cs" />
     <Compile Include="Models\ScrewMaterial.cs" />
+    <Compile Include="Models\ScrewNTool.cs" />
     <Compile Include="Models\ScrewSize.cs" />
     <Compile Include="Models\ScrewType.cs" />
     <Compile Include="Models\Test.cs" />
