@@ -499,8 +499,24 @@ namespace _0510Project
         {
             if (txtPassword.Text == Settings.Default.GestionDB)
             {
-                MessageBox.Show("Hola");
+                using (FrmMainManagementDB frm = new FrmMainManagementDB())
+                {
+                    frm.ShowDialog();
+                }
+                pGestion.Visible = false;
             }
+            else
+            {
+                pGestion.Visible = false;
+                MessageBox.Show("Access denied.\nPlease verify your information or contact support if you believe you should have access to this section", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtPassword.Text = "";
+            }
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            pGestion.Visible = false;
+            txtPassword.Text = "";
         }
     }
 }

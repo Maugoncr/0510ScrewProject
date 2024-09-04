@@ -127,11 +127,29 @@
   <data name="NutHex" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NutHex.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Size" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Size.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Abbreviation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Abbreviation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="91477A161p1-b01-digitall@1x_637104618588792597" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\91477A161p1-b01-digitall@1x_637104618588792597.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LengthSocketHead" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LengthSocketHead.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SSNE Just Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SSNE Just Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screws" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screws.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Material" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Material.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AvailableTools" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AvailableTools.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SocketTop" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SocketTop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,10 +172,40 @@
   <data name="T-Handle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\T-Handle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Types" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Types.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Flat Flat" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Flat Flat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="SSNE Just Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SSNE Just Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Length" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Length.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NTool" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NTool.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pi7_Abbreviation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pi7_Abbreviation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pi7_AvailableTools" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pi7_AvailableTools.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pi7_Length" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pi7_Length.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pi7_Material" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pi7_Material.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pi7_NTool" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pi7_NTool.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pi7_Screws" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pi7_Screws.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pi7_Size" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pi7_Size.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pi7_Types" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pi7_Types.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

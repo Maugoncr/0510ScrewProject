@@ -137,6 +137,22 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Resources\Pi7_Types.png" />
+    <None Include="Resources\Pi7_Size.png" />
+    <None Include="Resources\Pi7_Screws.png" />
+    <None Include="Resources\Pi7_NTool.png" />
+    <None Include="Resources\Pi7_Material.png" />
+    <None Include="Resources\Pi7_Length.png" />
+    <None Include="Resources\Pi7_AvailableTools.png" />
+    <None Include="Resources\Pi7_Abbreviation.png" />
+    <None Include="Resources\Types.png" />
+    <None Include="Resources\Size.png" />
+    <None Include="Resources\Screws.png" />
+    <None Include="Resources\NTool.png" />
+    <None Include="Resources\Material.png" />
+    <None Include="Resources\Length.png" />
+    <None Include="Resources\AvailableTools.png" />
+    <None Include="Resources\Abbreviation.png" />
     <None Include="Resources\SSNE Just Logo.png" />
     <None Include="Resources\SocketTop.png" />
     <None Include="Resources\LengthSocketHead.png" />
