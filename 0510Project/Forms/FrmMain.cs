@@ -501,9 +501,9 @@ namespace _0510Project
             {
                 using (FrmMainManagementDB frm = new FrmMainManagementDB())
                 {
+                    pGestion.Visible = false;
                     frm.ShowDialog();
                 }
-                pGestion.Visible = false;
             }
             else
             {
@@ -517,6 +517,14 @@ namespace _0510Project
         {
             pGestion.Visible = false;
             txtPassword.Text = "";
+        }
+
+        private void txtPassword_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.CapsLock)
+            {
+                e.Handled = true;
+            }
         }
     }
 }
