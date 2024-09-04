@@ -18,6 +18,7 @@ using Control = System.Windows.Forms.Control;
 using Label = System.Windows.Forms.Label;
 using Logica.Models;
 using Logica.Logic;
+using _0510Project.Properties;
 
 namespace _0510Project
 {
@@ -27,7 +28,7 @@ namespace _0510Project
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(IntPtr hWnd, int wMsg, int wParam, int lParam);
-
+        
         public FrmMain()
         {
             InitializeComponent();
@@ -471,6 +472,35 @@ namespace _0510Project
             FrmViewPDF frmScale = new FrmViewPDF("https://drive.google.com/file/d/14ZVIqs6Lp-E-Qg7wtM1tgMs1xVekFcEn/view?usp=drive_link");
             frmScale.ShowDialog();
         }
-   
+
+        private void FrmMain_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Alt && e.KeyCode == Keys.X)
+            {
+                pGestion.Visible = true;
+
+                int formWidth = 1920;
+                int formHeight = 1080;
+
+                // Dimensiones del panel
+                int panelWidth = 900;
+                int panelHeight = 300;
+
+                // Calcular la posición central
+                int centerX = (formWidth - panelWidth) / 2;
+                int centerY = (formHeight - panelHeight) / 2;
+
+                // Establecer la nueva ubicación del panel
+                pGestion.Location = new Point(centerX, centerY);
+            }
+        }
+
+        private void btnEnterGestion_Click(object sender, EventArgs e)
+        {
+            if (txtPassword.Text == Settings.Default.GestionDB)
+            {
+                MessageBox.Show("Hola");
+            }
+        }
     }
 }

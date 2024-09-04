@@ -219,6 +219,11 @@
             this.label71 = new System.Windows.Forms.Label();
             this.label72 = new System.Windows.Forms.Label();
             this.label62 = new System.Windows.Forms.Label();
+            this.pGestion = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.btnEnterGestion = new FontAwesome.Sharp.IconButton();
             this.pNavBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -250,6 +255,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picLength)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picISOView)).BeginInit();
             this.panel12.SuspendLayout();
+            this.pGestion.SuspendLayout();
             this.SuspendLayout();
             // 
             // cbDriveType
@@ -2711,11 +2717,76 @@
             this.label62.TabIndex = 456;
             this.label62.Text = "Select Size";
             // 
+            // pGestion
+            // 
+            this.pGestion.BackColor = System.Drawing.Color.DarkCyan;
+            this.pGestion.Controls.Add(this.btnEnterGestion);
+            this.pGestion.Controls.Add(this.txtPassword);
+            this.pGestion.Controls.Add(this.label12);
+            this.pGestion.Controls.Add(this.label11);
+            this.pGestion.Location = new System.Drawing.Point(709, 1066);
+            this.pGestion.Name = "pGestion";
+            this.pGestion.Size = new System.Drawing.Size(900, 300);
+            this.pGestion.TabIndex = 457;
+            this.pGestion.Visible = false;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Roboto", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(29, 45);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(830, 33);
+            this.label11.TabIndex = 0;
+            this.label11.Text = "Welcome to the database management system of Project 0510";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(245, 110);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(403, 23);
+            this.label12.TabIndex = 1;
+            this.label12.Text = "To continue, please enter the correct password";
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Location = new System.Drawing.Point(277, 161);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(331, 33);
+            this.txtPassword.TabIndex = 2;
+            this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtPassword.UseSystemPasswordChar = true;
+            // 
+            // btnEnterGestion
+            // 
+            this.btnEnterGestion.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.btnEnterGestion.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnEnterGestion.FlatAppearance.BorderSize = 0;
+            this.btnEnterGestion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEnterGestion.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEnterGestion.ForeColor = System.Drawing.Color.White;
+            this.btnEnterGestion.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnEnterGestion.IconColor = System.Drawing.Color.Black;
+            this.btnEnterGestion.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnEnterGestion.Location = new System.Drawing.Point(388, 218);
+            this.btnEnterGestion.Name = "btnEnterGestion";
+            this.btnEnterGestion.Size = new System.Drawing.Size(109, 46);
+            this.btnEnterGestion.TabIndex = 3;
+            this.btnEnterGestion.Text = "ENTER";
+            this.btnEnterGestion.UseVisualStyleBackColor = false;
+            this.btnEnterGestion.Click += new System.EventHandler(this.btnEnterGestion_Click);
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1920, 1061);
+            this.ClientSize = new System.Drawing.Size(1920, 1080);
+            this.Controls.Add(this.pGestion);
             this.Controls.Add(this.label62);
             this.Controls.Add(this.panel12);
             this.Controls.Add(this.panel6);
@@ -2756,11 +2827,13 @@
             this.Controls.Add(this.picISOView);
             this.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "0510";
             this.Load += new System.EventHandler(this.FrmMain_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FrmMain_KeyDown);
             this.pNavBar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
@@ -2801,6 +2874,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.picLength)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picISOView)).EndInit();
             this.panel12.ResumeLayout(false);
+            this.pGestion.ResumeLayout(false);
+            this.pGestion.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2996,6 +3071,11 @@
         private System.Windows.Forms.Label label71;
         private System.Windows.Forms.Label label72;
         private System.Windows.Forms.Label label62;
+        private System.Windows.Forms.Panel pGestion;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.Label label12;
+        private FontAwesome.Sharp.IconButton btnEnterGestion;
     }
 }
 

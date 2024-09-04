@@ -17,7 +17,7 @@ namespace _0510Project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmScrewNTool());
+            Application.Run(new FrmMain());
         }
     }
 }
