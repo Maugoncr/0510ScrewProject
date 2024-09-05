@@ -99,6 +99,12 @@
     <Compile Include="Forms\FrmScrewAbbreviation.Designer.cs">
       <DependentUpon>FrmScrewAbbreviation.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FrmScrewLength.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmScrewLength.Designer.cs">
+      <DependentUpon>FrmScrewLength.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FrmScrewMaterial.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -176,6 +182,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmScrewAbbreviation.resx">
       <DependentUpon>FrmScrewAbbreviation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmScrewLength.resx">
+      <DependentUpon>FrmScrewLength.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmScrewMaterial.resx">
       <DependentUpon>FrmScrewMaterial.cs</DependentUpon>

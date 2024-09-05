@@ -67,7 +67,7 @@ namespace Logica.Logic
 
                 string query = "Select IDScrewAbbreviation, AbbreviationName FROM ScrewAbbreviation WHERE Active = @Active ORDER BY IDScrewAbbreviation ASC";
 
-                if (Filter != null || Filter != "")
+                if (Filter != null && Filter != "")
                 {
                     query = "Select IDScrewAbbreviation, AbbreviationName FROM ScrewAbbreviation WHERE Active = @Active AND AbbreviationName LIKE '%' || @Filter || '%' ORDER BY IDScrewAbbreviation ASC";
                 }

@@ -68,7 +68,7 @@ namespace Logica.Logic
 
                 string query = "Select IDScrewNTool, NToolName FROM ScrewNTool WHERE Active = @Active ORDER BY IDScrewNTool ASC";
 
-                if (Filter != null || Filter != "")
+                if (Filter != null && Filter != "")
                 {
                     query = "Select IDScrewNTool, NToolName FROM ScrewNTool WHERE Active = @Active AND NToolName LIKE '%' || @Filter || '%' ORDER BY IDScrewNTool ASC";
                 }

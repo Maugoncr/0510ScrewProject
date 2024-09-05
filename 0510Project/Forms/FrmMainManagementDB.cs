@@ -115,12 +115,18 @@ namespace _0510Project.Forms
 
         private void picLength_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("WORK IN PROGRESS", "INFORMATION", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            using (FrmScrewLength frm = new FrmScrewLength())
+            {
+                frm.ShowDialog();
+            }
         }
 
         private void btnLengths_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("WORK IN PROGRESS", "INFORMATION", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            using (FrmScrewLength frm = new FrmScrewLength())
+            {
+                frm.ShowDialog();
+            }
         }
 
         private void picTypes_Click(object sender, EventArgs e)

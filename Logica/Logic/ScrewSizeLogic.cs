@@ -67,7 +67,7 @@ namespace Logica.Logic
 
                 string query = "Select IDScrewSize, SizeName FROM ScrewSize WHERE Active = @Active ORDER BY IDScrewSize ASC";
 
-                if (Filter != null || Filter != "")
+                if (Filter != null && Filter != "")
                 {
                     query = "Select IDScrewSize, SizeName FROM ScrewSize WHERE Active = @Active AND SizeName LIKE '%' || @Filter || '%' ORDER BY IDScrewSize ASC";
                 }

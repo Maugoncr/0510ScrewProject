@@ -68,7 +68,7 @@ namespace Logica.Logic
 
                     string query = "Select IDScrewMaterial, MaterialName FROM ScrewMaterial WHERE Active = @Active ORDER BY IDScrewMaterial ASC";
 
-                    if (Filter != null || Filter != "")
+                    if (Filter != null && Filter != "")
                     {
                         query = "Select IDScrewMaterial, MaterialName FROM ScrewMaterial WHERE Active = @Active AND MaterialName LIKE '%' || @Filter || '%' ORDER BY IDScrewMaterial ASC";
                     }

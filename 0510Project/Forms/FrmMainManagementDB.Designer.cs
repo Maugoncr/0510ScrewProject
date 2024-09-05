@@ -99,7 +99,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(1465, 58);
             this.label7.TabIndex = 146;
-            this.label7.Text = "Database Management 0510";
+            this.label7.Text = "SSNE MIDORI DASHBOARD";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnAbbreviations
