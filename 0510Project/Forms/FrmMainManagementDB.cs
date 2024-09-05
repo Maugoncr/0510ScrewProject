@@ -57,12 +57,19 @@ namespace _0510Project.Forms
 
         private void picAvailableTools_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("WORK IN PROGRESS", "INFORMATION", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            using (FrmScrewAvailableTool frm = new FrmScrewAvailableTool())
+            {
+                frm.ShowDialog();
+            }
         }
 
         private void btnAvailableTools_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("WORK IN PROGRESS", "INFORMATION", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            //MessageBox.Show("WORK IN PROGRESS", "INFORMATION", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            using (FrmScrewAvailableTool frm = new FrmScrewAvailableTool())
+            {
+                frm.ShowDialog();
+            }
         }
 
         private void picNTools_Click(object sender, EventArgs e)
