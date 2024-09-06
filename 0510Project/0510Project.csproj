@@ -93,6 +93,12 @@
     <Compile Include="Forms\FrmMainManagementDB.Designer.cs">
       <DependentUpon>FrmMainManagementDB.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FrmScrew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmScrew.Designer.cs">
+      <DependentUpon>FrmScrew.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FrmScrewAbbreviation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -185,6 +191,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmMainManagementDB.resx">
       <DependentUpon>FrmMainManagementDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmScrew.resx">
+      <DependentUpon>FrmScrew.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmScrewAbbreviation.resx">
       <DependentUpon>FrmScrewAbbreviation.cs</DependentUpon>
