@@ -141,6 +141,12 @@
     <Compile Include="Forms\FrmScrewType.Designer.cs">
       <DependentUpon>FrmScrewType.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\SelectedForms\FrmSelectScrewType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SelectedForms\FrmSelectScrewType.Designer.cs">
+      <DependentUpon>FrmSelectScrewType.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FrmTestTable.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -215,6 +221,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmScrewType.resx">
       <DependentUpon>FrmScrewType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SelectedForms\FrmSelectScrewType.resx">
+      <DependentUpon>FrmSelectScrewType.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmTestTable.resx">
       <DependentUpon>FrmTestTable.cs</DependentUpon>
