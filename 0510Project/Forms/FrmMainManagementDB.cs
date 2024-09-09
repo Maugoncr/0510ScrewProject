@@ -154,12 +154,18 @@ namespace _0510Project.Forms
 
         private void picScrews_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("WORK IN PROGRESS", "INFORMATION", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            using (FrmScrew frm = new FrmScrew())
+            {
+                frm.ShowDialog();
+            }
         }
 
         private void btnScrews_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("WORK IN PROGRESS", "INFORMATION", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            using (FrmScrew frm = new FrmScrew())
+            {
+                frm.ShowDialog();
+            }
         }
     }
 }

@@ -29,15 +29,22 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pNavBar = new System.Windows.Forms.Panel();
             this.btnClose = new System.Windows.Forms.Button();
             this.txtFilter = new System.Windows.Forms.TextBox();
@@ -109,15 +116,16 @@
             this.btnUpdate = new FontAwesome.Sharp.IconButton();
             this.btnSave = new FontAwesome.Sharp.IconButton();
             this.checkActives = new System.Windows.Forms.CheckBox();
+            this.btnFormSize = new FontAwesome.Sharp.IconButton();
             this.CIDScrewTool = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CSSNEPartNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CVendorPartNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CSize = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CLength = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CTypeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CSizeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CLengthInch = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CAbbreviation = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CNTool = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CMaterial = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CNToolName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CMaterialName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pNavBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvScrews)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -133,12 +141,14 @@
             // pNavBar
             // 
             this.pNavBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.pNavBar.Controls.Add(this.btnFormSize);
             this.pNavBar.Controls.Add(this.btnClose);
             this.pNavBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.pNavBar.Location = new System.Drawing.Point(0, 0);
             this.pNavBar.Name = "pNavBar";
             this.pNavBar.Size = new System.Drawing.Size(1920, 42);
             this.pNavBar.TabIndex = 5;
+            this.pNavBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pNavBar_MouseDown);
             // 
             // btnClose
             // 
@@ -186,32 +196,32 @@
             this.CIDScrewTool,
             this.CSSNEPartNumber,
             this.CVendorPartNumber,
-            this.CType,
-            this.CSize,
-            this.CLength,
+            this.CTypeName,
+            this.CSizeName,
+            this.CLengthInch,
             this.CAbbreviation,
-            this.CNTool,
-            this.CMaterial});
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvScrews.DefaultCellStyle = dataGridViewCellStyle4;
+            this.CNToolName,
+            this.CMaterialName});
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvScrews.DefaultCellStyle = dataGridViewCellStyle11;
             this.dgvScrews.Location = new System.Drawing.Point(17, 166);
             this.dgvScrews.MultiSelect = false;
             this.dgvScrews.Name = "dgvScrews";
             this.dgvScrews.ReadOnly = true;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvScrews.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvScrews.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.dgvScrews.RowHeadersVisible = false;
             this.dgvScrews.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvScrews.Size = new System.Drawing.Size(1885, 452);
@@ -973,38 +983,38 @@
             this.dataGridView2.AllowUserToDeleteRows = false;
             this.dataGridView2.AllowUserToResizeColumns = false;
             this.dataGridView2.AllowUserToResizeRows = false;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2});
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Roboto", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Roboto", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle16;
             this.dataGridView2.Location = new System.Drawing.Point(11, 331);
             this.dataGridView2.MultiSelect = false;
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Roboto", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView2.RowHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Roboto", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView2.RowHeadersDefaultCellStyle = dataGridViewCellStyle17;
             this.dataGridView2.RowHeadersVisible = false;
             this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView2.Size = new System.Drawing.Size(611, 110);
@@ -1013,9 +1023,9 @@
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "IDScrewTool";
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle14;
             this.dataGridViewTextBoxColumn1.HeaderText = "ID Tool";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
@@ -1025,8 +1035,8 @@
             // 
             this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.dataGridViewTextBoxColumn2.DataPropertyName = "ToolName";
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle15;
             this.dataGridViewTextBoxColumn2.HeaderText = "Tool Name";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.ReadOnly = true;
@@ -1125,6 +1135,22 @@
             this.checkActives.Text = "See Actives";
             this.checkActives.UseVisualStyleBackColor = true;
             // 
+            // btnFormSize
+            // 
+            this.btnFormSize.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnFormSize.FlatAppearance.BorderSize = 0;
+            this.btnFormSize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFormSize.IconChar = FontAwesome.Sharp.IconChar.ExpandAlt;
+            this.btnFormSize.IconColor = System.Drawing.Color.White;
+            this.btnFormSize.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnFormSize.IconSize = 30;
+            this.btnFormSize.Location = new System.Drawing.Point(1833, 0);
+            this.btnFormSize.Name = "btnFormSize";
+            this.btnFormSize.Size = new System.Drawing.Size(41, 42);
+            this.btnFormSize.TabIndex = 2;
+            this.btnFormSize.UseVisualStyleBackColor = true;
+            this.btnFormSize.Click += new System.EventHandler(this.btnFormSize_Click);
+            // 
             // CIDScrewTool
             // 
             this.CIDScrewTool.DataPropertyName = "IDScrew";
@@ -1150,64 +1176,78 @@
             // 
             this.CVendorPartNumber.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.CVendorPartNumber.DataPropertyName = "VendorPartNumber";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CVendorPartNumber.DefaultCellStyle = dataGridViewCellStyle4;
             this.CVendorPartNumber.HeaderText = "Vendor Part Number";
             this.CVendorPartNumber.Name = "CVendorPartNumber";
             this.CVendorPartNumber.ReadOnly = true;
             this.CVendorPartNumber.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
-            // CType
+            // CTypeName
             // 
-            this.CType.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.CType.DataPropertyName = "Type";
-            this.CType.HeaderText = "Type";
-            this.CType.Name = "CType";
-            this.CType.ReadOnly = true;
-            this.CType.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.CTypeName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CTypeName.DataPropertyName = "TypeName";
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CTypeName.DefaultCellStyle = dataGridViewCellStyle5;
+            this.CTypeName.HeaderText = "Type";
+            this.CTypeName.Name = "CTypeName";
+            this.CTypeName.ReadOnly = true;
+            this.CTypeName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
-            // CSize
+            // CSizeName
             // 
-            this.CSize.DataPropertyName = "Size";
-            this.CSize.HeaderText = "Size";
-            this.CSize.Name = "CSize";
-            this.CSize.ReadOnly = true;
-            this.CSize.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.CSize.Width = 150;
+            this.CSizeName.DataPropertyName = "SizeName";
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CSizeName.DefaultCellStyle = dataGridViewCellStyle6;
+            this.CSizeName.HeaderText = "Size";
+            this.CSizeName.Name = "CSizeName";
+            this.CSizeName.ReadOnly = true;
+            this.CSizeName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.CSizeName.Width = 150;
             // 
-            // CLength
+            // CLengthInch
             // 
-            this.CLength.DataPropertyName = "Length";
-            this.CLength.HeaderText = "Length";
-            this.CLength.Name = "CLength";
-            this.CLength.ReadOnly = true;
-            this.CLength.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.CLength.Width = 150;
+            this.CLengthInch.DataPropertyName = "LengthInch";
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CLengthInch.DefaultCellStyle = dataGridViewCellStyle7;
+            this.CLengthInch.HeaderText = "Length Inch";
+            this.CLengthInch.Name = "CLengthInch";
+            this.CLengthInch.ReadOnly = true;
+            this.CLengthInch.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.CLengthInch.Width = 150;
             // 
             // CAbbreviation
             // 
             this.CAbbreviation.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.CAbbreviation.DataPropertyName = "Abbreviation";
+            this.CAbbreviation.DataPropertyName = "AbbreviationName";
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CAbbreviation.DefaultCellStyle = dataGridViewCellStyle8;
             this.CAbbreviation.HeaderText = "Abbreviation";
             this.CAbbreviation.Name = "CAbbreviation";
             this.CAbbreviation.ReadOnly = true;
             this.CAbbreviation.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
-            // CNTool
+            // CNToolName
             // 
-            this.CNTool.DataPropertyName = "NTool";
-            this.CNTool.HeaderText = "Number Tool";
-            this.CNTool.Name = "CNTool";
-            this.CNTool.ReadOnly = true;
-            this.CNTool.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.CNTool.Width = 120;
+            this.CNToolName.DataPropertyName = "NToolName";
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CNToolName.DefaultCellStyle = dataGridViewCellStyle9;
+            this.CNToolName.HeaderText = "Number Tool";
+            this.CNToolName.Name = "CNToolName";
+            this.CNToolName.ReadOnly = true;
+            this.CNToolName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.CNToolName.Width = 120;
             // 
-            // CMaterial
+            // CMaterialName
             // 
-            this.CMaterial.DataPropertyName = "Material";
-            this.CMaterial.HeaderText = "Material";
-            this.CMaterial.Name = "CMaterial";
-            this.CMaterial.ReadOnly = true;
-            this.CMaterial.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.CMaterial.Width = 200;
+            this.CMaterialName.DataPropertyName = "MaterialName";
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CMaterialName.DefaultCellStyle = dataGridViewCellStyle10;
+            this.CMaterialName.HeaderText = "Material";
+            this.CMaterialName.Name = "CMaterialName";
+            this.CMaterialName.ReadOnly = true;
+            this.CMaterialName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.CMaterialName.Width = 200;
             // 
             // FrmScrew
             // 
@@ -1231,6 +1271,7 @@
             this.Name = "FrmScrew";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmScrew";
+            this.Load += new System.EventHandler(this.FrmScrew_Load);
             this.pNavBar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvScrews)).EndInit();
             this.groupBox2.ResumeLayout(false);
@@ -1326,14 +1367,15 @@
         private FontAwesome.Sharp.IconButton btnClean;
         private FontAwesome.Sharp.IconButton btnUpdate;
         private System.Windows.Forms.CheckBox checkActives;
+        private FontAwesome.Sharp.IconButton btnFormSize;
         private System.Windows.Forms.DataGridViewTextBoxColumn CIDScrewTool;
         private System.Windows.Forms.DataGridViewTextBoxColumn CSSNEPartNumber;
         private System.Windows.Forms.DataGridViewTextBoxColumn CVendorPartNumber;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CType;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CSize;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CLength;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CTypeName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CSizeName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CLengthInch;
         private System.Windows.Forms.DataGridViewTextBoxColumn CAbbreviation;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CNTool;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CMaterial;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CNToolName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CMaterialName;
     }
 }
