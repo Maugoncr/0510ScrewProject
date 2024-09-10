@@ -494,6 +494,7 @@
             this.txtIDScrewSize.Size = new System.Drawing.Size(152, 30);
             this.txtIDScrewSize.TabIndex = 162;
             this.txtIDScrewSize.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtIDScrewSize.TextChanged += new System.EventHandler(this.txtIDScrewSize_TextChanged);
             // 
             // label2
             // 
@@ -520,6 +521,7 @@
             this.btnClearScrewSize.Size = new System.Drawing.Size(36, 30);
             this.btnClearScrewSize.TabIndex = 132;
             this.btnClearScrewSize.UseVisualStyleBackColor = false;
+            this.btnClearScrewSize.Click += new System.EventHandler(this.btnClearScrewSize_Click);
             // 
             // btnSelectScrewSize
             // 
@@ -536,6 +538,7 @@
             this.btnSelectScrewSize.Size = new System.Drawing.Size(36, 30);
             this.btnSelectScrewSize.TabIndex = 150;
             this.btnSelectScrewSize.UseVisualStyleBackColor = false;
+            this.btnSelectScrewSize.Click += new System.EventHandler(this.btnSelectScrewSize_Click);
             // 
             // groupBox3
             // 

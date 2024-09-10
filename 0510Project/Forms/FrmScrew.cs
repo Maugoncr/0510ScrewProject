@@ -1,4 +1,5 @@
-﻿using Logica.Logic;
+﻿using _0510Project.Forms.SelectedForms;
+using Logica.Logic;
 using Logica.Models;
 using System;
 using System.Collections.Generic;
@@ -257,6 +258,40 @@ namespace _0510Project.Forms
         {
             FrmViewPDF frmScale = new FrmViewPDF("https://drive.google.com/file/d/14ZVIqs6Lp-E-Qg7wtM1tgMs1xVekFcEn/view?usp=drive_link");
             frmScale.ShowDialog();
+        }
+
+        public static int IDScrewSize;
+        public static string SizeName;
+        private void btnSelectScrewSize_Click(object sender, EventArgs e)
+        {
+            //TODO
+            FrmSelectScrewSize frm = new FrmSelectScrewSize();
+
+            DialogResult r = frm.ShowDialog();
+
+            if (r == DialogResult.OK)
+            {
+                txtIDScrewSize.Text = IDScrewSize.ToString();
+                txtSizeName.Text = SizeName;
+            }
+        }
+
+        private void txtIDScrewSize_TextChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtIDScrewSize.Text.Trim()))
+            {
+                MyScrew.MyScrewSize.IDScrewSize = Convert.ToInt32(txtIDScrewSize.Text.Trim());
+            }
+            else
+            {
+                MyScrew.MyScrewSize.IDScrewSize = 0;
+            }
+        }
+
+        private void btnClearScrewSize_Click(object sender, EventArgs e)
+        {
+            txtIDScrewSize.Clear();
+            txtSizeName.Clear();
         }
     }
 }
