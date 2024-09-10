@@ -141,11 +141,29 @@
     <Compile Include="Forms\FrmScrewType.Designer.cs">
       <DependentUpon>FrmScrewType.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\SelectedForms\FrmSelectScrewAbbreviation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SelectedForms\FrmSelectScrewAbbreviation.Designer.cs">
+      <DependentUpon>FrmSelectScrewAbbreviation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SelectedForms\FrmSelectScrewLength.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SelectedForms\FrmSelectScrewLength.Designer.cs">
+      <DependentUpon>FrmSelectScrewLength.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\SelectedForms\FrmSelectScrewMaterial.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\SelectedForms\FrmSelectScrewMaterial.Designer.cs">
       <DependentUpon>FrmSelectScrewMaterial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SelectedForms\FrmSelectScrewNTool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SelectedForms\FrmSelectScrewNTool.Designer.cs">
+      <DependentUpon>FrmSelectScrewNTool.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\SelectedForms\FrmSelectScrewSize.cs">
       <SubType>Form</SubType>
@@ -234,8 +252,17 @@
     <EmbeddedResource Include="Forms\FrmScrewType.resx">
       <DependentUpon>FrmScrewType.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SelectedForms\FrmSelectScrewAbbreviation.resx">
+      <DependentUpon>FrmSelectScrewAbbreviation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SelectedForms\FrmSelectScrewLength.resx">
+      <DependentUpon>FrmSelectScrewLength.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\SelectedForms\FrmSelectScrewMaterial.resx">
       <DependentUpon>FrmSelectScrewMaterial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SelectedForms\FrmSelectScrewNTool.resx">
+      <DependentUpon>FrmSelectScrewNTool.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SelectedForms\FrmSelectScrewSize.resx">
       <DependentUpon>FrmSelectScrewSize.cs</DependentUpon>

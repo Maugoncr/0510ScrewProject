@@ -62,7 +62,7 @@ namespace _0510Project.Forms
 
         private void FrmScrew_Load(object sender, EventArgs e)
         {
-            LoadAvailableTools();
+            //LoadAvailableTools();
 
             ShowScrews(checkActives.Checked);
 
@@ -186,6 +186,11 @@ namespace _0510Project.Forms
             }
             MyScrew = new Screw();
 
+            if (dgvAvailableTools.DataSource != null)
+            {
+                ((DataTable)dgvAvailableTools.DataSource).Rows.Clear();
+            }
+
             EnableSave();
         }
 
@@ -194,6 +199,8 @@ namespace _0510Project.Forms
             btnSave.Enabled = true;
             btnUpdate.Enabled = false;
             btnDisable.Enabled = false;
+
+
         }
 
         private void EnableUpdate_Disable()
@@ -332,7 +339,7 @@ namespace _0510Project.Forms
 
         private void btnSelectScrewLength_Click(object sender, EventArgs e)
         {
-            FrmSelectScrewMaterial frm = new FrmSelectScrewMaterial();
+            FrmSelectScrewLength frm = new FrmSelectScrewLength();
 
             DialogResult r = frm.ShowDialog();
 
@@ -360,5 +367,166 @@ namespace _0510Project.Forms
             txtIDScrewLength.Clear();
             txtLengthInch.Clear();
         }
+
+        public static int IDScrewAbbreviation;
+        public static string AbbreviationName;
+
+        private void btnSelectScrewAbbreviation_Click(object sender, EventArgs e)
+        {
+            FrmSelectScrewAbbreviation frm = new FrmSelectScrewAbbreviation();
+
+            DialogResult r = frm.ShowDialog();
+
+            if (r == DialogResult.OK)
+            {
+                txtIDScrewAbbreviation.Text = IDScrewAbbreviation.ToString();
+                txtAbbreviationName.Text = AbbreviationName;
+            }
+        }
+
+        private void txtIDScrewAbbreviation_TextChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtIDScrewAbbreviation.Text.Trim()))
+            {
+                MyScrew.MyScrewAbbreviation.IDScrewAbbreviation = Convert.ToInt32(txtIDScrewAbbreviation.Text.Trim());
+            }
+            else
+            {
+                MyScrew.MyScrewAbbreviation.IDScrewAbbreviation = 0;
+            }
+        }
+
+        private void btnClearScrewAbbreviation_Click(object sender, EventArgs e)
+        {
+            txtIDScrewAbbreviation.Clear();
+            txtAbbreviationName.Clear();
+        }
+
+        public static int IDScrewNTool;
+        public static string NToolName;
+
+        private void btnSelectScrewNTool_Click(object sender, EventArgs e)
+        {
+            FrmSelectScrewNTool frm = new FrmSelectScrewNTool();
+
+            DialogResult r = frm.ShowDialog();
+
+            if (r == DialogResult.OK)
+            {
+                txtIDScrewNTool.Text = IDScrewNTool.ToString();
+                txtNToolName.Text = NToolName;
+            }
+        }
+
+        private void btnClearScrewNTool_Click(object sender, EventArgs e)
+        {
+            txtIDScrewNTool.Clear();
+            txtNToolName.Clear();
+        }
+
+        private void txtIDScrewNTool_TextChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtIDScrewNTool.Text.Trim()))
+            {
+                MyScrew.MyScrewNTool.IDScrewNTool = Convert.ToInt32(txtIDScrewNTool.Text.Trim());
+            }
+            else
+            {
+                MyScrew.MyScrewNTool.IDScrewNTool = 0;
+            }
+        }
+
+        private void txtSSNEPartNumber_Leave(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtSSNEPartNumber.Text.Trim()))
+            {
+                MyScrew.SSNEPartNumber = txtSSNEPartNumber.Text.Trim();
+            }
+            else
+            {
+                MyScrew.SSNEPartNumber = "";
+            }
+        }
+
+        private void txtVendorPartNumber_Leave(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtVendorPartNumber.Text.Trim()))
+            {
+                MyScrew.VendorPartNumber = txtVendorPartNumber.Text.Trim();
+            }
+            else
+            {
+                MyScrew.VendorPartNumber = "";
+            }
+        }
+
+        private void txtUrlPDF_Leave(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtUrlPDF.Text.Trim()))
+            {
+                MyScrew.UrlPDF = txtUrlPDF.Text.Trim();
+            }
+            else
+            {
+                MyScrew.UrlPDF = "";
+            }
+        }
+
+        private void txtUrlSTEP_Leave(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtUrlSTEP.Text.Trim()))
+            {
+                MyScrew.UrlSTEP = txtUrlSTEP.Text.Trim();
+            }
+            else
+            {
+                MyScrew.UrlSTEP = "";
+            }
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            if (ValidateDataToAdd())
+            {
+                bool R = ScrewLogic.Instancia.Guardar(MyScrew);
+
+                if (R)
+                {
+                    CleanForm();
+                    ShowScrews(checkActives.Checked);
+                    MessageBox.Show("Screw Added Correctly", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+        }
+
+        private bool ValidateDataToAdd()
+        {
+            bool R = false;
+
+            if (
+                MyScrew.MyScrewType.IDScrewType > 0 &&
+                MyScrew.MyScrewSize.IDScrewSize > 0 &&
+                MyScrew.MyScrewLength.IDScrewLength > 0 &&
+                MyScrew.MyScrewMaterial.IDScrewMaterial > 0 &&
+                MyScrew.MyScrewAbbreviation.IDScrewAbbreviation > 0 &&
+                MyScrew.MyScrewNTool.IDScrewNTool > 0 &&
+                !string.IsNullOrEmpty(MyScrew.SSNEPartNumber) &&
+                !string.IsNullOrEmpty(MyScrew.VendorPartNumber) &&
+                !string.IsNullOrEmpty(MyScrew.UrlPDF) &&
+                !string.IsNullOrEmpty(MyScrew.UrlSTEP)
+                )
+            {
+                R = true;
+                return R;
+            }
+            else
+            {
+                MessageBox.Show("You cannot enter a record with missing data.", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            return R;
+        }
+
+
     }
 }

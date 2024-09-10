@@ -71,7 +71,6 @@ namespace Logica.Logic
 
                 using (SQLiteDataReader dr = cmd.ExecuteReader())
                 {
-                    // Cargar los resultados en el DataTable
                     R.Load(dr);
                     R.Columns.RemoveAt(3);
                 }
@@ -125,7 +124,7 @@ namespace Logica.Logic
         }
 
         public DataTable SelectScrewAvailableToolsByID(int ID)
-        { 
+        {
             DataTable R = new DataTable();
 
             using (SQLiteConnection conn = new SQLiteConnection(cadena))
@@ -141,6 +140,41 @@ namespace Logica.Logic
                 }
             }
             return R;
+        }
+
+        public bool Guardar(Screw obj)
+        {
+            bool respuesta = true;
+
+            using (SQLiteConnection conexion = new SQLiteConnection(cadena))
+            {
+                conexion.Open();
+
+                string query = "Insert into Screw (IDType, IDSize, IDLength, IDNTool, IDMaterial, IDAbbreviation, SSNEPartNumber, VendorPartNumber, UrlPDF, UrlSTEP) " +
+                    "values (@IDType, @IDSize, @IDLength, @IDNTool , @IDMaterial , @IDAbbreviation, @SSNEPartNumber, @VendorPartNumber, @UrlPDF, @UrlSTEP)";
+
+                SQLiteCommand cmd = new SQLiteCommand(query, conexion);
+
+                cmd.Parameters.Add(new SQLiteParameter("@IDType", obj.MyScrewType.IDScrewType));
+                cmd.Parameters.Add(new SQLiteParameter("@IDSize", obj.MyScrewSize.IDScrewSize));
+                cmd.Parameters.Add(new SQLiteParameter("@IDLength", obj.MyScrewLength.IDScrewLength));
+                cmd.Parameters.Add(new SQLiteParameter("@IDNTool", obj.MyScrewNTool.IDScrewNTool));
+                cmd.Parameters.Add(new SQLiteParameter("@IDMaterial", obj.MyScrewMaterial.IDScrewMaterial));
+                cmd.Parameters.Add(new SQLiteParameter("@IDAbbreviation", obj.MyScrewAbbreviation.IDScrewAbbreviation));
+                cmd.Parameters.Add(new SQLiteParameter("@SSNEPartNumber", obj.SSNEPartNumber));
+                cmd.Parameters.Add(new SQLiteParameter("@VendorPartNumber", obj.VendorPartNumber));
+                cmd.Parameters.Add(new SQLiteParameter("@UrlPDF", obj.UrlPDF));
+                cmd.Parameters.Add(new SQLiteParameter("@UrlSTEP", obj.UrlSTEP));
+
+                cmd.CommandType = CommandType.Text;
+
+                if (cmd.ExecuteNonQuery() < 1)
+                {
+                    respuesta = false;
+                }
+            }
+
+            return respuesta;
         }
 
     }
