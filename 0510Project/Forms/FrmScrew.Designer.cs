@@ -46,7 +46,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle49 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pNavBar = new System.Windows.Forms.Panel();
-            this.btnFormSize = new FontAwesome.Sharp.IconButton();
             this.btnClose = new System.Windows.Forms.Button();
             this.txtFilter = new System.Windows.Forms.TextBox();
             this.dgvScrews = new System.Windows.Forms.DataGridView();
@@ -65,59 +64,39 @@
             this.txtTypeName = new System.Windows.Forms.TextBox();
             this.txtIDScrewType = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.btnClearScrewType = new FontAwesome.Sharp.IconButton();
-            this.btnSelectScrewType = new FontAwesome.Sharp.IconButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtSizeName = new System.Windows.Forms.TextBox();
             this.txtIDScrewSize = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnClearScrewSize = new FontAwesome.Sharp.IconButton();
-            this.btnSelectScrewSize = new FontAwesome.Sharp.IconButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtLengthInch = new System.Windows.Forms.TextBox();
             this.txtIDScrewLength = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnClearScrewLength = new FontAwesome.Sharp.IconButton();
-            this.btnSelectScrewLength = new FontAwesome.Sharp.IconButton();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtMaterialName = new System.Windows.Forms.TextBox();
             this.txtIDScrewMaterial = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.btnClearScrewMaterial = new FontAwesome.Sharp.IconButton();
-            this.btnSelectScrewMaterial = new FontAwesome.Sharp.IconButton();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txtNToolName = new System.Windows.Forms.TextBox();
             this.txtIDScrewNTool = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.btnClearScrewNTool = new FontAwesome.Sharp.IconButton();
-            this.btnSelectScrewNTool = new FontAwesome.Sharp.IconButton();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.label10 = new System.Windows.Forms.Label();
             this.txtAbbreviationName = new System.Windows.Forms.TextBox();
             this.txtIDScrewAbbreviation = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.btnClearScrewAbbreviation = new FontAwesome.Sharp.IconButton();
-            this.btnSelectScrewAbbreviation = new FontAwesome.Sharp.IconButton();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.btnClean = new FontAwesome.Sharp.IconButton();
-            this.btnDisable = new FontAwesome.Sharp.IconButton();
             this.dgvAvailableTools = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iconButton14 = new FontAwesome.Sharp.IconButton();
-            this.btnUpdate = new FontAwesome.Sharp.IconButton();
-            this.iconButton13 = new FontAwesome.Sharp.IconButton();
             this.label19 = new System.Windows.Forms.Label();
-            this.iconButton12 = new FontAwesome.Sharp.IconButton();
             this.txtUrlSTEP = new System.Windows.Forms.TextBox();
-            this.btnSave = new FontAwesome.Sharp.IconButton();
             this.label18 = new System.Windows.Forms.Label();
-            this.btnCheckUrlPDF = new FontAwesome.Sharp.IconButton();
             this.txtUrlPDF = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.txtVendorPartNumber = new System.Windows.Forms.TextBox();
@@ -127,6 +106,27 @@
             this.txtIDScrew = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.checkActives = new System.Windows.Forms.CheckBox();
+            this.btnClearScrewAbbreviation = new FontAwesome.Sharp.IconButton();
+            this.btnSelectScrewAbbreviation = new FontAwesome.Sharp.IconButton();
+            this.btnClearScrewNTool = new FontAwesome.Sharp.IconButton();
+            this.btnSelectScrewNTool = new FontAwesome.Sharp.IconButton();
+            this.btnClearScrewMaterial = new FontAwesome.Sharp.IconButton();
+            this.btnSelectScrewMaterial = new FontAwesome.Sharp.IconButton();
+            this.btnClearScrewLength = new FontAwesome.Sharp.IconButton();
+            this.btnSelectScrewLength = new FontAwesome.Sharp.IconButton();
+            this.btnClearScrewSize = new FontAwesome.Sharp.IconButton();
+            this.btnSelectScrewSize = new FontAwesome.Sharp.IconButton();
+            this.btnClearScrewType = new FontAwesome.Sharp.IconButton();
+            this.btnSelectScrewType = new FontAwesome.Sharp.IconButton();
+            this.btnFormSize = new FontAwesome.Sharp.IconButton();
+            this.btnClean = new FontAwesome.Sharp.IconButton();
+            this.btnDisable = new FontAwesome.Sharp.IconButton();
+            this.iconButton14 = new FontAwesome.Sharp.IconButton();
+            this.btnUpdate = new FontAwesome.Sharp.IconButton();
+            this.iconButton13 = new FontAwesome.Sharp.IconButton();
+            this.iconButton12 = new FontAwesome.Sharp.IconButton();
+            this.btnSave = new FontAwesome.Sharp.IconButton();
+            this.btnCheckUrlPDF = new FontAwesome.Sharp.IconButton();
             this.pNavBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvScrews)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -150,22 +150,6 @@
             this.pNavBar.Size = new System.Drawing.Size(1920, 42);
             this.pNavBar.TabIndex = 5;
             this.pNavBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pNavBar_MouseDown);
-            // 
-            // btnFormSize
-            // 
-            this.btnFormSize.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnFormSize.FlatAppearance.BorderSize = 0;
-            this.btnFormSize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFormSize.IconChar = FontAwesome.Sharp.IconChar.ExpandAlt;
-            this.btnFormSize.IconColor = System.Drawing.Color.White;
-            this.btnFormSize.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnFormSize.IconSize = 30;
-            this.btnFormSize.Location = new System.Drawing.Point(1833, 0);
-            this.btnFormSize.Name = "btnFormSize";
-            this.btnFormSize.Size = new System.Drawing.Size(41, 42);
-            this.btnFormSize.TabIndex = 2;
-            this.btnFormSize.UseVisualStyleBackColor = true;
-            this.btnFormSize.Click += new System.EventHandler(this.btnFormSize_Click);
             // 
             // btnClose
             // 
@@ -414,40 +398,6 @@
             this.label17.TabIndex = 163;
             this.label17.Text = "Type Name";
             // 
-            // btnClearScrewType
-            // 
-            this.btnClearScrewType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.btnClearScrewType.FlatAppearance.BorderSize = 0;
-            this.btnClearScrewType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClearScrewType.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClearScrewType.IconChar = FontAwesome.Sharp.IconChar.Trash;
-            this.btnClearScrewType.IconColor = System.Drawing.Color.White;
-            this.btnClearScrewType.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnClearScrewType.IconSize = 20;
-            this.btnClearScrewType.Location = new System.Drawing.Point(275, 64);
-            this.btnClearScrewType.Name = "btnClearScrewType";
-            this.btnClearScrewType.Size = new System.Drawing.Size(36, 30);
-            this.btnClearScrewType.TabIndex = 132;
-            this.btnClearScrewType.UseVisualStyleBackColor = false;
-            this.btnClearScrewType.Click += new System.EventHandler(this.btnClearScrewType_Click);
-            // 
-            // btnSelectScrewType
-            // 
-            this.btnSelectScrewType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.btnSelectScrewType.FlatAppearance.BorderSize = 0;
-            this.btnSelectScrewType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSelectScrewType.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSelectScrewType.IconChar = FontAwesome.Sharp.IconChar.Plus;
-            this.btnSelectScrewType.IconColor = System.Drawing.Color.White;
-            this.btnSelectScrewType.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnSelectScrewType.IconSize = 20;
-            this.btnSelectScrewType.Location = new System.Drawing.Point(212, 64);
-            this.btnSelectScrewType.Name = "btnSelectScrewType";
-            this.btnSelectScrewType.Size = new System.Drawing.Size(36, 30);
-            this.btnSelectScrewType.TabIndex = 150;
-            this.btnSelectScrewType.UseVisualStyleBackColor = false;
-            this.btnSelectScrewType.Click += new System.EventHandler(this.btnSelectScrewType_Click);
-            // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
@@ -506,40 +456,6 @@
             this.label2.TabIndex = 163;
             this.label2.Text = "Size";
             // 
-            // btnClearScrewSize
-            // 
-            this.btnClearScrewSize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.btnClearScrewSize.FlatAppearance.BorderSize = 0;
-            this.btnClearScrewSize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClearScrewSize.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClearScrewSize.IconChar = FontAwesome.Sharp.IconChar.Trash;
-            this.btnClearScrewSize.IconColor = System.Drawing.Color.White;
-            this.btnClearScrewSize.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnClearScrewSize.IconSize = 20;
-            this.btnClearScrewSize.Location = new System.Drawing.Point(275, 64);
-            this.btnClearScrewSize.Name = "btnClearScrewSize";
-            this.btnClearScrewSize.Size = new System.Drawing.Size(36, 30);
-            this.btnClearScrewSize.TabIndex = 132;
-            this.btnClearScrewSize.UseVisualStyleBackColor = false;
-            this.btnClearScrewSize.Click += new System.EventHandler(this.btnClearScrewSize_Click);
-            // 
-            // btnSelectScrewSize
-            // 
-            this.btnSelectScrewSize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.btnSelectScrewSize.FlatAppearance.BorderSize = 0;
-            this.btnSelectScrewSize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSelectScrewSize.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSelectScrewSize.IconChar = FontAwesome.Sharp.IconChar.Plus;
-            this.btnSelectScrewSize.IconColor = System.Drawing.Color.White;
-            this.btnSelectScrewSize.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnSelectScrewSize.IconSize = 20;
-            this.btnSelectScrewSize.Location = new System.Drawing.Point(212, 64);
-            this.btnSelectScrewSize.Name = "btnSelectScrewSize";
-            this.btnSelectScrewSize.Size = new System.Drawing.Size(36, 30);
-            this.btnSelectScrewSize.TabIndex = 150;
-            this.btnSelectScrewSize.UseVisualStyleBackColor = false;
-            this.btnSelectScrewSize.Click += new System.EventHandler(this.btnSelectScrewSize_Click);
-            // 
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.Transparent;
@@ -586,6 +502,7 @@
             this.txtIDScrewLength.Size = new System.Drawing.Size(152, 30);
             this.txtIDScrewLength.TabIndex = 162;
             this.txtIDScrewLength.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtIDScrewLength.TextChanged += new System.EventHandler(this.txtIDScrewLength_TextChanged);
             // 
             // label4
             // 
@@ -596,38 +513,6 @@
             this.label4.Size = new System.Drawing.Size(107, 23);
             this.label4.TabIndex = 163;
             this.label4.Text = "Length Inch";
-            // 
-            // btnClearScrewLength
-            // 
-            this.btnClearScrewLength.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.btnClearScrewLength.FlatAppearance.BorderSize = 0;
-            this.btnClearScrewLength.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClearScrewLength.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClearScrewLength.IconChar = FontAwesome.Sharp.IconChar.Trash;
-            this.btnClearScrewLength.IconColor = System.Drawing.Color.White;
-            this.btnClearScrewLength.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnClearScrewLength.IconSize = 20;
-            this.btnClearScrewLength.Location = new System.Drawing.Point(275, 64);
-            this.btnClearScrewLength.Name = "btnClearScrewLength";
-            this.btnClearScrewLength.Size = new System.Drawing.Size(36, 30);
-            this.btnClearScrewLength.TabIndex = 132;
-            this.btnClearScrewLength.UseVisualStyleBackColor = false;
-            // 
-            // btnSelectScrewLength
-            // 
-            this.btnSelectScrewLength.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.btnSelectScrewLength.FlatAppearance.BorderSize = 0;
-            this.btnSelectScrewLength.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSelectScrewLength.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSelectScrewLength.IconChar = FontAwesome.Sharp.IconChar.Plus;
-            this.btnSelectScrewLength.IconColor = System.Drawing.Color.White;
-            this.btnSelectScrewLength.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnSelectScrewLength.IconSize = 20;
-            this.btnSelectScrewLength.Location = new System.Drawing.Point(212, 64);
-            this.btnSelectScrewLength.Name = "btnSelectScrewLength";
-            this.btnSelectScrewLength.Size = new System.Drawing.Size(36, 30);
-            this.btnSelectScrewLength.TabIndex = 150;
-            this.btnSelectScrewLength.UseVisualStyleBackColor = false;
             // 
             // groupBox4
             // 
@@ -675,6 +560,7 @@
             this.txtIDScrewMaterial.Size = new System.Drawing.Size(152, 30);
             this.txtIDScrewMaterial.TabIndex = 162;
             this.txtIDScrewMaterial.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtIDScrewMaterial.TextChanged += new System.EventHandler(this.txtIDScrewMaterial_TextChanged);
             // 
             // label6
             // 
@@ -685,38 +571,6 @@
             this.label6.Size = new System.Drawing.Size(79, 23);
             this.label6.TabIndex = 163;
             this.label6.Text = "Material";
-            // 
-            // btnClearScrewMaterial
-            // 
-            this.btnClearScrewMaterial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.btnClearScrewMaterial.FlatAppearance.BorderSize = 0;
-            this.btnClearScrewMaterial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClearScrewMaterial.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClearScrewMaterial.IconChar = FontAwesome.Sharp.IconChar.Trash;
-            this.btnClearScrewMaterial.IconColor = System.Drawing.Color.White;
-            this.btnClearScrewMaterial.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnClearScrewMaterial.IconSize = 20;
-            this.btnClearScrewMaterial.Location = new System.Drawing.Point(275, 64);
-            this.btnClearScrewMaterial.Name = "btnClearScrewMaterial";
-            this.btnClearScrewMaterial.Size = new System.Drawing.Size(36, 30);
-            this.btnClearScrewMaterial.TabIndex = 132;
-            this.btnClearScrewMaterial.UseVisualStyleBackColor = false;
-            // 
-            // btnSelectScrewMaterial
-            // 
-            this.btnSelectScrewMaterial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.btnSelectScrewMaterial.FlatAppearance.BorderSize = 0;
-            this.btnSelectScrewMaterial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSelectScrewMaterial.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSelectScrewMaterial.IconChar = FontAwesome.Sharp.IconChar.Plus;
-            this.btnSelectScrewMaterial.IconColor = System.Drawing.Color.White;
-            this.btnSelectScrewMaterial.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnSelectScrewMaterial.IconSize = 20;
-            this.btnSelectScrewMaterial.Location = new System.Drawing.Point(212, 64);
-            this.btnSelectScrewMaterial.Name = "btnSelectScrewMaterial";
-            this.btnSelectScrewMaterial.Size = new System.Drawing.Size(36, 30);
-            this.btnSelectScrewMaterial.TabIndex = 150;
-            this.btnSelectScrewMaterial.UseVisualStyleBackColor = false;
             // 
             // groupBox5
             // 
@@ -775,38 +629,6 @@
             this.label9.TabIndex = 163;
             this.label9.Text = "Number Tool";
             // 
-            // btnClearScrewNTool
-            // 
-            this.btnClearScrewNTool.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.btnClearScrewNTool.FlatAppearance.BorderSize = 0;
-            this.btnClearScrewNTool.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClearScrewNTool.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClearScrewNTool.IconChar = FontAwesome.Sharp.IconChar.Trash;
-            this.btnClearScrewNTool.IconColor = System.Drawing.Color.White;
-            this.btnClearScrewNTool.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnClearScrewNTool.IconSize = 20;
-            this.btnClearScrewNTool.Location = new System.Drawing.Point(314, 64);
-            this.btnClearScrewNTool.Name = "btnClearScrewNTool";
-            this.btnClearScrewNTool.Size = new System.Drawing.Size(36, 30);
-            this.btnClearScrewNTool.TabIndex = 132;
-            this.btnClearScrewNTool.UseVisualStyleBackColor = false;
-            // 
-            // btnSelectScrewNTool
-            // 
-            this.btnSelectScrewNTool.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.btnSelectScrewNTool.FlatAppearance.BorderSize = 0;
-            this.btnSelectScrewNTool.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSelectScrewNTool.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSelectScrewNTool.IconChar = FontAwesome.Sharp.IconChar.Plus;
-            this.btnSelectScrewNTool.IconColor = System.Drawing.Color.White;
-            this.btnSelectScrewNTool.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnSelectScrewNTool.IconSize = 20;
-            this.btnSelectScrewNTool.Location = new System.Drawing.Point(251, 64);
-            this.btnSelectScrewNTool.Name = "btnSelectScrewNTool";
-            this.btnSelectScrewNTool.Size = new System.Drawing.Size(36, 30);
-            this.btnSelectScrewNTool.TabIndex = 150;
-            this.btnSelectScrewNTool.UseVisualStyleBackColor = false;
-            // 
             // groupBox6
             // 
             this.groupBox6.BackColor = System.Drawing.Color.Transparent;
@@ -864,38 +686,6 @@
             this.label11.TabIndex = 163;
             this.label11.Text = "Abbreviation";
             // 
-            // btnClearScrewAbbreviation
-            // 
-            this.btnClearScrewAbbreviation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.btnClearScrewAbbreviation.FlatAppearance.BorderSize = 0;
-            this.btnClearScrewAbbreviation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClearScrewAbbreviation.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClearScrewAbbreviation.IconChar = FontAwesome.Sharp.IconChar.Trash;
-            this.btnClearScrewAbbreviation.IconColor = System.Drawing.Color.White;
-            this.btnClearScrewAbbreviation.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnClearScrewAbbreviation.IconSize = 20;
-            this.btnClearScrewAbbreviation.Location = new System.Drawing.Point(314, 64);
-            this.btnClearScrewAbbreviation.Name = "btnClearScrewAbbreviation";
-            this.btnClearScrewAbbreviation.Size = new System.Drawing.Size(36, 30);
-            this.btnClearScrewAbbreviation.TabIndex = 132;
-            this.btnClearScrewAbbreviation.UseVisualStyleBackColor = false;
-            // 
-            // btnSelectScrewAbbreviation
-            // 
-            this.btnSelectScrewAbbreviation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.btnSelectScrewAbbreviation.FlatAppearance.BorderSize = 0;
-            this.btnSelectScrewAbbreviation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSelectScrewAbbreviation.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSelectScrewAbbreviation.IconChar = FontAwesome.Sharp.IconChar.Plus;
-            this.btnSelectScrewAbbreviation.IconColor = System.Drawing.Color.White;
-            this.btnSelectScrewAbbreviation.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnSelectScrewAbbreviation.IconSize = 20;
-            this.btnSelectScrewAbbreviation.Location = new System.Drawing.Point(251, 64);
-            this.btnSelectScrewAbbreviation.Name = "btnSelectScrewAbbreviation";
-            this.btnSelectScrewAbbreviation.Size = new System.Drawing.Size(36, 30);
-            this.btnSelectScrewAbbreviation.TabIndex = 150;
-            this.btnSelectScrewAbbreviation.UseVisualStyleBackColor = false;
-            // 
             // groupBox7
             // 
             this.groupBox7.BackColor = System.Drawing.Color.Transparent;
@@ -939,47 +729,6 @@
             this.label20.Size = new System.Drawing.Size(93, 33);
             this.label20.TabIndex = 182;
             this.label20.Text = "Screw";
-            // 
-            // btnClean
-            // 
-            this.btnClean.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.btnClean.FlatAppearance.BorderSize = 0;
-            this.btnClean.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClean.Font = new System.Drawing.Font("Roboto", 20F, System.Drawing.FontStyle.Bold);
-            this.btnClean.ForeColor = System.Drawing.Color.White;
-            this.btnClean.IconChar = FontAwesome.Sharp.IconChar.Broom;
-            this.btnClean.IconColor = System.Drawing.Color.White;
-            this.btnClean.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnClean.IconSize = 30;
-            this.btnClean.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClean.Location = new System.Drawing.Point(584, 42);
-            this.btnClean.Name = "btnClean";
-            this.btnClean.Size = new System.Drawing.Size(176, 40);
-            this.btnClean.TabIndex = 180;
-            this.btnClean.Text = "Clean    ";
-            this.btnClean.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnClean.UseVisualStyleBackColor = false;
-            this.btnClean.Click += new System.EventHandler(this.btnClean_Click);
-            // 
-            // btnDisable
-            // 
-            this.btnDisable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.btnDisable.FlatAppearance.BorderSize = 0;
-            this.btnDisable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDisable.Font = new System.Drawing.Font("Roboto", 20F, System.Drawing.FontStyle.Bold);
-            this.btnDisable.ForeColor = System.Drawing.Color.White;
-            this.btnDisable.IconChar = FontAwesome.Sharp.IconChar.Ban;
-            this.btnDisable.IconColor = System.Drawing.Color.White;
-            this.btnDisable.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnDisable.IconSize = 30;
-            this.btnDisable.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDisable.Location = new System.Drawing.Point(393, 42);
-            this.btnDisable.Name = "btnDisable";
-            this.btnDisable.Size = new System.Drawing.Size(176, 40);
-            this.btnDisable.TabIndex = 181;
-            this.btnDisable.Text = "Disable  ";
-            this.btnDisable.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnDisable.UseVisualStyleBackColor = false;
             // 
             // dgvAvailableTools
             // 
@@ -1046,64 +795,6 @@
             this.dataGridViewTextBoxColumn2.ReadOnly = true;
             this.dataGridViewTextBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
-            // iconButton14
-            // 
-            this.iconButton14.BackColor = System.Drawing.Color.Firebrick;
-            this.iconButton14.FlatAppearance.BorderSize = 0;
-            this.iconButton14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton14.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton14.ForeColor = System.Drawing.Color.White;
-            this.iconButton14.IconChar = FontAwesome.Sharp.IconChar.Minus;
-            this.iconButton14.IconColor = System.Drawing.Color.White;
-            this.iconButton14.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton14.IconSize = 20;
-            this.iconButton14.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton14.Location = new System.Drawing.Point(641, 392);
-            this.iconButton14.Name = "iconButton14";
-            this.iconButton14.Size = new System.Drawing.Size(119, 30);
-            this.iconButton14.TabIndex = 177;
-            this.iconButton14.Text = "Unlink";
-            this.iconButton14.UseVisualStyleBackColor = false;
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.btnUpdate.FlatAppearance.BorderSize = 0;
-            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdate.Font = new System.Drawing.Font("Roboto", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.IconChar = FontAwesome.Sharp.IconChar.Pen;
-            this.btnUpdate.IconColor = System.Drawing.Color.White;
-            this.btnUpdate.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnUpdate.IconSize = 30;
-            this.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUpdate.Location = new System.Drawing.Point(202, 42);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(176, 40);
-            this.btnUpdate.TabIndex = 179;
-            this.btnUpdate.Text = "Update   ";
-            this.btnUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnUpdate.UseVisualStyleBackColor = false;
-            // 
-            // iconButton13
-            // 
-            this.iconButton13.BackColor = System.Drawing.Color.Green;
-            this.iconButton13.FlatAppearance.BorderSize = 0;
-            this.iconButton13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton13.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton13.ForeColor = System.Drawing.Color.White;
-            this.iconButton13.IconChar = FontAwesome.Sharp.IconChar.Plus;
-            this.iconButton13.IconColor = System.Drawing.Color.White;
-            this.iconButton13.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton13.IconSize = 20;
-            this.iconButton13.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton13.Location = new System.Drawing.Point(640, 343);
-            this.iconButton13.Name = "iconButton13";
-            this.iconButton13.Size = new System.Drawing.Size(119, 30);
-            this.iconButton13.TabIndex = 176;
-            this.iconButton13.Text = "Link";
-            this.iconButton13.UseVisualStyleBackColor = false;
-            // 
             // label19
             // 
             this.label19.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1114,26 +805,6 @@
             this.label19.Text = "Available Tools To Use with this Screw";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // iconButton12
-            // 
-            this.iconButton12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.iconButton12.FlatAppearance.BorderSize = 0;
-            this.iconButton12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton12.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton12.ForeColor = System.Drawing.Color.White;
-            this.iconButton12.IconChar = FontAwesome.Sharp.IconChar.GoogleDrive;
-            this.iconButton12.IconColor = System.Drawing.Color.White;
-            this.iconButton12.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton12.IconSize = 25;
-            this.iconButton12.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton12.Location = new System.Drawing.Point(639, 253);
-            this.iconButton12.Name = "iconButton12";
-            this.iconButton12.Size = new System.Drawing.Size(120, 30);
-            this.iconButton12.TabIndex = 173;
-            this.iconButton12.Text = "Check URL";
-            this.iconButton12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton12.UseVisualStyleBackColor = false;
-            // 
             // txtUrlSTEP
             // 
             this.txtUrlSTEP.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1142,26 +813,6 @@
             this.txtUrlSTEP.Size = new System.Drawing.Size(611, 30);
             this.txtUrlSTEP.TabIndex = 171;
             this.txtUrlSTEP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // btnSave
-            // 
-            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.btnSave.FlatAppearance.BorderSize = 0;
-            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Font = new System.Drawing.Font("Roboto", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.IconChar = FontAwesome.Sharp.IconChar.Plus;
-            this.btnSave.IconColor = System.Drawing.Color.White;
-            this.btnSave.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnSave.IconSize = 30;
-            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSave.Location = new System.Drawing.Point(11, 42);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(176, 40);
-            this.btnSave.TabIndex = 178;
-            this.btnSave.Text = "Save     ";
-            this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSave.UseVisualStyleBackColor = false;
             // 
             // label18
             // 
@@ -1172,27 +823,6 @@
             this.label18.TabIndex = 172;
             this.label18.Text = "URL STEP";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnCheckUrlPDF
-            // 
-            this.btnCheckUrlPDF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.btnCheckUrlPDF.FlatAppearance.BorderSize = 0;
-            this.btnCheckUrlPDF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCheckUrlPDF.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCheckUrlPDF.ForeColor = System.Drawing.Color.White;
-            this.btnCheckUrlPDF.IconChar = FontAwesome.Sharp.IconChar.GoogleDrive;
-            this.btnCheckUrlPDF.IconColor = System.Drawing.Color.White;
-            this.btnCheckUrlPDF.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnCheckUrlPDF.IconSize = 25;
-            this.btnCheckUrlPDF.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCheckUrlPDF.Location = new System.Drawing.Point(640, 186);
-            this.btnCheckUrlPDF.Name = "btnCheckUrlPDF";
-            this.btnCheckUrlPDF.Size = new System.Drawing.Size(120, 30);
-            this.btnCheckUrlPDF.TabIndex = 170;
-            this.btnCheckUrlPDF.Text = "Check URL";
-            this.btnCheckUrlPDF.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCheckUrlPDF.UseVisualStyleBackColor = false;
-            this.btnCheckUrlPDF.Click += new System.EventHandler(this.btnCheckUrlPDF_Click);
             // 
             // txtUrlPDF
             // 
@@ -1284,6 +914,382 @@
             this.checkActives.Text = "See Actives";
             this.checkActives.UseVisualStyleBackColor = true;
             this.checkActives.CheckedChanged += new System.EventHandler(this.checkActives_CheckedChanged);
+            // 
+            // btnClearScrewAbbreviation
+            // 
+            this.btnClearScrewAbbreviation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnClearScrewAbbreviation.FlatAppearance.BorderSize = 0;
+            this.btnClearScrewAbbreviation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClearScrewAbbreviation.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClearScrewAbbreviation.IconChar = FontAwesome.Sharp.IconChar.Trash;
+            this.btnClearScrewAbbreviation.IconColor = System.Drawing.Color.White;
+            this.btnClearScrewAbbreviation.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnClearScrewAbbreviation.IconSize = 20;
+            this.btnClearScrewAbbreviation.Location = new System.Drawing.Point(314, 64);
+            this.btnClearScrewAbbreviation.Name = "btnClearScrewAbbreviation";
+            this.btnClearScrewAbbreviation.Size = new System.Drawing.Size(36, 30);
+            this.btnClearScrewAbbreviation.TabIndex = 132;
+            this.btnClearScrewAbbreviation.UseVisualStyleBackColor = false;
+            // 
+            // btnSelectScrewAbbreviation
+            // 
+            this.btnSelectScrewAbbreviation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnSelectScrewAbbreviation.FlatAppearance.BorderSize = 0;
+            this.btnSelectScrewAbbreviation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSelectScrewAbbreviation.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSelectScrewAbbreviation.IconChar = FontAwesome.Sharp.IconChar.Plus;
+            this.btnSelectScrewAbbreviation.IconColor = System.Drawing.Color.White;
+            this.btnSelectScrewAbbreviation.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnSelectScrewAbbreviation.IconSize = 20;
+            this.btnSelectScrewAbbreviation.Location = new System.Drawing.Point(251, 64);
+            this.btnSelectScrewAbbreviation.Name = "btnSelectScrewAbbreviation";
+            this.btnSelectScrewAbbreviation.Size = new System.Drawing.Size(36, 30);
+            this.btnSelectScrewAbbreviation.TabIndex = 150;
+            this.btnSelectScrewAbbreviation.UseVisualStyleBackColor = false;
+            // 
+            // btnClearScrewNTool
+            // 
+            this.btnClearScrewNTool.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnClearScrewNTool.FlatAppearance.BorderSize = 0;
+            this.btnClearScrewNTool.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClearScrewNTool.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClearScrewNTool.IconChar = FontAwesome.Sharp.IconChar.Trash;
+            this.btnClearScrewNTool.IconColor = System.Drawing.Color.White;
+            this.btnClearScrewNTool.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnClearScrewNTool.IconSize = 20;
+            this.btnClearScrewNTool.Location = new System.Drawing.Point(314, 64);
+            this.btnClearScrewNTool.Name = "btnClearScrewNTool";
+            this.btnClearScrewNTool.Size = new System.Drawing.Size(36, 30);
+            this.btnClearScrewNTool.TabIndex = 132;
+            this.btnClearScrewNTool.UseVisualStyleBackColor = false;
+            // 
+            // btnSelectScrewNTool
+            // 
+            this.btnSelectScrewNTool.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnSelectScrewNTool.FlatAppearance.BorderSize = 0;
+            this.btnSelectScrewNTool.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSelectScrewNTool.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSelectScrewNTool.IconChar = FontAwesome.Sharp.IconChar.Plus;
+            this.btnSelectScrewNTool.IconColor = System.Drawing.Color.White;
+            this.btnSelectScrewNTool.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnSelectScrewNTool.IconSize = 20;
+            this.btnSelectScrewNTool.Location = new System.Drawing.Point(251, 64);
+            this.btnSelectScrewNTool.Name = "btnSelectScrewNTool";
+            this.btnSelectScrewNTool.Size = new System.Drawing.Size(36, 30);
+            this.btnSelectScrewNTool.TabIndex = 150;
+            this.btnSelectScrewNTool.UseVisualStyleBackColor = false;
+            // 
+            // btnClearScrewMaterial
+            // 
+            this.btnClearScrewMaterial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnClearScrewMaterial.FlatAppearance.BorderSize = 0;
+            this.btnClearScrewMaterial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClearScrewMaterial.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClearScrewMaterial.IconChar = FontAwesome.Sharp.IconChar.Trash;
+            this.btnClearScrewMaterial.IconColor = System.Drawing.Color.White;
+            this.btnClearScrewMaterial.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnClearScrewMaterial.IconSize = 20;
+            this.btnClearScrewMaterial.Location = new System.Drawing.Point(275, 64);
+            this.btnClearScrewMaterial.Name = "btnClearScrewMaterial";
+            this.btnClearScrewMaterial.Size = new System.Drawing.Size(36, 30);
+            this.btnClearScrewMaterial.TabIndex = 132;
+            this.btnClearScrewMaterial.UseVisualStyleBackColor = false;
+            this.btnClearScrewMaterial.Click += new System.EventHandler(this.btnClearScrewMaterial_Click);
+            // 
+            // btnSelectScrewMaterial
+            // 
+            this.btnSelectScrewMaterial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnSelectScrewMaterial.FlatAppearance.BorderSize = 0;
+            this.btnSelectScrewMaterial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSelectScrewMaterial.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSelectScrewMaterial.IconChar = FontAwesome.Sharp.IconChar.Plus;
+            this.btnSelectScrewMaterial.IconColor = System.Drawing.Color.White;
+            this.btnSelectScrewMaterial.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnSelectScrewMaterial.IconSize = 20;
+            this.btnSelectScrewMaterial.Location = new System.Drawing.Point(212, 64);
+            this.btnSelectScrewMaterial.Name = "btnSelectScrewMaterial";
+            this.btnSelectScrewMaterial.Size = new System.Drawing.Size(36, 30);
+            this.btnSelectScrewMaterial.TabIndex = 150;
+            this.btnSelectScrewMaterial.UseVisualStyleBackColor = false;
+            this.btnSelectScrewMaterial.Click += new System.EventHandler(this.btnSelectScrewMaterial_Click);
+            // 
+            // btnClearScrewLength
+            // 
+            this.btnClearScrewLength.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnClearScrewLength.FlatAppearance.BorderSize = 0;
+            this.btnClearScrewLength.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClearScrewLength.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClearScrewLength.IconChar = FontAwesome.Sharp.IconChar.Trash;
+            this.btnClearScrewLength.IconColor = System.Drawing.Color.White;
+            this.btnClearScrewLength.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnClearScrewLength.IconSize = 20;
+            this.btnClearScrewLength.Location = new System.Drawing.Point(275, 64);
+            this.btnClearScrewLength.Name = "btnClearScrewLength";
+            this.btnClearScrewLength.Size = new System.Drawing.Size(36, 30);
+            this.btnClearScrewLength.TabIndex = 132;
+            this.btnClearScrewLength.UseVisualStyleBackColor = false;
+            this.btnClearScrewLength.Click += new System.EventHandler(this.btnClearScrewLength_Click);
+            // 
+            // btnSelectScrewLength
+            // 
+            this.btnSelectScrewLength.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnSelectScrewLength.FlatAppearance.BorderSize = 0;
+            this.btnSelectScrewLength.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSelectScrewLength.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSelectScrewLength.IconChar = FontAwesome.Sharp.IconChar.Plus;
+            this.btnSelectScrewLength.IconColor = System.Drawing.Color.White;
+            this.btnSelectScrewLength.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnSelectScrewLength.IconSize = 20;
+            this.btnSelectScrewLength.Location = new System.Drawing.Point(212, 64);
+            this.btnSelectScrewLength.Name = "btnSelectScrewLength";
+            this.btnSelectScrewLength.Size = new System.Drawing.Size(36, 30);
+            this.btnSelectScrewLength.TabIndex = 150;
+            this.btnSelectScrewLength.UseVisualStyleBackColor = false;
+            this.btnSelectScrewLength.Click += new System.EventHandler(this.btnSelectScrewLength_Click);
+            // 
+            // btnClearScrewSize
+            // 
+            this.btnClearScrewSize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnClearScrewSize.FlatAppearance.BorderSize = 0;
+            this.btnClearScrewSize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClearScrewSize.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClearScrewSize.IconChar = FontAwesome.Sharp.IconChar.Trash;
+            this.btnClearScrewSize.IconColor = System.Drawing.Color.White;
+            this.btnClearScrewSize.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnClearScrewSize.IconSize = 20;
+            this.btnClearScrewSize.Location = new System.Drawing.Point(275, 64);
+            this.btnClearScrewSize.Name = "btnClearScrewSize";
+            this.btnClearScrewSize.Size = new System.Drawing.Size(36, 30);
+            this.btnClearScrewSize.TabIndex = 132;
+            this.btnClearScrewSize.UseVisualStyleBackColor = false;
+            this.btnClearScrewSize.Click += new System.EventHandler(this.btnClearScrewSize_Click);
+            // 
+            // btnSelectScrewSize
+            // 
+            this.btnSelectScrewSize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnSelectScrewSize.FlatAppearance.BorderSize = 0;
+            this.btnSelectScrewSize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSelectScrewSize.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSelectScrewSize.IconChar = FontAwesome.Sharp.IconChar.Plus;
+            this.btnSelectScrewSize.IconColor = System.Drawing.Color.White;
+            this.btnSelectScrewSize.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnSelectScrewSize.IconSize = 20;
+            this.btnSelectScrewSize.Location = new System.Drawing.Point(212, 64);
+            this.btnSelectScrewSize.Name = "btnSelectScrewSize";
+            this.btnSelectScrewSize.Size = new System.Drawing.Size(36, 30);
+            this.btnSelectScrewSize.TabIndex = 150;
+            this.btnSelectScrewSize.UseVisualStyleBackColor = false;
+            this.btnSelectScrewSize.Click += new System.EventHandler(this.btnSelectScrewSize_Click);
+            // 
+            // btnClearScrewType
+            // 
+            this.btnClearScrewType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnClearScrewType.FlatAppearance.BorderSize = 0;
+            this.btnClearScrewType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClearScrewType.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClearScrewType.IconChar = FontAwesome.Sharp.IconChar.Trash;
+            this.btnClearScrewType.IconColor = System.Drawing.Color.White;
+            this.btnClearScrewType.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnClearScrewType.IconSize = 20;
+            this.btnClearScrewType.Location = new System.Drawing.Point(275, 64);
+            this.btnClearScrewType.Name = "btnClearScrewType";
+            this.btnClearScrewType.Size = new System.Drawing.Size(36, 30);
+            this.btnClearScrewType.TabIndex = 132;
+            this.btnClearScrewType.UseVisualStyleBackColor = false;
+            this.btnClearScrewType.Click += new System.EventHandler(this.btnClearScrewType_Click);
+            // 
+            // btnSelectScrewType
+            // 
+            this.btnSelectScrewType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnSelectScrewType.FlatAppearance.BorderSize = 0;
+            this.btnSelectScrewType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSelectScrewType.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSelectScrewType.IconChar = FontAwesome.Sharp.IconChar.Plus;
+            this.btnSelectScrewType.IconColor = System.Drawing.Color.White;
+            this.btnSelectScrewType.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnSelectScrewType.IconSize = 20;
+            this.btnSelectScrewType.Location = new System.Drawing.Point(212, 64);
+            this.btnSelectScrewType.Name = "btnSelectScrewType";
+            this.btnSelectScrewType.Size = new System.Drawing.Size(36, 30);
+            this.btnSelectScrewType.TabIndex = 150;
+            this.btnSelectScrewType.UseVisualStyleBackColor = false;
+            this.btnSelectScrewType.Click += new System.EventHandler(this.btnSelectScrewType_Click);
+            // 
+            // btnFormSize
+            // 
+            this.btnFormSize.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnFormSize.FlatAppearance.BorderSize = 0;
+            this.btnFormSize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFormSize.IconChar = FontAwesome.Sharp.IconChar.ExpandAlt;
+            this.btnFormSize.IconColor = System.Drawing.Color.White;
+            this.btnFormSize.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnFormSize.IconSize = 30;
+            this.btnFormSize.Location = new System.Drawing.Point(1833, 0);
+            this.btnFormSize.Name = "btnFormSize";
+            this.btnFormSize.Size = new System.Drawing.Size(41, 42);
+            this.btnFormSize.TabIndex = 2;
+            this.btnFormSize.UseVisualStyleBackColor = true;
+            this.btnFormSize.Click += new System.EventHandler(this.btnFormSize_Click);
+            // 
+            // btnClean
+            // 
+            this.btnClean.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnClean.FlatAppearance.BorderSize = 0;
+            this.btnClean.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClean.Font = new System.Drawing.Font("Roboto", 20F, System.Drawing.FontStyle.Bold);
+            this.btnClean.ForeColor = System.Drawing.Color.White;
+            this.btnClean.IconChar = FontAwesome.Sharp.IconChar.Broom;
+            this.btnClean.IconColor = System.Drawing.Color.White;
+            this.btnClean.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnClean.IconSize = 30;
+            this.btnClean.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClean.Location = new System.Drawing.Point(584, 42);
+            this.btnClean.Name = "btnClean";
+            this.btnClean.Size = new System.Drawing.Size(176, 40);
+            this.btnClean.TabIndex = 180;
+            this.btnClean.Text = "Clean    ";
+            this.btnClean.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnClean.UseVisualStyleBackColor = false;
+            this.btnClean.Click += new System.EventHandler(this.btnClean_Click);
+            // 
+            // btnDisable
+            // 
+            this.btnDisable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnDisable.FlatAppearance.BorderSize = 0;
+            this.btnDisable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDisable.Font = new System.Drawing.Font("Roboto", 20F, System.Drawing.FontStyle.Bold);
+            this.btnDisable.ForeColor = System.Drawing.Color.White;
+            this.btnDisable.IconChar = FontAwesome.Sharp.IconChar.Ban;
+            this.btnDisable.IconColor = System.Drawing.Color.White;
+            this.btnDisable.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnDisable.IconSize = 30;
+            this.btnDisable.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDisable.Location = new System.Drawing.Point(393, 42);
+            this.btnDisable.Name = "btnDisable";
+            this.btnDisable.Size = new System.Drawing.Size(176, 40);
+            this.btnDisable.TabIndex = 181;
+            this.btnDisable.Text = "Disable  ";
+            this.btnDisable.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDisable.UseVisualStyleBackColor = false;
+            // 
+            // iconButton14
+            // 
+            this.iconButton14.BackColor = System.Drawing.Color.Firebrick;
+            this.iconButton14.FlatAppearance.BorderSize = 0;
+            this.iconButton14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton14.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton14.ForeColor = System.Drawing.Color.White;
+            this.iconButton14.IconChar = FontAwesome.Sharp.IconChar.Minus;
+            this.iconButton14.IconColor = System.Drawing.Color.White;
+            this.iconButton14.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton14.IconSize = 20;
+            this.iconButton14.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton14.Location = new System.Drawing.Point(641, 392);
+            this.iconButton14.Name = "iconButton14";
+            this.iconButton14.Size = new System.Drawing.Size(119, 30);
+            this.iconButton14.TabIndex = 177;
+            this.iconButton14.Text = "Unlink";
+            this.iconButton14.UseVisualStyleBackColor = false;
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnUpdate.FlatAppearance.BorderSize = 0;
+            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdate.Font = new System.Drawing.Font("Roboto", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.ForeColor = System.Drawing.Color.White;
+            this.btnUpdate.IconChar = FontAwesome.Sharp.IconChar.Pen;
+            this.btnUpdate.IconColor = System.Drawing.Color.White;
+            this.btnUpdate.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnUpdate.IconSize = 30;
+            this.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUpdate.Location = new System.Drawing.Point(202, 42);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(176, 40);
+            this.btnUpdate.TabIndex = 179;
+            this.btnUpdate.Text = "Update   ";
+            this.btnUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnUpdate.UseVisualStyleBackColor = false;
+            // 
+            // iconButton13
+            // 
+            this.iconButton13.BackColor = System.Drawing.Color.Green;
+            this.iconButton13.FlatAppearance.BorderSize = 0;
+            this.iconButton13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton13.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton13.ForeColor = System.Drawing.Color.White;
+            this.iconButton13.IconChar = FontAwesome.Sharp.IconChar.Plus;
+            this.iconButton13.IconColor = System.Drawing.Color.White;
+            this.iconButton13.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton13.IconSize = 20;
+            this.iconButton13.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton13.Location = new System.Drawing.Point(640, 343);
+            this.iconButton13.Name = "iconButton13";
+            this.iconButton13.Size = new System.Drawing.Size(119, 30);
+            this.iconButton13.TabIndex = 176;
+            this.iconButton13.Text = "Link";
+            this.iconButton13.UseVisualStyleBackColor = false;
+            // 
+            // iconButton12
+            // 
+            this.iconButton12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.iconButton12.FlatAppearance.BorderSize = 0;
+            this.iconButton12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton12.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton12.ForeColor = System.Drawing.Color.White;
+            this.iconButton12.IconChar = FontAwesome.Sharp.IconChar.GoogleDrive;
+            this.iconButton12.IconColor = System.Drawing.Color.White;
+            this.iconButton12.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton12.IconSize = 25;
+            this.iconButton12.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton12.Location = new System.Drawing.Point(639, 253);
+            this.iconButton12.Name = "iconButton12";
+            this.iconButton12.Size = new System.Drawing.Size(120, 30);
+            this.iconButton12.TabIndex = 173;
+            this.iconButton12.Text = "Check URL";
+            this.iconButton12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton12.UseVisualStyleBackColor = false;
+            // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnSave.FlatAppearance.BorderSize = 0;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Font = new System.Drawing.Font("Roboto", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.ForeColor = System.Drawing.Color.White;
+            this.btnSave.IconChar = FontAwesome.Sharp.IconChar.Plus;
+            this.btnSave.IconColor = System.Drawing.Color.White;
+            this.btnSave.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnSave.IconSize = 30;
+            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSave.Location = new System.Drawing.Point(11, 42);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(176, 40);
+            this.btnSave.TabIndex = 178;
+            this.btnSave.Text = "Save     ";
+            this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSave.UseVisualStyleBackColor = false;
+            // 
+            // btnCheckUrlPDF
+            // 
+            this.btnCheckUrlPDF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnCheckUrlPDF.FlatAppearance.BorderSize = 0;
+            this.btnCheckUrlPDF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCheckUrlPDF.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheckUrlPDF.ForeColor = System.Drawing.Color.White;
+            this.btnCheckUrlPDF.IconChar = FontAwesome.Sharp.IconChar.GoogleDrive;
+            this.btnCheckUrlPDF.IconColor = System.Drawing.Color.White;
+            this.btnCheckUrlPDF.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCheckUrlPDF.IconSize = 25;
+            this.btnCheckUrlPDF.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCheckUrlPDF.Location = new System.Drawing.Point(640, 186);
+            this.btnCheckUrlPDF.Name = "btnCheckUrlPDF";
+            this.btnCheckUrlPDF.Size = new System.Drawing.Size(120, 30);
+            this.btnCheckUrlPDF.TabIndex = 170;
+            this.btnCheckUrlPDF.Text = "Check URL";
+            this.btnCheckUrlPDF.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCheckUrlPDF.UseVisualStyleBackColor = false;
+            this.btnCheckUrlPDF.Click += new System.EventHandler(this.btnCheckUrlPDF_Click);
             // 
             // FrmScrew
             // 

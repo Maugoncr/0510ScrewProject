@@ -264,7 +264,6 @@ namespace _0510Project.Forms
         public static string SizeName;
         private void btnSelectScrewSize_Click(object sender, EventArgs e)
         {
-            //TODO
             FrmSelectScrewSize frm = new FrmSelectScrewSize();
 
             DialogResult r = frm.ShowDialog();
@@ -292,6 +291,74 @@ namespace _0510Project.Forms
         {
             txtIDScrewSize.Clear();
             txtSizeName.Clear();
+        }
+
+        public static int IDScrewMaterial;
+        public static string MaterialName;
+
+        private void btnSelectScrewMaterial_Click(object sender, EventArgs e)
+        {
+            FrmSelectScrewMaterial frm = new FrmSelectScrewMaterial();
+
+            DialogResult r = frm.ShowDialog();
+
+            if (r == DialogResult.OK)
+            {
+                txtIDScrewMaterial.Text = IDScrewMaterial.ToString();
+                txtMaterialName.Text = MaterialName;
+            }
+        }
+
+        private void txtIDScrewMaterial_TextChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtIDScrewMaterial.Text.Trim()))
+            {
+                MyScrew.MyScrewMaterial.IDScrewMaterial = Convert.ToInt32(txtIDScrewMaterial.Text.Trim());
+            }
+            else
+            {
+                MyScrew.MyScrewMaterial.IDScrewMaterial = 0;
+            }
+        }
+
+        private void btnClearScrewMaterial_Click(object sender, EventArgs e)
+        {
+            txtIDScrewMaterial.Clear();
+            txtMaterialName.Clear();
+        }
+
+        public static int IDScrewLength;
+        public static string LengthInch;
+
+        private void btnSelectScrewLength_Click(object sender, EventArgs e)
+        {
+            FrmSelectScrewMaterial frm = new FrmSelectScrewMaterial();
+
+            DialogResult r = frm.ShowDialog();
+
+            if (r == DialogResult.OK)
+            {
+                txtIDScrewLength.Text = IDScrewLength.ToString();
+                txtLengthInch.Text = LengthInch;
+            }
+        }
+
+        private void txtIDScrewLength_TextChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtIDScrewLength.Text.Trim()))
+            {
+                MyScrew.MyScrewLength.IDScrewLength = Convert.ToInt32(txtIDScrewLength.Text.Trim());
+            }
+            else
+            {
+                MyScrew.MyScrewLength.IDScrewLength = 0;
+            }
+        }
+
+        private void btnClearScrewLength_Click(object sender, EventArgs e)
+        {
+            txtIDScrewLength.Clear();
+            txtLengthInch.Clear();
         }
     }
 }
