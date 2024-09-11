@@ -40,6 +40,9 @@
             this.dgvScrewAvailableTools = new System.Windows.Forms.DataGridView();
             this.CIDScrewTool = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CToolName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.pNavBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvScrewAvailableTools)).BeginInit();
             this.SuspendLayout();
@@ -163,11 +166,41 @@
             this.CToolName.ReadOnly = true;
             this.CToolName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel3.Location = new System.Drawing.Point(0, 55);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(2, 464);
+            this.panel3.TabIndex = 188;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel1.Location = new System.Drawing.Point(931, 55);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(2, 464);
+            this.panel1.TabIndex = 189;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(2, 517);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(929, 2);
+            this.panel2.TabIndex = 190;
+            // 
             // FrmSelectAvailableTool
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(933, 519);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.dgvScrewAvailableTools);
             this.Controls.Add(this.txtFilter);
             this.Controls.Add(this.label3);
@@ -195,5 +228,8 @@
         private System.Windows.Forms.DataGridView dgvScrewAvailableTools;
         private System.Windows.Forms.DataGridViewTextBoxColumn CIDScrewTool;
         private System.Windows.Forms.DataGridViewTextBoxColumn CToolName;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
     }
 }

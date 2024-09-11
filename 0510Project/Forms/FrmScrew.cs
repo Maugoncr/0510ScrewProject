@@ -148,16 +148,11 @@ namespace _0510Project.Forms
 
             if (checkActives.Checked)
             {
-                btnDisable.Text = "     Disable";
-
-                btnDisable.IconChar = FontAwesome.Sharp.IconChar.Ban;
+                btnDisable.Text = "Disable";
             }
             else
             {
-
-                btnDisable.Text = "     Enable";
-
-                btnDisable.IconChar = FontAwesome.Sharp.IconChar.PowerOff;
+                btnDisable.Text = "Enable";
             }
         }
 
@@ -539,7 +534,7 @@ namespace _0510Project.Forms
             }
         }
 
-        private bool ValidateDataToAdd()
+        private bool ValidateDataToAdd(string from = "save")
         {
             bool R = false;
 
@@ -561,7 +556,14 @@ namespace _0510Project.Forms
             }
             else
             {
-                MessageBox.Show("You cannot enter a record with missing data.", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if (from == "save")
+                {
+                    MessageBox.Show("You cannot enter a record with missing data.", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    MessageBox.Show("You cannot update a record with missing data.", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
 
             return R;
@@ -651,6 +653,21 @@ namespace _0510Project.Forms
                 {
                     dgvAvailableTools.Rows.RemoveAt(indice);
                     dgvAvailableTools.ClearSelection();
+                }
+            }
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            if (ValidateDataToAdd("edit"))
+            {
+                bool respuesta = ScrewLogic.Instancia.Editar(MyScrew);
+
+                if (respuesta)
+                {
+                    CleanForm();
+                    ShowScrews(checkActives.Checked);
+                    MessageBox.Show("Screw Updated Correctly", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
         }
