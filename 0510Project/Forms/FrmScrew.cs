@@ -77,7 +77,7 @@ namespace _0510Project.Forms
                 Filtro = RFilter;
             }
 
-            dgvScrews.DataSource = ScrewLogic.Instancia.Listar(checkActives.Checked, Filtro);
+            dgvScrews.DataSource = ScrewLogic.Instancia.Listar(SeeActives, Filtro);
 
             dgvScrews.ClearSelection();
         }
@@ -119,7 +119,18 @@ namespace _0510Project.Forms
                 txtIDScrewNTool.Text = MyScrew.MyScrewNTool.IDScrewNTool.ToString();
                 txtNToolName.Text = MyScrew.MyScrewNTool.NToolName;
 
-                dgvAvailableTools.DataSource = ScrewLogic.Instancia.SelectScrewAvailableToolsByID(ID);
+                // Colocar dentro del datagridview las relaciones que tiene un tornillo en especifico y evitar utilizar el datasource para poder
+                // modificar las filas en caso de ser necesario
+
+                DataTable AvailableTools = ScrewLogic.Instancia.SelectScrewAvailableToolsByID(ID);
+
+                dgvAvailableTools.Rows.Clear();
+
+                foreach (DataRow row in AvailableTools.Rows) 
+                {
+                    dgvAvailableTools.Rows.Add(row["IDScrewTool"], row["ToolName"]);
+                }
+
                 dgvAvailableTools.ClearSelection();
 
                 EnableUpdate_Disable();
@@ -183,9 +194,9 @@ namespace _0510Project.Forms
             }
             MyScrew = new Screw();
 
-            if (dgvAvailableTools.DataSource != null)
+            if (dgvAvailableTools.Rows.Count >= 1)
             {
-                ((DataTable)dgvAvailableTools.DataSource).Rows.Clear();
+                dgvAvailableTools.Rows.Clear();
             }
 
             EnableSave();
@@ -485,7 +496,39 @@ namespace _0510Project.Forms
         {
             if (ValidateDataToAdd())
             {
-                bool R = ScrewLogic.Instancia.Guardar(MyScrew);
+                bool R = false;
+
+                if (dgvAvailableTools.Rows.Count > 0)
+                {
+                    //TODO un metodo SAVE que ademas agregue las relaciones N:M Correspondientes
+                    try
+                    {
+                        List<Screw_Tool> screw_Tools = new List<Screw_Tool>();
+
+                        foreach (DataGridViewRow row in dgvAvailableTools.Rows)
+                        {
+                            if (!row.IsNewRow)
+                            {
+                                Screw_Tool tool = new Screw_Tool
+                                {
+                                    IDScrewTool = Convert.ToInt32(row.Cells["CIDScrewTool"].Value.ToString())
+                                };
+                                screw_Tools.Add(tool);
+                            }
+                        }
+
+                        R = ScrewLogic.Instancia.SaveScrewAndScrew_Tool(MyScrew, screw_Tools);
+
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Failure detected: " + ex.Message, "Error", MessageBoxButtons.OK,MessageBoxIcon.Error);
+                    }
+                }
+                else
+                {
+                    R = ScrewLogic.Instancia.Guardar(MyScrew);
+                }
 
                 if (R)
                 {
@@ -578,9 +621,38 @@ namespace _0510Project.Forms
 
         }
 
+
         private void dgvAvailableTools_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
         {
+            if (e.RowIndex < 0)
+                return;
 
+            if (e.ColumnIndex == 2)
+            {
+                e.Paint(e.CellBounds, DataGridViewPaintParts.All);
+
+                var w = Properties.Resources.DeleteRow.Width;
+                var h = Properties.Resources.DeleteRow.Height;
+                var x = e.CellBounds.Left + (e.CellBounds.Width - w) / 2;
+                var y = e.CellBounds.Top + (e.CellBounds.Height - h) / 2;
+
+                e.Graphics.DrawImage(Properties.Resources.DeleteRow, new Rectangle(x, y, w, h));
+                e.Handled = true;
+            }
+        }
+
+        private void dgvAvailableTools_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dgvAvailableTools.Columns[e.ColumnIndex].Name == "btnEliminar")
+            {
+                int indice = e.RowIndex;
+
+                if (indice >= 0)
+                {
+                    dgvAvailableTools.Rows.RemoveAt(indice);
+                    dgvAvailableTools.ClearSelection();
+                }
+            }
         }
     }
 }

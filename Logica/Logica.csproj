@@ -78,6 +78,7 @@
     <Compile Include="Models\ScrewNTool.cs" />
     <Compile Include="Models\ScrewSize.cs" />
     <Compile Include="Models\ScrewType.cs" />
+    <Compile Include="Models\Screw_Tool.cs" />
     <Compile Include="Models\Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

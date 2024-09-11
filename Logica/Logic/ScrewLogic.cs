@@ -173,8 +173,141 @@ namespace Logica.Logic
                     respuesta = false;
                 }
             }
-
             return respuesta;
+        }
+           
+
+        public bool SaveScrewAndScrew_Tool(Screw obj, List<Screw_Tool> screw_tool)
+        {
+            bool respuesta = true;
+
+            using (SQLiteConnection conn = new SQLiteConnection(cadena))
+            { 
+                conn.Open();
+                using (SQLiteTransaction transaction = conn.BeginTransaction())
+                {
+                    try
+                    {
+                        // Registrar el nuevo tornillo
+                        string firstQuery = "Insert into Screw (IDType, IDSize, IDLength, IDNTool, IDMaterial, IDAbbreviation, SSNEPartNumber, VendorPartNumber, UrlPDF, UrlSTEP) " +
+                    "values (@IDType, @IDSize, @IDLength, @IDNTool , @IDMaterial , @IDAbbreviation, @SSNEPartNumber, @VendorPartNumber, @UrlPDF, @UrlSTEP)";
+
+                        using (SQLiteCommand cmd = new SQLiteCommand(firstQuery, conn))
+                        {
+                            cmd.Parameters.Add(new SQLiteParameter("@IDType", obj.MyScrewType.IDScrewType));
+                            cmd.Parameters.Add(new SQLiteParameter("@IDSize", obj.MyScrewSize.IDScrewSize));
+                            cmd.Parameters.Add(new SQLiteParameter("@IDLength", obj.MyScrewLength.IDScrewLength));
+                            cmd.Parameters.Add(new SQLiteParameter("@IDNTool", obj.MyScrewNTool.IDScrewNTool));
+                            cmd.Parameters.Add(new SQLiteParameter("@IDMaterial", obj.MyScrewMaterial.IDScrewMaterial));
+                            cmd.Parameters.Add(new SQLiteParameter("@IDAbbreviation", obj.MyScrewAbbreviation.IDScrewAbbreviation));
+                            cmd.Parameters.Add(new SQLiteParameter("@SSNEPartNumber", obj.SSNEPartNumber));
+                            cmd.Parameters.Add(new SQLiteParameter("@VendorPartNumber", obj.VendorPartNumber));
+                            cmd.Parameters.Add(new SQLiteParameter("@UrlPDF", obj.UrlPDF));
+                            cmd.Parameters.Add(new SQLiteParameter("@UrlSTEP", obj.UrlSTEP));
+
+                            cmd.ExecuteNonQuery();
+                        }
+
+                        // Obtener el id generado por el new Screw (last_insert_rowid)
+                        int idNewScrew;
+                        string queryGetIDScrew = "SELECT last_insert_rowid();";
+                        using (SQLiteCommand cmd = new SQLiteCommand(queryGetIDScrew, conn))
+                        {
+                            idNewScrew = Convert.ToInt32(cmd.ExecuteScalar());
+                        }
+
+                        foreach (var data in screw_tool)
+                        {
+                            string queryScrew_Tool = "INSERT INTO Screw_Tool (IDScrewTool, IDScrew) values (@IDScrewTool, @IDScrew)";
+
+                            using (SQLiteCommand cmd = new SQLiteCommand(queryScrew_Tool, conn))
+                            {
+                                cmd.Parameters.AddWithValue("@IDScrewTool", data.IDScrewTool);
+                                cmd.Parameters.AddWithValue("@IDScrew", idNewScrew);
+
+                                if (cmd.ExecuteNonQuery() < 1)
+                                {
+                                    respuesta = false;
+                                }
+                            }
+                        }
+
+                        transaction.Commit();
+
+                        return respuesta;
+                    }
+                    catch (Exception ex)
+                    {
+                        transaction.Rollback();
+                        throw new Exception("Error adding the screw: " + ex.Message);
+                    }
+                }
+            }
+        }
+
+        public class CompraHandler
+        {
+            private string connectionString = "Data Source=tu_ruta_a_base_de_datos.db;Version=3;";
+
+            public int InsertarCompra(DateTime fecha, decimal total)
+            {
+                using (SQLiteConnection conn = new SQLiteConnection(connectionString))
+                {
+                    conn.Open();
+                    using (SQLiteTransaction transaction = conn.BeginTransaction())
+                    {
+                        try
+                        {
+                            // Insertar en la tabla Compra
+                            string queryCompra = "INSERT INTO Compra (fecha, total) VALUES (@fecha, @total);";
+                            using (SQLiteCommand cmd = new SQLiteCommand(queryCompra, conn))
+                            {
+                                cmd.Parameters.AddWithValue("@fecha", fecha.ToString("yyyy-MM-dd"));
+                                cmd.Parameters.AddWithValue("@total", total);
+                                cmd.ExecuteNonQuery();
+                            }
+
+                            // Obtener el id generado (last_insert_rowid)
+                            int idCompra;
+                            string queryIdCompra = "SELECT last_insert_rowid();";
+                            using (SQLiteCommand cmd = new SQLiteCommand(queryIdCompra, conn))
+                            {
+                                idCompra = Convert.ToInt32(cmd.ExecuteScalar());
+                            }
+
+                            // Si todo va bien, confirmar la transacción
+                            transaction.Commit();
+
+                            // Devolver el idCompra generado
+                            return idCompra;
+                        }
+                        catch (Exception ex)
+                        {
+                            // Si ocurre algún error, deshacer la transacción
+                            transaction.Rollback();
+                            throw new Exception("Error al insertar la compra: " + ex.Message);
+                        }
+                    }
+                }
+            }
+
+            public void InsertarDetallesCompra(int idCompra, string producto, int cantidad, decimal precio)
+            {
+                using (SQLiteConnection conn = new SQLiteConnection(connectionString))
+                {
+                    conn.Open();
+                    string queryDetalles = "INSERT INTO DetallesCompra (idCompra, producto, cantidad, precio) VALUES (@idCompra, @producto, @cantidad, @precio);";
+
+                    using (SQLiteCommand cmd = new SQLiteCommand(queryDetalles, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@idCompra", idCompra);
+                        cmd.Parameters.AddWithValue("@producto", producto);
+                        cmd.Parameters.AddWithValue("@cantidad", cantidad);
+                        cmd.Parameters.AddWithValue("@precio", precio);
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+            }
         }
 
     }
