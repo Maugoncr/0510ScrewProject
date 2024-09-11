@@ -55,9 +55,6 @@ namespace _0510Project.Forms
 
         private void LoadAvailableTools()
         {
-            dgvAvailableTools.DataSource = ScrewAvailableToolLogic.Instancia.Listar(true, "");
-
-            dgvAvailableTools.ClearSelection();
         }
 
         private void FrmScrew_Load(object sender, EventArgs e)
@@ -527,6 +524,63 @@ namespace _0510Project.Forms
             return R;
         }
 
+        private void btnSearchAvailableTool_Click(object sender, EventArgs e)
+        {
+            using (var modal = new FrmSelectAvailableTool())
+            {
+                var result = modal.ShowDialog();
 
+
+                if (result == DialogResult.OK)
+                {
+                    txtIDAvailableTool.Text = modal._MyScrewAvailableTool.IDScrewTool.ToString();
+                    txtAvailableToolName.Text = modal._MyScrewAvailableTool.ToolName;
+                }
+            }
+        }
+
+        private void btnAddAvailableTool_Click(object sender, EventArgs e)
+        {
+            bool toolExist = false;
+
+            if (string.IsNullOrEmpty(txtIDAvailableTool.Text))
+            {
+                MessageBox.Show("You haven't selected any tool to add.", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            foreach (DataGridViewRow row in dgvAvailableTools.Rows)
+            {
+                if (row.Cells["CIDScrewTool"].Value.ToString() == txtIDAvailableTool.Text)
+                {
+                    toolExist = true;
+                    break;
+                }
+            }
+
+            if (!toolExist)
+            {
+                dgvAvailableTools.Rows.Add(new object[] {
+                    txtIDAvailableTool.Text,
+                    txtAvailableToolName.Text,
+                });
+
+                txtAvailableToolName.Clear();
+                txtIDAvailableTool.Clear();
+
+                dgvAvailableTools.ClearSelection();
+            }
+            else
+            {
+                MessageBox.Show("You cannot add the same tool again.", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+        }
+
+        private void dgvAvailableTools_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
+        {
+
+        }
     }
 }

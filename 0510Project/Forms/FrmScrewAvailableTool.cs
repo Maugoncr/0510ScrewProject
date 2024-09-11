@@ -225,7 +225,7 @@ namespace _0510Project.Forms
                 Filtro = RFilter;
             }
 
-            dgvScrewAvailableTools.DataSource = ScrewAvailableToolLogic.Instancia.Listar(checkActives.Checked, Filtro);
+            dgvScrewAvailableTools.DataSource = ScrewAvailableToolLogic.Instancia.Listar(SeeActives, Filtro);
 
             dgvScrewAvailableTools.ClearSelection();
         }

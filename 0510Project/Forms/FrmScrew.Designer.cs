@@ -28,23 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle120 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle130 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle131 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle121 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle122 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle123 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle124 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle125 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle126 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle127 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle128 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle129 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle132 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle135 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle136 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle133 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle134 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pNavBar = new System.Windows.Forms.Panel();
             this.btnClose = new System.Windows.Forms.Button();
             this.txtFilter = new System.Windows.Forms.TextBox();
@@ -91,9 +91,6 @@
             this.label11 = new System.Windows.Forms.Label();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.dgvAvailableTools = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label19 = new System.Windows.Forms.Label();
             this.txtUrlSTEP = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
@@ -106,6 +103,11 @@
             this.txtIDScrew = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.checkActives = new System.Windows.Forms.CheckBox();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.txtIDAvailableTool = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.txtAvailableToolName = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
             this.btnClearScrewAbbreviation = new FontAwesome.Sharp.IconButton();
             this.btnSelectScrewAbbreviation = new FontAwesome.Sharp.IconButton();
             this.btnClearScrewNTool = new FontAwesome.Sharp.IconButton();
@@ -119,14 +121,17 @@
             this.btnClearScrewType = new FontAwesome.Sharp.IconButton();
             this.btnSelectScrewType = new FontAwesome.Sharp.IconButton();
             this.btnFormSize = new FontAwesome.Sharp.IconButton();
+            this.btnSearchAvailableTool = new FontAwesome.Sharp.IconButton();
+            this.btnAddAvailableTool = new FontAwesome.Sharp.IconButton();
             this.btnClean = new FontAwesome.Sharp.IconButton();
-            this.btnDisable = new FontAwesome.Sharp.IconButton();
-            this.iconButton14 = new FontAwesome.Sharp.IconButton();
-            this.btnUpdate = new FontAwesome.Sharp.IconButton();
-            this.iconButton13 = new FontAwesome.Sharp.IconButton();
             this.iconButton12 = new FontAwesome.Sharp.IconButton();
-            this.btnSave = new FontAwesome.Sharp.IconButton();
+            this.btnDisable = new FontAwesome.Sharp.IconButton();
             this.btnCheckUrlPDF = new FontAwesome.Sharp.IconButton();
+            this.btnUpdate = new FontAwesome.Sharp.IconButton();
+            this.btnSave = new FontAwesome.Sharp.IconButton();
+            this.dgvAvailableTools = new System.Windows.Forms.DataGridView();
+            this.CIDAvailableTool = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CToolName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pNavBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvScrews)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -136,6 +141,7 @@
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox7.SuspendLayout();
+            this.groupBox8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAvailableTools)).BeginInit();
             this.SuspendLayout();
             // 
@@ -186,14 +192,14 @@
             this.dgvScrews.AllowUserToDeleteRows = false;
             this.dgvScrews.AllowUserToResizeColumns = false;
             this.dgvScrews.AllowUserToResizeRows = false;
-            dataGridViewCellStyle120.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle120.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle120.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle120.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle120.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle120.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle120.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvScrews.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle120;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvScrews.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvScrews.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvScrews.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.CIDScrew,
@@ -205,37 +211,37 @@
             this.CAbbreviation,
             this.CNToolName,
             this.CMaterialName});
-            dataGridViewCellStyle130.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle130.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle130.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle130.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle130.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle130.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle130.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvScrews.DefaultCellStyle = dataGridViewCellStyle130;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvScrews.DefaultCellStyle = dataGridViewCellStyle11;
             this.dgvScrews.Location = new System.Drawing.Point(17, 166);
             this.dgvScrews.MultiSelect = false;
             this.dgvScrews.Name = "dgvScrews";
             this.dgvScrews.ReadOnly = true;
-            dataGridViewCellStyle131.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle131.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle131.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle131.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle131.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle131.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle131.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvScrews.RowHeadersDefaultCellStyle = dataGridViewCellStyle131;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvScrews.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.dgvScrews.RowHeadersVisible = false;
             this.dgvScrews.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvScrews.Size = new System.Drawing.Size(1885, 452);
+            this.dgvScrews.Size = new System.Drawing.Size(1885, 367);
             this.dgvScrews.TabIndex = 168;
             this.dgvScrews.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvScrews_CellClick);
             // 
             // CIDScrew
             // 
             this.CIDScrew.DataPropertyName = "IDScrew";
-            dataGridViewCellStyle121.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CIDScrew.DefaultCellStyle = dataGridViewCellStyle121;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CIDScrew.DefaultCellStyle = dataGridViewCellStyle2;
             this.CIDScrew.HeaderText = "ID Screw";
             this.CIDScrew.Name = "CIDScrew";
             this.CIDScrew.ReadOnly = true;
@@ -245,8 +251,8 @@
             // 
             this.CSSNEPartNumber.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.CSSNEPartNumber.DataPropertyName = "SSNEPartNumber";
-            dataGridViewCellStyle122.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CSSNEPartNumber.DefaultCellStyle = dataGridViewCellStyle122;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CSSNEPartNumber.DefaultCellStyle = dataGridViewCellStyle3;
             this.CSSNEPartNumber.HeaderText = "SSNE Part Number";
             this.CSSNEPartNumber.Name = "CSSNEPartNumber";
             this.CSSNEPartNumber.ReadOnly = true;
@@ -256,8 +262,8 @@
             // 
             this.CVendorPartNumber.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.CVendorPartNumber.DataPropertyName = "VendorPartNumber";
-            dataGridViewCellStyle123.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CVendorPartNumber.DefaultCellStyle = dataGridViewCellStyle123;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CVendorPartNumber.DefaultCellStyle = dataGridViewCellStyle4;
             this.CVendorPartNumber.HeaderText = "Vendor Part Number";
             this.CVendorPartNumber.Name = "CVendorPartNumber";
             this.CVendorPartNumber.ReadOnly = true;
@@ -267,8 +273,8 @@
             // 
             this.CTypeName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.CTypeName.DataPropertyName = "TypeName";
-            dataGridViewCellStyle124.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CTypeName.DefaultCellStyle = dataGridViewCellStyle124;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CTypeName.DefaultCellStyle = dataGridViewCellStyle5;
             this.CTypeName.HeaderText = "Type";
             this.CTypeName.Name = "CTypeName";
             this.CTypeName.ReadOnly = true;
@@ -277,8 +283,8 @@
             // CSizeName
             // 
             this.CSizeName.DataPropertyName = "SizeName";
-            dataGridViewCellStyle125.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CSizeName.DefaultCellStyle = dataGridViewCellStyle125;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CSizeName.DefaultCellStyle = dataGridViewCellStyle6;
             this.CSizeName.HeaderText = "Size";
             this.CSizeName.Name = "CSizeName";
             this.CSizeName.ReadOnly = true;
@@ -288,8 +294,8 @@
             // CLengthInch
             // 
             this.CLengthInch.DataPropertyName = "LengthInch";
-            dataGridViewCellStyle126.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CLengthInch.DefaultCellStyle = dataGridViewCellStyle126;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CLengthInch.DefaultCellStyle = dataGridViewCellStyle7;
             this.CLengthInch.HeaderText = "Length Inch";
             this.CLengthInch.Name = "CLengthInch";
             this.CLengthInch.ReadOnly = true;
@@ -300,8 +306,8 @@
             // 
             this.CAbbreviation.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.CAbbreviation.DataPropertyName = "AbbreviationName";
-            dataGridViewCellStyle127.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CAbbreviation.DefaultCellStyle = dataGridViewCellStyle127;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CAbbreviation.DefaultCellStyle = dataGridViewCellStyle8;
             this.CAbbreviation.HeaderText = "Abbreviation";
             this.CAbbreviation.Name = "CAbbreviation";
             this.CAbbreviation.ReadOnly = true;
@@ -310,8 +316,8 @@
             // CNToolName
             // 
             this.CNToolName.DataPropertyName = "NToolName";
-            dataGridViewCellStyle128.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CNToolName.DefaultCellStyle = dataGridViewCellStyle128;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CNToolName.DefaultCellStyle = dataGridViewCellStyle9;
             this.CNToolName.HeaderText = "Number Tool";
             this.CNToolName.Name = "CNToolName";
             this.CNToolName.ReadOnly = true;
@@ -321,8 +327,8 @@
             // CMaterialName
             // 
             this.CMaterialName.DataPropertyName = "MaterialName";
-            dataGridViewCellStyle129.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CMaterialName.DefaultCellStyle = dataGridViewCellStyle129;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CMaterialName.DefaultCellStyle = dataGridViewCellStyle10;
             this.CMaterialName.HeaderText = "Material";
             this.CMaterialName.Name = "CMaterialName";
             this.CMaterialName.ReadOnly = true;
@@ -691,32 +697,31 @@
             // groupBox7
             // 
             this.groupBox7.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox7.Controls.Add(this.dgvAvailableTools);
+            this.groupBox7.Controls.Add(this.groupBox8);
             this.groupBox7.Controls.Add(this.label20);
             this.groupBox7.Controls.Add(this.btnClean);
-            this.groupBox7.Controls.Add(this.btnDisable);
-            this.groupBox7.Controls.Add(this.dgvAvailableTools);
-            this.groupBox7.Controls.Add(this.iconButton14);
-            this.groupBox7.Controls.Add(this.btnUpdate);
-            this.groupBox7.Controls.Add(this.iconButton13);
             this.groupBox7.Controls.Add(this.label19);
             this.groupBox7.Controls.Add(this.iconButton12);
+            this.groupBox7.Controls.Add(this.btnDisable);
             this.groupBox7.Controls.Add(this.txtUrlSTEP);
-            this.groupBox7.Controls.Add(this.btnSave);
             this.groupBox7.Controls.Add(this.label18);
             this.groupBox7.Controls.Add(this.btnCheckUrlPDF);
             this.groupBox7.Controls.Add(this.txtUrlPDF);
+            this.groupBox7.Controls.Add(this.btnUpdate);
             this.groupBox7.Controls.Add(this.label15);
             this.groupBox7.Controls.Add(this.txtVendorPartNumber);
             this.groupBox7.Controls.Add(this.label14);
             this.groupBox7.Controls.Add(this.label12);
             this.groupBox7.Controls.Add(this.txtSSNEPartNumber);
             this.groupBox7.Controls.Add(this.txtIDScrew);
+            this.groupBox7.Controls.Add(this.btnSave);
             this.groupBox7.Controls.Add(this.label13);
             this.groupBox7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox7.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox7.Location = new System.Drawing.Point(1129, 624);
+            this.groupBox7.Location = new System.Drawing.Point(1129, 582);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(773, 451);
+            this.groupBox7.Size = new System.Drawing.Size(773, 469);
             this.groupBox7.TabIndex = 176;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Screw";
@@ -726,83 +731,18 @@
             this.label20.AutoSize = true;
             this.label20.BackColor = System.Drawing.SystemColors.Control;
             this.label20.Font = new System.Drawing.Font("Roboto", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(9, -2);
+            this.label20.Location = new System.Drawing.Point(9, -7);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(93, 33);
             this.label20.TabIndex = 182;
             this.label20.Text = "Screw";
             // 
-            // dgvAvailableTools
-            // 
-            this.dgvAvailableTools.AllowUserToAddRows = false;
-            this.dgvAvailableTools.AllowUserToDeleteRows = false;
-            this.dgvAvailableTools.AllowUserToResizeColumns = false;
-            this.dgvAvailableTools.AllowUserToResizeRows = false;
-            dataGridViewCellStyle132.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle132.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle132.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle132.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle132.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle132.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle132.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvAvailableTools.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle132;
-            this.dgvAvailableTools.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAvailableTools.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2});
-            dataGridViewCellStyle135.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle135.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle135.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle135.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle135.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle135.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle135.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvAvailableTools.DefaultCellStyle = dataGridViewCellStyle135;
-            this.dgvAvailableTools.Location = new System.Drawing.Point(11, 316);
-            this.dgvAvailableTools.MultiSelect = false;
-            this.dgvAvailableTools.Name = "dgvAvailableTools";
-            this.dgvAvailableTools.ReadOnly = true;
-            dataGridViewCellStyle136.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle136.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle136.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle136.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle136.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle136.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle136.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvAvailableTools.RowHeadersDefaultCellStyle = dataGridViewCellStyle136;
-            this.dgvAvailableTools.RowHeadersVisible = false;
-            this.dgvAvailableTools.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvAvailableTools.Size = new System.Drawing.Size(611, 129);
-            this.dgvAvailableTools.TabIndex = 177;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "IDScrewTool";
-            dataGridViewCellStyle133.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle133.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle133;
-            this.dataGridViewTextBoxColumn1.HeaderText = "ID Tool";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "ToolName";
-            dataGridViewCellStyle134.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle134;
-            this.dataGridViewTextBoxColumn2.HeaderText = "Tool Name";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
             // label19
             // 
             this.label19.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(8, 290);
+            this.label19.Location = new System.Drawing.Point(8, 222);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(582, 23);
+            this.label19.Size = new System.Drawing.Size(614, 23);
             this.label19.TabIndex = 175;
             this.label19.Text = "Available Tools To Use with this Screw";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -810,7 +750,7 @@
             // txtUrlSTEP
             // 
             this.txtUrlSTEP.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUrlSTEP.Location = new System.Drawing.Point(11, 253);
+            this.txtUrlSTEP.Location = new System.Drawing.Point(11, 185);
             this.txtUrlSTEP.Name = "txtUrlSTEP";
             this.txtUrlSTEP.Size = new System.Drawing.Size(611, 30);
             this.txtUrlSTEP.TabIndex = 171;
@@ -820,7 +760,7 @@
             // label18
             // 
             this.label18.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(11, 227);
+            this.label18.Location = new System.Drawing.Point(11, 159);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(582, 23);
             this.label18.TabIndex = 172;
@@ -830,7 +770,7 @@
             // txtUrlPDF
             // 
             this.txtUrlPDF.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUrlPDF.Location = new System.Drawing.Point(11, 186);
+            this.txtUrlPDF.Location = new System.Drawing.Point(11, 118);
             this.txtUrlPDF.Name = "txtUrlPDF";
             this.txtUrlPDF.Size = new System.Drawing.Size(611, 30);
             this.txtUrlPDF.TabIndex = 166;
@@ -840,7 +780,7 @@
             // label15
             // 
             this.label15.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(11, 160);
+            this.label15.Location = new System.Drawing.Point(11, 92);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(582, 23);
             this.label15.TabIndex = 167;
@@ -850,7 +790,7 @@
             // txtVendorPartNumber
             // 
             this.txtVendorPartNumber.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtVendorPartNumber.Location = new System.Drawing.Point(456, 128);
+            this.txtVendorPartNumber.Location = new System.Drawing.Point(456, 60);
             this.txtVendorPartNumber.Name = "txtVendorPartNumber";
             this.txtVendorPartNumber.Size = new System.Drawing.Size(304, 30);
             this.txtVendorPartNumber.TabIndex = 164;
@@ -860,7 +800,7 @@
             // label14
             // 
             this.label14.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(456, 102);
+            this.label14.Location = new System.Drawing.Point(456, 34);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(302, 23);
             this.label14.TabIndex = 165;
@@ -871,7 +811,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(8, 102);
+            this.label12.Location = new System.Drawing.Point(8, 34);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(83, 23);
             this.label12.TabIndex = 163;
@@ -880,7 +820,7 @@
             // txtSSNEPartNumber
             // 
             this.txtSSNEPartNumber.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSSNEPartNumber.Location = new System.Drawing.Point(143, 128);
+            this.txtSSNEPartNumber.Location = new System.Drawing.Point(143, 60);
             this.txtSSNEPartNumber.Name = "txtSSNEPartNumber";
             this.txtSSNEPartNumber.Size = new System.Drawing.Size(294, 30);
             this.txtSSNEPartNumber.TabIndex = 162;
@@ -890,7 +830,7 @@
             // txtIDScrew
             // 
             this.txtIDScrew.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIDScrew.Location = new System.Drawing.Point(11, 128);
+            this.txtIDScrew.Location = new System.Drawing.Point(11, 60);
             this.txtIDScrew.Name = "txtIDScrew";
             this.txtIDScrew.ReadOnly = true;
             this.txtIDScrew.Size = new System.Drawing.Size(115, 30);
@@ -900,7 +840,7 @@
             // label13
             // 
             this.label13.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(143, 102);
+            this.label13.Location = new System.Drawing.Point(143, 34);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(294, 23);
             this.label13.TabIndex = 163;
@@ -920,6 +860,59 @@
             this.checkActives.Text = "See Actives";
             this.checkActives.UseVisualStyleBackColor = true;
             this.checkActives.CheckedChanged += new System.EventHandler(this.checkActives_CheckedChanged);
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBox8.Controls.Add(this.btnSearchAvailableTool);
+            this.groupBox8.Controls.Add(this.txtIDAvailableTool);
+            this.groupBox8.Controls.Add(this.label21);
+            this.groupBox8.Controls.Add(this.txtAvailableToolName);
+            this.groupBox8.Controls.Add(this.btnAddAvailableTool);
+            this.groupBox8.Controls.Add(this.label23);
+            this.groupBox8.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox8.Location = new System.Drawing.Point(11, 248);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(611, 79);
+            this.groupBox8.TabIndex = 199;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "Available Tool";
+            // 
+            // txtIDAvailableTool
+            // 
+            this.txtIDAvailableTool.Location = new System.Drawing.Point(147, 44);
+            this.txtIDAvailableTool.Name = "txtIDAvailableTool";
+            this.txtIDAvailableTool.ReadOnly = true;
+            this.txtIDAvailableTool.Size = new System.Drawing.Size(120, 27);
+            this.txtIDAvailableTool.TabIndex = 1;
+            this.txtIDAvailableTool.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label21
+            // 
+            this.label21.Location = new System.Drawing.Point(147, 20);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(120, 21);
+            this.label21.TabIndex = 96;
+            this.label21.Text = "ID Available Tool";
+            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtAvailableToolName
+            // 
+            this.txtAvailableToolName.Location = new System.Drawing.Point(284, 44);
+            this.txtAvailableToolName.Name = "txtAvailableToolName";
+            this.txtAvailableToolName.ReadOnly = true;
+            this.txtAvailableToolName.Size = new System.Drawing.Size(214, 27);
+            this.txtAvailableToolName.TabIndex = 3;
+            this.txtAvailableToolName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label23
+            // 
+            this.label23.Location = new System.Drawing.Point(284, 18);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(211, 21);
+            this.label23.TabIndex = 97;
+            this.label23.Text = "Available Tool Name";
+            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnClearScrewAbbreviation
             // 
@@ -1141,104 +1134,62 @@
             this.btnFormSize.UseVisualStyleBackColor = true;
             this.btnFormSize.Click += new System.EventHandler(this.btnFormSize_Click);
             // 
+            // btnSearchAvailableTool
+            // 
+            this.btnSearchAvailableTool.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnSearchAvailableTool.FlatAppearance.BorderSize = 0;
+            this.btnSearchAvailableTool.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearchAvailableTool.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearchAvailableTool.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
+            this.btnSearchAvailableTool.IconColor = System.Drawing.Color.White;
+            this.btnSearchAvailableTool.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnSearchAvailableTool.IconSize = 25;
+            this.btnSearchAvailableTool.Location = new System.Drawing.Point(20, 44);
+            this.btnSearchAvailableTool.Name = "btnSearchAvailableTool";
+            this.btnSearchAvailableTool.Size = new System.Drawing.Size(110, 27);
+            this.btnSearchAvailableTool.TabIndex = 151;
+            this.btnSearchAvailableTool.UseVisualStyleBackColor = false;
+            this.btnSearchAvailableTool.Click += new System.EventHandler(this.btnSearchAvailableTool_Click);
+            // 
+            // btnAddAvailableTool
+            // 
+            this.btnAddAvailableTool.BackColor = System.Drawing.Color.Green;
+            this.btnAddAvailableTool.FlatAppearance.BorderSize = 0;
+            this.btnAddAvailableTool.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddAvailableTool.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddAvailableTool.ForeColor = System.Drawing.Color.White;
+            this.btnAddAvailableTool.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnAddAvailableTool.IconColor = System.Drawing.Color.White;
+            this.btnAddAvailableTool.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnAddAvailableTool.IconSize = 20;
+            this.btnAddAvailableTool.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAddAvailableTool.Location = new System.Drawing.Point(520, 26);
+            this.btnAddAvailableTool.Name = "btnAddAvailableTool";
+            this.btnAddAvailableTool.Size = new System.Drawing.Size(67, 45);
+            this.btnAddAvailableTool.TabIndex = 176;
+            this.btnAddAvailableTool.Text = "Add";
+            this.btnAddAvailableTool.UseVisualStyleBackColor = false;
+            this.btnAddAvailableTool.Click += new System.EventHandler(this.btnAddAvailableTool_Click);
+            // 
             // btnClean
             // 
             this.btnClean.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.btnClean.FlatAppearance.BorderSize = 0;
             this.btnClean.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClean.Font = new System.Drawing.Font("Roboto", 20F, System.Drawing.FontStyle.Bold);
+            this.btnClean.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClean.ForeColor = System.Drawing.Color.White;
-            this.btnClean.IconChar = FontAwesome.Sharp.IconChar.Broom;
+            this.btnClean.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnClean.IconColor = System.Drawing.Color.White;
             this.btnClean.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnClean.IconSize = 30;
             this.btnClean.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClean.Location = new System.Drawing.Point(584, 42);
+            this.btnClean.Location = new System.Drawing.Point(636, 414);
             this.btnClean.Name = "btnClean";
-            this.btnClean.Size = new System.Drawing.Size(176, 40);
+            this.btnClean.Size = new System.Drawing.Size(121, 40);
             this.btnClean.TabIndex = 180;
-            this.btnClean.Text = "Clean    ";
-            this.btnClean.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnClean.Text = "Clean";
             this.btnClean.UseVisualStyleBackColor = false;
             this.btnClean.Click += new System.EventHandler(this.btnClean_Click);
-            // 
-            // btnDisable
-            // 
-            this.btnDisable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.btnDisable.FlatAppearance.BorderSize = 0;
-            this.btnDisable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDisable.Font = new System.Drawing.Font("Roboto", 20F, System.Drawing.FontStyle.Bold);
-            this.btnDisable.ForeColor = System.Drawing.Color.White;
-            this.btnDisable.IconChar = FontAwesome.Sharp.IconChar.Ban;
-            this.btnDisable.IconColor = System.Drawing.Color.White;
-            this.btnDisable.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnDisable.IconSize = 30;
-            this.btnDisable.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDisable.Location = new System.Drawing.Point(393, 42);
-            this.btnDisable.Name = "btnDisable";
-            this.btnDisable.Size = new System.Drawing.Size(176, 40);
-            this.btnDisable.TabIndex = 181;
-            this.btnDisable.Text = "Disable  ";
-            this.btnDisable.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnDisable.UseVisualStyleBackColor = false;
-            // 
-            // iconButton14
-            // 
-            this.iconButton14.BackColor = System.Drawing.Color.Firebrick;
-            this.iconButton14.FlatAppearance.BorderSize = 0;
-            this.iconButton14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton14.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton14.ForeColor = System.Drawing.Color.White;
-            this.iconButton14.IconChar = FontAwesome.Sharp.IconChar.Minus;
-            this.iconButton14.IconColor = System.Drawing.Color.White;
-            this.iconButton14.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton14.IconSize = 20;
-            this.iconButton14.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton14.Location = new System.Drawing.Point(641, 392);
-            this.iconButton14.Name = "iconButton14";
-            this.iconButton14.Size = new System.Drawing.Size(119, 30);
-            this.iconButton14.TabIndex = 177;
-            this.iconButton14.Text = "Unlink";
-            this.iconButton14.UseVisualStyleBackColor = false;
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.btnUpdate.FlatAppearance.BorderSize = 0;
-            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdate.Font = new System.Drawing.Font("Roboto", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.IconChar = FontAwesome.Sharp.IconChar.Pen;
-            this.btnUpdate.IconColor = System.Drawing.Color.White;
-            this.btnUpdate.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnUpdate.IconSize = 30;
-            this.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUpdate.Location = new System.Drawing.Point(202, 42);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(176, 40);
-            this.btnUpdate.TabIndex = 179;
-            this.btnUpdate.Text = "Update   ";
-            this.btnUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnUpdate.UseVisualStyleBackColor = false;
-            // 
-            // iconButton13
-            // 
-            this.iconButton13.BackColor = System.Drawing.Color.Green;
-            this.iconButton13.FlatAppearance.BorderSize = 0;
-            this.iconButton13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton13.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton13.ForeColor = System.Drawing.Color.White;
-            this.iconButton13.IconChar = FontAwesome.Sharp.IconChar.Plus;
-            this.iconButton13.IconColor = System.Drawing.Color.White;
-            this.iconButton13.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton13.IconSize = 20;
-            this.iconButton13.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton13.Location = new System.Drawing.Point(640, 343);
-            this.iconButton13.Name = "iconButton13";
-            this.iconButton13.Size = new System.Drawing.Size(119, 30);
-            this.iconButton13.TabIndex = 176;
-            this.iconButton13.Text = "Link";
-            this.iconButton13.UseVisualStyleBackColor = false;
             // 
             // iconButton12
             // 
@@ -1252,7 +1203,7 @@
             this.iconButton12.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton12.IconSize = 25;
             this.iconButton12.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton12.Location = new System.Drawing.Point(639, 253);
+            this.iconButton12.Location = new System.Drawing.Point(639, 185);
             this.iconButton12.Name = "iconButton12";
             this.iconButton12.Size = new System.Drawing.Size(120, 30);
             this.iconButton12.TabIndex = 173;
@@ -1260,26 +1211,24 @@
             this.iconButton12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton12.UseVisualStyleBackColor = false;
             // 
-            // btnSave
+            // btnDisable
             // 
-            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.btnSave.FlatAppearance.BorderSize = 0;
-            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Font = new System.Drawing.Font("Roboto", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.IconChar = FontAwesome.Sharp.IconChar.Plus;
-            this.btnSave.IconColor = System.Drawing.Color.White;
-            this.btnSave.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnSave.IconSize = 30;
-            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSave.Location = new System.Drawing.Point(11, 42);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(176, 40);
-            this.btnSave.TabIndex = 178;
-            this.btnSave.Text = "Save     ";
-            this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSave.UseVisualStyleBackColor = false;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            this.btnDisable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnDisable.FlatAppearance.BorderSize = 0;
+            this.btnDisable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDisable.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDisable.ForeColor = System.Drawing.Color.White;
+            this.btnDisable.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnDisable.IconColor = System.Drawing.Color.White;
+            this.btnDisable.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnDisable.IconSize = 30;
+            this.btnDisable.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDisable.Location = new System.Drawing.Point(636, 364);
+            this.btnDisable.Name = "btnDisable";
+            this.btnDisable.Size = new System.Drawing.Size(121, 40);
+            this.btnDisable.TabIndex = 181;
+            this.btnDisable.Text = "Disable";
+            this.btnDisable.UseVisualStyleBackColor = false;
             // 
             // btnCheckUrlPDF
             // 
@@ -1293,7 +1242,7 @@
             this.btnCheckUrlPDF.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnCheckUrlPDF.IconSize = 25;
             this.btnCheckUrlPDF.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCheckUrlPDF.Location = new System.Drawing.Point(640, 186);
+            this.btnCheckUrlPDF.Location = new System.Drawing.Point(640, 118);
             this.btnCheckUrlPDF.Name = "btnCheckUrlPDF";
             this.btnCheckUrlPDF.Size = new System.Drawing.Size(120, 30);
             this.btnCheckUrlPDF.TabIndex = 170;
@@ -1301,6 +1250,110 @@
             this.btnCheckUrlPDF.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCheckUrlPDF.UseVisualStyleBackColor = false;
             this.btnCheckUrlPDF.Click += new System.EventHandler(this.btnCheckUrlPDF_Click);
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnUpdate.FlatAppearance.BorderSize = 0;
+            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdate.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.ForeColor = System.Drawing.Color.White;
+            this.btnUpdate.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnUpdate.IconColor = System.Drawing.Color.White;
+            this.btnUpdate.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnUpdate.IconSize = 30;
+            this.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUpdate.Location = new System.Drawing.Point(636, 314);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(121, 40);
+            this.btnUpdate.TabIndex = 179;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = false;
+            // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnSave.FlatAppearance.BorderSize = 0;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.ForeColor = System.Drawing.Color.White;
+            this.btnSave.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnSave.IconColor = System.Drawing.Color.White;
+            this.btnSave.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnSave.IconSize = 30;
+            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSave.Location = new System.Drawing.Point(636, 264);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(121, 40);
+            this.btnSave.TabIndex = 178;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // dgvAvailableTools
+            // 
+            this.dgvAvailableTools.AllowUserToAddRows = false;
+            this.dgvAvailableTools.AllowUserToDeleteRows = false;
+            this.dgvAvailableTools.AllowUserToResizeColumns = false;
+            this.dgvAvailableTools.AllowUserToResizeRows = false;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvAvailableTools.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
+            this.dgvAvailableTools.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvAvailableTools.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.CIDAvailableTool,
+            this.CToolName});
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvAvailableTools.DefaultCellStyle = dataGridViewCellStyle16;
+            this.dgvAvailableTools.Location = new System.Drawing.Point(11, 333);
+            this.dgvAvailableTools.MultiSelect = false;
+            this.dgvAvailableTools.Name = "dgvAvailableTools";
+            this.dgvAvailableTools.ReadOnly = true;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvAvailableTools.RowHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            this.dgvAvailableTools.RowHeadersVisible = false;
+            this.dgvAvailableTools.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvAvailableTools.Size = new System.Drawing.Size(611, 121);
+            this.dgvAvailableTools.TabIndex = 200;
+            // 
+            // CIDAvailableTool
+            // 
+            this.CIDAvailableTool.DataPropertyName = "IDAvailableTool";
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CIDAvailableTool.DefaultCellStyle = dataGridViewCellStyle14;
+            this.CIDAvailableTool.HeaderText = "ID Available Tool";
+            this.CIDAvailableTool.Name = "CIDAvailableTool";
+            this.CIDAvailableTool.ReadOnly = true;
+            this.CIDAvailableTool.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.CIDAvailableTool.Width = 150;
+            // 
+            // CToolName
+            // 
+            this.CToolName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CToolName.DataPropertyName = "ToolName";
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CToolName.DefaultCellStyle = dataGridViewCellStyle15;
+            this.CToolName.HeaderText = "Tool Name";
+            this.CToolName.Name = "CToolName";
+            this.CToolName.ReadOnly = true;
+            this.CToolName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // FrmScrew
             // 
@@ -1341,6 +1394,8 @@
             this.groupBox6.PerformLayout();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAvailableTools)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -1409,12 +1464,8 @@
         private FontAwesome.Sharp.IconButton iconButton12;
         private System.Windows.Forms.TextBox txtUrlSTEP;
         private System.Windows.Forms.Label label18;
-        private FontAwesome.Sharp.IconButton iconButton14;
-        private FontAwesome.Sharp.IconButton iconButton13;
+        private FontAwesome.Sharp.IconButton btnAddAvailableTool;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.DataGridView dgvAvailableTools;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private FontAwesome.Sharp.IconButton btnSave;
         private FontAwesome.Sharp.IconButton btnDisable;
         private FontAwesome.Sharp.IconButton btnClean;
@@ -1431,5 +1482,14 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn CAbbreviation;
         private System.Windows.Forms.DataGridViewTextBoxColumn CNToolName;
         private System.Windows.Forms.DataGridViewTextBoxColumn CMaterialName;
+        private System.Windows.Forms.GroupBox groupBox8;
+        private System.Windows.Forms.TextBox txtIDAvailableTool;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.TextBox txtAvailableToolName;
+        private System.Windows.Forms.Label label23;
+        private FontAwesome.Sharp.IconButton btnSearchAvailableTool;
+        private System.Windows.Forms.DataGridView dgvAvailableTools;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CIDAvailableTool;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CToolName;
     }
 }

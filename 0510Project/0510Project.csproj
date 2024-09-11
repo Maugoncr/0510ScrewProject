@@ -141,6 +141,12 @@
     <Compile Include="Forms\FrmScrewType.Designer.cs">
       <DependentUpon>FrmScrewType.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\SelectedForms\FrmSelectAvailableTool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SelectedForms\FrmSelectAvailableTool.Designer.cs">
+      <DependentUpon>FrmSelectAvailableTool.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\SelectedForms\FrmSelectScrewAbbreviation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -191,6 +197,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Resources\DeleteRow.png" />
     <None Include="Resources\Pi7_Types.png" />
     <None Include="Resources\Pi7_Size.png" />
     <None Include="Resources\Pi7_Screws.png" />
@@ -251,6 +258,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmScrewType.resx">
       <DependentUpon>FrmScrewType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SelectedForms\FrmSelectAvailableTool.resx">
+      <DependentUpon>FrmSelectAvailableTool.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SelectedForms\FrmSelectScrewAbbreviation.resx">
       <DependentUpon>FrmSelectScrewAbbreviation.cs</DependentUpon>
