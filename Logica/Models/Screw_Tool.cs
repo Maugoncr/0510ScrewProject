@@ -9,5 +9,6 @@ namespace Logica.Models
     public class Screw_Tool
     {
         public int IDScrewTool { get; set; }
+        public int IDScrew { get; set; }
     }
 }

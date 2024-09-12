@@ -35,6 +35,27 @@ namespace Logica.Logic
             }
         }
 
+        public bool Disable_Enable(Screw obj)
+        {
+            bool respuesta = true;
+            using (SQLiteConnection conexion = new SQLiteConnection(cadena))
+            {
+                conexion.Open();
+                string query = "Update Screw set Active = @Active WHERE IDScrew = @ID";
+                SQLiteCommand cmd = new SQLiteCommand(query, conexion);
+
+                cmd.Parameters.Add(new SQLiteParameter("@ID", obj.IDScrew));
+                cmd.Parameters.Add(new SQLiteParameter("@Active", obj.Active));
+                cmd.CommandType = CommandType.Text;
+
+                if (cmd.ExecuteNonQuery() < 1)
+                {
+                    respuesta = false;
+                }
+            }
+            return respuesta;
+        }
+
         public DataTable Listar(bool VerActivos, string Filter)
         {
             DataTable R = new DataTable();
@@ -248,7 +269,6 @@ namespace Logica.Logic
         public bool Editar(Screw obj)
         {
             bool respuesta = true;
-
             using (SQLiteConnection conexion = new SQLiteConnection(cadena))
             {
                 conexion.Open();
@@ -278,9 +298,9 @@ namespace Logica.Logic
                     respuesta = false;
                 }
             }
-
             return respuesta;
         }
+
 
     }
 }

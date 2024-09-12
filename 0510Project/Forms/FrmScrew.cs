@@ -22,12 +22,15 @@ namespace _0510Project.Forms
         private extern static void SendMessage(IntPtr hWnd, int wMsg, int wParam, int lParam);
 
         private Screw MyScrew { get; set; }
+        private Screw_Tool MyScrew_Tool { get; set; }
 
         public FrmScrew()
         {
             InitializeComponent();
 
             MyScrew = new Screw();
+
+            MyScrew_Tool = new Screw_Tool();
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -605,6 +608,25 @@ namespace _0510Project.Forms
 
             if (!toolExist)
             {
+                if (!string.IsNullOrEmpty(txtIDScrew.Text))
+                {
+                    bool R = false;
+
+                    // Debemos crear una nueva relación N:M
+                    MyScrew_Tool = new Screw_Tool
+                    {
+                        IDScrew = Convert.ToInt32(txtIDScrew.Text),
+                        IDScrewTool = Convert.ToInt32(txtIDAvailableTool.Text)
+                    };
+
+                    R = Screw_ToolLogic.Instancia.SaveScrew_Tool(MyScrew_Tool);
+
+                    if (R)
+                    {
+                        MessageBox.Show("Relation Screw_Tool Added Correctly", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+
                 dgvAvailableTools.Rows.Add(new object[] {
                     txtIDAvailableTool.Text,
                     txtAvailableToolName.Text,
@@ -651,6 +673,28 @@ namespace _0510Project.Forms
 
                 if (indice >= 0)
                 {
+
+                    if (!string.IsNullOrEmpty(txtIDScrew.Text))
+                    {
+                        bool R = false;
+
+                        var valorCIDScrewTool = dgvAvailableTools.Rows[indice].Cells["CIDScrewTool"].Value;
+
+                        // Debemos eliminar una relación N:M
+                        MyScrew_Tool = new Screw_Tool
+                        {
+                            IDScrew = Convert.ToInt32(txtIDScrew.Text),
+                            IDScrewTool = Convert.ToInt32(valorCIDScrewTool)
+                        };
+
+                        R = Screw_ToolLogic.Instancia.DeleteScrew_Tool(MyScrew_Tool);
+
+                        if (R)
+                        {
+                            MessageBox.Show("Relation Screw_Tool Deleted Correctly", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                    }
+
                     dgvAvailableTools.Rows.RemoveAt(indice);
                     dgvAvailableTools.ClearSelection();
                 }
@@ -668,6 +712,61 @@ namespace _0510Project.Forms
                     CleanForm();
                     ShowScrews(checkActives.Checked);
                     MessageBox.Show("Screw Updated Correctly", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+        }
+
+        private void btnDisable_Click(object sender, EventArgs e)
+        {
+            Screw TempObj = ScrewLogic.Instancia.SelectScrewByID(Convert.ToInt32(txtIDScrew.Text));
+
+            if (TempObj.IDScrew > 0)
+            {
+                if (checkActives.Checked)
+                {
+                    string Mensaje = string.Format("Do you wish to proceed with the deactivation of the ID Screw: {0}?", txtIDScrew.Text);
+
+                    DialogResult Continuar = MessageBox.Show(Mensaje, "Alert", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+
+                    if (Continuar == DialogResult.Yes)
+                    {
+                        MyScrew = new Screw
+                        {
+                            IDScrew = Convert.ToInt32(txtIDScrew.Text),
+                            Active = 0
+                        };
+
+                        if (ScrewLogic.Instancia.Disable_Enable(MyScrew))
+                        {
+                            MessageBox.Show("Screw successfully deactivated.", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                            CleanForm();
+                            ShowScrews(checkActives.Checked);
+                        }
+                    }
+                }
+                else
+                {
+                    string Mensaje = string.Format("Do you wish to proceed with the activation of the ID Screw: {0}?", txtIDScrewAbbreviation.Text);
+
+                    DialogResult Continuar = MessageBox.Show(Mensaje, "Alert", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+
+                    if (Continuar == DialogResult.Yes)
+                    {
+                        MyScrew = new Screw
+                        {
+                            IDScrew = Convert.ToInt32(txtIDScrew.Text),
+                            Active = 1
+                        };
+
+                        if (ScrewLogic.Instancia.Disable_Enable(MyScrew))
+                        {
+                            MessageBox.Show("Screw successfully activated.", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                            CleanForm();
+                            ShowScrews(checkActives.Checked);
+                        }
+                    }
                 }
             }
         }

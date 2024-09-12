@@ -69,6 +69,7 @@
     <Compile Include="Logic\ScrewNToolLogic.cs" />
     <Compile Include="Logic\ScrewSizeLogic.cs" />
     <Compile Include="Logic\ScrewTypeLogic.cs" />
+    <Compile Include="Logic\Screw_ToolLogic.cs" />
     <Compile Include="Logic\TestLogic.cs" />
     <Compile Include="Models\Screw.cs" />
     <Compile Include="Models\ScrewAbbreviation.cs" />
