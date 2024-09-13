@@ -29,13 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             this.cbScrewTypes = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pNavBar = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.btnFormSize = new FontAwesome.Sharp.IconButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnExit = new FontAwesome.Sharp.IconButton();
             this.lbDateTime = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -217,7 +215,6 @@
             this.picLength = new System.Windows.Forms.PictureBox();
             this.picISOView = new System.Windows.Forms.PictureBox();
             this.pNavBar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.pSizeSelect.SuspendLayout();
             this.pLengths.SuspendLayout();
@@ -275,7 +272,6 @@
             this.pNavBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
             this.pNavBar.Controls.Add(this.label2);
             this.pNavBar.Controls.Add(this.btnFormSize);
-            this.pNavBar.Controls.Add(this.pictureBox1);
             this.pNavBar.Controls.Add(this.btnExit);
             this.pNavBar.Controls.Add(this.lbDateTime);
             this.pNavBar.Controls.Add(this.label3);
@@ -311,16 +307,6 @@
             this.btnFormSize.TabIndex = 1;
             this.btnFormSize.UseVisualStyleBackColor = true;
             this.btnFormSize.Click += new System.EventHandler(this.btnFormSize_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(57, 53);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
             // 
             // btnExit
             // 
@@ -2681,7 +2667,6 @@
             this.Load += new System.EventHandler(this.FrmMain_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FrmMain_KeyDown);
             this.pNavBar.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.pSizeSelect.ResumeLayout(false);
@@ -2730,7 +2715,6 @@
         private System.Windows.Forms.Panel pNavBar;
         private System.Windows.Forms.Label label2;
         private FontAwesome.Sharp.IconButton btnFormSize;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private FontAwesome.Sharp.IconButton btnExit;
         private System.Windows.Forms.Label lbDateTime;
         private System.Windows.Forms.Label label3;
