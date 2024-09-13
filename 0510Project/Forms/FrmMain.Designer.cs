@@ -1478,7 +1478,6 @@
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Image = global::_0510Project.Properties.Resources.Crown;
             this.pictureBox6.Location = new System.Drawing.Point(13, 31);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(218, 45);
@@ -1603,7 +1602,6 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Image = global::_0510Project.Properties.Resources.NutHex;
             this.pictureBox5.Location = new System.Drawing.Point(13, 31);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(218, 45);
@@ -1718,7 +1716,6 @@
             // 
             // pictureBox7
             // 
-            this.pictureBox7.Image = global::_0510Project.Properties.Resources.Flat_Flat;
             this.pictureBox7.Location = new System.Drawing.Point(13, 38);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(219, 29);
@@ -1915,7 +1912,6 @@
             // 
             // pictureBox11
             // 
-            this.pictureBox11.Image = global::_0510Project.Properties.Resources.Wedge_Lock121;
             this.pictureBox11.Location = new System.Drawing.Point(13, 33);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(218, 51);
@@ -2027,7 +2023,6 @@
             // 
             // pictureBox10
             // 
-            this.pictureBox10.Image = global::_0510Project.Properties.Resources._91477A161p1_b01_digitall_1x_637104618588792597;
             this.pictureBox10.Location = new System.Drawing.Point(13, 41);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(218, 29);
@@ -2165,7 +2160,6 @@
             // 
             // pictureBox9
             // 
-            this.pictureBox9.Image = global::_0510Project.Properties.Resources.tooth;
             this.pictureBox9.Location = new System.Drawing.Point(11, 33);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(220, 45);
@@ -2290,7 +2284,6 @@
             // 
             // pictureBox8
             // 
-            this.pictureBox8.Image = global::_0510Project.Properties.Resources.Split_Lock;
             this.pictureBox8.Location = new System.Drawing.Point(14, 27);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(217, 56);
@@ -2545,7 +2538,6 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(1215, 152);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(124, 74);
@@ -2555,7 +2547,6 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(1362, 152);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(124, 74);
@@ -2614,7 +2605,6 @@
             // 
             // picTopView
             // 
-            this.picTopView.Image = ((System.Drawing.Image)(resources.GetObject("picTopView.Image")));
             this.picTopView.Location = new System.Drawing.Point(1737, 283);
             this.picTopView.Name = "picTopView";
             this.picTopView.Size = new System.Drawing.Size(106, 72);
@@ -2624,7 +2614,6 @@
             // 
             // picLength
             // 
-            this.picLength.Image = ((System.Drawing.Image)(resources.GetObject("picLength.Image")));
             this.picLength.Location = new System.Drawing.Point(1604, 265);
             this.picLength.Name = "picLength";
             this.picLength.Size = new System.Drawing.Size(133, 90);
@@ -2634,7 +2623,6 @@
             // 
             // picISOView
             // 
-            this.picISOView.Image = ((System.Drawing.Image)(resources.GetObject("picISOView.Image")));
             this.picISOView.Location = new System.Drawing.Point(1569, 100);
             this.picISOView.Name = "picISOView";
             this.picISOView.Size = new System.Drawing.Size(294, 173);

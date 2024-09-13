@@ -40,6 +40,7 @@ namespace _0510Project.Forms
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Alert", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                this.Close();
             }
         }
 

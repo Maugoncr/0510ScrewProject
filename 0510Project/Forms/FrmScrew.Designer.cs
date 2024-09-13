@@ -118,7 +118,7 @@
             this.label20 = new System.Windows.Forms.Label();
             this.btnClean = new FontAwesome.Sharp.IconButton();
             this.label19 = new System.Windows.Forms.Label();
-            this.iconButton12 = new FontAwesome.Sharp.IconButton();
+            this.btnCheckUrlSTEP = new FontAwesome.Sharp.IconButton();
             this.btnDisable = new FontAwesome.Sharp.IconButton();
             this.txtUrlSTEP = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
@@ -924,7 +924,7 @@
             this.groupBox7.Controls.Add(this.label20);
             this.groupBox7.Controls.Add(this.btnClean);
             this.groupBox7.Controls.Add(this.label19);
-            this.groupBox7.Controls.Add(this.iconButton12);
+            this.groupBox7.Controls.Add(this.btnCheckUrlSTEP);
             this.groupBox7.Controls.Add(this.btnDisable);
             this.groupBox7.Controls.Add(this.txtUrlSTEP);
             this.groupBox7.Controls.Add(this.label18);
@@ -1160,25 +1160,26 @@
             this.label19.Text = "Available Tools To Use with this Screw";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // iconButton12
+            // btnCheckUrlSTEP
             // 
-            this.iconButton12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.iconButton12.FlatAppearance.BorderSize = 0;
-            this.iconButton12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton12.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton12.ForeColor = System.Drawing.Color.White;
-            this.iconButton12.IconChar = FontAwesome.Sharp.IconChar.GoogleDrive;
-            this.iconButton12.IconColor = System.Drawing.Color.White;
-            this.iconButton12.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton12.IconSize = 25;
-            this.iconButton12.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton12.Location = new System.Drawing.Point(639, 185);
-            this.iconButton12.Name = "iconButton12";
-            this.iconButton12.Size = new System.Drawing.Size(120, 30);
-            this.iconButton12.TabIndex = 173;
-            this.iconButton12.Text = "Check URL";
-            this.iconButton12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton12.UseVisualStyleBackColor = false;
+            this.btnCheckUrlSTEP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnCheckUrlSTEP.FlatAppearance.BorderSize = 0;
+            this.btnCheckUrlSTEP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCheckUrlSTEP.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheckUrlSTEP.ForeColor = System.Drawing.Color.White;
+            this.btnCheckUrlSTEP.IconChar = FontAwesome.Sharp.IconChar.GoogleDrive;
+            this.btnCheckUrlSTEP.IconColor = System.Drawing.Color.White;
+            this.btnCheckUrlSTEP.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCheckUrlSTEP.IconSize = 25;
+            this.btnCheckUrlSTEP.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCheckUrlSTEP.Location = new System.Drawing.Point(639, 185);
+            this.btnCheckUrlSTEP.Name = "btnCheckUrlSTEP";
+            this.btnCheckUrlSTEP.Size = new System.Drawing.Size(120, 30);
+            this.btnCheckUrlSTEP.TabIndex = 173;
+            this.btnCheckUrlSTEP.Text = "Check URL";
+            this.btnCheckUrlSTEP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCheckUrlSTEP.UseVisualStyleBackColor = false;
+            this.btnCheckUrlSTEP.Click += new System.EventHandler(this.btnCheckUrlSTEP_Click);
             // 
             // btnDisable
             // 
@@ -1481,7 +1482,7 @@
         private System.Windows.Forms.TextBox txtIDScrew;
         private System.Windows.Forms.Label label13;
         private FontAwesome.Sharp.IconButton btnCheckUrlPDF;
-        private FontAwesome.Sharp.IconButton iconButton12;
+        private FontAwesome.Sharp.IconButton btnCheckUrlSTEP;
         private System.Windows.Forms.TextBox txtUrlSTEP;
         private System.Windows.Forms.Label label18;
         private FontAwesome.Sharp.IconButton btnAddAvailableTool;

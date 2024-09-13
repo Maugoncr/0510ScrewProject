@@ -269,7 +269,7 @@ namespace _0510Project.Forms
 
         private void btnCheckUrlPDF_Click(object sender, EventArgs e)
         {
-            FrmViewPDF frmScale = new FrmViewPDF("https://drive.google.com/file/d/14ZVIqs6Lp-E-Qg7wtM1tgMs1xVekFcEn/view?usp=drive_link");
+            FrmViewPDF frmScale = new FrmViewPDF(txtUrlPDF.Text.ToString());
             frmScale.ShowDialog();
         }
 
@@ -769,6 +769,12 @@ namespace _0510Project.Forms
                     }
                 }
             }
+        }
+
+        private void btnCheckUrlSTEP_Click(object sender, EventArgs e)
+        {
+            FrmViewPDF frmScale = new FrmViewPDF(txtUrlSTEP.Text.ToString());
+            frmScale.ShowDialog();
         }
     }
 }
