@@ -68,8 +68,7 @@ namespace _0510Project
         {
             ResetAppereance();
 
-            LoadDataGridView();
-            ConfigureDataGridView();
+            
         }
 
         private void ResetAppereance()
@@ -102,104 +101,8 @@ namespace _0510Project
 
         }
 
-        private void LoadDataGridView()
-        {
-          
-                // Primero, asegúrate de que tu DataGridView está configurado con las columnas necesarias.
-                dgvLength.Columns.Clear();
-                dgvLength.Columns.Add("Measurement", "Measurement");
-                dgvLength.Columns.Add("1", "1");
-                dgvLength.Columns.Add("2", "2");
-                dgvLength.Columns.Add("3", "3");
-                dgvLength.Columns.Add("4", "4");
-                dgvLength.Columns.Add("5", "5");
-                dgvLength.Columns.Add("6", "6");
-                dgvLength.Columns.Add("7", "7");
-                dgvLength.Columns.Add("8", "8");
-                dgvLength.Columns.Add("9", "9");
-                dgvLength.Columns.Add("10", "10");
-                dgvLength.Columns.Add("11", "11");
-                dgvLength.Columns.Add("12", "12");
-                dgvLength.Columns.Add("13", "13");
-                dgvLength.Columns.Add("14", "14");
-                dgvLength.Columns.Add("15", "15");
-                dgvLength.Columns.Add("16", "16");
-                
-
-            // Suponiendo que 'dataGridView1' ya tiene las columnas configuradas correctamente.
-            string[,] data = new string[,]
-            {
-        {"Inches", "1/8\"", "1/4\"", "3/8\"", "1/2\"", "5/8\"", "3/4\"", "7/8\"", "1\"", "1 1/8\"", "1 1/4\"", "1 3/8\"", "1 1/2\"", "1 5/8\"", "1 3/4\"", "1 7/8\"", "2\""},
-        {"Decimal", "0.125\"", "0.250\"", "0.375\"", "0.500\"", "0.625\"", "0.750\"", "0.875\"", "1.000\"", "1.125\"", "1.250\"", "1.375\"", "1.500\"", "1.625\"", "1.750\"", "1.875\"", "2.000\""},
-        {"Metric", "3.175 mm", "6.35 mm", "9.525 mm", "12.7 mm", "15.875 mm", "19.05 mm", "22.225 mm", "25.4 mm", "28.575 mm", "31.75 mm", "34.925 mm", "38.1 mm", "41.275 mm", "44.45 mm", "47.625 mm", "50.8 mm"}
-        
-            };
-
-            // Añadir las filas al DataGridView
-            for (int i = 0; i < data.GetLength(0); i++)
-            {
-                DataGridViewRow row = new DataGridViewRow();
-                row.CreateCells(dgvLength);  // Crear las celdas para la fila basadas en la configuración de DataGridView
-
-                for (int j = 0; j < data.GetLength(1); j++)
-                {
-                    row.Cells[j].Value = data[i, j];  // '+1' porque la primera celda (j=0) se dejará para el encabezado de fila si se usa
-                }
-
-                dgvLength.Rows.Add(row);
-            }
-
-            foreach (DataGridViewColumn column in dgvLength.Columns)
-            {
-                column.SortMode = DataGridViewColumnSortMode.NotSortable;
-            }
-
-            dgvLength.SelectionMode = DataGridViewSelectionMode.FullColumnSelect;
-            dgvLength.MultiSelect = false;
-        }
-
-        private void ConfigureDataGridView()
-        {
-            foreach (DataGridViewRow row in dgvLength.Rows)
-            {
-                row.Resizable = DataGridViewTriState.False;
-            }
-
-            foreach (DataGridViewColumn column in dgvLength.Columns)
-            {
-                column.Resizable = DataGridViewTriState.False;
-            }
-
-
-
-            foreach (DataGridViewColumn column in dgvLength.Columns)
-            {
-                column.Width = 110; // Establece el ancho de todas las columnas a 100 píxeles
-            }
-
-            foreach (DataGridViewRow row in dgvLength.Rows)
-            {
-                row.Height = 50; // Establece el alto de todas las filas a 30 píxeles
-            }
-
-            // Configuración de la primera columna para usar el espacio restante
-            dgvLength.Columns["Measurement"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            dgvLength.ColumnHeadersVisible = false;
-
-
-
-            // Cambiar la fuente y tamaño para todas las celdas
-            dgvLength.DefaultCellStyle.Font = new Font("Arial", 12, FontStyle.Regular);
-
-            // Centrar el texto en todas las celdas y encabezados
-            dgvLength.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dgvLength.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dgvLength.ColumnHeadersDefaultCellStyle.Font = new Font("Arial", 12, FontStyle.Regular);
-            dgvLength.RowHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-
-            // Asegúrate de que el DataGridView no muestra la cabecera de filas si aún no lo has configurado
-            dgvLength.RowHeadersVisible = false;
-        }
+       
+      
 
       
 
@@ -207,7 +110,7 @@ namespace _0510Project
 
         private void cbDriveType_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            if (cbDriveType.SelectedItem.ToString() == "Socket Head Screw")
+            if (cbScrewTypes.SelectedItem.ToString() == "Socket Head Screw")
             {
                 picISOView.Visible = true;
                 picISOView.Image = Properties.Resources.Socket;
@@ -224,7 +127,7 @@ namespace _0510Project
                 picLength.Image = Properties.Resources.LengthSocketHead;
             }
 
-            if (cbDriveType.SelectedItem.ToString() == "Countersunk Screw")
+            if (cbScrewTypes.SelectedItem.ToString() == "Countersunk Screw")
             {
                 picISOView.Visible = true;
               //  picISOView.Image = Properties.Resources.SunkISO;
@@ -241,7 +144,7 @@ namespace _0510Project
                // picLength.Image = Properties.Resources.LengthSunk;
             }
 
-            if (cbDriveType.SelectedItem.ToString() == "Torx Screw")
+            if (cbScrewTypes.SelectedItem.ToString() == "Torx Screw")
             {
                 picISOView.Visible = true;
 //picISOView.Image = Properties.Resources.TorxISO;
@@ -258,7 +161,7 @@ namespace _0510Project
               //  picLength.Image = Properties.Resources.LengthTorx;
             }
 
-            if (cbDriveType.SelectedItem.ToString() == "Vent Socket Head Screw")
+            if (cbScrewTypes.SelectedItem.ToString() == "Vent Socket Head Screw")
             {
                 picISOView.Visible = true;
               //  picISOView.Image = Properties.Resources.VentISO;
@@ -278,66 +181,6 @@ namespace _0510Project
             pSizeSelect.Enabled = true;
 
         }
-
-        private void txtSearchSize_TextChanged(object sender, EventArgs e)
-        {
-            // Supongamos que tienes una lista original de elementos
-            List<string> allItems = new List<string>() { "0-80", "1-64", "1-72", "2-56", "2-64", "3-48", "3-56", "4-40" };
-
-            // Filtrar los elementos en base al texto ingresado
-            var filteredItems = allItems.Where(item => item.Contains(txtSearchSize.Text)).ToList();
-
-            // Actualizar los ítems del ListBox
-            listSize.DataSource = filteredItems;
-        }
-
-        private void txtSearchLength_TextChanged(object sender, EventArgs e)
-        {
-            // Supongamos que tienes una lista original de elementos
-            List<string> allItems = new List<string>() {
-                "X",
-                "1/4\"",
-                "3/8\"",
-                "1/2\"",
-                "5/8\"",
-                "3/4\"",
-                "7/8\"",
-                "1\"",
-                "1\" X",
-                "1\" 1/4",
-                "1\" 3/8",
-                "1\" 1/2",
-                "1\" 5/8",
-                "1\" 3/4"
-            };
-
-            // Filtrar los elementos en base al texto ingresado
-            var filteredItems = allItems.Where(item => item.Contains(txtSearchLength.Text)).ToList();
-
-            // Actualizar los ítems del ListBox
-            listLength.DataSource = filteredItems;
-        }
-
-        private void txtSearchSize_Click(object sender, EventArgs e)
-        {
-            txtSearchSize.SelectAll();
-        }
-
-        private void txtSearchLength_Click(object sender, EventArgs e)
-        {
-            txtSearchLength.SelectAll();
-        }
-
-        private void listLength_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (listLength.SelectedItem.ToString() == "1/4\"")
-            {
-               
-
-            }
-        }
-
-        
 
         private void btnSTP_Click(object sender, EventArgs e)
         {
