@@ -209,7 +209,6 @@
             // picScrews
             // 
             this.picScrews.BackColor = System.Drawing.Color.DarkCyan;
-            this.picScrews.Image = global::_0510Project.Properties.Resources.Pi7_Screws;
             this.picScrews.Location = new System.Drawing.Point(812, 790);
             this.picScrews.Name = "picScrews";
             this.picScrews.Size = new System.Drawing.Size(156, 135);
@@ -221,7 +220,6 @@
             // picLength
             // 
             this.picLength.BackColor = System.Drawing.Color.DarkCyan;
-            this.picLength.Image = global::_0510Project.Properties.Resources.Pi7_Length;
             this.picLength.Location = new System.Drawing.Point(812, 402);
             this.picLength.Name = "picLength";
             this.picLength.Size = new System.Drawing.Size(156, 135);
@@ -233,7 +231,6 @@
             // picSize
             // 
             this.picSize.BackColor = System.Drawing.Color.DarkCyan;
-            this.picSize.Image = global::_0510Project.Properties.Resources.Pi7_Size;
             this.picSize.Location = new System.Drawing.Point(812, 201);
             this.picSize.Name = "picSize";
             this.picSize.Size = new System.Drawing.Size(156, 135);
@@ -245,7 +242,6 @@
             // picNTools
             // 
             this.picNTools.BackColor = System.Drawing.Color.DarkCyan;
-            this.picNTools.Image = global::_0510Project.Properties.Resources.Pi7_NTool;
             this.picNTools.Location = new System.Drawing.Point(123, 594);
             this.picNTools.Name = "picNTools";
             this.picNTools.Size = new System.Drawing.Size(156, 135);
@@ -257,7 +253,6 @@
             // picAvailableTools
             // 
             this.picAvailableTools.BackColor = System.Drawing.Color.DarkCyan;
-            this.picAvailableTools.Image = global::_0510Project.Properties.Resources.Pi7_AvailableTools;
             this.picAvailableTools.Location = new System.Drawing.Point(122, 402);
             this.picAvailableTools.Name = "picAvailableTools";
             this.picAvailableTools.Size = new System.Drawing.Size(156, 135);
@@ -269,7 +264,6 @@
             // picAbbreviations
             // 
             this.picAbbreviations.BackColor = System.Drawing.Color.DarkCyan;
-            this.picAbbreviations.Image = global::_0510Project.Properties.Resources.Pi7_Abbreviation;
             this.picAbbreviations.Location = new System.Drawing.Point(122, 790);
             this.picAbbreviations.Name = "picAbbreviations";
             this.picAbbreviations.Size = new System.Drawing.Size(156, 135);
@@ -281,7 +275,6 @@
             // picTypes
             // 
             this.picTypes.BackColor = System.Drawing.Color.DarkCyan;
-            this.picTypes.Image = global::_0510Project.Properties.Resources.Pi7_Types;
             this.picTypes.Location = new System.Drawing.Point(812, 594);
             this.picTypes.Name = "picTypes";
             this.picTypes.Size = new System.Drawing.Size(156, 135);
@@ -293,7 +286,6 @@
             // picMaterials
             // 
             this.picMaterials.BackColor = System.Drawing.Color.DarkCyan;
-            this.picMaterials.Image = global::_0510Project.Properties.Resources.Pi7_Material;
             this.picMaterials.Location = new System.Drawing.Point(122, 201);
             this.picMaterials.Name = "picMaterials";
             this.picMaterials.Size = new System.Drawing.Size(156, 135);

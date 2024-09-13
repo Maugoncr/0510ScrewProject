@@ -198,36 +198,6 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="Resources\DeleteRow.png" />
-    <None Include="Resources\Pi7_Types.png" />
-    <None Include="Resources\Pi7_Size.png" />
-    <None Include="Resources\Pi7_Screws.png" />
-    <None Include="Resources\Pi7_NTool.png" />
-    <None Include="Resources\Pi7_Material.png" />
-    <None Include="Resources\Pi7_Length.png" />
-    <None Include="Resources\Pi7_AvailableTools.png" />
-    <None Include="Resources\Pi7_Abbreviation.png" />
-    <None Include="Resources\Types.png" />
-    <None Include="Resources\Size.png" />
-    <None Include="Resources\Screws.png" />
-    <None Include="Resources\NTool.png" />
-    <None Include="Resources\Material.png" />
-    <None Include="Resources\Length.png" />
-    <None Include="Resources\AvailableTools.png" />
-    <None Include="Resources\Abbreviation.png" />
-    <None Include="Resources\SSNE Just Logo.png" />
-    <None Include="Resources\SocketTop.png" />
-    <None Include="Resources\LengthSocketHead.png" />
-    <None Include="Resources\Socket.png" />
-    <None Include="Resources\T-Handle.png" />
-    <None Include="Resources\Driver.png" />
-    <None Include="Resources\Allen-Wrenches.png" />
-    <None Include="Resources\Wedge Lock121.png" />
-    <None Include="Resources\91477A161p1-b01-digitall%401x_637104618588792597.png" />
-    <None Include="Resources\tooth.png" />
-    <None Include="Resources\Split Lock.png" />
-    <None Include="Resources\Flat Flat.png" />
-    <None Include="Resources\Crown.png" />
-    <None Include="Resources\NutHex.png" />
     <EmbeddedResource Include="Forms\FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
       <SubType>Designer</SubType>
