@@ -101,6 +101,8 @@ namespace _0510Project
             txtSSNEPartNumber.Text = "";
             txtVendorPartNumber.Text = "";
 
+            txtIDScrew.Clear();
+
             pSizeSelect.Enabled = false;
             pLengths.Enabled = false;
 
@@ -204,8 +206,6 @@ namespace _0510Project
         {
             if (MyScrewMain.MyScrewLength.IDScrewLength != 0)
             {
-                // SELECT INFORMATION
-
                 try
                 {
                     int IDType = MyScrewMain.MyScrewType.IDScrewType;
@@ -217,6 +217,7 @@ namespace _0510Project
                         MyScrewMain = ScrewLogic.Instancia.SelectScrewByTypeSizeLength(IDType, IDSize, IDLength);
 
                         txtIDScrew.Text = MyScrewMain.IDScrew.ToString();
+
                         txtSSNEPartNumber.Text = MyScrewMain.SSNEPartNumber;
                         txtVendorPartNumber.Text = MyScrewMain.VendorPartNumber;
                         

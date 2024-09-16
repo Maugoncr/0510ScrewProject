@@ -216,6 +216,7 @@
             this.picLength = new System.Windows.Forms.PictureBox();
             this.picISOView = new System.Windows.Forms.PictureBox();
             this.txtIDScrew = new System.Windows.Forms.TextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.pNavBar.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.pSizeSelect.SuspendLayout();
@@ -245,6 +246,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picTopView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLength)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picISOView)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // cbScrewTypes
@@ -272,7 +274,6 @@
             // pNavBar
             // 
             this.pNavBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            this.pNavBar.Controls.Add(this.button1);
             this.pNavBar.Controls.Add(this.label2);
             this.pNavBar.Controls.Add(this.btnFormSize);
             this.pNavBar.Controls.Add(this.btnExit);
@@ -288,11 +289,11 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(423, 13);
+            this.button1.Location = new System.Drawing.Point(1832, 628);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 359;
-            this.button1.Text = "button1";
+            this.button1.Text = "Refresh";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -1393,7 +1394,7 @@
             // label20
             // 
             this.label20.Font = new System.Drawing.Font("Roboto", 12F);
-            this.label20.Location = new System.Drawing.Point(1073, 229);
+            this.label20.Location = new System.Drawing.Point(7, 83);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(124, 22);
             this.label20.TabIndex = 442;
@@ -1403,7 +1404,7 @@
             // label22
             // 
             this.label22.Font = new System.Drawing.Font("Roboto", 12F);
-            this.label22.Location = new System.Drawing.Point(1362, 229);
+            this.label22.Location = new System.Drawing.Point(296, 83);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(124, 22);
             this.label22.TabIndex = 446;
@@ -1413,7 +1414,7 @@
             // label23
             // 
             this.label23.Font = new System.Drawing.Font("Roboto", 12F);
-            this.label23.Location = new System.Drawing.Point(1215, 229);
+            this.label23.Location = new System.Drawing.Point(149, 83);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(124, 22);
             this.label23.TabIndex = 448;
@@ -2595,7 +2596,7 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Location = new System.Drawing.Point(1215, 152);
+            this.pictureBox4.Location = new System.Drawing.Point(149, 6);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(124, 74);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -2604,7 +2605,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(1362, 152);
+            this.pictureBox3.Location = new System.Drawing.Point(296, 6);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(124, 74);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -2613,7 +2614,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(1073, 152);
+            this.pictureBox2.Location = new System.Drawing.Point(7, 6);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(124, 74);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -2695,11 +2696,26 @@
             this.txtIDScrew.TabIndex = 458;
             this.txtIDScrew.Visible = false;
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.label23);
+            this.panel2.Controls.Add(this.label20);
+            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Controls.Add(this.label22);
+            this.panel2.Controls.Add(this.pictureBox3);
+            this.panel2.Controls.Add(this.pictureBox4);
+            this.panel2.Location = new System.Drawing.Point(1308, 609);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(429, 114);
+            this.panel2.TabIndex = 459;
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1920, 1061);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtIDScrew);
             this.Controls.Add(this.pGestion);
             this.Controls.Add(this.label62);
@@ -2707,12 +2723,6 @@
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.label23);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.label22);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.label20);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.txtVendorPartNumber);
             this.Controls.Add(this.txtSSNEPartNumber);
@@ -2784,6 +2794,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picTopView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLength)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picISOView)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2977,6 +2988,7 @@
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtIDScrew;
+        private System.Windows.Forms.Panel panel2;
     }
 }
 
