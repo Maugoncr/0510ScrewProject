@@ -19,6 +19,7 @@ using Label = System.Windows.Forms.Label;
 using Logica.Models;
 using Logica.Logic;
 using _0510Project.Properties;
+using System.Diagnostics.Eventing.Reader;
 
 namespace _0510Project
 {
@@ -108,6 +109,10 @@ namespace _0510Project
 
             btnPDF.Enabled = false;
             btnSTP.Enabled = false;
+
+            pAvailableTools1.Visible = false;
+            pAvailableTools2.Visible = false;
+            pAvailableTools3.Visible = false;
 
             foreach (Control control in pSizeSelect.Controls)
             {
@@ -214,6 +219,8 @@ namespace _0510Project
 
                     if (IDType != 0 && IDSize != 0 && IDLength != 0)
                     {
+                        // Get Screw Info
+
                         MyScrewMain = ScrewLogic.Instancia.SelectScrewByTypeSizeLength(IDType, IDSize, IDLength);
 
                         txtIDScrew.Text = MyScrewMain.IDScrew.ToString();
@@ -226,6 +233,112 @@ namespace _0510Project
                         txtAbbreviationName.Text = MyScrewMain.MyScrewAbbreviation.AbbreviationName;
 
                         txtNToolName.Text = MyScrewMain.MyScrewNTool.NToolName;
+
+                        // Get Available Tools Info
+                        pAvailableTools3.Visible = false;
+                        pAvailableTools2.Visible = false;
+                        pAvailableTools1.Visible = false;
+
+                        DataTable AvailableTools = ScrewLogic.Instancia.SelectScrewAvailableToolsByID(MyScrewMain.IDScrew);
+
+                        int rowCount = AvailableTools.Rows.Count;
+
+                        if (rowCount == 3)
+                        {
+                            pAvailableTools3.Location = new Point(1065, 153);
+                            pAvailableTools3.Visible = true;
+                        }
+                        else if (rowCount == 2)
+                        {
+                            pAvailableTools2.Location = new Point(1065, 153);
+                            pAvailableTools2.Visible = true;
+
+                            bool containsAllen = false;
+                            bool containsDriver = false;
+                            bool containsTHandle = false;
+
+                            foreach (DataRow row in AvailableTools.Rows)
+                            {
+                                if (row["ToolName"].ToString() == "Allen Wrench")
+                                {
+                                    containsAllen = true;
+                                }
+                                else if (row["ToolName"].ToString() == "Screw Driver")
+                                {
+                                    containsDriver = true;
+                                }
+                                else if (row["ToolName"].ToString() == "T-Handle")
+                                {
+                                    containsTHandle = true;
+                                }
+                            }
+
+                            if (containsAllen && containsDriver)
+                            {
+                                picTool1B.Image = Resources.Allen;
+                                lbTool1B.Text = "Allen Wrench";
+
+                                picTool2B.Image = Resources.ScrewDriver;
+                                lbTool2B.Text = "Screw Driver";
+                            }
+                            else if (containsAllen && containsTHandle)
+                            {
+                                picTool1B.Image = Resources.Allen;
+                                lbTool1B.Text = "Allen Wrench";
+
+                                picTool2B.Image = Resources.T_Handle;
+                                lbTool2B.Text = "T-Handle";
+                            }
+                            else if (containsDriver && containsTHandle)
+                            {
+                                picTool1B.Image = Resources.ScrewDriver;
+                                lbTool1B.Text = "Screw Driver";
+
+                                picTool2B.Image = Resources.T_Handle;
+                                lbTool2B.Text = "T-Handle";
+                            }
+                        }
+                        else if (rowCount == 1)
+                        {
+                            pAvailableTools1.Location = new Point(1065, 153);
+                            pAvailableTools1.Visible = true;
+
+                            bool containsAllen = false;
+                            bool containsDriver = false;
+                            bool containsTHandle = false;
+
+                            foreach (DataRow row in AvailableTools.Rows)
+                            {
+                                if (row["ToolName"].ToString() == "Allen Wrench")
+                                {
+                                    containsAllen = true;
+                                }
+                                else if (row["ToolName"].ToString() == "Screw Driver")
+                                {
+                                    containsDriver = true;
+                                }
+                                else if (row["ToolName"].ToString() == "T-Handle")
+                                {
+                                    containsTHandle = true;
+                                }
+                            }
+
+                            if (containsAllen)
+                            {
+                                picTool1C.Image = Resources.Allen;
+                                lbTool1C.Text = "Allen Wrench";
+                            }
+                            else if (containsDriver)
+                            {
+                                picTool1C.Image = Resources.ScrewDriver;
+                                lbTool1C.Text = "Screw Driver";
+                            }
+                            else if (containsTHandle)
+                            {
+                                picTool1C.Image = Resources.T_Handle;
+                                lbTool1C.Text = "T-Handle";
+                            }
+                        }
 
                         Label clickedLabel = sender as Label;
 

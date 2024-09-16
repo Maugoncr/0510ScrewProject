@@ -203,6 +203,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Resources\T-Handle.png" />
+    <None Include="Resources\ScrewDriver.png" />
+    <None Include="Resources\Allen.png" />
     <None Include="Resources\DeleteRow.png" />
     <EmbeddedResource Include="Forms\FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
