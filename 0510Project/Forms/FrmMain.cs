@@ -132,6 +132,7 @@ namespace _0510Project
                 }
             }
 
+            cbScrewTypes.Enabled = true;
             cbScrewTypes.SelectedIndex = -1;
 
             MyScrewMain = new Screw();
@@ -389,6 +390,11 @@ namespace _0510Project
                             btnPDF.Enabled = true;
                             btnSTP.Enabled = true;
                         }
+
+                        cbScrewTypes.Enabled = false;
+                        pLengths.Enabled = false;
+                        pSizeSelect.Enabled = false;
+
                     }
                 }
                 catch (Exception ex)
@@ -1715,6 +1721,11 @@ namespace _0510Project
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ResetAppereance();
         }
     }
 }

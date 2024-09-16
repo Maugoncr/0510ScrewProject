@@ -32,7 +32,6 @@
             this.cbScrewTypes = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pNavBar = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.lbDateTime = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -226,6 +225,7 @@
             this.btnFormSize = new FontAwesome.Sharp.IconButton();
             this.btnExit = new FontAwesome.Sharp.IconButton();
             this.picISOView = new System.Windows.Forms.PictureBox();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.pNavBar.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.pSizeSelect.SuspendLayout();
@@ -303,16 +303,6 @@
             this.pNavBar.TabIndex = 4;
             this.pNavBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pNavBar_MouseDown);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(1832, 628);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 359;
-            this.button1.Text = "Refresh";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -351,6 +341,7 @@
             this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.menuStrip1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1,
             this.informationToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 62);
             this.menuStrip1.Name = "menuStrip1";
@@ -2822,6 +2813,15 @@
             this.picISOView.TabIndex = 7;
             this.picISOView.TabStop = false;
             // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripMenuItem1.ForeColor = System.Drawing.Color.Black;
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(144, 31);
+            this.toolStripMenuItem1.Text = "Reset Selection";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -2830,7 +2830,6 @@
             this.Controls.Add(this.pAvailableTools1);
             this.Controls.Add(this.pAvailableTools2);
             this.Controls.Add(this.pAvailableTools3);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtIDScrew);
             this.Controls.Add(this.pGestion);
             this.Controls.Add(this.label62);
@@ -3107,7 +3106,6 @@
         private System.Windows.Forms.Label label12;
         private FontAwesome.Sharp.IconButton btnEnterGestion;
         private System.Windows.Forms.Button btnClose;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtIDScrew;
         private System.Windows.Forms.Panel pAvailableTools3;
         private System.Windows.Forms.Panel pAvailableTools2;
@@ -3119,6 +3117,7 @@
         private System.Windows.Forms.Label lbTool1C;
         private System.Windows.Forms.PictureBox picTool1C;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
     }
 }
 
