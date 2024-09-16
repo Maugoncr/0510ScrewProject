@@ -203,6 +203,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Resources\SSNE LOGO.png" />
+    <None Include="Resources\Types.png" />
+    <None Include="Resources\Size.png" />
+    <None Include="Resources\Screws.png" />
+    <None Include="Resources\NTool.png" />
+    <None Include="Resources\Material.png" />
+    <None Include="Resources\Length.png" />
+    <None Include="Resources\AvailableTools.png" />
+    <None Include="Resources\Abbreviation.png" />
+    <None Include="Resources\SunkTop.png" />
+    <None Include="Resources\SocketTop.png" />
+    <None Include="Resources\LengthTorx.png" />
+    <None Include="Resources\LengthSunk.png" />
+    <None Include="Resources\LengthSocket.png" />
+    <None Include="Resources\Torxscrew.png" />
+    <None Include="Resources\TorxTop.png" />
+    <None Include="Resources\Countersunk.png" />
+    <None Include="Resources\Sockethead.png" />
     <None Include="Resources\T-Handle.png" />
     <None Include="Resources\ScrewDriver.png" />
     <None Include="Resources\Allen.png" />

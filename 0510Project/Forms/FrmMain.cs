@@ -114,6 +114,8 @@ namespace _0510Project
             pAvailableTools2.Visible = false;
             pAvailableTools3.Visible = false;
 
+            lbAvailableToolsTitle.Visible = false;
+
             foreach (Control control in pSizeSelect.Controls)
             {
                 if (control is Label && control.Name.StartsWith("s"))
@@ -134,6 +136,10 @@ namespace _0510Project
 
             MyScrewMain = new Screw();
 
+            picTopView.Visible = false;
+            picISOView.Visible = false;
+            picLength.Visible = false;
+
         }
 
         // Hasta Ahora ya tengo el IDScrewType
@@ -144,15 +150,43 @@ namespace _0510Project
             if (cbScrewTypes.SelectedIndex >= 0)
             {
                 MyScrewMain.MyScrewType.IDScrewType = Convert.ToInt32(cbScrewTypes.SelectedValue);
+
+                picTopView.Visible = true;
+                picISOView.Visible = true;
+                picLength.Visible = true;
+
+                if (cbScrewTypes.SelectedIndex == 0)
+                {
+                    // 0 = Socket Head
+                    picISOView.Image = Resources.Sockethead;
+                    picLength.Image = Resources.LengthSocket;
+                    picTopView.Image = Resources.SocketTop;
+                }
+                else if (cbScrewTypes.SelectedIndex == 1)
+                {
+                    // 1 = CounterSunk
+                    picISOView.Image = Resources.Countersunk;
+                    picLength.Image = Resources.LengthSunk;
+                    picTopView.Image = Resources.SunkTop;
+                }
+                else if (cbScrewTypes.SelectedIndex == 2)
+                {
+                    // 2 = Torx
+                    picISOView.Image = Resources.Torxscrew;
+                    picLength.Image = Resources.LengthTorx;
+                    picTopView.Image = Resources.TorxTop;
+                }
             }
             else
             {
                 MyScrewMain.MyScrewType.IDScrewType = 0;
-            }
 
+                picTopView.Visible = false;
+                picISOView.Visible = false;
+                picLength.Visible = false;
+            }
             // Se permite continuar con el siguiente paso
             pSizeSelect.Enabled = true;
-
         }
 
 
@@ -247,11 +281,13 @@ namespace _0510Project
                         {
                             pAvailableTools3.Location = new Point(1065, 153);
                             pAvailableTools3.Visible = true;
+                            lbAvailableToolsTitle.Visible = true;
                         }
                         else if (rowCount == 2)
                         {
                             pAvailableTools2.Location = new Point(1065, 153);
                             pAvailableTools2.Visible = true;
+                            lbAvailableToolsTitle.Visible = true;
 
                             bool containsAllen = false;
                             bool containsDriver = false;
@@ -302,6 +338,7 @@ namespace _0510Project
                         {
                             pAvailableTools1.Location = new Point(1065, 153);
                             pAvailableTools1.Visible = true;
+                            lbAvailableToolsTitle.Visible = true;
 
                             bool containsAllen = false;
                             bool containsDriver = false;
@@ -358,6 +395,10 @@ namespace _0510Project
                 {
                     MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+            }
+            else
+            {
+                MessageBox.Show("This Length isn't register yet", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

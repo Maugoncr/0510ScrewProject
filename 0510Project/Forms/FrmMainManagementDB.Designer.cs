@@ -39,6 +39,9 @@
             this.btnLengths = new System.Windows.Forms.Label();
             this.btnSizes = new System.Windows.Forms.Label();
             this.btnTypes = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.picScrews = new System.Windows.Forms.PictureBox();
             this.picLength = new System.Windows.Forms.PictureBox();
             this.picSize = new System.Windows.Forms.PictureBox();
@@ -47,9 +50,6 @@
             this.picAbbreviations = new System.Windows.Forms.PictureBox();
             this.picTypes = new System.Windows.Forms.PictureBox();
             this.picMaterials = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.pNavBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picScrews)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLength)).BeginInit();
@@ -206,94 +206,6 @@
             this.btnTypes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnTypes.Click += new System.EventHandler(this.btnTypes_Click);
             // 
-            // picScrews
-            // 
-            this.picScrews.BackColor = System.Drawing.Color.DarkCyan;
-            this.picScrews.Location = new System.Drawing.Point(812, 790);
-            this.picScrews.Name = "picScrews";
-            this.picScrews.Size = new System.Drawing.Size(156, 135);
-            this.picScrews.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.picScrews.TabIndex = 154;
-            this.picScrews.TabStop = false;
-            this.picScrews.Click += new System.EventHandler(this.picScrews_Click);
-            // 
-            // picLength
-            // 
-            this.picLength.BackColor = System.Drawing.Color.DarkCyan;
-            this.picLength.Location = new System.Drawing.Point(812, 402);
-            this.picLength.Name = "picLength";
-            this.picLength.Size = new System.Drawing.Size(156, 135);
-            this.picLength.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.picLength.TabIndex = 153;
-            this.picLength.TabStop = false;
-            this.picLength.Click += new System.EventHandler(this.picLength_Click);
-            // 
-            // picSize
-            // 
-            this.picSize.BackColor = System.Drawing.Color.DarkCyan;
-            this.picSize.Location = new System.Drawing.Point(812, 201);
-            this.picSize.Name = "picSize";
-            this.picSize.Size = new System.Drawing.Size(156, 135);
-            this.picSize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.picSize.TabIndex = 152;
-            this.picSize.TabStop = false;
-            this.picSize.Click += new System.EventHandler(this.picSize_Click);
-            // 
-            // picNTools
-            // 
-            this.picNTools.BackColor = System.Drawing.Color.DarkCyan;
-            this.picNTools.Location = new System.Drawing.Point(123, 594);
-            this.picNTools.Name = "picNTools";
-            this.picNTools.Size = new System.Drawing.Size(156, 135);
-            this.picNTools.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.picNTools.TabIndex = 151;
-            this.picNTools.TabStop = false;
-            this.picNTools.Click += new System.EventHandler(this.picNTools_Click);
-            // 
-            // picAvailableTools
-            // 
-            this.picAvailableTools.BackColor = System.Drawing.Color.DarkCyan;
-            this.picAvailableTools.Location = new System.Drawing.Point(122, 402);
-            this.picAvailableTools.Name = "picAvailableTools";
-            this.picAvailableTools.Size = new System.Drawing.Size(156, 135);
-            this.picAvailableTools.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.picAvailableTools.TabIndex = 150;
-            this.picAvailableTools.TabStop = false;
-            this.picAvailableTools.Click += new System.EventHandler(this.picAvailableTools_Click);
-            // 
-            // picAbbreviations
-            // 
-            this.picAbbreviations.BackColor = System.Drawing.Color.DarkCyan;
-            this.picAbbreviations.Location = new System.Drawing.Point(122, 790);
-            this.picAbbreviations.Name = "picAbbreviations";
-            this.picAbbreviations.Size = new System.Drawing.Size(156, 135);
-            this.picAbbreviations.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.picAbbreviations.TabIndex = 149;
-            this.picAbbreviations.TabStop = false;
-            this.picAbbreviations.Click += new System.EventHandler(this.picAbbreviations_Click);
-            // 
-            // picTypes
-            // 
-            this.picTypes.BackColor = System.Drawing.Color.DarkCyan;
-            this.picTypes.Location = new System.Drawing.Point(812, 594);
-            this.picTypes.Name = "picTypes";
-            this.picTypes.Size = new System.Drawing.Size(156, 135);
-            this.picTypes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.picTypes.TabIndex = 148;
-            this.picTypes.TabStop = false;
-            this.picTypes.Click += new System.EventHandler(this.picTypes_Click);
-            // 
-            // picMaterials
-            // 
-            this.picMaterials.BackColor = System.Drawing.Color.DarkCyan;
-            this.picMaterials.Location = new System.Drawing.Point(122, 201);
-            this.picMaterials.Name = "picMaterials";
-            this.picMaterials.Size = new System.Drawing.Size(156, 135);
-            this.picMaterials.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.picMaterials.TabIndex = 147;
-            this.picMaterials.TabStop = false;
-            this.picMaterials.Click += new System.EventHandler(this.picMaterials_Click);
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightSeaGreen;
@@ -320,6 +232,102 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(2, 1011);
             this.panel3.TabIndex = 165;
+            // 
+            // picScrews
+            // 
+            this.picScrews.BackColor = System.Drawing.Color.DarkCyan;
+            this.picScrews.Image = global::_0510Project.Properties.Resources.Screws;
+            this.picScrews.Location = new System.Drawing.Point(812, 790);
+            this.picScrews.Name = "picScrews";
+            this.picScrews.Size = new System.Drawing.Size(156, 135);
+            this.picScrews.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picScrews.TabIndex = 154;
+            this.picScrews.TabStop = false;
+            this.picScrews.Click += new System.EventHandler(this.picScrews_Click);
+            // 
+            // picLength
+            // 
+            this.picLength.BackColor = System.Drawing.Color.DarkCyan;
+            this.picLength.Image = global::_0510Project.Properties.Resources.Length;
+            this.picLength.Location = new System.Drawing.Point(812, 402);
+            this.picLength.Name = "picLength";
+            this.picLength.Size = new System.Drawing.Size(156, 135);
+            this.picLength.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picLength.TabIndex = 153;
+            this.picLength.TabStop = false;
+            this.picLength.Click += new System.EventHandler(this.picLength_Click);
+            // 
+            // picSize
+            // 
+            this.picSize.BackColor = System.Drawing.Color.DarkCyan;
+            this.picSize.Image = global::_0510Project.Properties.Resources.Size;
+            this.picSize.Location = new System.Drawing.Point(812, 201);
+            this.picSize.Name = "picSize";
+            this.picSize.Size = new System.Drawing.Size(156, 135);
+            this.picSize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picSize.TabIndex = 152;
+            this.picSize.TabStop = false;
+            this.picSize.Click += new System.EventHandler(this.picSize_Click);
+            // 
+            // picNTools
+            // 
+            this.picNTools.BackColor = System.Drawing.Color.DarkCyan;
+            this.picNTools.Image = global::_0510Project.Properties.Resources.NTool;
+            this.picNTools.Location = new System.Drawing.Point(123, 594);
+            this.picNTools.Name = "picNTools";
+            this.picNTools.Size = new System.Drawing.Size(156, 135);
+            this.picNTools.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picNTools.TabIndex = 151;
+            this.picNTools.TabStop = false;
+            this.picNTools.Click += new System.EventHandler(this.picNTools_Click);
+            // 
+            // picAvailableTools
+            // 
+            this.picAvailableTools.BackColor = System.Drawing.Color.DarkCyan;
+            this.picAvailableTools.Image = global::_0510Project.Properties.Resources.AvailableTools;
+            this.picAvailableTools.Location = new System.Drawing.Point(122, 402);
+            this.picAvailableTools.Name = "picAvailableTools";
+            this.picAvailableTools.Size = new System.Drawing.Size(156, 135);
+            this.picAvailableTools.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picAvailableTools.TabIndex = 150;
+            this.picAvailableTools.TabStop = false;
+            this.picAvailableTools.Click += new System.EventHandler(this.picAvailableTools_Click);
+            // 
+            // picAbbreviations
+            // 
+            this.picAbbreviations.BackColor = System.Drawing.Color.DarkCyan;
+            this.picAbbreviations.Image = global::_0510Project.Properties.Resources.Abbreviation;
+            this.picAbbreviations.Location = new System.Drawing.Point(122, 790);
+            this.picAbbreviations.Name = "picAbbreviations";
+            this.picAbbreviations.Size = new System.Drawing.Size(156, 135);
+            this.picAbbreviations.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picAbbreviations.TabIndex = 149;
+            this.picAbbreviations.TabStop = false;
+            this.picAbbreviations.Click += new System.EventHandler(this.picAbbreviations_Click);
+            // 
+            // picTypes
+            // 
+            this.picTypes.BackColor = System.Drawing.Color.DarkCyan;
+            this.picTypes.Image = global::_0510Project.Properties.Resources.Types;
+            this.picTypes.Location = new System.Drawing.Point(812, 594);
+            this.picTypes.Name = "picTypes";
+            this.picTypes.Size = new System.Drawing.Size(156, 135);
+            this.picTypes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picTypes.TabIndex = 148;
+            this.picTypes.TabStop = false;
+            this.picTypes.Click += new System.EventHandler(this.picTypes_Click);
+            // 
+            // picMaterials
+            // 
+            this.picMaterials.BackColor = System.Drawing.Color.DarkCyan;
+            this.picMaterials.Image = global::_0510Project.Properties.Resources.Material;
+            this.picMaterials.Location = new System.Drawing.Point(122, 201);
+            this.picMaterials.Name = "picMaterials";
+            this.picMaterials.Size = new System.Drawing.Size(156, 135);
+            this.picMaterials.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picMaterials.TabIndex = 147;
+            this.picMaterials.TabStop = false;
+            this.picMaterials.Click += new System.EventHandler(this.picMaterials_Click);
             // 
             // FrmMainManagementDB
             // 

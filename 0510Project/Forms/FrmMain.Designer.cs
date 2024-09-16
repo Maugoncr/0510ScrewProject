@@ -114,7 +114,7 @@
             this.txtSSNEPartNumber = new System.Windows.Forms.Label();
             this.txtVendorPartNumber = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
+            this.lbAvailableToolsTitle = new System.Windows.Forms.Label();
             this.lbAllen = new System.Windows.Forms.Label();
             this.lbTHandle = new System.Windows.Forms.Label();
             this.lbScrewDriver = new System.Windows.Forms.Label();
@@ -185,6 +185,14 @@
             this.label11 = new System.Windows.Forms.Label();
             this.txtIDScrew = new System.Windows.Forms.TextBox();
             this.pAvailableTools3 = new System.Windows.Forms.Panel();
+            this.pAvailableTools2 = new System.Windows.Forms.Panel();
+            this.lbTool1B = new System.Windows.Forms.Label();
+            this.lbTool2B = new System.Windows.Forms.Label();
+            this.pAvailableTools1 = new System.Windows.Forms.Panel();
+            this.lbTool1C = new System.Windows.Forms.Label();
+            this.picTool1C = new System.Windows.Forms.PictureBox();
+            this.picTool1B = new System.Windows.Forms.PictureBox();
+            this.picTool2B = new System.Windows.Forms.PictureBox();
             this.picTool1 = new System.Windows.Forms.PictureBox();
             this.picTool3 = new System.Windows.Forms.PictureBox();
             this.picTool2 = new System.Windows.Forms.PictureBox();
@@ -214,17 +222,10 @@
             this.btnPDF = new FontAwesome.Sharp.IconButton();
             this.picTopView = new System.Windows.Forms.PictureBox();
             this.picLength = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnFormSize = new FontAwesome.Sharp.IconButton();
             this.btnExit = new FontAwesome.Sharp.IconButton();
             this.picISOView = new System.Windows.Forms.PictureBox();
-            this.pAvailableTools2 = new System.Windows.Forms.Panel();
-            this.lbTool1B = new System.Windows.Forms.Label();
-            this.picTool1B = new System.Windows.Forms.PictureBox();
-            this.lbTool2B = new System.Windows.Forms.Label();
-            this.picTool2B = new System.Windows.Forms.PictureBox();
-            this.pAvailableTools1 = new System.Windows.Forms.Panel();
-            this.lbTool1C = new System.Windows.Forms.Label();
-            this.picTool1C = new System.Windows.Forms.PictureBox();
             this.pNavBar.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.pSizeSelect.SuspendLayout();
@@ -242,6 +243,11 @@
             this.panel12.SuspendLayout();
             this.pGestion.SuspendLayout();
             this.pAvailableTools3.SuspendLayout();
+            this.pAvailableTools2.SuspendLayout();
+            this.pAvailableTools1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picTool1C)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picTool1B)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picTool2B)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picTool1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picTool3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picTool2)).BeginInit();
@@ -254,12 +260,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picTopView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLength)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picISOView)).BeginInit();
-            this.pAvailableTools2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picTool1B)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picTool2B)).BeginInit();
-            this.pAvailableTools1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picTool1C)).BeginInit();
             this.SuspendLayout();
             // 
             // cbScrewTypes
@@ -287,6 +289,7 @@
             // pNavBar
             // 
             this.pNavBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
+            this.pNavBar.Controls.Add(this.pictureBox1);
             this.pNavBar.Controls.Add(this.label2);
             this.pNavBar.Controls.Add(this.btnFormSize);
             this.pNavBar.Controls.Add(this.btnExit);
@@ -314,7 +317,7 @@
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(60, 35);
+            this.label2.Location = new System.Drawing.Point(67, 35);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(124, 20);
             this.label2.TabIndex = 4;
@@ -336,7 +339,7 @@
             // 
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(59, 0);
+            this.label3.Location = new System.Drawing.Point(66, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(293, 53);
             this.label3.TabIndex = 1;
@@ -1364,15 +1367,16 @@
             this.label10.TabIndex = 380;
             this.label10.Text = "DOCUMENTS";
             // 
-            // label13
+            // lbAvailableToolsTitle
             // 
-            this.label13.Font = new System.Drawing.Font("Roboto", 16F);
-            this.label13.Location = new System.Drawing.Point(1073, 123);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(412, 27);
-            this.label13.TabIndex = 390;
-            this.label13.Text = "Available Tools";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbAvailableToolsTitle.Font = new System.Drawing.Font("Roboto", 16F);
+            this.lbAvailableToolsTitle.Location = new System.Drawing.Point(1073, 123);
+            this.lbAvailableToolsTitle.Name = "lbAvailableToolsTitle";
+            this.lbAvailableToolsTitle.Size = new System.Drawing.Size(412, 27);
+            this.lbAvailableToolsTitle.TabIndex = 390;
+            this.lbAvailableToolsTitle.Text = "Available Tools";
+            this.lbAvailableToolsTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbAvailableToolsTitle.Visible = false;
             // 
             // lbAllen
             // 
@@ -2237,6 +2241,88 @@
             this.pAvailableTools3.TabIndex = 459;
             this.pAvailableTools3.Visible = false;
             // 
+            // pAvailableTools2
+            // 
+            this.pAvailableTools2.Controls.Add(this.lbTool1B);
+            this.pAvailableTools2.Controls.Add(this.picTool1B);
+            this.pAvailableTools2.Controls.Add(this.lbTool2B);
+            this.pAvailableTools2.Controls.Add(this.picTool2B);
+            this.pAvailableTools2.Location = new System.Drawing.Point(1046, 684);
+            this.pAvailableTools2.Name = "pAvailableTools2";
+            this.pAvailableTools2.Size = new System.Drawing.Size(429, 106);
+            this.pAvailableTools2.TabIndex = 460;
+            this.pAvailableTools2.Visible = false;
+            // 
+            // lbTool1B
+            // 
+            this.lbTool1B.Font = new System.Drawing.Font("Roboto", 12F);
+            this.lbTool1B.Location = new System.Drawing.Point(78, 83);
+            this.lbTool1B.Name = "lbTool1B";
+            this.lbTool1B.Size = new System.Drawing.Size(124, 22);
+            this.lbTool1B.TabIndex = 442;
+            this.lbTool1B.Text = "Allen Wrenches";
+            this.lbTool1B.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbTool2B
+            // 
+            this.lbTool2B.Font = new System.Drawing.Font("Roboto", 12F);
+            this.lbTool2B.Location = new System.Drawing.Point(220, 83);
+            this.lbTool2B.Name = "lbTool2B";
+            this.lbTool2B.Size = new System.Drawing.Size(124, 22);
+            this.lbTool2B.TabIndex = 446;
+            this.lbTool2B.Text = "T-Handle";
+            this.lbTool2B.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pAvailableTools1
+            // 
+            this.pAvailableTools1.Controls.Add(this.lbTool1C);
+            this.pAvailableTools1.Controls.Add(this.picTool1C);
+            this.pAvailableTools1.Location = new System.Drawing.Point(1481, 684);
+            this.pAvailableTools1.Name = "pAvailableTools1";
+            this.pAvailableTools1.Size = new System.Drawing.Size(429, 106);
+            this.pAvailableTools1.TabIndex = 461;
+            this.pAvailableTools1.Visible = false;
+            // 
+            // lbTool1C
+            // 
+            this.lbTool1C.Font = new System.Drawing.Font("Roboto", 12F);
+            this.lbTool1C.Location = new System.Drawing.Point(153, 83);
+            this.lbTool1C.Name = "lbTool1C";
+            this.lbTool1C.Size = new System.Drawing.Size(124, 22);
+            this.lbTool1C.TabIndex = 446;
+            this.lbTool1C.Text = "T-Handle";
+            this.lbTool1C.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // picTool1C
+            // 
+            this.picTool1C.Image = global::_0510Project.Properties.Resources.T_Handle;
+            this.picTool1C.Location = new System.Drawing.Point(153, 6);
+            this.picTool1C.Name = "picTool1C";
+            this.picTool1C.Size = new System.Drawing.Size(124, 74);
+            this.picTool1C.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picTool1C.TabIndex = 447;
+            this.picTool1C.TabStop = false;
+            // 
+            // picTool1B
+            // 
+            this.picTool1B.Image = global::_0510Project.Properties.Resources.Allen;
+            this.picTool1B.Location = new System.Drawing.Point(78, 6);
+            this.picTool1B.Name = "picTool1B";
+            this.picTool1B.Size = new System.Drawing.Size(124, 74);
+            this.picTool1B.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picTool1B.TabIndex = 445;
+            this.picTool1B.TabStop = false;
+            // 
+            // picTool2B
+            // 
+            this.picTool2B.Image = global::_0510Project.Properties.Resources.T_Handle;
+            this.picTool2B.Location = new System.Drawing.Point(220, 6);
+            this.picTool2B.Name = "picTool2B";
+            this.picTool2B.Size = new System.Drawing.Size(124, 74);
+            this.picTool2B.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picTool2B.TabIndex = 447;
+            this.picTool2B.TabStop = false;
+            // 
             // picTool1
             // 
             this.picTool1.Image = global::_0510Project.Properties.Resources.Allen;
@@ -2687,6 +2773,16 @@
             this.picLength.TabIndex = 16;
             this.picLength.TabStop = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::_0510Project.Properties.Resources.SSNE_LOGO;
+            this.pictureBox1.Location = new System.Drawing.Point(4, 1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(64, 60);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 359;
+            this.pictureBox1.TabStop = false;
+            // 
             // btnFormSize
             // 
             this.btnFormSize.FlatAppearance.BorderSize = 0;
@@ -2726,88 +2822,6 @@
             this.picISOView.TabIndex = 7;
             this.picISOView.TabStop = false;
             // 
-            // pAvailableTools2
-            // 
-            this.pAvailableTools2.Controls.Add(this.lbTool1B);
-            this.pAvailableTools2.Controls.Add(this.picTool1B);
-            this.pAvailableTools2.Controls.Add(this.lbTool2B);
-            this.pAvailableTools2.Controls.Add(this.picTool2B);
-            this.pAvailableTools2.Location = new System.Drawing.Point(1046, 684);
-            this.pAvailableTools2.Name = "pAvailableTools2";
-            this.pAvailableTools2.Size = new System.Drawing.Size(429, 106);
-            this.pAvailableTools2.TabIndex = 460;
-            this.pAvailableTools2.Visible = false;
-            // 
-            // lbTool1B
-            // 
-            this.lbTool1B.Font = new System.Drawing.Font("Roboto", 12F);
-            this.lbTool1B.Location = new System.Drawing.Point(78, 83);
-            this.lbTool1B.Name = "lbTool1B";
-            this.lbTool1B.Size = new System.Drawing.Size(124, 22);
-            this.lbTool1B.TabIndex = 442;
-            this.lbTool1B.Text = "Allen Wrenches";
-            this.lbTool1B.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // picTool1B
-            // 
-            this.picTool1B.Image = global::_0510Project.Properties.Resources.Allen;
-            this.picTool1B.Location = new System.Drawing.Point(78, 6);
-            this.picTool1B.Name = "picTool1B";
-            this.picTool1B.Size = new System.Drawing.Size(124, 74);
-            this.picTool1B.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picTool1B.TabIndex = 445;
-            this.picTool1B.TabStop = false;
-            // 
-            // lbTool2B
-            // 
-            this.lbTool2B.Font = new System.Drawing.Font("Roboto", 12F);
-            this.lbTool2B.Location = new System.Drawing.Point(220, 83);
-            this.lbTool2B.Name = "lbTool2B";
-            this.lbTool2B.Size = new System.Drawing.Size(124, 22);
-            this.lbTool2B.TabIndex = 446;
-            this.lbTool2B.Text = "T-Handle";
-            this.lbTool2B.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // picTool2B
-            // 
-            this.picTool2B.Image = global::_0510Project.Properties.Resources.T_Handle;
-            this.picTool2B.Location = new System.Drawing.Point(220, 6);
-            this.picTool2B.Name = "picTool2B";
-            this.picTool2B.Size = new System.Drawing.Size(124, 74);
-            this.picTool2B.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picTool2B.TabIndex = 447;
-            this.picTool2B.TabStop = false;
-            // 
-            // pAvailableTools1
-            // 
-            this.pAvailableTools1.Controls.Add(this.lbTool1C);
-            this.pAvailableTools1.Controls.Add(this.picTool1C);
-            this.pAvailableTools1.Location = new System.Drawing.Point(1481, 684);
-            this.pAvailableTools1.Name = "pAvailableTools1";
-            this.pAvailableTools1.Size = new System.Drawing.Size(429, 106);
-            this.pAvailableTools1.TabIndex = 461;
-            this.pAvailableTools1.Visible = false;
-            // 
-            // lbTool1C
-            // 
-            this.lbTool1C.Font = new System.Drawing.Font("Roboto", 12F);
-            this.lbTool1C.Location = new System.Drawing.Point(153, 83);
-            this.lbTool1C.Name = "lbTool1C";
-            this.lbTool1C.Size = new System.Drawing.Size(124, 22);
-            this.lbTool1C.TabIndex = 446;
-            this.lbTool1C.Text = "T-Handle";
-            this.lbTool1C.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // picTool1C
-            // 
-            this.picTool1C.Image = global::_0510Project.Properties.Resources.T_Handle;
-            this.picTool1C.Location = new System.Drawing.Point(153, 6);
-            this.picTool1C.Name = "picTool1C";
-            this.picTool1C.Size = new System.Drawing.Size(124, 74);
-            this.picTool1C.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picTool1C.TabIndex = 447;
-            this.picTool1C.TabStop = false;
-            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -2824,7 +2838,7 @@
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label13);
+            this.Controls.Add(this.lbAvailableToolsTitle);
             this.Controls.Add(this.txtVendorPartNumber);
             this.Controls.Add(this.txtSSNEPartNumber);
             this.Controls.Add(this.label7);
@@ -2883,6 +2897,11 @@
             this.pGestion.ResumeLayout(false);
             this.pGestion.PerformLayout();
             this.pAvailableTools3.ResumeLayout(false);
+            this.pAvailableTools2.ResumeLayout(false);
+            this.pAvailableTools1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picTool1C)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picTool1B)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picTool2B)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picTool1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picTool3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picTool2)).EndInit();
@@ -2895,12 +2914,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picTopView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLength)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picISOView)).EndInit();
-            this.pAvailableTools2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picTool1B)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picTool2B)).EndInit();
-            this.pAvailableTools1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picTool1C)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2996,7 +3011,7 @@
         private System.Windows.Forms.Label txtSSNEPartNumber;
         private System.Windows.Forms.Label txtVendorPartNumber;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label lbAvailableToolsTitle;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label lbAllen;
@@ -3103,6 +3118,7 @@
         private System.Windows.Forms.Panel pAvailableTools1;
         private System.Windows.Forms.Label lbTool1C;
         private System.Windows.Forms.PictureBox picTool1C;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
