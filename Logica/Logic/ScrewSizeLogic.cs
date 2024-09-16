@@ -122,6 +122,28 @@ namespace Logica.Logic
             return R;
         }
 
+        public ScrewSize SelectByName(string SizeName)
+        {
+            ScrewSize R = new ScrewSize();
+
+            using (SQLiteConnection conn = new SQLiteConnection(cadena))
+            using (SQLiteCommand cmd = new SQLiteCommand("SELECT IDScrewSize FROM ScrewSize WHERE SizeName = @SizeName AND Active = 1", conn))
+            {
+                cmd.Parameters.Add(new SQLiteParameter("@SizeName", SizeName));
+                conn.Open();
+
+                using (SQLiteDataReader dr = cmd.ExecuteReader())
+                {
+                    if (dr.Read())
+                    {
+                        R.IDScrewSize = Convert.ToInt32(dr["IDScrewSize"].ToString());
+                    }
+                }
+            }
+
+            return R;
+        }
+
 
         public bool Editar(ScrewSize obj)
         {

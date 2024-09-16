@@ -32,6 +32,7 @@
             this.cbScrewTypes = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pNavBar = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.btnFormSize = new FontAwesome.Sharp.IconButton();
             this.btnExit = new FontAwesome.Sharp.IconButton();
@@ -55,10 +56,10 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.lbAbbreviation = new System.Windows.Forms.Label();
+            this.txtAbbreviationName = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.lbMaterial = new System.Windows.Forms.Label();
-            this.lbNToolc = new System.Windows.Forms.Label();
+            this.txtMaterialName = new System.Windows.Forms.Label();
+            this.txtNToolName = new System.Windows.Forms.Label();
             this.pLengths = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -112,8 +113,8 @@
             this.c1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.txtSSNEPartNumber = new System.Windows.Forms.Label();
+            this.txtVendorPartNumber = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
@@ -214,6 +215,7 @@
             this.picTopView = new System.Windows.Forms.PictureBox();
             this.picLength = new System.Windows.Forms.PictureBox();
             this.picISOView = new System.Windows.Forms.PictureBox();
+            this.txtIDScrew = new System.Windows.Forms.TextBox();
             this.pNavBar.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.pSizeSelect.SuspendLayout();
@@ -270,6 +272,7 @@
             // pNavBar
             // 
             this.pNavBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
+            this.pNavBar.Controls.Add(this.button1);
             this.pNavBar.Controls.Add(this.label2);
             this.pNavBar.Controls.Add(this.btnFormSize);
             this.pNavBar.Controls.Add(this.btnExit);
@@ -282,6 +285,16 @@
             this.pNavBar.Size = new System.Drawing.Size(1920, 97);
             this.pNavBar.TabIndex = 4;
             this.pNavBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pNavBar_MouseDown);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(423, 13);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 359;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
@@ -401,6 +414,7 @@
             this.s10.TabIndex = 359;
             this.s10.Text = "3/8 - 24";
             this.s10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.s10.Click += new System.EventHandler(this.s10_Click);
             // 
             // s9
             // 
@@ -413,6 +427,7 @@
             this.s9.TabIndex = 358;
             this.s9.Text = "3/8 - 16";
             this.s9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.s9.Click += new System.EventHandler(this.s9_Click);
             // 
             // s8
             // 
@@ -423,8 +438,9 @@
             this.s8.Name = "s8";
             this.s8.Size = new System.Drawing.Size(125, 47);
             this.s8.TabIndex = 357;
-            this.s8.Text = "5/16 -24";
+            this.s8.Text = "5/16 - 24";
             this.s8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.s8.Click += new System.EventHandler(this.s8_Click);
             // 
             // s7
             // 
@@ -437,6 +453,7 @@
             this.s7.TabIndex = 356;
             this.s7.Text = "5/16 - 18";
             this.s7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.s7.Click += new System.EventHandler(this.s7_Click);
             // 
             // s6
             // 
@@ -449,6 +466,7 @@
             this.s6.TabIndex = 355;
             this.s6.Text = "1/4 - 28";
             this.s6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.s6.Click += new System.EventHandler(this.s6_Click);
             // 
             // s5
             // 
@@ -461,6 +479,7 @@
             this.s5.TabIndex = 354;
             this.s5.Text = "1/4 - 20";
             this.s5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.s5.Click += new System.EventHandler(this.s5_Click);
             // 
             // s4
             // 
@@ -473,6 +492,7 @@
             this.s4.TabIndex = 353;
             this.s4.Text = "10 - 32";
             this.s4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.s4.Click += new System.EventHandler(this.s4_Click);
             // 
             // s3
             // 
@@ -485,6 +505,7 @@
             this.s3.TabIndex = 352;
             this.s3.Text = "8 - 32";
             this.s3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.s3.Click += new System.EventHandler(this.s3_Click);
             // 
             // s2
             // 
@@ -497,6 +518,7 @@
             this.s2.TabIndex = 351;
             this.s2.Text = "6 - 32";
             this.s2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.s2.Click += new System.EventHandler(this.s2_Click);
             // 
             // s1
             // 
@@ -509,6 +531,7 @@
             this.s1.TabIndex = 349;
             this.s1.Text = "4 - 40";
             this.s1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.s1.Click += new System.EventHandler(this.s1_Click);
             // 
             // label15
             // 
@@ -550,18 +573,18 @@
             this.label18.Text = "Material";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lbAbbreviation
+            // txtAbbreviationName
             // 
-            this.lbAbbreviation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(226)))), ((int)(((byte)(227)))));
-            this.lbAbbreviation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbAbbreviation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lbAbbreviation.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAbbreviation.Location = new System.Drawing.Point(429, 159);
-            this.lbAbbreviation.Name = "lbAbbreviation";
-            this.lbAbbreviation.Size = new System.Drawing.Size(176, 46);
-            this.lbAbbreviation.TabIndex = 366;
-            this.lbAbbreviation.Text = "SOC HD";
-            this.lbAbbreviation.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txtAbbreviationName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(226)))), ((int)(((byte)(227)))));
+            this.txtAbbreviationName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtAbbreviationName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.txtAbbreviationName.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAbbreviationName.Location = new System.Drawing.Point(429, 159);
+            this.txtAbbreviationName.Name = "txtAbbreviationName";
+            this.txtAbbreviationName.Size = new System.Drawing.Size(176, 46);
+            this.txtAbbreviationName.TabIndex = 366;
+            this.txtAbbreviationName.Text = "SOC HD";
+            this.txtAbbreviationName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label21
             // 
@@ -573,31 +596,31 @@
             this.label21.Text = "Tool to Use";
             this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lbMaterial
+            // txtMaterialName
             // 
-            this.lbMaterial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(226)))), ((int)(((byte)(227)))));
-            this.lbMaterial.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbMaterial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lbMaterial.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMaterial.Location = new System.Drawing.Point(633, 159);
-            this.lbMaterial.Name = "lbMaterial";
-            this.lbMaterial.Size = new System.Drawing.Size(176, 46);
-            this.lbMaterial.TabIndex = 370;
-            this.lbMaterial.Text = "SST";
-            this.lbMaterial.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txtMaterialName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(226)))), ((int)(((byte)(227)))));
+            this.txtMaterialName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtMaterialName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.txtMaterialName.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaterialName.Location = new System.Drawing.Point(633, 159);
+            this.txtMaterialName.Name = "txtMaterialName";
+            this.txtMaterialName.Size = new System.Drawing.Size(176, 46);
+            this.txtMaterialName.TabIndex = 370;
+            this.txtMaterialName.Text = "SST";
+            this.txtMaterialName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lbNToolc
+            // txtNToolName
             // 
-            this.lbNToolc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(226)))), ((int)(((byte)(227)))));
-            this.lbNToolc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbNToolc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lbNToolc.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNToolc.Location = new System.Drawing.Point(833, 159);
-            this.lbNToolc.Name = "lbNToolc";
-            this.lbNToolc.Size = new System.Drawing.Size(213, 46);
-            this.lbNToolc.TabIndex = 371;
-            this.lbNToolc.Text = "--- Number";
-            this.lbNToolc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txtNToolName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(226)))), ((int)(((byte)(227)))));
+            this.txtNToolName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNToolName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.txtNToolName.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNToolName.Location = new System.Drawing.Point(833, 159);
+            this.txtNToolName.Name = "txtNToolName";
+            this.txtNToolName.Size = new System.Drawing.Size(213, 46);
+            this.txtNToolName.TabIndex = 371;
+            this.txtNToolName.Text = "--- Number";
+            this.txtNToolName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pLengths
             // 
@@ -688,6 +711,7 @@
             this.c16b.TabIndex = 439;
             this.c16b.Text = "50.8";
             this.c16b.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c16b.Click += new System.EventHandler(this.c16b_Click);
             // 
             // c15b
             // 
@@ -700,6 +724,7 @@
             this.c15b.TabIndex = 438;
             this.c15b.Text = "47.625";
             this.c15b.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c15b.Click += new System.EventHandler(this.c15b_Click);
             // 
             // c14b
             // 
@@ -712,6 +737,7 @@
             this.c14b.TabIndex = 437;
             this.c14b.Text = "44.45";
             this.c14b.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c14b.Click += new System.EventHandler(this.c14b_Click);
             // 
             // c13b
             // 
@@ -724,6 +750,7 @@
             this.c13b.TabIndex = 436;
             this.c13b.Text = "41.275";
             this.c13b.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c13b.Click += new System.EventHandler(this.c13b_Click);
             // 
             // c12b
             // 
@@ -736,6 +763,7 @@
             this.c12b.TabIndex = 435;
             this.c12b.Text = "38.1";
             this.c12b.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c12b.Click += new System.EventHandler(this.c12b_Click);
             // 
             // c11b
             // 
@@ -748,6 +776,7 @@
             this.c11b.TabIndex = 434;
             this.c11b.Text = "34.925";
             this.c11b.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c11b.Click += new System.EventHandler(this.c11b_Click);
             // 
             // c10b
             // 
@@ -760,6 +789,7 @@
             this.c10b.TabIndex = 433;
             this.c10b.Text = "31.75";
             this.c10b.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c10b.Click += new System.EventHandler(this.c10b_Click);
             // 
             // c9b
             // 
@@ -772,6 +802,7 @@
             this.c9b.TabIndex = 432;
             this.c9b.Text = "28.575";
             this.c9b.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c9b.Click += new System.EventHandler(this.c9b_Click);
             // 
             // c8b
             // 
@@ -784,6 +815,7 @@
             this.c8b.TabIndex = 431;
             this.c8b.Text = "25.4";
             this.c8b.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c8b.Click += new System.EventHandler(this.c8b_Click);
             // 
             // c7b
             // 
@@ -796,6 +828,7 @@
             this.c7b.TabIndex = 430;
             this.c7b.Text = "22.225";
             this.c7b.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c7b.Click += new System.EventHandler(this.c7b_Click);
             // 
             // c6b
             // 
@@ -808,6 +841,7 @@
             this.c6b.TabIndex = 429;
             this.c6b.Text = "19.05";
             this.c6b.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c6b.Click += new System.EventHandler(this.c6b_Click);
             // 
             // c5b
             // 
@@ -820,6 +854,7 @@
             this.c5b.TabIndex = 428;
             this.c5b.Text = "15.875";
             this.c5b.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c5b.Click += new System.EventHandler(this.c5b_Click);
             // 
             // c4b
             // 
@@ -832,6 +867,7 @@
             this.c4b.TabIndex = 427;
             this.c4b.Text = "12.7";
             this.c4b.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c4b.Click += new System.EventHandler(this.c4b_Click);
             // 
             // c3b
             // 
@@ -844,6 +880,7 @@
             this.c3b.TabIndex = 426;
             this.c3b.Text = "9.525";
             this.c3b.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c3b.Click += new System.EventHandler(this.c3b_Click);
             // 
             // c2b
             // 
@@ -856,6 +893,7 @@
             this.c2b.TabIndex = 425;
             this.c2b.Text = "6.35";
             this.c2b.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c2b.Click += new System.EventHandler(this.c2b_Click);
             // 
             // c1b
             // 
@@ -868,6 +906,7 @@
             this.c1b.TabIndex = 424;
             this.c1b.Text = "3.175";
             this.c1b.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c1b.Click += new System.EventHandler(this.c1b_Click);
             // 
             // c16a
             // 
@@ -880,6 +919,7 @@
             this.c16a.TabIndex = 423;
             this.c16a.Text = "2.000\"";
             this.c16a.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c16a.Click += new System.EventHandler(this.c16a_Click);
             // 
             // c15a
             // 
@@ -892,6 +932,7 @@
             this.c15a.TabIndex = 422;
             this.c15a.Text = "1.875\"";
             this.c15a.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c15a.Click += new System.EventHandler(this.c15a_Click);
             // 
             // c14a
             // 
@@ -904,6 +945,7 @@
             this.c14a.TabIndex = 421;
             this.c14a.Text = "1.750\"";
             this.c14a.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c14a.Click += new System.EventHandler(this.c14a_Click);
             // 
             // c13a
             // 
@@ -916,6 +958,7 @@
             this.c13a.TabIndex = 420;
             this.c13a.Text = "1.625\"";
             this.c13a.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c13a.Click += new System.EventHandler(this.c13a_Click);
             // 
             // c12a
             // 
@@ -928,6 +971,7 @@
             this.c12a.TabIndex = 419;
             this.c12a.Text = "1.500\"";
             this.c12a.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c12a.Click += new System.EventHandler(this.c12a_Click);
             // 
             // c11a
             // 
@@ -940,6 +984,7 @@
             this.c11a.TabIndex = 418;
             this.c11a.Text = "1.375\"";
             this.c11a.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c11a.Click += new System.EventHandler(this.c11a_Click);
             // 
             // c10a
             // 
@@ -952,6 +997,7 @@
             this.c10a.TabIndex = 417;
             this.c10a.Text = "1.250\"";
             this.c10a.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c10a.Click += new System.EventHandler(this.c10a_Click);
             // 
             // c9a
             // 
@@ -964,6 +1010,7 @@
             this.c9a.TabIndex = 416;
             this.c9a.Text = "1.125\"";
             this.c9a.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c9a.Click += new System.EventHandler(this.c9a_Click);
             // 
             // c8a
             // 
@@ -976,6 +1023,7 @@
             this.c8a.TabIndex = 415;
             this.c8a.Text = "1.000\"";
             this.c8a.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c8a.Click += new System.EventHandler(this.c8a_Click);
             // 
             // c7a
             // 
@@ -988,6 +1036,7 @@
             this.c7a.TabIndex = 414;
             this.c7a.Text = "0.875\"";
             this.c7a.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c7a.Click += new System.EventHandler(this.c7a_Click);
             // 
             // c6a
             // 
@@ -1000,6 +1049,7 @@
             this.c6a.TabIndex = 413;
             this.c6a.Text = "0.750\"";
             this.c6a.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c6a.Click += new System.EventHandler(this.c6a_Click);
             // 
             // c5a
             // 
@@ -1012,6 +1062,7 @@
             this.c5a.TabIndex = 412;
             this.c5a.Text = "0.625\"";
             this.c5a.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c5a.Click += new System.EventHandler(this.c5a_Click);
             // 
             // c4a
             // 
@@ -1024,6 +1075,7 @@
             this.c4a.TabIndex = 411;
             this.c4a.Text = "0.500\"";
             this.c4a.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c4a.Click += new System.EventHandler(this.c4a_Click);
             // 
             // c3a
             // 
@@ -1036,6 +1088,7 @@
             this.c3a.TabIndex = 410;
             this.c3a.Text = "0.375\"";
             this.c3a.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c3a.Click += new System.EventHandler(this.c3a_Click);
             // 
             // c2a
             // 
@@ -1048,6 +1101,7 @@
             this.c2a.TabIndex = 409;
             this.c2a.Text = "0.250\"";
             this.c2a.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c2a.Click += new System.EventHandler(this.c2a_Click);
             // 
             // c1a
             // 
@@ -1060,6 +1114,7 @@
             this.c1a.TabIndex = 408;
             this.c1a.Text = "0.125\"";
             this.c1a.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c1a.Click += new System.EventHandler(this.c1a_Click);
             // 
             // c16
             // 
@@ -1072,6 +1127,7 @@
             this.c16.TabIndex = 407;
             this.c16.Text = "2\"";
             this.c16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c16.Click += new System.EventHandler(this.c16_Click);
             // 
             // c15
             // 
@@ -1084,6 +1140,7 @@
             this.c15.TabIndex = 406;
             this.c15.Text = "1 7/8\"";
             this.c15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c15.Click += new System.EventHandler(this.c15_Click);
             // 
             // c14
             // 
@@ -1096,6 +1153,7 @@
             this.c14.TabIndex = 405;
             this.c14.Text = "1 3/4\"";
             this.c14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c14.Click += new System.EventHandler(this.c14_Click);
             // 
             // c13
             // 
@@ -1108,6 +1166,7 @@
             this.c13.TabIndex = 404;
             this.c13.Text = "1 5/8\"";
             this.c13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c13.Click += new System.EventHandler(this.c13_Click);
             // 
             // c12
             // 
@@ -1120,6 +1179,7 @@
             this.c12.TabIndex = 403;
             this.c12.Text = "1 1/2\"";
             this.c12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c12.Click += new System.EventHandler(this.c12_Click);
             // 
             // c11
             // 
@@ -1132,6 +1192,7 @@
             this.c11.TabIndex = 402;
             this.c11.Text = "1 3/8\"";
             this.c11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c11.Click += new System.EventHandler(this.c11_Click);
             // 
             // c10
             // 
@@ -1144,6 +1205,7 @@
             this.c10.TabIndex = 401;
             this.c10.Text = "1 1/4\"";
             this.c10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c10.Click += new System.EventHandler(this.c10_Click);
             // 
             // c9
             // 
@@ -1156,6 +1218,7 @@
             this.c9.TabIndex = 400;
             this.c9.Text = "1 1/8\"";
             this.c9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c9.Click += new System.EventHandler(this.c9_Click);
             // 
             // c8
             // 
@@ -1168,6 +1231,7 @@
             this.c8.TabIndex = 399;
             this.c8.Text = "1\"";
             this.c8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c8.Click += new System.EventHandler(this.c8_Click);
             // 
             // c7
             // 
@@ -1180,6 +1244,7 @@
             this.c7.TabIndex = 398;
             this.c7.Text = "7/8\"";
             this.c7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c7.Click += new System.EventHandler(this.c7_Click);
             // 
             // c6
             // 
@@ -1192,6 +1257,7 @@
             this.c6.TabIndex = 397;
             this.c6.Text = "3/4\"";
             this.c6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c6.Click += new System.EventHandler(this.c6_Click);
             // 
             // c5
             // 
@@ -1204,6 +1270,7 @@
             this.c5.TabIndex = 396;
             this.c5.Text = "5/8\"";
             this.c5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c5.Click += new System.EventHandler(this.c5_Click);
             // 
             // c4
             // 
@@ -1216,6 +1283,7 @@
             this.c4.TabIndex = 395;
             this.c4.Text = "1/2\"";
             this.c4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c4.Click += new System.EventHandler(this.c4_Click);
             // 
             // c3
             // 
@@ -1228,6 +1296,7 @@
             this.c3.TabIndex = 394;
             this.c3.Text = "3/8\"";
             this.c3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c3.Click += new System.EventHandler(this.c3_Click);
             // 
             // c2
             // 
@@ -1240,6 +1309,7 @@
             this.c2.TabIndex = 393;
             this.c2.Text = "1/4\"";
             this.c2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c2.Click += new System.EventHandler(this.c2_Click);
             // 
             // c1
             // 
@@ -1252,6 +1322,7 @@
             this.c1.TabIndex = 392;
             this.c1.Text = "1/8\"";
             this.c1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c1.Click += new System.EventHandler(this.c1_Click);
             // 
             // label6
             // 
@@ -1273,31 +1344,31 @@
             this.label7.TabIndex = 377;
             this.label7.Text = "VENDOR P/N";
             // 
-            // label8
+            // txtSSNEPartNumber
             // 
-            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(226)))), ((int)(((byte)(227)))));
-            this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label8.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(129, 628);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(236, 46);
-            this.label8.TabIndex = 378;
-            this.label8.Text = "-------------";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txtSSNEPartNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(226)))), ((int)(((byte)(227)))));
+            this.txtSSNEPartNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSSNEPartNumber.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.txtSSNEPartNumber.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSSNEPartNumber.Location = new System.Drawing.Point(129, 628);
+            this.txtSSNEPartNumber.Name = "txtSSNEPartNumber";
+            this.txtSSNEPartNumber.Size = new System.Drawing.Size(236, 46);
+            this.txtSSNEPartNumber.TabIndex = 378;
+            this.txtSSNEPartNumber.Text = "-------------";
+            this.txtSSNEPartNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label9
+            // txtVendorPartNumber
             // 
-            this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(226)))), ((int)(((byte)(227)))));
-            this.label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label9.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(515, 628);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(236, 46);
-            this.label9.TabIndex = 379;
-            this.label9.Text = "-------------";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txtVendorPartNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(226)))), ((int)(((byte)(227)))));
+            this.txtVendorPartNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtVendorPartNumber.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.txtVendorPartNumber.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtVendorPartNumber.Location = new System.Drawing.Point(515, 628);
+            this.txtVendorPartNumber.Name = "txtVendorPartNumber";
+            this.txtVendorPartNumber.Size = new System.Drawing.Size(236, 46);
+            this.txtVendorPartNumber.TabIndex = 379;
+            this.txtVendorPartNumber.Text = "-------------";
+            this.txtVendorPartNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label10
             // 
@@ -2616,11 +2687,20 @@
             this.picISOView.TabIndex = 7;
             this.picISOView.TabStop = false;
             // 
+            // txtIDScrew
+            // 
+            this.txtIDScrew.Location = new System.Drawing.Point(429, 208);
+            this.txtIDScrew.Name = "txtIDScrew";
+            this.txtIDScrew.Size = new System.Drawing.Size(176, 23);
+            this.txtIDScrew.TabIndex = 458;
+            this.txtIDScrew.Visible = false;
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1920, 1061);
+            this.Controls.Add(this.txtIDScrew);
             this.Controls.Add(this.pGestion);
             this.Controls.Add(this.label62);
             this.Controls.Add(this.panel12);
@@ -2634,8 +2714,8 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.txtVendorPartNumber);
+            this.Controls.Add(this.txtSSNEPartNumber);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnSTP);
@@ -2643,10 +2723,10 @@
             this.Controls.Add(this.pLengths);
             this.Controls.Add(this.picTopView);
             this.Controls.Add(this.picLength);
-            this.Controls.Add(this.lbNToolc);
-            this.Controls.Add(this.lbMaterial);
+            this.Controls.Add(this.txtNToolName);
+            this.Controls.Add(this.txtMaterialName);
             this.Controls.Add(this.label21);
-            this.Controls.Add(this.lbAbbreviation);
+            this.Controls.Add(this.txtAbbreviationName);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label16);
@@ -2740,10 +2820,10 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label lbAbbreviation;
+        private System.Windows.Forms.Label txtAbbreviationName;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label lbMaterial;
-        private System.Windows.Forms.Label lbNToolc;
+        private System.Windows.Forms.Label txtMaterialName;
+        private System.Windows.Forms.Label txtNToolName;
         private System.Windows.Forms.PictureBox picTopView;
         private System.Windows.Forms.Panel pLengths;
         private System.Windows.Forms.Label c6;
@@ -2796,8 +2876,8 @@
         private System.Windows.Forms.Label c1b;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label txtSSNEPartNumber;
+        private System.Windows.Forms.Label txtVendorPartNumber;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label19;
@@ -2895,6 +2975,8 @@
         private System.Windows.Forms.Label label12;
         private FontAwesome.Sharp.IconButton btnEnterGestion;
         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtIDScrew;
     }
 }
 

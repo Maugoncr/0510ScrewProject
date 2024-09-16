@@ -3,6 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Data;
 using System.Data.SQLite;
 
 namespace Logica.Logic
@@ -93,8 +94,30 @@ namespace Logica.Logic
                     }
                 }
             }
-
             return oLista;
+        }
+
+
+        public DataTable ListarCombo()
+        {
+            DataTable R = new DataTable();
+
+            using (SQLiteConnection conexion = new SQLiteConnection(cadena))
+            {
+                conexion.Open();
+
+                string query = "Select IDScrewType, TypeName FROM ScrewType WHERE Active = 1 ORDER BY IDScrewType ASC";
+
+                SQLiteCommand cmd = new SQLiteCommand(query, conexion);
+
+                cmd.CommandType = CommandType.Text;
+
+                using (SQLiteDataReader dr = cmd.ExecuteReader())
+                {
+                    R.Load(dr);
+                }
+            }
+            return R;
         }
 
         public ScrewType SelectByID(int ID)

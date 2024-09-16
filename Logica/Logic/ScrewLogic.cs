@@ -99,6 +99,52 @@ namespace Logica.Logic
             return R;
         }
 
+        public Screw SelectScrewByTypeSizeLength(int IDType, int IDSize, int IDLength)
+        {
+            Screw R = new Screw();
+
+            using (SQLiteConnection conn = new SQLiteConnection(cadena))
+            using (SQLiteCommand cmd = new SQLiteCommand("SELECT * FROM View_ScrewSelectedByTypeSizeLength WHERE IDScrewType = @IDType AND IDScrewSize = @IDSize AND IDScrewLength = @IDLength", conn))
+            {
+                cmd.Parameters.Add(new SQLiteParameter("@IDType", IDType));
+                cmd.Parameters.Add(new SQLiteParameter("@IDSize", IDSize));
+                cmd.Parameters.Add(new SQLiteParameter("@IDLength", IDLength));
+                conn.Open();
+
+                using (SQLiteDataReader dr = cmd.ExecuteReader())
+                {
+                    if (dr.Read())
+                    {
+                        R.IDScrew = Convert.ToInt32(dr["IDScrew"].ToString());
+                        R.SSNEPartNumber = dr["SSNEPartNumber"].ToString();
+                        R.VendorPartNumber = dr["VendorPartNumber"].ToString();
+                        R.UrlPDF = dr["UrlPDF"].ToString();
+                        R.UrlSTEP = dr["UrlSTEP"].ToString();
+                        // Propiedades de Navegación
+
+                        R.MyScrewType.IDScrewType = Convert.ToInt32(dr["IDScrewType"].ToString());
+                        R.MyScrewType.TypeName = dr["TypeName"].ToString();
+
+                        R.MyScrewSize.IDScrewSize = Convert.ToInt32(dr["IDScrewSize"].ToString());
+                        R.MyScrewSize.SizeName = dr["SizeName"].ToString();
+
+                        R.MyScrewMaterial.IDScrewMaterial = Convert.ToInt32(dr["IDScrewMaterial"].ToString());
+                        R.MyScrewMaterial.MaterialName = dr["MaterialName"].ToString();
+
+                        R.MyScrewLength.IDScrewLength = Convert.ToInt32(dr["IDScrewLength"].ToString());
+                        R.MyScrewLength.LengthInch = dr["LengthInch"].ToString();
+
+                        R.MyScrewAbbreviation.IDScrewAbbreviation = Convert.ToInt32(dr["IDScrewAbbreviation"].ToString());
+                        R.MyScrewAbbreviation.AbbreviationName = dr["AbbreviationName"].ToString();
+
+                        R.MyScrewNTool.IDScrewNTool = Convert.ToInt32(dr["IDScrewNTool"].ToString());
+                        R.MyScrewNTool.NToolName = dr["NToolName"].ToString();
+                    }
+                }
+            }
+            return R;
+        }
+
         public Screw SelectScrewByID(int ID)
         {
             Screw R = new Screw();
