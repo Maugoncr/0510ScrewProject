@@ -248,173 +248,174 @@ namespace _0510Project
 
         private void SelectColumnLength(object sender, EventArgs e)
         {
-            if (MyScrewMain.MyScrewLength.IDScrewLength != 0)
+            if (existLength)
             {
-                try
+                if (MyScrewMain.MyScrewLength.IDScrewLength != 0)
                 {
-                    int IDType = MyScrewMain.MyScrewType.IDScrewType;
-                    int IDSize = MyScrewMain.MyScrewSize.IDScrewSize;
-                    int IDLength = MyScrewMain.MyScrewLength.IDScrewLength;
-
-                    if (IDType != 0 && IDSize != 0 && IDLength != 0)
+                    try
                     {
-                        // Get Screw Info
+                        int IDType = MyScrewMain.MyScrewType.IDScrewType;
+                        int IDSize = MyScrewMain.MyScrewSize.IDScrewSize;
+                        int IDLength = MyScrewMain.MyScrewLength.IDScrewLength;
 
-                        MyScrewMain = ScrewLogic.Instancia.SelectScrewByTypeSizeLength(IDType, IDSize, IDLength);
-
-                        if (MyScrewMain.IDScrew != 0)
+                        if (IDType != 0 && IDSize != 0 && IDLength != 0)
                         {
+                            // Get Screw Info
 
+                            MyScrewMain = ScrewLogic.Instancia.SelectScrewByTypeSizeLength(IDType, IDSize, IDLength);
 
-
-                            txtIDScrew.Text = MyScrewMain.IDScrew.ToString();
-
-                            txtSSNEPartNumber.Text = MyScrewMain.SSNEPartNumber;
-                            txtVendorPartNumber.Text = MyScrewMain.VendorPartNumber;
-
-                            txtMaterialName.Text = MyScrewMain.MyScrewMaterial.MaterialName;
-
-                            txtAbbreviationName.Text = MyScrewMain.MyScrewAbbreviation.AbbreviationName;
-
-                            txtNToolName.Text = MyScrewMain.MyScrewNTool.NToolName;
-
-                            // Get Available Tools Info
-                            pAvailableTools3.Visible = false;
-                            pAvailableTools2.Visible = false;
-                            pAvailableTools1.Visible = false;
-
-                            DataTable AvailableTools = ScrewLogic.Instancia.SelectScrewAvailableToolsByID(MyScrewMain.IDScrew);
-
-                            int rowCount = AvailableTools.Rows.Count;
-
-                            if (rowCount == 3)
+                            if (MyScrewMain.IDScrew != 0)
                             {
-                                pAvailableTools3.Location = new Point(1065, 153);
-                                pAvailableTools3.Visible = true;
-                                lbAvailableToolsTitle.Visible = true;
+                                txtIDScrew.Text = MyScrewMain.IDScrew.ToString();
+
+                                txtSSNEPartNumber.Text = MyScrewMain.SSNEPartNumber;
+                                txtVendorPartNumber.Text = MyScrewMain.VendorPartNumber;
+
+                                txtMaterialName.Text = MyScrewMain.MyScrewMaterial.MaterialName;
+
+                                txtAbbreviationName.Text = MyScrewMain.MyScrewAbbreviation.AbbreviationName;
+
+                                txtNToolName.Text = MyScrewMain.MyScrewNTool.NToolName;
+
+                                // Get Available Tools Info
+                                pAvailableTools3.Visible = false;
+                                pAvailableTools2.Visible = false;
+                                pAvailableTools1.Visible = false;
+
+                                DataTable AvailableTools = ScrewLogic.Instancia.SelectScrewAvailableToolsByID(MyScrewMain.IDScrew);
+
+                                int rowCount = AvailableTools.Rows.Count;
+
+                                if (rowCount == 3)
+                                {
+                                    pAvailableTools3.Location = new Point(1065, 153);
+                                    pAvailableTools3.Visible = true;
+                                    lbAvailableToolsTitle.Visible = true;
+                                }
+                                else if (rowCount == 2)
+                                {
+                                    pAvailableTools2.Location = new Point(1065, 153);
+                                    pAvailableTools2.Visible = true;
+                                    lbAvailableToolsTitle.Visible = true;
+
+                                    bool containsAllen = false;
+                                    bool containsDriver = false;
+                                    bool containsTHandle = false;
+
+                                    foreach (DataRow row in AvailableTools.Rows)
+                                    {
+                                        if (row["ToolName"].ToString() == "Allen Wrench")
+                                        {
+                                            containsAllen = true;
+                                        }
+                                        else if (row["ToolName"].ToString() == "Screw Driver")
+                                        {
+                                            containsDriver = true;
+                                        }
+                                        else if (row["ToolName"].ToString() == "T-Handle")
+                                        {
+                                            containsTHandle = true;
+                                        }
+                                    }
+
+                                    if (containsAllen && containsDriver)
+                                    {
+                                        picTool1B.Image = Resources.Allen;
+                                        lbTool1B.Text = "Allen Wrench";
+
+                                        picTool2B.Image = Resources.ScrewDriver;
+                                        lbTool2B.Text = "Screw Driver";
+                                    }
+                                    else if (containsAllen && containsTHandle)
+                                    {
+                                        picTool1B.Image = Resources.Allen;
+                                        lbTool1B.Text = "Allen Wrench";
+
+                                        picTool2B.Image = Resources.T_Handle;
+                                        lbTool2B.Text = "T-Handle";
+                                    }
+                                    else if (containsDriver && containsTHandle)
+                                    {
+                                        picTool1B.Image = Resources.ScrewDriver;
+                                        lbTool1B.Text = "Screw Driver";
+
+                                        picTool2B.Image = Resources.T_Handle;
+                                        lbTool2B.Text = "T-Handle";
+                                    }
+                                }
+                                else if (rowCount == 1)
+                                {
+                                    pAvailableTools1.Location = new Point(1065, 153);
+                                    pAvailableTools1.Visible = true;
+                                    lbAvailableToolsTitle.Visible = true;
+
+                                    bool containsAllen = false;
+                                    bool containsDriver = false;
+                                    bool containsTHandle = false;
+
+                                    foreach (DataRow row in AvailableTools.Rows)
+                                    {
+                                        if (row["ToolName"].ToString() == "Allen Wrench")
+                                        {
+                                            containsAllen = true;
+                                        }
+                                        else if (row["ToolName"].ToString() == "Screw Driver")
+                                        {
+                                            containsDriver = true;
+                                        }
+                                        else if (row["ToolName"].ToString() == "T-Handle")
+                                        {
+                                            containsTHandle = true;
+                                        }
+                                    }
+
+                                    if (containsAllen)
+                                    {
+                                        picTool1C.Image = Resources.Allen;
+                                        lbTool1C.Text = "Allen Wrench";
+                                    }
+                                    else if (containsDriver)
+                                    {
+                                        picTool1C.Image = Resources.ScrewDriver;
+                                        lbTool1C.Text = "Screw Driver";
+                                    }
+                                    else if (containsTHandle)
+                                    {
+                                        picTool1C.Image = Resources.T_Handle;
+                                        lbTool1C.Text = "T-Handle";
+                                    }
+                                }
+
+                                Label clickedLabel = sender as Label;
+
+                                if (clickedLabel != null)
+                                {
+                                    string input = clickedLabel.Name.Trim('a', 'b');
+
+                                    PaintSelectedColumn(input);
+                                    DeselectOtherLength(input);
+
+                                    btnPDF.Enabled = true;
+                                    btnSTP.Enabled = true;
+                                }
+
+                                cbScrewTypes.Enabled = false;
+                                pLengths.Enabled = false;
+                                pSizeSelect.Enabled = false;
                             }
-                            else if (rowCount == 2)
+                            else
                             {
-                                pAvailableTools2.Location = new Point(1065, 153);
-                                pAvailableTools2.Visible = true;
-                                lbAvailableToolsTitle.Visible = true;
-
-                                bool containsAllen = false;
-                                bool containsDriver = false;
-                                bool containsTHandle = false;
-
-                                foreach (DataRow row in AvailableTools.Rows)
-                                {
-                                    if (row["ToolName"].ToString() == "Allen Wrench")
-                                    {
-                                        containsAllen = true;
-                                    }
-                                    else if (row["ToolName"].ToString() == "Screw Driver")
-                                    {
-                                        containsDriver = true;
-                                    }
-                                    else if (row["ToolName"].ToString() == "T-Handle")
-                                    {
-                                        containsTHandle = true;
-                                    }
-                                }
-
-                                if (containsAllen && containsDriver)
-                                {
-                                    picTool1B.Image = Resources.Allen;
-                                    lbTool1B.Text = "Allen Wrench";
-
-                                    picTool2B.Image = Resources.ScrewDriver;
-                                    lbTool2B.Text = "Screw Driver";
-                                }
-                                else if (containsAllen && containsTHandle)
-                                {
-                                    picTool1B.Image = Resources.Allen;
-                                    lbTool1B.Text = "Allen Wrench";
-
-                                    picTool2B.Image = Resources.T_Handle;
-                                    lbTool2B.Text = "T-Handle";
-                                }
-                                else if (containsDriver && containsTHandle)
-                                {
-                                    picTool1B.Image = Resources.ScrewDriver;
-                                    lbTool1B.Text = "Screw Driver";
-
-                                    picTool2B.Image = Resources.T_Handle;
-                                    lbTool2B.Text = "T-Handle";
-                                }
+                                MessageBox.Show("This Screw isn't register yet", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                ResetAppereance();
                             }
-                            else if (rowCount == 1)
-                            {
-                                pAvailableTools1.Location = new Point(1065, 153);
-                                pAvailableTools1.Visible = true;
-                                lbAvailableToolsTitle.Visible = true;
-
-                                bool containsAllen = false;
-                                bool containsDriver = false;
-                                bool containsTHandle = false;
-
-                                foreach (DataRow row in AvailableTools.Rows)
-                                {
-                                    if (row["ToolName"].ToString() == "Allen Wrench")
-                                    {
-                                        containsAllen = true;
-                                    }
-                                    else if (row["ToolName"].ToString() == "Screw Driver")
-                                    {
-                                        containsDriver = true;
-                                    }
-                                    else if (row["ToolName"].ToString() == "T-Handle")
-                                    {
-                                        containsTHandle = true;
-                                    }
-                                }
-
-                                if (containsAllen)
-                                {
-                                    picTool1C.Image = Resources.Allen;
-                                    lbTool1C.Text = "Allen Wrench";
-                                }
-                                else if (containsDriver)
-                                {
-                                    picTool1C.Image = Resources.ScrewDriver;
-                                    lbTool1C.Text = "Screw Driver";
-                                }
-                                else if (containsTHandle)
-                                {
-                                    picTool1C.Image = Resources.T_Handle;
-                                    lbTool1C.Text = "T-Handle";
-                                }
-                            }
-
-                            Label clickedLabel = sender as Label;
-
-                            if (clickedLabel != null)
-                            {
-                                string input = clickedLabel.Name.Trim('a', 'b');
-
-                                PaintSelectedColumn(input);
-                                DeselectOtherLength(input);
-
-                                btnPDF.Enabled = true;
-                                btnSTP.Enabled = true;
-                            }
-
-                            cbScrewTypes.Enabled = false;
-                            pLengths.Enabled = false;
-                            pSizeSelect.Enabled = false;
-
-                        }
-                        else
-                        {
-                            MessageBox.Show("This Screw isn't register yet", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                     }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                existLength = false;
             }
             else
             {
@@ -822,6 +823,7 @@ namespace _0510Project
                 if (MyScrewLength.IDScrewLength != 0)
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
+                    existLength = true;
                 }
             }
             catch (Exception ex)
@@ -843,6 +845,7 @@ namespace _0510Project
                 if (MyScrewLength.IDScrewLength != 0)
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
+                    existLength = true;
                 }
             }
             catch (Exception ex)
@@ -864,6 +867,7 @@ namespace _0510Project
                 if (MyScrewLength.IDScrewLength != 0)
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
+                    existLength = true;
                 }
             }
             catch (Exception ex)
@@ -885,6 +889,7 @@ namespace _0510Project
                 if (MyScrewLength.IDScrewLength != 0)
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
+                    existLength = true;
                 }
             }
             catch (Exception ex)
@@ -906,6 +911,7 @@ namespace _0510Project
                 if (MyScrewLength.IDScrewLength != 0)
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
+                    existLength = true;
                 }
             }
             catch (Exception ex)
@@ -927,6 +933,7 @@ namespace _0510Project
                 if (MyScrewLength.IDScrewLength != 0)
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
+                    existLength = true;
                 }
             }
             catch (Exception ex)
@@ -948,6 +955,7 @@ namespace _0510Project
                 if (MyScrewLength.IDScrewLength != 0)
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
+                    existLength = true;
                 }
             }
             catch (Exception ex)
@@ -969,6 +977,7 @@ namespace _0510Project
                 if (MyScrewLength.IDScrewLength != 0)
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
+                    existLength = true;
                 }
             }
             catch (Exception ex)
@@ -990,6 +999,7 @@ namespace _0510Project
                 if (MyScrewLength.IDScrewLength != 0)
                 {   
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
+                    existLength = true;
                 }
             }
             catch (Exception ex)
@@ -1011,6 +1021,7 @@ namespace _0510Project
                 if (MyScrewLength.IDScrewLength != 0)
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
+                    existLength = true;
                 }
             }
             catch (Exception ex)
@@ -1032,6 +1043,7 @@ namespace _0510Project
                 if (MyScrewLength.IDScrewLength != 0)
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
+                    existLength = true;
                 }
             }
             catch (Exception ex)
@@ -1053,6 +1065,7 @@ namespace _0510Project
                 if (MyScrewLength.IDScrewLength != 0)
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
+                    existLength = true;
                 }
             }
             catch (Exception ex)
@@ -1074,6 +1087,7 @@ namespace _0510Project
                 if (MyScrewLength.IDScrewLength != 0)
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
+                    existLength = true;
                 }
             }
             catch (Exception ex)
@@ -1095,6 +1109,7 @@ namespace _0510Project
                 if (MyScrewLength.IDScrewLength != 0)
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
+                    existLength = true;
                 }
             }
             catch (Exception ex)
@@ -1116,6 +1131,7 @@ namespace _0510Project
                 if (MyScrewLength.IDScrewLength != 0)
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
+                    existLength = true;
                 }
             }
             catch (Exception ex)
@@ -1137,6 +1153,7 @@ namespace _0510Project
                 if (MyScrewLength.IDScrewLength != 0)
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
+                    existLength = true;
                 }
             }
             catch (Exception ex)
@@ -1158,6 +1175,7 @@ namespace _0510Project
                 if (MyScrewLength.IDScrewLength != 0)
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
+                    existLength = true;
                 }
             }
             catch (Exception ex)
@@ -1179,6 +1197,7 @@ namespace _0510Project
                 if (MyScrewLength.IDScrewLength != 0)
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
+                    existLength = true;
                 }
             }
             catch (Exception ex)
@@ -1200,6 +1219,7 @@ namespace _0510Project
                 if (MyScrewLength.IDScrewLength != 0)
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
+                    existLength = true;
                 }
             }
             catch (Exception ex)
@@ -1221,6 +1241,7 @@ namespace _0510Project
                 if (MyScrewLength.IDScrewLength != 0)
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
+                    existLength = true;
                 }
             }
             catch (Exception ex)
@@ -1242,6 +1263,7 @@ namespace _0510Project
                 if (MyScrewLength.IDScrewLength != 0)
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
+                    existLength = true;
                 }
             }
             catch (Exception ex)
@@ -1263,6 +1285,7 @@ namespace _0510Project
                 if (MyScrewLength.IDScrewLength != 0)
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
+                    existLength = true;
                 }
             }
             catch (Exception ex)
@@ -1284,6 +1307,7 @@ namespace _0510Project
                 if (MyScrewLength.IDScrewLength != 0)
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
+                    existLength = true;
                 }
             }
             catch (Exception ex)
@@ -1305,6 +1329,7 @@ namespace _0510Project
                 if (MyScrewLength.IDScrewLength != 0)
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
+                    existLength = true;
                 }
             }
             catch (Exception ex)
@@ -1326,6 +1351,7 @@ namespace _0510Project
                 if (MyScrewLength.IDScrewLength != 0)
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
+                    existLength = true;
                 }
             }
             catch (Exception ex)
@@ -1347,6 +1373,7 @@ namespace _0510Project
                 if (MyScrewLength.IDScrewLength != 0)
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
+                    existLength = true;
                 }
             }
             catch (Exception ex)
@@ -1368,6 +1395,7 @@ namespace _0510Project
                 if (MyScrewLength.IDScrewLength != 0)
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
+                    existLength = true;
                 }
             }
             catch (Exception ex)
@@ -1389,6 +1417,7 @@ namespace _0510Project
                 if (MyScrewLength.IDScrewLength != 0)
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
+                    existLength = true;
                 }
             }
             catch (Exception ex)
@@ -1410,6 +1439,7 @@ namespace _0510Project
                 if (MyScrewLength.IDScrewLength != 0)
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
+                    existLength = true;
                 }
             }
             catch (Exception ex)
@@ -1431,6 +1461,7 @@ namespace _0510Project
                 if (MyScrewLength.IDScrewLength != 0)
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
+                    existLength = true;
                 }
             }
             catch (Exception ex)
@@ -1452,6 +1483,7 @@ namespace _0510Project
                 if (MyScrewLength.IDScrewLength != 0)
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
+                    existLength = true;
                 }
             }
             catch (Exception ex)
@@ -1470,9 +1502,10 @@ namespace _0510Project
 
                 MyScrewLength = ScrewLengthLogic.Instancia.SelectByName(LengthName);
 
-                if (MyScrewLength != null)
+                if (MyScrewLength.IDScrewLength != 0)
                 {   
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
+                    existLength = true;
                 }
             }
             catch (Exception ex)
@@ -1491,9 +1524,10 @@ namespace _0510Project
 
                 MyScrewLength = ScrewLengthLogic.Instancia.SelectByName(LengthName);
 
-                if (MyScrewLength != null)
+                if (MyScrewLength.IDScrewLength != 0)
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
+                    existLength = true;
                 }
             }
             catch (Exception ex)
@@ -1512,9 +1546,10 @@ namespace _0510Project
 
                 MyScrewLength = ScrewLengthLogic.Instancia.SelectByName(LengthName);
 
-                if (MyScrewLength != null)
+                if (MyScrewLength.IDScrewLength != 0)
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
+                    existLength = true;
                 }
             }
             catch (Exception ex)
@@ -1533,9 +1568,10 @@ namespace _0510Project
 
                 MyScrewLength = ScrewLengthLogic.Instancia.SelectByName(LengthName);
 
-                if (MyScrewLength != null)
+                if (MyScrewLength.IDScrewLength != 0)
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
+                    existLength = true;
                 }
             }
             catch (Exception ex)
@@ -1554,9 +1590,10 @@ namespace _0510Project
 
                 MyScrewLength = ScrewLengthLogic.Instancia.SelectByName(LengthName);
 
-                if (MyScrewLength != null)
+                if (MyScrewLength.IDScrewLength != 0)
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
+                    existLength = true;
                 }
             }
             catch (Exception ex)
@@ -1575,9 +1612,10 @@ namespace _0510Project
 
                 MyScrewLength = ScrewLengthLogic.Instancia.SelectByName(LengthName);
 
-                if (MyScrewLength != null)
+                if (MyScrewLength.IDScrewLength != 0)
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
+                    existLength = true;
                 }
             }
             catch (Exception ex)
@@ -1596,9 +1634,10 @@ namespace _0510Project
 
                 MyScrewLength = ScrewLengthLogic.Instancia.SelectByName(LengthName);
 
-                if (MyScrewLength != null)
+                if (MyScrewLength.IDScrewLength != 0)
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
+                    existLength = true;
                 }
             }
             catch (Exception ex)
@@ -1617,9 +1656,10 @@ namespace _0510Project
 
                 MyScrewLength = ScrewLengthLogic.Instancia.SelectByName(LengthName);
 
-                if (MyScrewLength != null)
+                if (MyScrewLength.IDScrewLength != 0)
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
+                    existLength = true;
                 }
             }
             catch (Exception ex)
@@ -1638,9 +1678,10 @@ namespace _0510Project
 
                 MyScrewLength = ScrewLengthLogic.Instancia.SelectByName(LengthName);
 
-                if (MyScrewLength != null)
+                if (MyScrewLength.IDScrewLength != 0)
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
+                    existLength = true;
                 }
             }
             catch (Exception ex)
@@ -1659,9 +1700,10 @@ namespace _0510Project
 
                 MyScrewLength = ScrewLengthLogic.Instancia.SelectByName(LengthName);
 
-                if (MyScrewLength != null)
+                if (MyScrewLength.IDScrewLength != 0)
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
+                    existLength = true;
                 }
             }
             catch (Exception ex)
@@ -1680,9 +1722,10 @@ namespace _0510Project
 
                 MyScrewLength = ScrewLengthLogic.Instancia.SelectByName(LengthName);
 
-                if (MyScrewLength != null)
+                if (MyScrewLength.IDScrewLength != 0)
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
+                    existLength = true;
                 }
             }
             catch (Exception ex)
@@ -1701,9 +1744,10 @@ namespace _0510Project
 
                 MyScrewLength = ScrewLengthLogic.Instancia.SelectByName(LengthName);
 
-                if (MyScrewLength != null)
+                if (MyScrewLength.IDScrewLength != 0)
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
+                    existLength = true;
                 }
             }
             catch (Exception ex)
@@ -1722,9 +1766,10 @@ namespace _0510Project
 
                 MyScrewLength = ScrewLengthLogic.Instancia.SelectByName(LengthName);
 
-                if (MyScrewLength != null)
+                if (MyScrewLength.IDScrewLength != 0)
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
+                    existLength = true;
                 }
             }
             catch (Exception ex)
@@ -1743,9 +1788,10 @@ namespace _0510Project
 
                 MyScrewLength = ScrewLengthLogic.Instancia.SelectByName(LengthName);
 
-                if (MyScrewLength != null)
+                if (MyScrewLength.IDScrewLength != 0)
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
+                    existLength = true;
                 }
             }
             catch (Exception ex)
@@ -1757,6 +1803,13 @@ namespace _0510Project
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
             ResetAppereance();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            txtIDType.Text = MyScrewMain.MyScrewType.IDScrewType.ToString();
+            txtIDSize.Text = MyScrewMain.MyScrewSize.IDScrewSize.ToString();
+            txtIDLength.Text = MyScrewMain.MyScrewLength.IDScrewLength.ToString();
         }
     }
 }
