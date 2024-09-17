@@ -20,6 +20,9 @@ using Logica.Models;
 using Logica.Logic;
 using _0510Project.Properties;
 using System.Diagnostics.Eventing.Reader;
+using System.IO;
+using System.Net;
+using System.Security.Cryptography;
 
 namespace _0510Project
 {
@@ -1811,5 +1814,6 @@ namespace _0510Project
             txtIDSize.Text = MyScrewMain.MyScrewSize.IDScrewSize.ToString();
             txtIDLength.Text = MyScrewMain.MyScrewLength.IDScrewLength.ToString();
         }
+
     }
 }
