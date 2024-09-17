@@ -203,6 +203,13 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Resources\Wedge.png" />
+    <None Include="Resources\Tooth.png" />
+    <None Include="Resources\SpringLock.png" />
+    <None Include="Resources\SplitLock.png" />
+    <None Include="Resources\NutHex.png" />
+    <None Include="Resources\Flat.png" />
+    <None Include="Resources\Crown.png" />
     <None Include="Resources\SSNE LOGO.png" />
     <None Include="Resources\Types.png" />
     <None Include="Resources\Size.png" />
