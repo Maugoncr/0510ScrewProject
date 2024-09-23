@@ -490,7 +490,7 @@ namespace _0510Project
         {
             if (txtPassword.Text == Settings.Default.GestionDB)
             {
-                using (FrmMainManagementDB frm = new FrmMainManagementDB())
+                using (FrmMainManagementDashboard frm = new FrmMainManagementDashboard())
                 {
                     pGestion.Visible = false;
                     frm.ShowDialog();

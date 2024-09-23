@@ -87,11 +87,29 @@
     <Compile Include="Forms\FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FrmMainManagementDB.cs">
+    <Compile Include="Forms\FrmMainManagementDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FrmMainManagementDB.Designer.cs">
-      <DependentUpon>FrmMainManagementDB.cs</DependentUpon>
+    <Compile Include="Forms\FrmMainManagementDashboard.Designer.cs">
+      <DependentUpon>FrmMainManagementDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmMainManagementNutsDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmMainManagementNutsDB.Designer.cs">
+      <DependentUpon>FrmMainManagementNutsDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmMainManagementScrewsDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmMainManagementScrewsDB.Designer.cs">
+      <DependentUpon>FrmMainManagementScrewsDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmMainManagementWashersDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmMainManagementWashersDB.Designer.cs">
+      <DependentUpon>FrmMainManagementWashersDB.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FrmScrew.cs">
       <SubType>Form</SubType>
@@ -236,8 +254,17 @@
       <DependentUpon>FrmMain.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FrmMainManagementDB.resx">
-      <DependentUpon>FrmMainManagementDB.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FrmMainManagementDashboard.resx">
+      <DependentUpon>FrmMainManagementDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmMainManagementNutsDB.resx">
+      <DependentUpon>FrmMainManagementNutsDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmMainManagementScrewsDB.resx">
+      <DependentUpon>FrmMainManagementScrewsDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmMainManagementWashersDB.resx">
+      <DependentUpon>FrmMainManagementWashersDB.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmScrew.resx">
       <DependentUpon>FrmScrew.cs</DependentUpon>

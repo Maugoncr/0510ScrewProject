@@ -1,6 +1,6 @@
 ﻿namespace _0510Project.Forms
 {
-    partial class FrmMainManagementDB
+    partial class FrmMainManagementScrewsDB
     {
         /// <summary>
         /// Required designer variable.
@@ -99,7 +99,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(1465, 58);
             this.label7.TabIndex = 146;
-            this.label7.Text = "SSNE MIDORI DASHBOARD";
+            this.label7.Text = "SCREWS DASHBOARD";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnAbbreviations
@@ -329,7 +329,7 @@
             this.picMaterials.TabStop = false;
             this.picMaterials.Click += new System.EventHandler(this.picMaterials_Click);
             // 
-            // FrmMainManagementDB
+            // FrmMainManagementScrewsDB
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -358,9 +358,9 @@
             this.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.Name = "FrmMainManagementDB";
+            this.Name = "FrmMainManagementScrewsDB";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "0510 DataBase Managament System";
+            this.Text = "Data Base Management Screws";
             this.Load += new System.EventHandler(this.FrmMainManagementDB_Load);
             this.pNavBar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picScrews)).EndInit();
