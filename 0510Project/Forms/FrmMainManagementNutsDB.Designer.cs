@@ -33,8 +33,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.btnMaterials = new System.Windows.Forms.Label();
             this.picMaterials = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnNutsSize = new System.Windows.Forms.Label();
+            this.picNutsSize = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -42,7 +42,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.pNavBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picMaterials)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picNutsSize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -110,28 +110,30 @@
             this.picMaterials.TabIndex = 157;
             this.picMaterials.TabStop = false;
             // 
-            // label1
+            // btnNutsSize
             // 
-            this.label1.BackColor = System.Drawing.Color.DarkCyan;
-            this.label1.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(368, 341);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(350, 135);
-            this.label1.TabIndex = 160;
-            this.label1.Text = "Nuts Size";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnNutsSize.BackColor = System.Drawing.Color.DarkCyan;
+            this.btnNutsSize.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNutsSize.ForeColor = System.Drawing.Color.White;
+            this.btnNutsSize.Location = new System.Drawing.Point(368, 341);
+            this.btnNutsSize.Name = "btnNutsSize";
+            this.btnNutsSize.Size = new System.Drawing.Size(350, 135);
+            this.btnNutsSize.TabIndex = 160;
+            this.btnNutsSize.Text = "Nuts Size";
+            this.btnNutsSize.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnNutsSize.Click += new System.EventHandler(this.btnNutsSize_Click);
             // 
-            // pictureBox1
+            // picNutsSize
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.DarkCyan;
-            this.pictureBox1.Image = global::_0510Project.Properties.Resources.Size;
-            this.pictureBox1.Location = new System.Drawing.Point(212, 341);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(156, 135);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 159;
-            this.pictureBox1.TabStop = false;
+            this.picNutsSize.BackColor = System.Drawing.Color.DarkCyan;
+            this.picNutsSize.Image = global::_0510Project.Properties.Resources.Size;
+            this.picNutsSize.Location = new System.Drawing.Point(212, 341);
+            this.picNutsSize.Name = "picNutsSize";
+            this.picNutsSize.Size = new System.Drawing.Size(156, 135);
+            this.picNutsSize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picNutsSize.TabIndex = 159;
+            this.picNutsSize.TabStop = false;
+            this.picNutsSize.Click += new System.EventHandler(this.picNutsSize_Click);
             // 
             // label2
             // 
@@ -193,8 +195,8 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.btnNutsSize);
+            this.Controls.Add(this.picNutsSize);
             this.Controls.Add(this.btnMaterials);
             this.Controls.Add(this.picMaterials);
             this.Controls.Add(this.label7);
@@ -207,7 +209,7 @@
             this.Text = "Data Base Management Nuts";
             this.pNavBar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picMaterials)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picNutsSize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
@@ -220,8 +222,8 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label btnMaterials;
         private System.Windows.Forms.PictureBox picMaterials;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label btnNutsSize;
+        private System.Windows.Forms.PictureBox picNutsSize;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel1;

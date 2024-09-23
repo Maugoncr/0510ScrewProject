@@ -32,5 +32,21 @@ namespace _0510Project.Forms
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
+
+        private void btnNutsSize_Click(object sender, EventArgs e)
+        {
+            using (FrmNutsSize frm = new FrmNutsSize())
+            {
+                frm.ShowDialog();
+            }
+        }
+
+        private void picNutsSize_Click(object sender, EventArgs e)
+        {
+            using (FrmNutsSize frm = new FrmNutsSize())
+            {
+                frm.ShowDialog();
+            }
+        }
     }
 }
