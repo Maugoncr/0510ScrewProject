@@ -71,6 +71,9 @@
     <Compile Include="Logic\ScrewTypeLogic.cs" />
     <Compile Include="Logic\Screw_ToolLogic.cs" />
     <Compile Include="Logic\TestLogic.cs" />
+    <Compile Include="Models\Nuts.cs" />
+    <Compile Include="Models\NutsSize.cs" />
+    <Compile Include="Models\NutsType.cs" />
     <Compile Include="Models\Screw.cs" />
     <Compile Include="Models\ScrewAbbreviation.cs" />
     <Compile Include="Models\ScrewAvailableTool.cs" />
@@ -81,6 +84,9 @@
     <Compile Include="Models\ScrewType.cs" />
     <Compile Include="Models\Screw_Tool.cs" />
     <Compile Include="Models\Test.cs" />
+    <Compile Include="Models\Washer.cs" />
+    <Compile Include="Models\WasherSize.cs" />
+    <Compile Include="Models\WasherType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
