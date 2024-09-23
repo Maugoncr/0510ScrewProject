@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Logica.Models
 {
-    public class Washer
+    public class Washers
     {
         public int IDWasher { get; set; }
 
@@ -30,7 +30,7 @@ namespace Logica.Models
         public WasherSize MyWasherSize { get; set; }
         public WasherType MyWasherType { get; set; }
 
-        public Washer()
+        public Washers()
         {
             MyWasherSize = new WasherSize();
             MyWasherType = new WasherType();
