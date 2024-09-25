@@ -42,7 +42,7 @@ namespace _0510Project.Forms
 
         private void FrmNutsSize_Load(object sender, EventArgs e)
         {
-            ShowScrewSizes(checkActives.Checked);
+            ShowNutsSizes(checkActives.Checked);
 
             CleanForm();
         }
@@ -51,11 +51,11 @@ namespace _0510Project.Forms
         {
             if (!string.IsNullOrEmpty(txtFilter.Text.Trim()) && txtFilter.Text.Count() >= 2)
             {
-                ShowScrewSizes(checkActives.Checked, txtFilter.Text.Trim());
+                ShowNutsSizes(checkActives.Checked, txtFilter.Text.Trim());
             }
             else
             {
-                ShowScrewSizes(checkActives.Checked);
+                ShowNutsSizes(checkActives.Checked);
             }
         }
 
@@ -98,7 +98,7 @@ namespace _0510Project.Forms
                 if (respuesta)
                 {
                     CleanForm();
-                    ShowScrewSizes(checkActives.Checked);
+                    ShowNutsSizes(checkActives.Checked);
                     MessageBox.Show("Nut Size Added Correctly", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
 
@@ -134,7 +134,7 @@ namespace _0510Project.Forms
                             MessageBox.Show("Nut Size successfully deactivated.", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                             CleanForm();
-                            ShowScrewSizes(checkActives.Checked);
+                            ShowNutsSizes(checkActives.Checked);
                         }
                     }
 
@@ -158,7 +158,7 @@ namespace _0510Project.Forms
                             MessageBox.Show("Nut Size successfully activated.", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                             CleanForm();
-                            ShowScrewSizes(checkActives.Checked);
+                            ShowNutsSizes(checkActives.Checked);
                         }
                     }
                 }
@@ -180,7 +180,7 @@ namespace _0510Project.Forms
                 if (respuesta)
                 {
                     CleanForm();
-                    ShowScrewSizes(checkActives.Checked);
+                    ShowNutsSizes(checkActives.Checked);
                     MessageBox.Show("Nut Size Updated Correctly", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
@@ -197,7 +197,7 @@ namespace _0510Project.Forms
 
         private void checkActives_CheckedChanged(object sender, EventArgs e)
         {
-            ShowScrewSizes(checkActives.Checked);
+            ShowNutsSizes(checkActives.Checked);
 
             if (checkActives.Checked)
             {
@@ -241,7 +241,7 @@ namespace _0510Project.Forms
             btnDisable.Enabled = true;
         }
 
-        private void ShowScrewSizes(bool SeeActives, string RFilter = "")
+        private void ShowNutsSizes(bool SeeActives, string RFilter = "")
         {
             string Filtro = "";
 

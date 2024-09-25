@@ -305,6 +305,9 @@
     <EmbeddedResource Include="Forms\FrmNutsSize.resx">
       <DependentUpon>FrmNutsSize.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmNutsType.resx">
+      <DependentUpon>FrmNutsType.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmScrew.resx">
       <DependentUpon>FrmScrew.cs</DependentUpon>
     </EmbeddedResource>
@@ -331,6 +334,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmTestingElements.resx">
       <DependentUpon>FrmTestingElements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmWasherSize.resx">
+      <DependentUpon>FrmWasherSize.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmWasherType.resx">
+      <DependentUpon>FrmWasherType.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SelectedForms\FrmSelectAvailableTool.resx">
       <DependentUpon>FrmSelectAvailableTool.cs</DependentUpon>

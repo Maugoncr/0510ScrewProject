@@ -31,8 +31,8 @@
             this.pNavBar = new System.Windows.Forms.Panel();
             this.btnClose = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.btnMaterials = new System.Windows.Forms.Label();
-            this.picMaterials = new System.Windows.Forms.PictureBox();
+            this.btnNutsType = new System.Windows.Forms.Label();
+            this.picNutsType = new System.Windows.Forms.PictureBox();
             this.btnNutsSize = new System.Windows.Forms.Label();
             this.picNutsSize = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -41,7 +41,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pNavBar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picMaterials)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picNutsType)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picNutsSize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -87,28 +87,30 @@
             this.label7.Text = "NUTS DASHBOARD";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnMaterials
+            // btnNutsType
             // 
-            this.btnMaterials.BackColor = System.Drawing.Color.DarkCyan;
-            this.btnMaterials.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMaterials.ForeColor = System.Drawing.Color.White;
-            this.btnMaterials.Location = new System.Drawing.Point(368, 153);
-            this.btnMaterials.Name = "btnMaterials";
-            this.btnMaterials.Size = new System.Drawing.Size(350, 135);
-            this.btnMaterials.TabIndex = 158;
-            this.btnMaterials.Text = "Nuts Type";
-            this.btnMaterials.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnNutsType.BackColor = System.Drawing.Color.DarkCyan;
+            this.btnNutsType.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNutsType.ForeColor = System.Drawing.Color.White;
+            this.btnNutsType.Location = new System.Drawing.Point(368, 153);
+            this.btnNutsType.Name = "btnNutsType";
+            this.btnNutsType.Size = new System.Drawing.Size(350, 135);
+            this.btnNutsType.TabIndex = 158;
+            this.btnNutsType.Text = "Nuts Type";
+            this.btnNutsType.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnNutsType.Click += new System.EventHandler(this.btnNutsType_Click);
             // 
-            // picMaterials
+            // picNutsType
             // 
-            this.picMaterials.BackColor = System.Drawing.Color.DarkCyan;
-            this.picMaterials.Image = global::_0510Project.Properties.Resources.Types;
-            this.picMaterials.Location = new System.Drawing.Point(212, 153);
-            this.picMaterials.Name = "picMaterials";
-            this.picMaterials.Size = new System.Drawing.Size(156, 135);
-            this.picMaterials.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.picMaterials.TabIndex = 157;
-            this.picMaterials.TabStop = false;
+            this.picNutsType.BackColor = System.Drawing.Color.DarkCyan;
+            this.picNutsType.Image = global::_0510Project.Properties.Resources.Types;
+            this.picNutsType.Location = new System.Drawing.Point(212, 153);
+            this.picNutsType.Name = "picNutsType";
+            this.picNutsType.Size = new System.Drawing.Size(156, 135);
+            this.picNutsType.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picNutsType.TabIndex = 157;
+            this.picNutsType.TabStop = false;
+            this.picNutsType.Click += new System.EventHandler(this.picNutsType_Click);
             // 
             // btnNutsSize
             // 
@@ -197,8 +199,8 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.btnNutsSize);
             this.Controls.Add(this.picNutsSize);
-            this.Controls.Add(this.btnMaterials);
-            this.Controls.Add(this.picMaterials);
+            this.Controls.Add(this.btnNutsType);
+            this.Controls.Add(this.picNutsType);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.pNavBar);
             this.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -208,7 +210,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Data Base Management Nuts";
             this.pNavBar.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picMaterials)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picNutsType)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picNutsSize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
@@ -220,8 +222,8 @@
         private System.Windows.Forms.Panel pNavBar;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label btnMaterials;
-        private System.Windows.Forms.PictureBox picMaterials;
+        private System.Windows.Forms.Label btnNutsType;
+        private System.Windows.Forms.PictureBox picNutsType;
         private System.Windows.Forms.Label btnNutsSize;
         private System.Windows.Forms.PictureBox picNutsSize;
         private System.Windows.Forms.Label label2;

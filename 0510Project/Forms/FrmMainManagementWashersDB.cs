@@ -32,5 +32,37 @@ namespace _0510Project.Forms
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
+
+        private void btnWasherType_Click(object sender, EventArgs e)
+        {
+            using (FrmWasherType frm = new FrmWasherType())
+            {
+                frm.ShowDialog();
+            }
+        }
+
+        private void picWasherType_Click(object sender, EventArgs e)
+        {
+            using (FrmWasherType frm = new FrmWasherType())
+            {
+                frm.ShowDialog();
+            }
+        }
+
+        private void btnWasherSize_Click(object sender, EventArgs e)
+        {
+            using (FrmWasherSize frm = new FrmWasherSize())
+            {
+                frm.ShowDialog();
+            }
+        }
+
+        private void picWasherSize_Click(object sender, EventArgs e)
+        {
+            using (FrmWasherSize frm = new FrmWasherSize())
+            {
+                frm.ShowDialog();
+            }
+        }
     }
 }
