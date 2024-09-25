@@ -109,30 +109,30 @@ namespace Logica.Logic
                 {
                     if (dr.Read())
                     {
-                        R.IDScrew = Convert.ToInt32(dr["IDScrew"].ToString());
-                        R.SSNEPartNumber = dr["SSNEPartNumber"].ToString();
-                        R.VendorPartNumber = dr["VendorPartNumber"].ToString();
-                        R.UrlPDF = dr["UrlPDF"].ToString();
-                        R.UrlSTEP = dr["UrlSTEP"].ToString();
-                        // Propiedades de Navegación
+                        //R.IDScrew = Convert.ToInt32(dr["IDScrew"].ToString());
+                        //R.SSNEPartNumber = dr["SSNEPartNumber"].ToString();
+                        //R.VendorPartNumber = dr["VendorPartNumber"].ToString();
+                        //R.UrlPDF = dr["UrlPDF"].ToString();
+                        //R.UrlSTEP = dr["UrlSTEP"].ToString();
+                        //// Propiedades de Navegación
 
-                        R.MyScrewType.IDScrewType = Convert.ToInt32(dr["IDScrewType"].ToString());
-                        R.MyScrewType.TypeName = dr["TypeName"].ToString();
+                        //R.MyScrewType.IDScrewType = Convert.ToInt32(dr["IDScrewType"].ToString());
+                        //R.MyScrewType.TypeName = dr["TypeName"].ToString();
 
-                        R.MyScrewSize.IDScrewSize = Convert.ToInt32(dr["IDScrewSize"].ToString());
-                        R.MyScrewSize.SizeName = dr["SizeName"].ToString();
+                        //R.MyScrewSize.IDScrewSize = Convert.ToInt32(dr["IDScrewSize"].ToString());
+                        //R.MyScrewSize.SizeName = dr["SizeName"].ToString();
 
-                        R.MyScrewMaterial.IDScrewMaterial = Convert.ToInt32(dr["IDScrewMaterial"].ToString());
-                        R.MyScrewMaterial.MaterialName = dr["MaterialName"].ToString();
+                        //R.MyScrewMaterial.IDScrewMaterial = Convert.ToInt32(dr["IDScrewMaterial"].ToString());
+                        //R.MyScrewMaterial.MaterialName = dr["MaterialName"].ToString();
 
-                        R.MyScrewLength.IDScrewLength = Convert.ToInt32(dr["IDScrewLength"].ToString());
-                        R.MyScrewLength.LengthInch = dr["LengthInch"].ToString();
+                        //R.MyScrewLength.IDScrewLength = Convert.ToInt32(dr["IDScrewLength"].ToString());
+                        //R.MyScrewLength.LengthInch = dr["LengthInch"].ToString();
 
-                        R.MyScrewAbbreviation.IDScrewAbbreviation = Convert.ToInt32(dr["IDScrewAbbreviation"].ToString());
-                        R.MyScrewAbbreviation.AbbreviationName = dr["AbbreviationName"].ToString();
+                        //R.MyScrewAbbreviation.IDScrewAbbreviation = Convert.ToInt32(dr["IDScrewAbbreviation"].ToString());
+                        //R.MyScrewAbbreviation.AbbreviationName = dr["AbbreviationName"].ToString();
 
-                        R.MyScrewNTool.IDScrewNTool = Convert.ToInt32(dr["IDScrewNTool"].ToString());
-                        R.MyScrewNTool.NToolName = dr["NToolName"].ToString();
+                        //R.MyScrewNTool.IDScrewNTool = Convert.ToInt32(dr["IDScrewNTool"].ToString());
+                        //R.MyScrewNTool.NToolName = dr["NToolName"].ToString();
                     }
                 }
             }
@@ -185,16 +185,16 @@ namespace Logica.Logic
 
                 SQLiteCommand cmd = new SQLiteCommand(query, conexion);
 
-                cmd.Parameters.Add(new SQLiteParameter("@IDType", obj.MyScrewType.IDScrewType));
-                cmd.Parameters.Add(new SQLiteParameter("@IDSize", obj.MyScrewSize.IDScrewSize));
-                cmd.Parameters.Add(new SQLiteParameter("@IDLength", obj.MyScrewLength.IDScrewLength));
-                cmd.Parameters.Add(new SQLiteParameter("@IDNTool", obj.MyScrewNTool.IDScrewNTool));
-                cmd.Parameters.Add(new SQLiteParameter("@IDMaterial", obj.MyScrewMaterial.IDScrewMaterial));
-                cmd.Parameters.Add(new SQLiteParameter("@IDAbbreviation", obj.MyScrewAbbreviation.IDScrewAbbreviation));
-                cmd.Parameters.Add(new SQLiteParameter("@SSNEPartNumber", obj.SSNEPartNumber));
-                cmd.Parameters.Add(new SQLiteParameter("@VendorPartNumber", obj.VendorPartNumber));
-                cmd.Parameters.Add(new SQLiteParameter("@UrlPDF", obj.UrlPDF));
-                cmd.Parameters.Add(new SQLiteParameter("@UrlSTEP", obj.UrlSTEP));
+                //cmd.Parameters.Add(new SQLiteParameter("@IDType", obj.MyScrewType.IDScrewType));
+                //cmd.Parameters.Add(new SQLiteParameter("@IDSize", obj.MyScrewSize.IDScrewSize));
+                //cmd.Parameters.Add(new SQLiteParameter("@IDLength", obj.MyScrewLength.IDScrewLength));
+                //cmd.Parameters.Add(new SQLiteParameter("@IDNTool", obj.MyScrewNTool.IDScrewNTool));
+                //cmd.Parameters.Add(new SQLiteParameter("@IDMaterial", obj.MyScrewMaterial.IDScrewMaterial));
+                //cmd.Parameters.Add(new SQLiteParameter("@IDAbbreviation", obj.MyScrewAbbreviation.IDScrewAbbreviation));
+                //cmd.Parameters.Add(new SQLiteParameter("@SSNEPartNumber", obj.SSNEPartNumber));
+                //cmd.Parameters.Add(new SQLiteParameter("@VendorPartNumber", obj.VendorPartNumber));
+                //cmd.Parameters.Add(new SQLiteParameter("@UrlPDF", obj.UrlPDF));
+                //cmd.Parameters.Add(new SQLiteParameter("@UrlSTEP", obj.UrlSTEP));
 
                 cmd.CommandType = CommandType.Text;
 
