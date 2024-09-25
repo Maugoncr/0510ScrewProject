@@ -335,6 +335,9 @@
     <EmbeddedResource Include="Forms\FrmTestingElements.resx">
       <DependentUpon>FrmTestingElements.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmWashers.resx">
+      <DependentUpon>FrmWashers.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmWasherSize.resx">
       <DependentUpon>FrmWasherSize.cs</DependentUpon>
     </EmbeddedResource>
