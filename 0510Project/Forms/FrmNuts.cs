@@ -11,6 +11,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Media;
 
 namespace _0510Project.Forms
 {
@@ -105,9 +106,19 @@ namespace _0510Project.Forms
             }
         }
 
+        public static int IDNutsType;
+        public static string TypeName;
         private void btnSelectNutType_Click(object sender, EventArgs e)
         {
+            FrmSelectNutType frm = new FrmSelectNutType();
 
+            DialogResult r = frm.ShowDialog();
+
+            if (r == DialogResult.OK)
+            {
+                txtIDNutsType.Text = IDNutsType.ToString();
+                txtTypeName.Text = TypeName;
+            }
         }
 
         private void btnClearNutType_Click(object sender, EventArgs e)
