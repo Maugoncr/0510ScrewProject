@@ -745,7 +745,7 @@ namespace _0510Project
             ResetAppereance();
         }
 
-        bool existLength = false; 
+        bool existLength = false;
 
         private void c1_Click(object sender, EventArgs e)
         {
@@ -1000,7 +1000,7 @@ namespace _0510Project
                 MyScrewLength = ScrewLengthLogic.Instancia.SelectByName(LengthName);
 
                 if (MyScrewLength.IDScrewLength != 0)
-                {   
+                {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
                     existLength = true;
                 }
@@ -1506,7 +1506,7 @@ namespace _0510Project
                 MyScrewLength = ScrewLengthLogic.Instancia.SelectByName(LengthName);
 
                 if (MyScrewLength.IDScrewLength != 0)
-                {   
+                {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
                     existLength = true;
                 }
@@ -1825,6 +1825,81 @@ namespace _0510Project
             {
                 WindowState = FormWindowState.Minimized;
             }
+        }
+
+        private void ss1_Click(object sender, EventArgs e)
+        {
+            WhiteSSize();
+            ss1.BackColor = Color.Yellow;
+        }
+
+        private void ss2_Click(object sender, EventArgs e)
+        {
+            WhiteSSize();
+            ss2.BackColor = Color.Yellow;
+        }
+
+        private void ss3_Click(object sender, EventArgs e)
+        {
+            WhiteSSize();
+            ss3.BackColor = Color.Yellow;
+        }
+
+        private void ss4_Click(object sender, EventArgs e)
+        {
+            WhiteSSize();
+            ss4.BackColor = Color.Yellow;
+        }
+
+        private void ss5_Click(object sender, EventArgs e)
+        {
+            WhiteSSize();
+            ss5.BackColor = Color.Yellow;
+        }
+
+        private void ss6_Click(object sender, EventArgs e)
+        {
+            WhiteSSize();
+            ss6.BackColor = Color.Yellow;
+        }
+
+        private void ss7_Click(object sender, EventArgs e)
+        {
+            WhiteSSize();
+            ss7.BackColor = Color.Yellow;
+        }
+
+        private void ss8_Click(object sender, EventArgs e)
+        {
+            WhiteSSize();
+            ss8.BackColor = Color.Yellow;
+        }
+
+        private void ss9_Click(object sender, EventArgs e)
+        {
+            WhiteSSize();
+            ss9.BackColor = Color.Yellow;
+        }
+
+        private void ss10_Click(object sender, EventArgs e)
+        {
+            WhiteSSize();
+            ss10.BackColor = Color.Yellow;
+        }
+
+        private void WhiteSSize()
+        { 
+            ss1.BackColor = Color.White;
+            ss2.BackColor = Color.White;
+            ss3.BackColor = Color.White;
+            ss4.BackColor = Color.White;
+            ss5.BackColor = Color.White;
+            ss6.BackColor = Color.White;
+            ss7.BackColor = Color.White;
+            ss8.BackColor = Color.White;
+            ss9.BackColor = Color.White;
+            ss10.BackColor = Color.White;
+        
         }
     }
 }

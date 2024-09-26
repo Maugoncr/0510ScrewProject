@@ -192,16 +192,16 @@
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label51 = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.label63 = new System.Windows.Forms.Label();
-            this.label64 = new System.Windows.Forms.Label();
-            this.label65 = new System.Windows.Forms.Label();
-            this.label66 = new System.Windows.Forms.Label();
-            this.label67 = new System.Windows.Forms.Label();
-            this.label68 = new System.Windows.Forms.Label();
-            this.label69 = new System.Windows.Forms.Label();
-            this.label70 = new System.Windows.Forms.Label();
-            this.label71 = new System.Windows.Forms.Label();
-            this.label72 = new System.Windows.Forms.Label();
+            this.ss10 = new System.Windows.Forms.Label();
+            this.ss9 = new System.Windows.Forms.Label();
+            this.ss8 = new System.Windows.Forms.Label();
+            this.ss7 = new System.Windows.Forms.Label();
+            this.ss6 = new System.Windows.Forms.Label();
+            this.ss5 = new System.Windows.Forms.Label();
+            this.ss4 = new System.Windows.Forms.Label();
+            this.ss3 = new System.Windows.Forms.Label();
+            this.ss2 = new System.Windows.Forms.Label();
+            this.ss1 = new System.Windows.Forms.Label();
             this.label62 = new System.Windows.Forms.Label();
             this.pGestion = new System.Windows.Forms.Panel();
             this.btnClose = new System.Windows.Forms.Button();
@@ -2420,140 +2420,150 @@
             // panel12
             // 
             this.panel12.BackColor = System.Drawing.Color.DarkGray;
-            this.panel12.Controls.Add(this.label63);
-            this.panel12.Controls.Add(this.label64);
-            this.panel12.Controls.Add(this.label65);
-            this.panel12.Controls.Add(this.label66);
-            this.panel12.Controls.Add(this.label67);
-            this.panel12.Controls.Add(this.label68);
-            this.panel12.Controls.Add(this.label69);
-            this.panel12.Controls.Add(this.label70);
-            this.panel12.Controls.Add(this.label71);
-            this.panel12.Controls.Add(this.label72);
+            this.panel12.Controls.Add(this.ss10);
+            this.panel12.Controls.Add(this.ss9);
+            this.panel12.Controls.Add(this.ss8);
+            this.panel12.Controls.Add(this.ss7);
+            this.panel12.Controls.Add(this.ss6);
+            this.panel12.Controls.Add(this.ss5);
+            this.panel12.Controls.Add(this.ss4);
+            this.panel12.Controls.Add(this.ss3);
+            this.panel12.Controls.Add(this.ss2);
+            this.panel12.Controls.Add(this.ss1);
             this.panel12.Location = new System.Drawing.Point(14, 724);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(990, 57);
             this.panel12.TabIndex = 455;
             // 
-            // label63
+            // ss10
             // 
-            this.label63.BackColor = System.Drawing.Color.White;
-            this.label63.Font = new System.Drawing.Font("Roboto", 12F);
-            this.label63.ForeColor = System.Drawing.Color.Black;
-            this.label63.Location = new System.Drawing.Point(890, 11);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(80, 35);
-            this.label63.TabIndex = 369;
-            this.label63.Text = "3/8 - 24";
-            this.label63.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ss10.BackColor = System.Drawing.Color.White;
+            this.ss10.Font = new System.Drawing.Font("Roboto", 12F);
+            this.ss10.ForeColor = System.Drawing.Color.Black;
+            this.ss10.Location = new System.Drawing.Point(890, 11);
+            this.ss10.Name = "ss10";
+            this.ss10.Size = new System.Drawing.Size(80, 35);
+            this.ss10.TabIndex = 369;
+            this.ss10.Text = "3/8 - 24";
+            this.ss10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ss10.Click += new System.EventHandler(this.ss10_Click);
             // 
-            // label64
+            // ss9
             // 
-            this.label64.BackColor = System.Drawing.Color.White;
-            this.label64.Font = new System.Drawing.Font("Roboto", 12F);
-            this.label64.ForeColor = System.Drawing.Color.Black;
-            this.label64.Location = new System.Drawing.Point(793, 11);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(80, 35);
-            this.label64.TabIndex = 368;
-            this.label64.Text = "3/8 - 16";
-            this.label64.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ss9.BackColor = System.Drawing.Color.White;
+            this.ss9.Font = new System.Drawing.Font("Roboto", 12F);
+            this.ss9.ForeColor = System.Drawing.Color.Black;
+            this.ss9.Location = new System.Drawing.Point(793, 11);
+            this.ss9.Name = "ss9";
+            this.ss9.Size = new System.Drawing.Size(80, 35);
+            this.ss9.TabIndex = 368;
+            this.ss9.Text = "3/8 - 16";
+            this.ss9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ss9.Click += new System.EventHandler(this.ss9_Click);
             // 
-            // label65
+            // ss8
             // 
-            this.label65.BackColor = System.Drawing.Color.White;
-            this.label65.Font = new System.Drawing.Font("Roboto", 12F);
-            this.label65.ForeColor = System.Drawing.Color.Black;
-            this.label65.Location = new System.Drawing.Point(696, 11);
-            this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(80, 35);
-            this.label65.TabIndex = 367;
-            this.label65.Text = "5/16 -24";
-            this.label65.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ss8.BackColor = System.Drawing.Color.White;
+            this.ss8.Font = new System.Drawing.Font("Roboto", 12F);
+            this.ss8.ForeColor = System.Drawing.Color.Black;
+            this.ss8.Location = new System.Drawing.Point(696, 11);
+            this.ss8.Name = "ss8";
+            this.ss8.Size = new System.Drawing.Size(80, 35);
+            this.ss8.TabIndex = 367;
+            this.ss8.Text = "5/16 -24";
+            this.ss8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ss8.Click += new System.EventHandler(this.ss8_Click);
             // 
-            // label66
+            // ss7
             // 
-            this.label66.BackColor = System.Drawing.Color.White;
-            this.label66.Font = new System.Drawing.Font("Roboto", 12F);
-            this.label66.ForeColor = System.Drawing.Color.Black;
-            this.label66.Location = new System.Drawing.Point(599, 11);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(80, 35);
-            this.label66.TabIndex = 366;
-            this.label66.Text = "5/16 - 18";
-            this.label66.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ss7.BackColor = System.Drawing.Color.White;
+            this.ss7.Font = new System.Drawing.Font("Roboto", 12F);
+            this.ss7.ForeColor = System.Drawing.Color.Black;
+            this.ss7.Location = new System.Drawing.Point(599, 11);
+            this.ss7.Name = "ss7";
+            this.ss7.Size = new System.Drawing.Size(80, 35);
+            this.ss7.TabIndex = 366;
+            this.ss7.Text = "5/16 - 18";
+            this.ss7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ss7.Click += new System.EventHandler(this.ss7_Click);
             // 
-            // label67
+            // ss6
             // 
-            this.label67.BackColor = System.Drawing.Color.White;
-            this.label67.Font = new System.Drawing.Font("Roboto", 12F);
-            this.label67.ForeColor = System.Drawing.Color.Black;
-            this.label67.Location = new System.Drawing.Point(502, 11);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(80, 35);
-            this.label67.TabIndex = 365;
-            this.label67.Text = "1/4 - 28";
-            this.label67.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ss6.BackColor = System.Drawing.Color.White;
+            this.ss6.Font = new System.Drawing.Font("Roboto", 12F);
+            this.ss6.ForeColor = System.Drawing.Color.Black;
+            this.ss6.Location = new System.Drawing.Point(502, 11);
+            this.ss6.Name = "ss6";
+            this.ss6.Size = new System.Drawing.Size(80, 35);
+            this.ss6.TabIndex = 365;
+            this.ss6.Text = "1/4 - 28";
+            this.ss6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ss6.Click += new System.EventHandler(this.ss6_Click);
             // 
-            // label68
+            // ss5
             // 
-            this.label68.BackColor = System.Drawing.Color.White;
-            this.label68.Font = new System.Drawing.Font("Roboto", 12F);
-            this.label68.ForeColor = System.Drawing.Color.Black;
-            this.label68.Location = new System.Drawing.Point(405, 11);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(80, 35);
-            this.label68.TabIndex = 364;
-            this.label68.Text = "1/4 - 20";
-            this.label68.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ss5.BackColor = System.Drawing.Color.White;
+            this.ss5.Font = new System.Drawing.Font("Roboto", 12F);
+            this.ss5.ForeColor = System.Drawing.Color.Black;
+            this.ss5.Location = new System.Drawing.Point(405, 11);
+            this.ss5.Name = "ss5";
+            this.ss5.Size = new System.Drawing.Size(80, 35);
+            this.ss5.TabIndex = 364;
+            this.ss5.Text = "1/4 - 20";
+            this.ss5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ss5.Click += new System.EventHandler(this.ss5_Click);
             // 
-            // label69
+            // ss4
             // 
-            this.label69.BackColor = System.Drawing.Color.White;
-            this.label69.Font = new System.Drawing.Font("Roboto", 12F);
-            this.label69.ForeColor = System.Drawing.Color.Black;
-            this.label69.Location = new System.Drawing.Point(308, 11);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(80, 35);
-            this.label69.TabIndex = 363;
-            this.label69.Text = "10 - 32";
-            this.label69.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ss4.BackColor = System.Drawing.Color.White;
+            this.ss4.Font = new System.Drawing.Font("Roboto", 12F);
+            this.ss4.ForeColor = System.Drawing.Color.Black;
+            this.ss4.Location = new System.Drawing.Point(308, 11);
+            this.ss4.Name = "ss4";
+            this.ss4.Size = new System.Drawing.Size(80, 35);
+            this.ss4.TabIndex = 363;
+            this.ss4.Text = "10 - 32";
+            this.ss4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ss4.Click += new System.EventHandler(this.ss4_Click);
             // 
-            // label70
+            // ss3
             // 
-            this.label70.BackColor = System.Drawing.Color.White;
-            this.label70.Font = new System.Drawing.Font("Roboto", 12F);
-            this.label70.ForeColor = System.Drawing.Color.Black;
-            this.label70.Location = new System.Drawing.Point(211, 11);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(80, 35);
-            this.label70.TabIndex = 362;
-            this.label70.Text = "8 - 32";
-            this.label70.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ss3.BackColor = System.Drawing.Color.White;
+            this.ss3.Font = new System.Drawing.Font("Roboto", 12F);
+            this.ss3.ForeColor = System.Drawing.Color.Black;
+            this.ss3.Location = new System.Drawing.Point(211, 11);
+            this.ss3.Name = "ss3";
+            this.ss3.Size = new System.Drawing.Size(80, 35);
+            this.ss3.TabIndex = 362;
+            this.ss3.Text = "8 - 32";
+            this.ss3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ss3.Click += new System.EventHandler(this.ss3_Click);
             // 
-            // label71
+            // ss2
             // 
-            this.label71.BackColor = System.Drawing.Color.White;
-            this.label71.Font = new System.Drawing.Font("Roboto", 12F);
-            this.label71.ForeColor = System.Drawing.Color.Black;
-            this.label71.Location = new System.Drawing.Point(114, 11);
-            this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(80, 35);
-            this.label71.TabIndex = 361;
-            this.label71.Text = "6 - 32";
-            this.label71.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ss2.BackColor = System.Drawing.Color.White;
+            this.ss2.Font = new System.Drawing.Font("Roboto", 12F);
+            this.ss2.ForeColor = System.Drawing.Color.Black;
+            this.ss2.Location = new System.Drawing.Point(114, 11);
+            this.ss2.Name = "ss2";
+            this.ss2.Size = new System.Drawing.Size(80, 35);
+            this.ss2.TabIndex = 361;
+            this.ss2.Text = "6 - 32";
+            this.ss2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ss2.Click += new System.EventHandler(this.ss2_Click);
             // 
-            // label72
+            // ss1
             // 
-            this.label72.BackColor = System.Drawing.Color.White;
-            this.label72.Font = new System.Drawing.Font("Roboto", 12F);
-            this.label72.ForeColor = System.Drawing.Color.Black;
-            this.label72.Location = new System.Drawing.Point(17, 11);
-            this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(80, 35);
-            this.label72.TabIndex = 360;
-            this.label72.Text = "4 - 40";
-            this.label72.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ss1.BackColor = System.Drawing.Color.White;
+            this.ss1.Font = new System.Drawing.Font("Roboto", 12F);
+            this.ss1.ForeColor = System.Drawing.Color.Black;
+            this.ss1.Location = new System.Drawing.Point(17, 11);
+            this.ss1.Name = "ss1";
+            this.ss1.Size = new System.Drawing.Size(80, 35);
+            this.ss1.TabIndex = 360;
+            this.ss1.Text = "4 - 40";
+            this.ss1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ss1.Click += new System.EventHandler(this.ss1_Click);
             // 
             // label62
             // 
@@ -3149,16 +3159,16 @@
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.Label label63;
-        private System.Windows.Forms.Label label64;
-        private System.Windows.Forms.Label label65;
-        private System.Windows.Forms.Label label66;
-        private System.Windows.Forms.Label label67;
-        private System.Windows.Forms.Label label68;
-        private System.Windows.Forms.Label label69;
-        private System.Windows.Forms.Label label70;
-        private System.Windows.Forms.Label label71;
-        private System.Windows.Forms.Label label72;
+        private System.Windows.Forms.Label ss10;
+        private System.Windows.Forms.Label ss9;
+        private System.Windows.Forms.Label ss8;
+        private System.Windows.Forms.Label ss7;
+        private System.Windows.Forms.Label ss6;
+        private System.Windows.Forms.Label ss5;
+        private System.Windows.Forms.Label ss4;
+        private System.Windows.Forms.Label ss3;
+        private System.Windows.Forms.Label ss2;
+        private System.Windows.Forms.Label ss1;
         private System.Windows.Forms.Label label62;
         private System.Windows.Forms.Panel pGestion;
         private System.Windows.Forms.Label label11;
