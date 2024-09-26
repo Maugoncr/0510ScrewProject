@@ -28,63 +28,63 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle153 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle159 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle160 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle154 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle155 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle156 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle157 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle158 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pNavBar = new System.Windows.Forms.Panel();
+            this.btnFormSize = new FontAwesome.Sharp.IconButton();
             this.btnClose = new System.Windows.Forms.Button();
             this.checkActives = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtSizeName = new System.Windows.Forms.TextBox();
-            this.txtIDWasherSize = new System.Windows.Forms.TextBox();
+            this.txtIDNutsSize = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnClearNutsSize = new FontAwesome.Sharp.IconButton();
+            this.btnSelectNutsSize = new FontAwesome.Sharp.IconButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label16 = new System.Windows.Forms.Label();
             this.txtTypeName = new System.Windows.Forms.TextBox();
-            this.txtIDWasherType = new System.Windows.Forms.TextBox();
+            this.txtIDNutsType = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
+            this.btnClearNutType = new FontAwesome.Sharp.IconButton();
+            this.btnSelectNutType = new FontAwesome.Sharp.IconButton();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.label20 = new System.Windows.Forms.Label();
+            this.btnCheckUrlSTEP = new FontAwesome.Sharp.IconButton();
             this.txtUrlSTEP = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
+            this.btnCheckUrlPDF = new FontAwesome.Sharp.IconButton();
             this.txtUrlPDF = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.txtVendorPartNumber = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.txtSSNEPartNumber = new System.Windows.Forms.TextBox();
-            this.txtIDWasher = new System.Windows.Forms.TextBox();
+            this.txtIDNuts = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.dgvWashers = new System.Windows.Forms.DataGridView();
+            this.dgvNuts = new System.Windows.Forms.DataGridView();
             this.txtFilter = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.btnClean = new FontAwesome.Sharp.IconButton();
             this.btnDisable = new FontAwesome.Sharp.IconButton();
             this.btnSave = new FontAwesome.Sharp.IconButton();
             this.btnUpdate = new FontAwesome.Sharp.IconButton();
-            this.btnClearWasherSize = new FontAwesome.Sharp.IconButton();
-            this.btnSelectWasherSize = new FontAwesome.Sharp.IconButton();
-            this.btnClearWasherType = new FontAwesome.Sharp.IconButton();
-            this.btnSelectWasherType = new FontAwesome.Sharp.IconButton();
-            this.btnCheckUrlSTEP = new FontAwesome.Sharp.IconButton();
-            this.btnCheckUrlPDF = new FontAwesome.Sharp.IconButton();
-            this.btnFormSize = new FontAwesome.Sharp.IconButton();
-            this.CIDWasher = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CIDNuts = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CSSNEPartNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CVendorPartNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CWasherTypeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CWasherSizeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CNutsTypeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CNutsSizeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pNavBar.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvWashers)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvNuts)).BeginInit();
             this.SuspendLayout();
             // 
             // pNavBar
@@ -97,6 +97,23 @@
             this.pNavBar.Name = "pNavBar";
             this.pNavBar.Size = new System.Drawing.Size(1223, 42);
             this.pNavBar.TabIndex = 7;
+            this.pNavBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pNavBar_MouseDown);
+            // 
+            // btnFormSize
+            // 
+            this.btnFormSize.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnFormSize.FlatAppearance.BorderSize = 0;
+            this.btnFormSize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFormSize.IconChar = FontAwesome.Sharp.IconChar.ExpandAlt;
+            this.btnFormSize.IconColor = System.Drawing.Color.White;
+            this.btnFormSize.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnFormSize.IconSize = 30;
+            this.btnFormSize.Location = new System.Drawing.Point(1136, 0);
+            this.btnFormSize.Name = "btnFormSize";
+            this.btnFormSize.Size = new System.Drawing.Size(41, 42);
+            this.btnFormSize.TabIndex = 2;
+            this.btnFormSize.UseVisualStyleBackColor = true;
+            this.btnFormSize.Click += new System.EventHandler(this.btnFormSize_Click);
             // 
             // btnClose
             // 
@@ -127,16 +144,17 @@
             this.checkActives.TabIndex = 195;
             this.checkActives.Text = "See Actives";
             this.checkActives.UseVisualStyleBackColor = true;
+            this.checkActives.CheckedChanged += new System.EventHandler(this.checkActives_CheckedChanged);
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txtSizeName);
-            this.groupBox1.Controls.Add(this.txtIDWasherSize);
+            this.groupBox1.Controls.Add(this.txtIDNutsSize);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.btnClearWasherSize);
-            this.groupBox1.Controls.Add(this.btnSelectWasherSize);
+            this.groupBox1.Controls.Add(this.btnClearNutsSize);
+            this.groupBox1.Controls.Add(this.btnSelectNutsSize);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(25, 680);
@@ -165,15 +183,16 @@
             this.txtSizeName.TabIndex = 162;
             this.txtSizeName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // txtIDWasherSize
+            // txtIDNutsSize
             // 
-            this.txtIDWasherSize.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIDWasherSize.Location = new System.Drawing.Point(10, 64);
-            this.txtIDWasherSize.Name = "txtIDWasherSize";
-            this.txtIDWasherSize.ReadOnly = true;
-            this.txtIDWasherSize.Size = new System.Drawing.Size(124, 30);
-            this.txtIDWasherSize.TabIndex = 162;
-            this.txtIDWasherSize.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtIDNutsSize.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIDNutsSize.Location = new System.Drawing.Point(10, 64);
+            this.txtIDNutsSize.Name = "txtIDNutsSize";
+            this.txtIDNutsSize.ReadOnly = true;
+            this.txtIDNutsSize.Size = new System.Drawing.Size(124, 30);
+            this.txtIDNutsSize.TabIndex = 162;
+            this.txtIDNutsSize.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtIDNutsSize.TextChanged += new System.EventHandler(this.txtIDNutsSize_TextChanged);
             // 
             // label2
             // 
@@ -185,15 +204,49 @@
             this.label2.Text = "Size Name";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // btnClearNutsSize
+            // 
+            this.btnClearNutsSize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnClearNutsSize.FlatAppearance.BorderSize = 0;
+            this.btnClearNutsSize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClearNutsSize.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClearNutsSize.IconChar = FontAwesome.Sharp.IconChar.Trash;
+            this.btnClearNutsSize.IconColor = System.Drawing.Color.White;
+            this.btnClearNutsSize.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnClearNutsSize.IconSize = 20;
+            this.btnClearNutsSize.Location = new System.Drawing.Point(189, 64);
+            this.btnClearNutsSize.Name = "btnClearNutsSize";
+            this.btnClearNutsSize.Size = new System.Drawing.Size(36, 30);
+            this.btnClearNutsSize.TabIndex = 132;
+            this.btnClearNutsSize.UseVisualStyleBackColor = false;
+            this.btnClearNutsSize.Click += new System.EventHandler(this.btnClearNutsSize_Click);
+            // 
+            // btnSelectNutsSize
+            // 
+            this.btnSelectNutsSize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnSelectNutsSize.FlatAppearance.BorderSize = 0;
+            this.btnSelectNutsSize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSelectNutsSize.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSelectNutsSize.IconChar = FontAwesome.Sharp.IconChar.Plus;
+            this.btnSelectNutsSize.IconColor = System.Drawing.Color.White;
+            this.btnSelectNutsSize.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnSelectNutsSize.IconSize = 20;
+            this.btnSelectNutsSize.Location = new System.Drawing.Point(143, 64);
+            this.btnSelectNutsSize.Name = "btnSelectNutsSize";
+            this.btnSelectNutsSize.Size = new System.Drawing.Size(36, 30);
+            this.btnSelectNutsSize.TabIndex = 150;
+            this.btnSelectNutsSize.UseVisualStyleBackColor = false;
+            this.btnSelectNutsSize.Click += new System.EventHandler(this.btnSelectNutsSize_Click);
+            // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
             this.groupBox2.Controls.Add(this.label16);
             this.groupBox2.Controls.Add(this.txtTypeName);
-            this.groupBox2.Controls.Add(this.txtIDWasherType);
+            this.groupBox2.Controls.Add(this.txtIDNutsType);
             this.groupBox2.Controls.Add(this.label17);
-            this.groupBox2.Controls.Add(this.btnClearWasherType);
-            this.groupBox2.Controls.Add(this.btnSelectWasherType);
+            this.groupBox2.Controls.Add(this.btnClearNutType);
+            this.groupBox2.Controls.Add(this.btnSelectNutType);
             this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox2.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(25, 513);
@@ -222,15 +275,16 @@
             this.txtTypeName.TabIndex = 162;
             this.txtTypeName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // txtIDWasherType
+            // txtIDNutsType
             // 
-            this.txtIDWasherType.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIDWasherType.Location = new System.Drawing.Point(10, 64);
-            this.txtIDWasherType.Name = "txtIDWasherType";
-            this.txtIDWasherType.ReadOnly = true;
-            this.txtIDWasherType.Size = new System.Drawing.Size(124, 30);
-            this.txtIDWasherType.TabIndex = 162;
-            this.txtIDWasherType.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtIDNutsType.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIDNutsType.Location = new System.Drawing.Point(10, 64);
+            this.txtIDNutsType.Name = "txtIDNutsType";
+            this.txtIDNutsType.ReadOnly = true;
+            this.txtIDNutsType.Size = new System.Drawing.Size(124, 30);
+            this.txtIDNutsType.TabIndex = 162;
+            this.txtIDNutsType.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtIDNutsType.TextChanged += new System.EventHandler(this.txtIDNutsType_TextChanged);
             // 
             // label17
             // 
@@ -241,6 +295,40 @@
             this.label17.TabIndex = 163;
             this.label17.Text = "Type Name";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // btnClearNutType
+            // 
+            this.btnClearNutType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnClearNutType.FlatAppearance.BorderSize = 0;
+            this.btnClearNutType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClearNutType.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClearNutType.IconChar = FontAwesome.Sharp.IconChar.Trash;
+            this.btnClearNutType.IconColor = System.Drawing.Color.White;
+            this.btnClearNutType.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnClearNutType.IconSize = 20;
+            this.btnClearNutType.Location = new System.Drawing.Point(189, 64);
+            this.btnClearNutType.Name = "btnClearNutType";
+            this.btnClearNutType.Size = new System.Drawing.Size(36, 30);
+            this.btnClearNutType.TabIndex = 132;
+            this.btnClearNutType.UseVisualStyleBackColor = false;
+            this.btnClearNutType.Click += new System.EventHandler(this.btnClearNutType_Click);
+            // 
+            // btnSelectNutType
+            // 
+            this.btnSelectNutType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnSelectNutType.FlatAppearance.BorderSize = 0;
+            this.btnSelectNutType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSelectNutType.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSelectNutType.IconChar = FontAwesome.Sharp.IconChar.Plus;
+            this.btnSelectNutType.IconColor = System.Drawing.Color.White;
+            this.btnSelectNutType.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnSelectNutType.IconSize = 20;
+            this.btnSelectNutType.Location = new System.Drawing.Point(143, 64);
+            this.btnSelectNutType.Name = "btnSelectNutType";
+            this.btnSelectNutType.Size = new System.Drawing.Size(36, 30);
+            this.btnSelectNutType.TabIndex = 150;
+            this.btnSelectNutType.UseVisualStyleBackColor = false;
+            this.btnSelectNutType.Click += new System.EventHandler(this.btnSelectNutType_Click);
             // 
             // groupBox7
             // 
@@ -256,7 +344,7 @@
             this.groupBox7.Controls.Add(this.label14);
             this.groupBox7.Controls.Add(this.label12);
             this.groupBox7.Controls.Add(this.txtSSNEPartNumber);
-            this.groupBox7.Controls.Add(this.txtIDWasher);
+            this.groupBox7.Controls.Add(this.txtIDNuts);
             this.groupBox7.Controls.Add(this.label13);
             this.groupBox7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox7.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -278,6 +366,27 @@
             this.label20.TabIndex = 182;
             this.label20.Text = "Nut";
             // 
+            // btnCheckUrlSTEP
+            // 
+            this.btnCheckUrlSTEP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnCheckUrlSTEP.FlatAppearance.BorderSize = 0;
+            this.btnCheckUrlSTEP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCheckUrlSTEP.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheckUrlSTEP.ForeColor = System.Drawing.Color.White;
+            this.btnCheckUrlSTEP.IconChar = FontAwesome.Sharp.IconChar.GoogleDrive;
+            this.btnCheckUrlSTEP.IconColor = System.Drawing.Color.White;
+            this.btnCheckUrlSTEP.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCheckUrlSTEP.IconSize = 25;
+            this.btnCheckUrlSTEP.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCheckUrlSTEP.Location = new System.Drawing.Point(639, 285);
+            this.btnCheckUrlSTEP.Name = "btnCheckUrlSTEP";
+            this.btnCheckUrlSTEP.Size = new System.Drawing.Size(120, 30);
+            this.btnCheckUrlSTEP.TabIndex = 173;
+            this.btnCheckUrlSTEP.Text = "Check URL";
+            this.btnCheckUrlSTEP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCheckUrlSTEP.UseVisualStyleBackColor = false;
+            this.btnCheckUrlSTEP.Click += new System.EventHandler(this.btnCheckUrlSTEP_Click);
+            // 
             // txtUrlSTEP
             // 
             this.txtUrlSTEP.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -286,6 +395,7 @@
             this.txtUrlSTEP.Size = new System.Drawing.Size(611, 30);
             this.txtUrlSTEP.TabIndex = 171;
             this.txtUrlSTEP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtUrlSTEP.Leave += new System.EventHandler(this.txtUrlSTEP_Leave);
             // 
             // label18
             // 
@@ -297,6 +407,27 @@
             this.label18.Text = "URL STEP";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // btnCheckUrlPDF
+            // 
+            this.btnCheckUrlPDF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnCheckUrlPDF.FlatAppearance.BorderSize = 0;
+            this.btnCheckUrlPDF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCheckUrlPDF.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheckUrlPDF.ForeColor = System.Drawing.Color.White;
+            this.btnCheckUrlPDF.IconChar = FontAwesome.Sharp.IconChar.GoogleDrive;
+            this.btnCheckUrlPDF.IconColor = System.Drawing.Color.White;
+            this.btnCheckUrlPDF.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCheckUrlPDF.IconSize = 25;
+            this.btnCheckUrlPDF.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCheckUrlPDF.Location = new System.Drawing.Point(639, 218);
+            this.btnCheckUrlPDF.Name = "btnCheckUrlPDF";
+            this.btnCheckUrlPDF.Size = new System.Drawing.Size(120, 30);
+            this.btnCheckUrlPDF.TabIndex = 170;
+            this.btnCheckUrlPDF.Text = "Check URL";
+            this.btnCheckUrlPDF.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCheckUrlPDF.UseVisualStyleBackColor = false;
+            this.btnCheckUrlPDF.Click += new System.EventHandler(this.btnCheckUrlPDF_Click);
+            // 
             // txtUrlPDF
             // 
             this.txtUrlPDF.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -305,6 +436,7 @@
             this.txtUrlPDF.Size = new System.Drawing.Size(611, 30);
             this.txtUrlPDF.TabIndex = 166;
             this.txtUrlPDF.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtUrlPDF.Leave += new System.EventHandler(this.txtUrlPDF_Leave);
             // 
             // label15
             // 
@@ -324,6 +456,7 @@
             this.txtVendorPartNumber.Size = new System.Drawing.Size(611, 30);
             this.txtVendorPartNumber.TabIndex = 164;
             this.txtVendorPartNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtVendorPartNumber.Leave += new System.EventHandler(this.txtVendorPartNumber_Leave);
             // 
             // label14
             // 
@@ -353,16 +486,17 @@
             this.txtSSNEPartNumber.Size = new System.Drawing.Size(611, 30);
             this.txtSSNEPartNumber.TabIndex = 162;
             this.txtSSNEPartNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtSSNEPartNumber.Leave += new System.EventHandler(this.txtSSNEPartNumber_Leave);
             // 
-            // txtIDWasher
+            // txtIDNuts
             // 
-            this.txtIDWasher.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIDWasher.Location = new System.Drawing.Point(11, 52);
-            this.txtIDWasher.Name = "txtIDWasher";
-            this.txtIDWasher.ReadOnly = true;
-            this.txtIDWasher.Size = new System.Drawing.Size(115, 30);
-            this.txtIDWasher.TabIndex = 162;
-            this.txtIDWasher.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtIDNuts.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIDNuts.Location = new System.Drawing.Point(11, 52);
+            this.txtIDNuts.Name = "txtIDNuts";
+            this.txtIDNuts.ReadOnly = true;
+            this.txtIDNuts.Size = new System.Drawing.Size(115, 30);
+            this.txtIDNuts.TabIndex = 162;
+            this.txtIDNuts.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label13
             // 
@@ -374,51 +508,52 @@
             this.label13.Text = "SSNE Part Number";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // dgvWashers
+            // dgvNuts
             // 
-            this.dgvWashers.AllowUserToAddRows = false;
-            this.dgvWashers.AllowUserToDeleteRows = false;
-            this.dgvWashers.AllowUserToResizeColumns = false;
-            this.dgvWashers.AllowUserToResizeRows = false;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvWashers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
-            this.dgvWashers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvWashers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CIDWasher,
+            this.dgvNuts.AllowUserToAddRows = false;
+            this.dgvNuts.AllowUserToDeleteRows = false;
+            this.dgvNuts.AllowUserToResizeColumns = false;
+            this.dgvNuts.AllowUserToResizeRows = false;
+            dataGridViewCellStyle153.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle153.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle153.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle153.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle153.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle153.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle153.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvNuts.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle153;
+            this.dgvNuts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvNuts.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.CIDNuts,
             this.CSSNEPartNumber,
             this.CVendorPartNumber,
-            this.CWasherTypeName,
-            this.CWasherSizeName});
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvWashers.DefaultCellStyle = dataGridViewCellStyle15;
-            this.dgvWashers.Location = new System.Drawing.Point(25, 175);
-            this.dgvWashers.MultiSelect = false;
-            this.dgvWashers.Name = "dgvWashers";
-            this.dgvWashers.ReadOnly = true;
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvWashers.RowHeadersDefaultCellStyle = dataGridViewCellStyle16;
-            this.dgvWashers.RowHeadersVisible = false;
-            this.dgvWashers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvWashers.Size = new System.Drawing.Size(1172, 326);
-            this.dgvWashers.TabIndex = 187;
+            this.CNutsTypeName,
+            this.CNutsSizeName});
+            dataGridViewCellStyle159.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle159.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle159.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle159.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle159.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle159.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle159.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvNuts.DefaultCellStyle = dataGridViewCellStyle159;
+            this.dgvNuts.Location = new System.Drawing.Point(25, 175);
+            this.dgvNuts.MultiSelect = false;
+            this.dgvNuts.Name = "dgvNuts";
+            this.dgvNuts.ReadOnly = true;
+            dataGridViewCellStyle160.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle160.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle160.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle160.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle160.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle160.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle160.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvNuts.RowHeadersDefaultCellStyle = dataGridViewCellStyle160;
+            this.dgvNuts.RowHeadersVisible = false;
+            this.dgvNuts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvNuts.Size = new System.Drawing.Size(1172, 326);
+            this.dgvNuts.TabIndex = 187;
+            this.dgvNuts.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNuts_CellClick);
             // 
             // txtFilter
             // 
@@ -429,6 +564,8 @@
             this.txtFilter.TabIndex = 186;
             this.txtFilter.Text = "Search...";
             this.txtFilter.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtFilter.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtFilter_MouseClick);
+            this.txtFilter.TextChanged += new System.EventHandler(this.txtFilter_TextChanged);
             // 
             // label7
             // 
@@ -459,6 +596,7 @@
             this.btnClean.TabIndex = 191;
             this.btnClean.Text = "Clean";
             this.btnClean.UseVisualStyleBackColor = false;
+            this.btnClean.Click += new System.EventHandler(this.btnClean_Click);
             // 
             // btnDisable
             // 
@@ -478,6 +616,7 @@
             this.btnDisable.TabIndex = 192;
             this.btnDisable.Text = "Disable";
             this.btnDisable.UseVisualStyleBackColor = false;
+            this.btnDisable.Click += new System.EventHandler(this.btnDisable_Click);
             // 
             // btnSave
             // 
@@ -497,6 +636,7 @@
             this.btnSave.TabIndex = 189;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnUpdate
             // 
@@ -516,142 +656,24 @@
             this.btnUpdate.TabIndex = 190;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
-            // btnClearWasherSize
+            // CIDNuts
             // 
-            this.btnClearWasherSize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.btnClearWasherSize.FlatAppearance.BorderSize = 0;
-            this.btnClearWasherSize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClearWasherSize.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClearWasherSize.IconChar = FontAwesome.Sharp.IconChar.Trash;
-            this.btnClearWasherSize.IconColor = System.Drawing.Color.White;
-            this.btnClearWasherSize.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnClearWasherSize.IconSize = 20;
-            this.btnClearWasherSize.Location = new System.Drawing.Point(189, 64);
-            this.btnClearWasherSize.Name = "btnClearWasherSize";
-            this.btnClearWasherSize.Size = new System.Drawing.Size(36, 30);
-            this.btnClearWasherSize.TabIndex = 132;
-            this.btnClearWasherSize.UseVisualStyleBackColor = false;
-            // 
-            // btnSelectWasherSize
-            // 
-            this.btnSelectWasherSize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.btnSelectWasherSize.FlatAppearance.BorderSize = 0;
-            this.btnSelectWasherSize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSelectWasherSize.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSelectWasherSize.IconChar = FontAwesome.Sharp.IconChar.Plus;
-            this.btnSelectWasherSize.IconColor = System.Drawing.Color.White;
-            this.btnSelectWasherSize.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnSelectWasherSize.IconSize = 20;
-            this.btnSelectWasherSize.Location = new System.Drawing.Point(143, 64);
-            this.btnSelectWasherSize.Name = "btnSelectWasherSize";
-            this.btnSelectWasherSize.Size = new System.Drawing.Size(36, 30);
-            this.btnSelectWasherSize.TabIndex = 150;
-            this.btnSelectWasherSize.UseVisualStyleBackColor = false;
-            // 
-            // btnClearWasherType
-            // 
-            this.btnClearWasherType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.btnClearWasherType.FlatAppearance.BorderSize = 0;
-            this.btnClearWasherType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClearWasherType.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClearWasherType.IconChar = FontAwesome.Sharp.IconChar.Trash;
-            this.btnClearWasherType.IconColor = System.Drawing.Color.White;
-            this.btnClearWasherType.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnClearWasherType.IconSize = 20;
-            this.btnClearWasherType.Location = new System.Drawing.Point(189, 64);
-            this.btnClearWasherType.Name = "btnClearWasherType";
-            this.btnClearWasherType.Size = new System.Drawing.Size(36, 30);
-            this.btnClearWasherType.TabIndex = 132;
-            this.btnClearWasherType.UseVisualStyleBackColor = false;
-            // 
-            // btnSelectWasherType
-            // 
-            this.btnSelectWasherType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.btnSelectWasherType.FlatAppearance.BorderSize = 0;
-            this.btnSelectWasherType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSelectWasherType.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSelectWasherType.IconChar = FontAwesome.Sharp.IconChar.Plus;
-            this.btnSelectWasherType.IconColor = System.Drawing.Color.White;
-            this.btnSelectWasherType.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnSelectWasherType.IconSize = 20;
-            this.btnSelectWasherType.Location = new System.Drawing.Point(143, 64);
-            this.btnSelectWasherType.Name = "btnSelectWasherType";
-            this.btnSelectWasherType.Size = new System.Drawing.Size(36, 30);
-            this.btnSelectWasherType.TabIndex = 150;
-            this.btnSelectWasherType.UseVisualStyleBackColor = false;
-            // 
-            // btnCheckUrlSTEP
-            // 
-            this.btnCheckUrlSTEP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.btnCheckUrlSTEP.FlatAppearance.BorderSize = 0;
-            this.btnCheckUrlSTEP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCheckUrlSTEP.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCheckUrlSTEP.ForeColor = System.Drawing.Color.White;
-            this.btnCheckUrlSTEP.IconChar = FontAwesome.Sharp.IconChar.GoogleDrive;
-            this.btnCheckUrlSTEP.IconColor = System.Drawing.Color.White;
-            this.btnCheckUrlSTEP.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnCheckUrlSTEP.IconSize = 25;
-            this.btnCheckUrlSTEP.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCheckUrlSTEP.Location = new System.Drawing.Point(639, 285);
-            this.btnCheckUrlSTEP.Name = "btnCheckUrlSTEP";
-            this.btnCheckUrlSTEP.Size = new System.Drawing.Size(120, 30);
-            this.btnCheckUrlSTEP.TabIndex = 173;
-            this.btnCheckUrlSTEP.Text = "Check URL";
-            this.btnCheckUrlSTEP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCheckUrlSTEP.UseVisualStyleBackColor = false;
-            // 
-            // btnCheckUrlPDF
-            // 
-            this.btnCheckUrlPDF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.btnCheckUrlPDF.FlatAppearance.BorderSize = 0;
-            this.btnCheckUrlPDF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCheckUrlPDF.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCheckUrlPDF.ForeColor = System.Drawing.Color.White;
-            this.btnCheckUrlPDF.IconChar = FontAwesome.Sharp.IconChar.GoogleDrive;
-            this.btnCheckUrlPDF.IconColor = System.Drawing.Color.White;
-            this.btnCheckUrlPDF.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnCheckUrlPDF.IconSize = 25;
-            this.btnCheckUrlPDF.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCheckUrlPDF.Location = new System.Drawing.Point(639, 218);
-            this.btnCheckUrlPDF.Name = "btnCheckUrlPDF";
-            this.btnCheckUrlPDF.Size = new System.Drawing.Size(120, 30);
-            this.btnCheckUrlPDF.TabIndex = 170;
-            this.btnCheckUrlPDF.Text = "Check URL";
-            this.btnCheckUrlPDF.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCheckUrlPDF.UseVisualStyleBackColor = false;
-            // 
-            // btnFormSize
-            // 
-            this.btnFormSize.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnFormSize.FlatAppearance.BorderSize = 0;
-            this.btnFormSize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFormSize.IconChar = FontAwesome.Sharp.IconChar.ExpandAlt;
-            this.btnFormSize.IconColor = System.Drawing.Color.White;
-            this.btnFormSize.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnFormSize.IconSize = 30;
-            this.btnFormSize.Location = new System.Drawing.Point(1136, 0);
-            this.btnFormSize.Name = "btnFormSize";
-            this.btnFormSize.Size = new System.Drawing.Size(41, 42);
-            this.btnFormSize.TabIndex = 2;
-            this.btnFormSize.UseVisualStyleBackColor = true;
-            // 
-            // CIDWasher
-            // 
-            this.CIDWasher.DataPropertyName = "IDWasher";
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CIDWasher.DefaultCellStyle = dataGridViewCellStyle10;
-            this.CIDWasher.HeaderText = "ID Nuts";
-            this.CIDWasher.Name = "CIDWasher";
-            this.CIDWasher.ReadOnly = true;
-            this.CIDWasher.Width = 120;
+            this.CIDNuts.DataPropertyName = "IDNuts";
+            dataGridViewCellStyle154.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CIDNuts.DefaultCellStyle = dataGridViewCellStyle154;
+            this.CIDNuts.HeaderText = "ID Nuts";
+            this.CIDNuts.Name = "CIDNuts";
+            this.CIDNuts.ReadOnly = true;
+            this.CIDNuts.Width = 120;
             // 
             // CSSNEPartNumber
             // 
             this.CSSNEPartNumber.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.CSSNEPartNumber.DataPropertyName = "SSNEPartNumber";
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CSSNEPartNumber.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle155.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CSSNEPartNumber.DefaultCellStyle = dataGridViewCellStyle155;
             this.CSSNEPartNumber.HeaderText = "SSNE Part Number";
             this.CSSNEPartNumber.Name = "CSSNEPartNumber";
             this.CSSNEPartNumber.ReadOnly = true;
@@ -661,34 +683,34 @@
             // 
             this.CVendorPartNumber.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.CVendorPartNumber.DataPropertyName = "VendorPartNumber";
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CVendorPartNumber.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle156.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CVendorPartNumber.DefaultCellStyle = dataGridViewCellStyle156;
             this.CVendorPartNumber.HeaderText = "Vendor Part Number";
             this.CVendorPartNumber.Name = "CVendorPartNumber";
             this.CVendorPartNumber.ReadOnly = true;
             this.CVendorPartNumber.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
-            // CWasherTypeName
+            // CNutsTypeName
             // 
-            this.CWasherTypeName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.CWasherTypeName.DataPropertyName = "WasherTypeName";
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CWasherTypeName.DefaultCellStyle = dataGridViewCellStyle13;
-            this.CWasherTypeName.HeaderText = "Type";
-            this.CWasherTypeName.Name = "CWasherTypeName";
-            this.CWasherTypeName.ReadOnly = true;
-            this.CWasherTypeName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.CNutsTypeName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CNutsTypeName.DataPropertyName = "NutsTypeName";
+            dataGridViewCellStyle157.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CNutsTypeName.DefaultCellStyle = dataGridViewCellStyle157;
+            this.CNutsTypeName.HeaderText = "Type";
+            this.CNutsTypeName.Name = "CNutsTypeName";
+            this.CNutsTypeName.ReadOnly = true;
+            this.CNutsTypeName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
-            // CWasherSizeName
+            // CNutsSizeName
             // 
-            this.CWasherSizeName.DataPropertyName = "WasherSizeName";
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CWasherSizeName.DefaultCellStyle = dataGridViewCellStyle14;
-            this.CWasherSizeName.HeaderText = "Size";
-            this.CWasherSizeName.Name = "CWasherSizeName";
-            this.CWasherSizeName.ReadOnly = true;
-            this.CWasherSizeName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.CWasherSizeName.Width = 150;
+            this.CNutsSizeName.DataPropertyName = "NutsSizeName";
+            dataGridViewCellStyle158.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CNutsSizeName.DefaultCellStyle = dataGridViewCellStyle158;
+            this.CNutsSizeName.HeaderText = "Size";
+            this.CNutsSizeName.Name = "CNutsSizeName";
+            this.CNutsSizeName.ReadOnly = true;
+            this.CNutsSizeName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.CNutsSizeName.Width = 150;
             // 
             // FrmNuts
             // 
@@ -703,7 +725,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox7);
-            this.Controls.Add(this.dgvWashers);
+            this.Controls.Add(this.dgvNuts);
             this.Controls.Add(this.txtFilter);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.pNavBar);
@@ -713,6 +735,7 @@
             this.Name = "FrmNuts";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmNuts";
+            this.Load += new System.EventHandler(this.FrmNuts_Load);
             this.pNavBar.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -720,7 +743,7 @@
             this.groupBox2.PerformLayout();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvWashers)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvNuts)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -739,17 +762,17 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtSizeName;
-        private System.Windows.Forms.TextBox txtIDWasherSize;
+        private System.Windows.Forms.TextBox txtIDNutsSize;
         private System.Windows.Forms.Label label2;
-        private FontAwesome.Sharp.IconButton btnClearWasherSize;
-        private FontAwesome.Sharp.IconButton btnSelectWasherSize;
+        private FontAwesome.Sharp.IconButton btnClearNutsSize;
+        private FontAwesome.Sharp.IconButton btnSelectNutsSize;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox txtTypeName;
-        private System.Windows.Forms.TextBox txtIDWasherType;
+        private System.Windows.Forms.TextBox txtIDNutsType;
         private System.Windows.Forms.Label label17;
-        private FontAwesome.Sharp.IconButton btnClearWasherType;
-        private FontAwesome.Sharp.IconButton btnSelectWasherType;
+        private FontAwesome.Sharp.IconButton btnClearNutType;
+        private FontAwesome.Sharp.IconButton btnSelectNutType;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.Label label20;
         private FontAwesome.Sharp.IconButton btnCheckUrlSTEP;
@@ -762,15 +785,15 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox txtSSNEPartNumber;
-        private System.Windows.Forms.TextBox txtIDWasher;
+        private System.Windows.Forms.TextBox txtIDNuts;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.DataGridView dgvWashers;
+        private System.Windows.Forms.DataGridView dgvNuts;
         private System.Windows.Forms.TextBox txtFilter;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CIDWasher;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CIDNuts;
         private System.Windows.Forms.DataGridViewTextBoxColumn CSSNEPartNumber;
         private System.Windows.Forms.DataGridViewTextBoxColumn CVendorPartNumber;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CWasherTypeName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CWasherSizeName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CNutsTypeName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CNutsSizeName;
     }
 }

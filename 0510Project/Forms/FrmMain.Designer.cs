@@ -32,6 +32,7 @@
             this.cbScrewTypes = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pNavBar = new System.Windows.Forms.Panel();
+            this.btnMinin = new FontAwesome.Sharp.IconButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnFormSize = new FontAwesome.Sharp.IconButton();
@@ -230,7 +231,6 @@
             this.picTopView = new System.Windows.Forms.PictureBox();
             this.picLength = new System.Windows.Forms.PictureBox();
             this.picISOView = new System.Windows.Forms.PictureBox();
-            this.btnMinin = new FontAwesome.Sharp.IconButton();
             this.pNavBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -308,6 +308,21 @@
             this.pNavBar.Size = new System.Drawing.Size(1920, 97);
             this.pNavBar.TabIndex = 4;
             this.pNavBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pNavBar_MouseDown);
+            // 
+            // btnMinin
+            // 
+            this.btnMinin.FlatAppearance.BorderSize = 0;
+            this.btnMinin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinin.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
+            this.btnMinin.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(254)))), ((int)(((byte)(251)))));
+            this.btnMinin.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnMinin.IconSize = 30;
+            this.btnMinin.Location = new System.Drawing.Point(1775, 3);
+            this.btnMinin.Name = "btnMinin";
+            this.btnMinin.Size = new System.Drawing.Size(41, 46);
+            this.btnMinin.TabIndex = 360;
+            this.btnMinin.UseVisualStyleBackColor = true;
+            this.btnMinin.Click += new System.EventHandler(this.btnMinin_Click);
             // 
             // pictureBox1
             // 
@@ -469,7 +484,7 @@
             this.s8.ForeColor = System.Drawing.Color.Black;
             this.s8.Location = new System.Drawing.Point(1024, 12);
             this.s8.Name = "s8";
-            this.s8.Size = new System.Drawing.Size(125, 47);
+            this.s8.Size = new System.Drawing.Size(128, 47);
             this.s8.TabIndex = 357;
             this.s8.Text = "5/16 - 24";
             this.s8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -482,7 +497,7 @@
             this.s7.ForeColor = System.Drawing.Color.Black;
             this.s7.Location = new System.Drawing.Point(881, 12);
             this.s7.Name = "s7";
-            this.s7.Size = new System.Drawing.Size(125, 47);
+            this.s7.Size = new System.Drawing.Size(128, 47);
             this.s7.TabIndex = 356;
             this.s7.Text = "5/16 - 18";
             this.s7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2863,21 +2878,6 @@
             this.picISOView.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picISOView.TabIndex = 7;
             this.picISOView.TabStop = false;
-            // 
-            // btnMinin
-            // 
-            this.btnMinin.FlatAppearance.BorderSize = 0;
-            this.btnMinin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMinin.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
-            this.btnMinin.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(254)))), ((int)(((byte)(251)))));
-            this.btnMinin.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnMinin.IconSize = 30;
-            this.btnMinin.Location = new System.Drawing.Point(1775, 3);
-            this.btnMinin.Name = "btnMinin";
-            this.btnMinin.Size = new System.Drawing.Size(41, 46);
-            this.btnMinin.TabIndex = 360;
-            this.btnMinin.UseVisualStyleBackColor = true;
-            this.btnMinin.Click += new System.EventHandler(this.btnMinin_Click);
             // 
             // FrmMain
             // 
