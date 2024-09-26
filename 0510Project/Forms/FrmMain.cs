@@ -1,28 +1,16 @@
 ﻿using _0510Project.Forms;
 using FontAwesome.Sharp;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Net.Sockets;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Controls;
-using System.Windows.Documents;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using Control = System.Windows.Forms.Control;
 using Label = System.Windows.Forms.Label;
 using Logica.Models;
 using Logica.Logic;
 using _0510Project.Properties;
-using System.Diagnostics.Eventing.Reader;
-using System.IO;
-using System.Net;
-using System.Security.Cryptography;
 
 namespace _0510Project
 {
@@ -34,6 +22,10 @@ namespace _0510Project
         private extern static void SendMessage(IntPtr hWnd, int wMsg, int wParam, int lParam);
 
         private Screw MyScrewMain { get; set; }
+
+        private Nuts MyNuts { get; set; }
+        private Washers MyWashers { get; set; }
+
         public FrmMain()
         {
             InitializeComponent();
@@ -41,6 +33,10 @@ namespace _0510Project
             InitializeLabelEvents();
 
             MyScrewMain = new Screw();
+
+            MyNuts = new Nuts();
+
+            MyWashers = new Washers();
         }
 
         private void tDateTime_Tick(object sender, EventArgs e)
@@ -1831,6 +1827,9 @@ namespace _0510Project
         {
             WhiteSSize();
             ss1.BackColor = Color.Yellow;
+
+          // MyNuts.MyNutSize.
+
         }
 
         private void ss2_Click(object sender, EventArgs e)
