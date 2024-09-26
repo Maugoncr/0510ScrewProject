@@ -31,8 +31,8 @@
             this.pNavBar = new System.Windows.Forms.Panel();
             this.btnClose = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnWasher = new System.Windows.Forms.Label();
+            this.picWasher = new System.Windows.Forms.PictureBox();
             this.btnWasherSize = new System.Windows.Forms.Label();
             this.picWasherSize = new System.Windows.Forms.PictureBox();
             this.btnWasherType = new System.Windows.Forms.Label();
@@ -41,7 +41,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pNavBar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picWasher)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picWasherSize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picWasherType)).BeginInit();
             this.SuspendLayout();
@@ -87,28 +87,30 @@
             this.label7.Text = "WASHERS DASHBOARD";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label2
+            // btnWasher
             // 
-            this.label2.BackColor = System.Drawing.Color.DarkCyan;
-            this.label2.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(367, 530);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(350, 135);
-            this.label2.TabIndex = 168;
-            this.label2.Text = "Washers";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnWasher.BackColor = System.Drawing.Color.DarkCyan;
+            this.btnWasher.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnWasher.ForeColor = System.Drawing.Color.White;
+            this.btnWasher.Location = new System.Drawing.Point(367, 530);
+            this.btnWasher.Name = "btnWasher";
+            this.btnWasher.Size = new System.Drawing.Size(350, 135);
+            this.btnWasher.TabIndex = 168;
+            this.btnWasher.Text = "Washers";
+            this.btnWasher.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnWasher.Click += new System.EventHandler(this.btnWasher_Click);
             // 
-            // pictureBox2
+            // picWasher
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.DarkCyan;
-            this.pictureBox2.Image = global::_0510Project.Properties.Resources.Screws;
-            this.pictureBox2.Location = new System.Drawing.Point(211, 530);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(156, 135);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox2.TabIndex = 167;
-            this.pictureBox2.TabStop = false;
+            this.picWasher.BackColor = System.Drawing.Color.DarkCyan;
+            this.picWasher.Image = global::_0510Project.Properties.Resources.Screws;
+            this.picWasher.Location = new System.Drawing.Point(211, 530);
+            this.picWasher.Name = "picWasher";
+            this.picWasher.Size = new System.Drawing.Size(156, 135);
+            this.picWasher.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picWasher.TabIndex = 167;
+            this.picWasher.TabStop = false;
+            this.picWasher.Click += new System.EventHandler(this.picWasher_Click);
             // 
             // btnWasherSize
             // 
@@ -195,8 +197,8 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.btnWasher);
+            this.Controls.Add(this.picWasher);
             this.Controls.Add(this.btnWasherSize);
             this.Controls.Add(this.picWasherSize);
             this.Controls.Add(this.btnWasherType);
@@ -210,7 +212,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Data Base Management Washers";
             this.pNavBar.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picWasher)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picWasherSize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picWasherType)).EndInit();
             this.ResumeLayout(false);
@@ -222,8 +224,8 @@
         private System.Windows.Forms.Panel pNavBar;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label btnWasher;
+        private System.Windows.Forms.PictureBox picWasher;
         private System.Windows.Forms.Label btnWasherSize;
         private System.Windows.Forms.PictureBox picWasherSize;
         private System.Windows.Forms.Label btnWasherType;

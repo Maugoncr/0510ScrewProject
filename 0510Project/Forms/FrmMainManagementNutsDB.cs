@@ -64,5 +64,21 @@ namespace _0510Project.Forms
                 frm.ShowDialog();
             }
         }
+
+        private void btnNuts_Click(object sender, EventArgs e)
+        {
+            using (FrmNuts frm = new FrmNuts())
+            {
+                frm.ShowDialog();
+            }
+        }
+
+        private void picNuts_Click(object sender, EventArgs e)
+        {
+            using (FrmNuts frm = new FrmNuts())
+            {
+                frm.ShowDialog();
+            }
+        }
     }
 }

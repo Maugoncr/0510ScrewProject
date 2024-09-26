@@ -16,5 +16,10 @@ namespace _0510Project.Forms
         {
             InitializeComponent();
         }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

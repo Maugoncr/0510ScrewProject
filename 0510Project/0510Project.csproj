@@ -255,6 +255,18 @@
     <Compile Include="Forms\FrmViewPDF.Designer.cs">
       <DependentUpon>FrmViewPDF.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\SelectedForms\FrmSelectWasherSize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SelectedForms\FrmSelectWasherSize.Designer.cs">
+      <DependentUpon>FrmSelectWasherSize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SelectedForms\FrmSelectWasherType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SelectedForms\FrmSelectWasherType.Designer.cs">
+      <DependentUpon>FrmSelectWasherType.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="Resources\Wedge.png" />
@@ -301,6 +313,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmMainManagementWashersDB.resx">
       <DependentUpon>FrmMainManagementWashersDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmNuts.resx">
+      <DependentUpon>FrmNuts.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmNutsSize.resx">
       <DependentUpon>FrmNutsSize.cs</DependentUpon>
@@ -370,6 +385,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmViewPDF.resx">
       <DependentUpon>FrmViewPDF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SelectedForms\FrmSelectWasherSize.resx">
+      <DependentUpon>FrmSelectWasherSize.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SelectedForms\FrmSelectWasherType.resx">
+      <DependentUpon>FrmSelectWasherType.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

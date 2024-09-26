@@ -64,5 +64,21 @@ namespace _0510Project.Forms
                 frm.ShowDialog();
             }
         }
+
+        private void btnWasher_Click(object sender, EventArgs e)
+        {
+            using (FrmWashers frm = new FrmWashers())
+            {
+                frm.ShowDialog();
+            }
+        }
+
+        private void picWasher_Click(object sender, EventArgs e)
+        {
+            using (FrmWashers frm = new FrmWashers())
+            {
+                frm.ShowDialog();
+            }
+        }
     }
 }

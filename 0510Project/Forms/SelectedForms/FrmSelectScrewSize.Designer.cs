@@ -131,7 +131,7 @@
             this.btnSelect.Name = "btnSelect";
             this.btnSelect.Size = new System.Drawing.Size(176, 29);
             this.btnSelect.TabIndex = 170;
-            this.btnSelect.Text = "       Select Screw Type";
+            this.btnSelect.Text = "       Select Screw Size";
             this.btnSelect.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSelect.UseVisualStyleBackColor = false;
             this.btnSelect.Click += new System.EventHandler(this.btnSelect_Click);
