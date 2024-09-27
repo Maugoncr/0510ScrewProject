@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.pCentral = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.webShow = new Microsoft.Web.WebView2.WinForms.WebView2();
             this.pNavBar = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnExit = new FontAwesome.Sharp.IconButton();
             this.label3 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.webShow = new Microsoft.Web.WebView2.WinForms.WebView2();
             this.pCentral.SuspendLayout();
-            this.pNavBar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.webShow)).BeginInit();
+            this.pNavBar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pCentral
@@ -51,6 +51,27 @@
             this.pCentral.Name = "pCentral";
             this.pCentral.Size = new System.Drawing.Size(1771, 786);
             this.pCentral.TabIndex = 6;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.webShow);
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1765, 780);
+            this.panel1.TabIndex = 0;
+            // 
+            // webShow
+            // 
+            this.webShow.AllowExternalDrop = true;
+            this.webShow.CreationProperties = null;
+            this.webShow.DefaultBackgroundColor = System.Drawing.Color.White;
+            this.webShow.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.webShow.Location = new System.Drawing.Point(0, 0);
+            this.webShow.Name = "webShow";
+            this.webShow.Size = new System.Drawing.Size(1765, 780);
+            this.webShow.TabIndex = 0;
+            this.webShow.ZoomFactor = 1D;
             // 
             // pNavBar
             // 
@@ -78,7 +99,7 @@
             // 
             // pictureBox1
             // 
-
+            this.pictureBox1.Image = global::_0510Project.Properties.Resources.SSNE_LOGO;
             this.pictureBox1.Location = new System.Drawing.Point(3, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(57, 53);
@@ -111,27 +132,6 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "SSNE GROUP, INC";
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.webShow);
-            this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1765, 780);
-            this.panel1.TabIndex = 0;
-            // 
-            // webShow
-            // 
-            this.webShow.AllowExternalDrop = true;
-            this.webShow.CreationProperties = null;
-            this.webShow.DefaultBackgroundColor = System.Drawing.Color.White;
-            this.webShow.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.webShow.Location = new System.Drawing.Point(0, 0);
-            this.webShow.Name = "webShow";
-            this.webShow.Size = new System.Drawing.Size(1765, 780);
-            this.webShow.TabIndex = 0;
-            this.webShow.ZoomFactor = 1D;
-            // 
             // FrmViewPDF
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -148,10 +148,10 @@
             this.Text = "FrmViewPDF";
             this.Load += new System.EventHandler(this.FrmViewPDF_Load);
             this.pCentral.ResumeLayout(false);
-            this.pNavBar.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.webShow)).EndInit();
+            this.pNavBar.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

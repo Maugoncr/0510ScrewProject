@@ -35,6 +35,8 @@ namespace _0510Project.Forms
         {
             lbWhoAreYou.Text = "User: " + GetUserName() + "\nSystem: " + GetMachineName() + "\nIP: " + GetIPAddress()
                 + "\nOS: " + GetOSVersion() + "\nUserDomain: " + GetUserDomain();
+
+            btnCheckUpdate.IconChar = FontAwesome.Sharp.IconChar.Rotate;
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -140,6 +142,30 @@ namespace _0510Project.Forms
             {
                 MessageBox.Show("The downloaded database is not in the requested folder\nPlease review the instructions again.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+        private string keySequence = "";
+        private readonly string desiredSequence = "ADMINMGMDB";
+
+        private void FrmUpdateDataBase_KeyDown(object sender, KeyEventArgs e)
+        {
+            keySequence += (char)e.KeyValue;
+
+            // Verifica si la secuencia actual termina con la secuencia deseada
+            if (keySequence.EndsWith(desiredSequence))
+            {
+                btnGetActualDataBase.Visible = true;
+                lbAdmin.Visible = true;
+                keySequence = "";
+            }
+            else if (keySequence.Length > desiredSequence.Length)
+            {
+                keySequence = keySequence.Substring(keySequence.Length - desiredSequence.Length);
+            }
+        }
+
+        private void btnGetActualDataBase_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

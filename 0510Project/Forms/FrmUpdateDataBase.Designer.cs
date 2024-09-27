@@ -40,7 +40,11 @@
             this.label6 = new System.Windows.Forms.Label();
             this.btnDownloadDataBase = new FontAwesome.Sharp.IconButton();
             this.btnCheckUpdate = new FontAwesome.Sharp.IconButton();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
+            this.btnGetActualDataBase = new FontAwesome.Sharp.IconButton();
+            this.lbAdmin = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.pNavBar.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -171,7 +175,7 @@
             this.btnDownloadDataBase.Name = "btnDownloadDataBase";
             this.btnDownloadDataBase.Size = new System.Drawing.Size(225, 37);
             this.btnDownloadDataBase.TabIndex = 179;
-            this.btnDownloadDataBase.Text = "1. Download DataBase";
+            this.btnDownloadDataBase.Text = "1. Download Database";
             this.btnDownloadDataBase.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDownloadDataBase.UseVisualStyleBackColor = false;
             this.btnDownloadDataBase.Click += new System.EventHandler(this.btnDownloadDataBase_Click);
@@ -183,7 +187,7 @@
             this.btnCheckUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCheckUpdate.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCheckUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnCheckUpdate.IconChar = FontAwesome.Sharp.IconChar.Database;
+            this.btnCheckUpdate.IconChar = FontAwesome.Sharp.IconChar.Route;
             this.btnCheckUpdate.IconColor = System.Drawing.Color.White;
             this.btnCheckUpdate.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnCheckUpdate.IconSize = 25;
@@ -192,37 +196,83 @@
             this.btnCheckUpdate.Name = "btnCheckUpdate";
             this.btnCheckUpdate.Size = new System.Drawing.Size(191, 37);
             this.btnCheckUpdate.TabIndex = 180;
-            this.btnCheckUpdate.Text = "2. Check DataBase";
+            this.btnCheckUpdate.Text = "2. Check Database";
             this.btnCheckUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCheckUpdate.UseVisualStyleBackColor = false;
             this.btnCheckUpdate.Click += new System.EventHandler(this.btnCheckUpdate_Click);
             // 
-            // iconButton2
+            // btnGetActualDataBase
             // 
-            this.iconButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.iconButton2.FlatAppearance.BorderSize = 0;
-            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton2.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton2.ForeColor = System.Drawing.Color.White;
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.Database;
-            this.iconButton2.IconColor = System.Drawing.Color.White;
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.IconSize = 25;
-            this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton2.Location = new System.Drawing.Point(704, 539);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(191, 37);
-            this.iconButton2.TabIndex = 181;
-            this.iconButton2.Text = "2. Check DataBase";
-            this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.UseVisualStyleBackColor = false;
+            this.btnGetActualDataBase.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnGetActualDataBase.FlatAppearance.BorderSize = 0;
+            this.btnGetActualDataBase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGetActualDataBase.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGetActualDataBase.ForeColor = System.Drawing.Color.White;
+            this.btnGetActualDataBase.IconChar = FontAwesome.Sharp.IconChar.Download;
+            this.btnGetActualDataBase.IconColor = System.Drawing.Color.White;
+            this.btnGetActualDataBase.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnGetActualDataBase.IconSize = 25;
+            this.btnGetActualDataBase.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnGetActualDataBase.Location = new System.Drawing.Point(693, 499);
+            this.btnGetActualDataBase.Name = "btnGetActualDataBase";
+            this.btnGetActualDataBase.Size = new System.Drawing.Size(228, 37);
+            this.btnGetActualDataBase.TabIndex = 181;
+            this.btnGetActualDataBase.Text = "3. Get Actual Database";
+            this.btnGetActualDataBase.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGetActualDataBase.UseVisualStyleBackColor = false;
+            this.btnGetActualDataBase.Visible = false;
+            this.btnGetActualDataBase.Click += new System.EventHandler(this.btnGetActualDataBase_Click);
+            // 
+            // lbAdmin
+            // 
+            this.lbAdmin.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAdmin.ForeColor = System.Drawing.Color.Red;
+            this.lbAdmin.Location = new System.Drawing.Point(12, 499);
+            this.lbAdmin.Name = "lbAdmin";
+            this.lbAdmin.Size = new System.Drawing.Size(675, 41);
+            this.lbAdmin.TabIndex = 182;
+            this.lbAdmin.Text = "You are the administrator. Click on the \"Get Actual Database\" button, and you wil" +
+    "l get the database with the latest changes you made.";
+            this.lbAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbAdmin.Visible = false;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel3.Location = new System.Drawing.Point(0, 47);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(2, 501);
+            this.panel3.TabIndex = 183;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel1.Location = new System.Drawing.Point(931, 47);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(2, 501);
+            this.panel1.TabIndex = 184;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(2, 546);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(929, 2);
+            this.panel2.TabIndex = 185;
             // 
             // FrmUpdateDataBase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(933, 612);
-            this.Controls.Add(this.iconButton2);
+            this.ClientSize = new System.Drawing.Size(933, 548);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.lbAdmin);
+            this.Controls.Add(this.btnGetActualDataBase);
             this.Controls.Add(this.btnCheckUpdate);
             this.Controls.Add(this.btnDownloadDataBase);
             this.Controls.Add(this.label6);
@@ -235,11 +285,13 @@
             this.Controls.Add(this.pNavBar);
             this.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "FrmUpdateDataBase";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmUpdateDataBase";
             this.Load += new System.EventHandler(this.FrmUpdateDataBase_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FrmUpdateDataBase_KeyDown);
             this.pNavBar.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -258,6 +310,10 @@
         private System.Windows.Forms.Label label6;
         private FontAwesome.Sharp.IconButton btnDownloadDataBase;
         private FontAwesome.Sharp.IconButton btnCheckUpdate;
-        private FontAwesome.Sharp.IconButton iconButton2;
+        private FontAwesome.Sharp.IconButton btnGetActualDataBase;
+        private System.Windows.Forms.Label lbAdmin;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
     }
 }

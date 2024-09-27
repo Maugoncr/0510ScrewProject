@@ -35,13 +35,16 @@
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnDownloadFonts = new FontAwesome.Sharp.IconButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.btnDownloadDataBase = new FontAwesome.Sharp.IconButton();
             this.btnDownloadWebView2 = new FontAwesome.Sharp.IconButton();
-            this.btnDownloadFonts = new FontAwesome.Sharp.IconButton();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnDownloadDataBase = new FontAwesome.Sharp.IconButton();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.pNavBar.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -123,6 +126,27 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Option 1";
             // 
+            // btnDownloadFonts
+            // 
+            this.btnDownloadFonts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnDownloadFonts.FlatAppearance.BorderSize = 0;
+            this.btnDownloadFonts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDownloadFonts.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDownloadFonts.ForeColor = System.Drawing.Color.White;
+            this.btnDownloadFonts.IconChar = FontAwesome.Sharp.IconChar.GoogleDrive;
+            this.btnDownloadFonts.IconColor = System.Drawing.Color.White;
+            this.btnDownloadFonts.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnDownloadFonts.IconSize = 25;
+            this.btnDownloadFonts.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDownloadFonts.Location = new System.Drawing.Point(131, 109);
+            this.btnDownloadFonts.Name = "btnDownloadFonts";
+            this.btnDownloadFonts.Size = new System.Drawing.Size(225, 37);
+            this.btnDownloadFonts.TabIndex = 171;
+            this.btnDownloadFonts.Text = "Download Roboto Font";
+            this.btnDownloadFonts.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDownloadFonts.UseVisualStyleBackColor = false;
+            this.btnDownloadFonts.Click += new System.EventHandler(this.btnDownloadFonts_Click);
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.label2);
@@ -145,51 +169,6 @@
             this.label2.Text = resources.GetString("label2.Text");
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.btnDownloadDataBase);
-            this.groupBox3.Controls.Add(this.label3);
-            this.groupBox3.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.ForeColor = System.Drawing.Color.Red;
-            this.groupBox3.Location = new System.Drawing.Point(146, 558);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(511, 167);
-            this.groupBox3.TabIndex = 175;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Option 3";
-            // 
-            // label3
-            // 
-            this.label3.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(14, 19);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(485, 87);
-            this.label3.TabIndex = 172;
-            this.label3.Text = resources.GetString("label3.Text");
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnDownloadDataBase
-            // 
-            this.btnDownloadDataBase.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.btnDownloadDataBase.FlatAppearance.BorderSize = 0;
-            this.btnDownloadDataBase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDownloadDataBase.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDownloadDataBase.ForeColor = System.Drawing.Color.White;
-            this.btnDownloadDataBase.IconChar = FontAwesome.Sharp.IconChar.Database;
-            this.btnDownloadDataBase.IconColor = System.Drawing.Color.White;
-            this.btnDownloadDataBase.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnDownloadDataBase.IconSize = 25;
-            this.btnDownloadDataBase.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnDownloadDataBase.Location = new System.Drawing.Point(144, 100);
-            this.btnDownloadDataBase.Name = "btnDownloadDataBase";
-            this.btnDownloadDataBase.Size = new System.Drawing.Size(206, 37);
-            this.btnDownloadDataBase.TabIndex = 171;
-            this.btnDownloadDataBase.Text = "Download DataBase";
-            this.btnDownloadDataBase.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDownloadDataBase.UseVisualStyleBackColor = false;
-            this.btnDownloadDataBase.Click += new System.EventHandler(this.btnDownloadDataBase_Click);
-            // 
             // btnDownloadWebView2
             // 
             this.btnDownloadWebView2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
@@ -211,32 +190,86 @@
             this.btnDownloadWebView2.UseVisualStyleBackColor = false;
             this.btnDownloadWebView2.Click += new System.EventHandler(this.btnDownloadWebView2_Click);
             // 
-            // btnDownloadFonts
+            // groupBox3
             // 
-            this.btnDownloadFonts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.btnDownloadFonts.FlatAppearance.BorderSize = 0;
-            this.btnDownloadFonts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDownloadFonts.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDownloadFonts.ForeColor = System.Drawing.Color.White;
-            this.btnDownloadFonts.IconChar = FontAwesome.Sharp.IconChar.GoogleDrive;
-            this.btnDownloadFonts.IconColor = System.Drawing.Color.White;
-            this.btnDownloadFonts.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnDownloadFonts.IconSize = 25;
-            this.btnDownloadFonts.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnDownloadFonts.Location = new System.Drawing.Point(131, 109);
-            this.btnDownloadFonts.Name = "btnDownloadFonts";
-            this.btnDownloadFonts.Size = new System.Drawing.Size(225, 37);
-            this.btnDownloadFonts.TabIndex = 171;
-            this.btnDownloadFonts.Text = "Download Roboto Font";
-            this.btnDownloadFonts.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDownloadFonts.UseVisualStyleBackColor = false;
-            this.btnDownloadFonts.Click += new System.EventHandler(this.btnDownloadFonts_Click);
+            this.groupBox3.Controls.Add(this.btnDownloadDataBase);
+            this.groupBox3.Controls.Add(this.label3);
+            this.groupBox3.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.ForeColor = System.Drawing.Color.Red;
+            this.groupBox3.Location = new System.Drawing.Point(146, 558);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(511, 167);
+            this.groupBox3.TabIndex = 175;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Option 3";
+            // 
+            // btnDownloadDataBase
+            // 
+            this.btnDownloadDataBase.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnDownloadDataBase.FlatAppearance.BorderSize = 0;
+            this.btnDownloadDataBase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDownloadDataBase.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDownloadDataBase.ForeColor = System.Drawing.Color.White;
+            this.btnDownloadDataBase.IconChar = FontAwesome.Sharp.IconChar.Database;
+            this.btnDownloadDataBase.IconColor = System.Drawing.Color.White;
+            this.btnDownloadDataBase.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnDownloadDataBase.IconSize = 25;
+            this.btnDownloadDataBase.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDownloadDataBase.Location = new System.Drawing.Point(144, 100);
+            this.btnDownloadDataBase.Name = "btnDownloadDataBase";
+            this.btnDownloadDataBase.Size = new System.Drawing.Size(206, 37);
+            this.btnDownloadDataBase.TabIndex = 171;
+            this.btnDownloadDataBase.Text = "Download Database";
+            this.btnDownloadDataBase.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDownloadDataBase.UseVisualStyleBackColor = false;
+            this.btnDownloadDataBase.Click += new System.EventHandler(this.btnDownloadDataBase_Click);
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Red;
+            this.label3.Location = new System.Drawing.Point(14, 19);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(485, 87);
+            this.label3.TabIndex = 172;
+            this.label3.Text = resources.GetString("label3.Text");
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel3.Location = new System.Drawing.Point(0, 47);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(2, 694);
+            this.panel3.TabIndex = 176;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel1.Location = new System.Drawing.Point(785, 47);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(2, 694);
+            this.panel1.TabIndex = 177;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(2, 739);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(783, 2);
+            this.panel2.TabIndex = 178;
             // 
             // FrmInformation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(787, 741);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -271,5 +304,8 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label3;
         private FontAwesome.Sharp.IconButton btnDownloadDataBase;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
     }
 }
