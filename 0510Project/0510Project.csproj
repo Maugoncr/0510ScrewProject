@@ -192,6 +192,12 @@
     <Compile Include="Forms\FrmTestingElements.Designer.cs">
       <DependentUpon>FrmTestingElements.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FrmUpdateDataBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmUpdateDataBase.Designer.cs">
+      <DependentUpon>FrmUpdateDataBase.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FrmWashers.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -374,6 +380,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmTestingElements.resx">
       <DependentUpon>FrmTestingElements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmUpdateDataBase.resx">
+      <DependentUpon>FrmUpdateDataBase.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmWashers.resx">
       <DependentUpon>FrmWashers.cs</DependentUpon>

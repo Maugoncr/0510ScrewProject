@@ -117,20 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="richTextBox1.Text" xml:space="preserve">
-    <value>Here you will find resources that may be necessary for the proper functioning of this software:
-
-1. The Roboto font used in this software. 
-2. The WebView2 engine to preview PDF and STEP files.
-3. The semi-automated option to update the software database.</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>If the "Roboto" font is not already installed on your operating system and you are experiencing a disorganized interface display, click the "Download Roboto Font" button. You will find two files; download both and install both fonts. Then restart the software, and you should be all set.</value>
-  </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>If the WebView2 engine for previewing PDF and STEP files is not already installed on your operating system and you are experiencing issues with their previews, click the "Download WebView2 Engine" button. Download the .exe file and install it on your computer. Then restart the software, and you should be all set.</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>This option should only be used when explicitly required. Executing it without prior authorization will result in consequences. Be aware that your user data and system information are being monitored. Misuse of this function will immediately alert administrators</value>
+  <data name="label4.Text" xml:space="preserve">
+    <value>You must download that file and place it in the "Downloads" folder. Once you complete this process, click the "Check DataBase" button, which will verify if the process was done correctly, and the system will inform you of the result.</value>
   </data>
 </root>
