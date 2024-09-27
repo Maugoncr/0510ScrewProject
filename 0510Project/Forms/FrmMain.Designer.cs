@@ -32,7 +32,11 @@
             this.cbScrewTypes = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pNavBar = new System.Windows.Forms.Panel();
+            this.btnMinin = new FontAwesome.Sharp.IconButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnFormSize = new FontAwesome.Sharp.IconButton();
+            this.btnExit = new FontAwesome.Sharp.IconButton();
             this.lbDateTime = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -120,21 +124,30 @@
             this.lbScrewDriver = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.btnUrlSTEPLockNut = new FontAwesome.Sharp.IconButton();
+            this.btnUrlPDFLockNut = new FontAwesome.Sharp.IconButton();
             this.txtVendorLockNut = new System.Windows.Forms.Label();
             this.txtSSNELockNut = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label34 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btnUrlSTEPHexNut = new FontAwesome.Sharp.IconButton();
+            this.btnUrlPDFHexNut = new FontAwesome.Sharp.IconButton();
             this.txtVendorHexNut = new System.Windows.Forms.Label();
             this.txtSSNEHexNut = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label25 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.btnUrlSTEPFlat = new FontAwesome.Sharp.IconButton();
+            this.btnUrlPDFFlat = new FontAwesome.Sharp.IconButton();
             this.txtVendorFlat = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.txtSSNEFlat = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
@@ -142,29 +155,41 @@
             this.label45 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.btnUrlSTEPWedge = new FontAwesome.Sharp.IconButton();
+            this.btnUrlPDFWedge = new FontAwesome.Sharp.IconButton();
             this.txtVendorWedge = new System.Windows.Forms.Label();
             this.txtSSNEWedge = new System.Windows.Forms.Label();
             this.label59 = new System.Windows.Forms.Label();
             this.label60 = new System.Windows.Forms.Label();
             this.label61 = new System.Windows.Forms.Label();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.btnUrlSTEPSpring = new FontAwesome.Sharp.IconButton();
+            this.btnUrlPDFSpring = new FontAwesome.Sharp.IconButton();
             this.txtVendorSpring = new System.Windows.Forms.Label();
             this.txtSSNESpring = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.label56 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.btnUrlSTEPTooth = new FontAwesome.Sharp.IconButton();
+            this.btnUrlPDFTooth = new FontAwesome.Sharp.IconButton();
             this.txtVendorTooth = new System.Windows.Forms.Label();
             this.txtSSNETooth = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
             this.label49 = new System.Windows.Forms.Label();
             this.label50 = new System.Windows.Forms.Label();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.btnUrlSTEPSplit = new FontAwesome.Sharp.IconButton();
+            this.btnUrlPDFSplit = new FontAwesome.Sharp.IconButton();
             this.txtVendorSplit = new System.Windows.Forms.Label();
             this.txtSSNESplit = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label51 = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
             this.ss10 = new System.Windows.Forms.Label();
@@ -180,92 +205,67 @@
             this.label62 = new System.Windows.Forms.Label();
             this.pGestion = new System.Windows.Forms.Panel();
             this.btnClose = new System.Windows.Forms.Button();
+            this.btnEnterGestion = new FontAwesome.Sharp.IconButton();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.txtIDScrew = new System.Windows.Forms.TextBox();
             this.pAvailableTools3 = new System.Windows.Forms.Panel();
+            this.picTool1 = new System.Windows.Forms.PictureBox();
+            this.picTool3 = new System.Windows.Forms.PictureBox();
+            this.picTool2 = new System.Windows.Forms.PictureBox();
             this.pAvailableTools2 = new System.Windows.Forms.Panel();
             this.lbTool1B = new System.Windows.Forms.Label();
+            this.picTool1B = new System.Windows.Forms.PictureBox();
             this.lbTool2B = new System.Windows.Forms.Label();
+            this.picTool2B = new System.Windows.Forms.PictureBox();
             this.pAvailableTools1 = new System.Windows.Forms.Panel();
             this.lbTool1C = new System.Windows.Forms.Label();
+            this.picTool1C = new System.Windows.Forms.PictureBox();
             this.txtIDLength = new System.Windows.Forms.TextBox();
             this.tTesting = new System.Windows.Forms.Timer(this.components);
             this.txtIDSize = new System.Windows.Forms.TextBox();
             this.txtIDType = new System.Windows.Forms.TextBox();
-            this.picTool1C = new System.Windows.Forms.PictureBox();
-            this.picTool1B = new System.Windows.Forms.PictureBox();
-            this.picTool2B = new System.Windows.Forms.PictureBox();
-            this.picTool1 = new System.Windows.Forms.PictureBox();
-            this.picTool3 = new System.Windows.Forms.PictureBox();
-            this.picTool2 = new System.Windows.Forms.PictureBox();
-            this.btnEnterGestion = new FontAwesome.Sharp.IconButton();
-            this.btnUrlSTEPWedge = new FontAwesome.Sharp.IconButton();
-            this.btnUrlPDFWedge = new FontAwesome.Sharp.IconButton();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.btnUrlSTEPSpring = new FontAwesome.Sharp.IconButton();
-            this.btnUrlPDFSpring = new FontAwesome.Sharp.IconButton();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.btnUrlSTEPTooth = new FontAwesome.Sharp.IconButton();
-            this.btnUrlPDFTooth = new FontAwesome.Sharp.IconButton();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.btnUrlSTEPSplit = new FontAwesome.Sharp.IconButton();
-            this.btnUrlPDFSplit = new FontAwesome.Sharp.IconButton();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.btnUrlSTEPFlat = new FontAwesome.Sharp.IconButton();
-            this.btnUrlPDFFlat = new FontAwesome.Sharp.IconButton();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.btnUrlSTEPLockNut = new FontAwesome.Sharp.IconButton();
-            this.btnUrlPDFLockNut = new FontAwesome.Sharp.IconButton();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.btnUrlSTEPHexNut = new FontAwesome.Sharp.IconButton();
-            this.btnUrlPDFHexNut = new FontAwesome.Sharp.IconButton();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.btnSTP = new FontAwesome.Sharp.IconButton();
             this.btnPDF = new FontAwesome.Sharp.IconButton();
             this.picTopView = new System.Windows.Forms.PictureBox();
             this.picLength = new System.Windows.Forms.PictureBox();
-            this.btnMinin = new FontAwesome.Sharp.IconButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnFormSize = new FontAwesome.Sharp.IconButton();
-            this.btnExit = new FontAwesome.Sharp.IconButton();
             this.picISOView = new System.Windows.Forms.PictureBox();
             this.pNavBar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.pSizeSelect.SuspendLayout();
             this.pLengths.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel5.SuspendLayout();
             this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.panel6.SuspendLayout();
             this.panel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panel12.SuspendLayout();
             this.pGestion.SuspendLayout();
             this.pAvailableTools3.SuspendLayout();
-            this.pAvailableTools2.SuspendLayout();
-            this.pAvailableTools1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picTool1C)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picTool1B)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picTool2B)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picTool1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picTool3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picTool2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.pAvailableTools2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picTool1B)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picTool2B)).BeginInit();
+            this.pAvailableTools1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picTool1C)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picTopView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLength)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picISOView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -309,6 +309,31 @@
             this.pNavBar.TabIndex = 4;
             this.pNavBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pNavBar_MouseDown);
             // 
+            // btnMinin
+            // 
+            this.btnMinin.FlatAppearance.BorderSize = 0;
+            this.btnMinin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinin.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
+            this.btnMinin.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(254)))), ((int)(((byte)(251)))));
+            this.btnMinin.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnMinin.IconSize = 30;
+            this.btnMinin.Location = new System.Drawing.Point(1775, 3);
+            this.btnMinin.Name = "btnMinin";
+            this.btnMinin.Size = new System.Drawing.Size(41, 46);
+            this.btnMinin.TabIndex = 360;
+            this.btnMinin.UseVisualStyleBackColor = true;
+            this.btnMinin.Click += new System.EventHandler(this.btnMinin_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::_0510Project.Properties.Resources.SSNE_LOGO;
+            this.pictureBox1.Location = new System.Drawing.Point(4, 1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(64, 60);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 359;
+            this.pictureBox1.TabStop = false;
+            // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -318,6 +343,36 @@
             this.label2.Size = new System.Drawing.Size(124, 20);
             this.label2.TabIndex = 4;
             this.label2.Text = "0510 Project";
+            // 
+            // btnFormSize
+            // 
+            this.btnFormSize.FlatAppearance.BorderSize = 0;
+            this.btnFormSize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFormSize.IconChar = FontAwesome.Sharp.IconChar.ExpandAlt;
+            this.btnFormSize.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(254)))), ((int)(((byte)(251)))));
+            this.btnFormSize.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnFormSize.IconSize = 30;
+            this.btnFormSize.Location = new System.Drawing.Point(1822, 3);
+            this.btnFormSize.Name = "btnFormSize";
+            this.btnFormSize.Size = new System.Drawing.Size(41, 46);
+            this.btnFormSize.TabIndex = 1;
+            this.btnFormSize.UseVisualStyleBackColor = true;
+            this.btnFormSize.Click += new System.EventHandler(this.btnFormSize_Click);
+            // 
+            // btnExit
+            // 
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.IconChar = FontAwesome.Sharp.IconChar.Code;
+            this.btnExit.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(254)))), ((int)(((byte)(251)))));
+            this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnExit.IconSize = 35;
+            this.btnExit.Location = new System.Drawing.Point(1869, 3);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(48, 46);
+            this.btnExit.TabIndex = 0;
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // lbDateTime
             // 
@@ -371,6 +426,7 @@
             this.informationToolStripMenuItem.Name = "informationToolStripMenuItem";
             this.informationToolStripMenuItem.Size = new System.Drawing.Size(115, 31);
             this.informationToolStripMenuItem.Text = "Information";
+            this.informationToolStripMenuItem.Click += new System.EventHandler(this.informationToolStripMenuItem_Click);
             // 
             // tDateTime
             // 
@@ -578,6 +634,7 @@
             this.txtAbbreviationName.TabIndex = 366;
             this.txtAbbreviationName.Text = "SOC HD";
             this.txtAbbreviationName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txtAbbreviationName.Click += new System.EventHandler(this.txtAbbreviationName_Click);
             // 
             // label21
             // 
@@ -601,6 +658,7 @@
             this.txtMaterialName.TabIndex = 370;
             this.txtMaterialName.Text = "SST";
             this.txtMaterialName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txtMaterialName.Click += new System.EventHandler(this.txtMaterialName_Click);
             // 
             // txtNToolName
             // 
@@ -614,6 +672,7 @@
             this.txtNToolName.TabIndex = 371;
             this.txtNToolName.Text = "--- Number";
             this.txtNToolName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txtNToolName.Click += new System.EventHandler(this.txtNToolName_Click);
             // 
             // pLengths
             // 
@@ -1349,6 +1408,7 @@
             this.txtSSNEPartNumber.TabIndex = 378;
             this.txtSSNEPartNumber.Text = "-------------";
             this.txtSSNEPartNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txtSSNEPartNumber.Click += new System.EventHandler(this.txtSSNEPartNumber_Click);
             // 
             // txtVendorPartNumber
             // 
@@ -1362,6 +1422,7 @@
             this.txtVendorPartNumber.TabIndex = 379;
             this.txtVendorPartNumber.Text = "-------------";
             this.txtVendorPartNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txtVendorPartNumber.Click += new System.EventHandler(this.txtVendorPartNumber_Click);
             // 
             // label10
             // 
@@ -1441,31 +1502,73 @@
             this.panel4.Size = new System.Drawing.Size(245, 200);
             this.panel4.TabIndex = 453;
             // 
+            // btnUrlSTEPLockNut
+            // 
+            this.btnUrlSTEPLockNut.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnUrlSTEPLockNut.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnUrlSTEPLockNut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUrlSTEPLockNut.Font = new System.Drawing.Font("Roboto", 12F);
+            this.btnUrlSTEPLockNut.ForeColor = System.Drawing.Color.White;
+            this.btnUrlSTEPLockNut.IconChar = FontAwesome.Sharp.IconChar.FileArchive;
+            this.btnUrlSTEPLockNut.IconColor = System.Drawing.Color.White;
+            this.btnUrlSTEPLockNut.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.btnUrlSTEPLockNut.IconSize = 20;
+            this.btnUrlSTEPLockNut.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnUrlSTEPLockNut.Location = new System.Drawing.Point(151, 156);
+            this.btnUrlSTEPLockNut.Name = "btnUrlSTEPLockNut";
+            this.btnUrlSTEPLockNut.Size = new System.Drawing.Size(80, 31);
+            this.btnUrlSTEPLockNut.TabIndex = 452;
+            this.btnUrlSTEPLockNut.Text = "STEP";
+            this.btnUrlSTEPLockNut.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUrlSTEPLockNut.UseVisualStyleBackColor = false;
+            this.btnUrlSTEPLockNut.Click += new System.EventHandler(this.btnUrlSTEPLockNut_Click);
+            // 
+            // btnUrlPDFLockNut
+            // 
+            this.btnUrlPDFLockNut.BackColor = System.Drawing.Color.Firebrick;
+            this.btnUrlPDFLockNut.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnUrlPDFLockNut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUrlPDFLockNut.Font = new System.Drawing.Font("Roboto", 12F);
+            this.btnUrlPDFLockNut.ForeColor = System.Drawing.Color.White;
+            this.btnUrlPDFLockNut.IconChar = FontAwesome.Sharp.IconChar.FilePdf;
+            this.btnUrlPDFLockNut.IconColor = System.Drawing.Color.White;
+            this.btnUrlPDFLockNut.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.btnUrlPDFLockNut.IconSize = 20;
+            this.btnUrlPDFLockNut.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnUrlPDFLockNut.Location = new System.Drawing.Point(151, 103);
+            this.btnUrlPDFLockNut.Name = "btnUrlPDFLockNut";
+            this.btnUrlPDFLockNut.Size = new System.Drawing.Size(80, 31);
+            this.btnUrlPDFLockNut.TabIndex = 451;
+            this.btnUrlPDFLockNut.Text = "PDF";
+            this.btnUrlPDFLockNut.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUrlPDFLockNut.UseVisualStyleBackColor = false;
+            this.btnUrlPDFLockNut.Click += new System.EventHandler(this.btnUrlPDFLockNut_Click);
+            // 
             // txtVendorLockNut
             // 
             this.txtVendorLockNut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(226)))), ((int)(((byte)(227)))));
             this.txtVendorLockNut.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtVendorLockNut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.txtVendorLockNut.Font = new System.Drawing.Font("Roboto", 14F);
+            this.txtVendorLockNut.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtVendorLockNut.Location = new System.Drawing.Point(13, 156);
             this.txtVendorLockNut.Name = "txtVendorLockNut";
             this.txtVendorLockNut.Size = new System.Drawing.Size(128, 31);
             this.txtVendorLockNut.TabIndex = 381;
-            this.txtVendorLockNut.Text = "XXXXXXX";
             this.txtVendorLockNut.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txtVendorLockNut.Click += new System.EventHandler(this.txtVendorLockNut_Click);
             // 
             // txtSSNELockNut
             // 
             this.txtSSNELockNut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(226)))), ((int)(((byte)(227)))));
             this.txtSSNELockNut.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSSNELockNut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.txtSSNELockNut.Font = new System.Drawing.Font("Roboto", 14F);
+            this.txtSSNELockNut.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSSNELockNut.Location = new System.Drawing.Point(13, 103);
             this.txtSSNELockNut.Name = "txtSSNELockNut";
             this.txtSSNELockNut.Size = new System.Drawing.Size(128, 31);
             this.txtSSNELockNut.TabIndex = 380;
-            this.txtSSNELockNut.Text = "200-XXXXX";
             this.txtSSNELockNut.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txtSSNELockNut.Click += new System.EventHandler(this.txtSSNELockNut_Click);
             // 
             // label32
             // 
@@ -1486,6 +1589,16 @@
             this.label33.Size = new System.Drawing.Size(72, 15);
             this.label33.TabIndex = 3;
             this.label33.Text = "SSNE P/N";
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::_0510Project.Properties.Resources.Crown;
+            this.pictureBox6.Location = new System.Drawing.Point(13, 31);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(218, 45);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 2;
+            this.pictureBox6.TabStop = false;
             // 
             // label34
             // 
@@ -1516,31 +1629,73 @@
             this.panel3.Size = new System.Drawing.Size(245, 200);
             this.panel3.TabIndex = 1;
             // 
+            // btnUrlSTEPHexNut
+            // 
+            this.btnUrlSTEPHexNut.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnUrlSTEPHexNut.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnUrlSTEPHexNut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUrlSTEPHexNut.Font = new System.Drawing.Font("Roboto", 12F);
+            this.btnUrlSTEPHexNut.ForeColor = System.Drawing.Color.White;
+            this.btnUrlSTEPHexNut.IconChar = FontAwesome.Sharp.IconChar.FileArchive;
+            this.btnUrlSTEPHexNut.IconColor = System.Drawing.Color.White;
+            this.btnUrlSTEPHexNut.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.btnUrlSTEPHexNut.IconSize = 20;
+            this.btnUrlSTEPHexNut.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnUrlSTEPHexNut.Location = new System.Drawing.Point(151, 156);
+            this.btnUrlSTEPHexNut.Name = "btnUrlSTEPHexNut";
+            this.btnUrlSTEPHexNut.Size = new System.Drawing.Size(80, 31);
+            this.btnUrlSTEPHexNut.TabIndex = 452;
+            this.btnUrlSTEPHexNut.Text = "STEP";
+            this.btnUrlSTEPHexNut.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUrlSTEPHexNut.UseVisualStyleBackColor = false;
+            this.btnUrlSTEPHexNut.Click += new System.EventHandler(this.btnUrlSTEPHexNut_Click);
+            // 
+            // btnUrlPDFHexNut
+            // 
+            this.btnUrlPDFHexNut.BackColor = System.Drawing.Color.Firebrick;
+            this.btnUrlPDFHexNut.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnUrlPDFHexNut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUrlPDFHexNut.Font = new System.Drawing.Font("Roboto", 12F);
+            this.btnUrlPDFHexNut.ForeColor = System.Drawing.Color.White;
+            this.btnUrlPDFHexNut.IconChar = FontAwesome.Sharp.IconChar.FilePdf;
+            this.btnUrlPDFHexNut.IconColor = System.Drawing.Color.White;
+            this.btnUrlPDFHexNut.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.btnUrlPDFHexNut.IconSize = 20;
+            this.btnUrlPDFHexNut.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnUrlPDFHexNut.Location = new System.Drawing.Point(151, 103);
+            this.btnUrlPDFHexNut.Name = "btnUrlPDFHexNut";
+            this.btnUrlPDFHexNut.Size = new System.Drawing.Size(80, 31);
+            this.btnUrlPDFHexNut.TabIndex = 451;
+            this.btnUrlPDFHexNut.Text = "PDF";
+            this.btnUrlPDFHexNut.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUrlPDFHexNut.UseVisualStyleBackColor = false;
+            this.btnUrlPDFHexNut.Click += new System.EventHandler(this.btnUrlPDFHexNut_Click);
+            // 
             // txtVendorHexNut
             // 
             this.txtVendorHexNut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(226)))), ((int)(((byte)(227)))));
             this.txtVendorHexNut.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtVendorHexNut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.txtVendorHexNut.Font = new System.Drawing.Font("Roboto", 14F);
+            this.txtVendorHexNut.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtVendorHexNut.Location = new System.Drawing.Point(13, 156);
             this.txtVendorHexNut.Name = "txtVendorHexNut";
             this.txtVendorHexNut.Size = new System.Drawing.Size(128, 31);
             this.txtVendorHexNut.TabIndex = 381;
-            this.txtVendorHexNut.Text = "XXXXXXX";
             this.txtVendorHexNut.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txtVendorHexNut.Click += new System.EventHandler(this.txtVendorHexNut_Click);
             // 
             // txtSSNEHexNut
             // 
             this.txtSSNEHexNut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(226)))), ((int)(((byte)(227)))));
             this.txtSSNEHexNut.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSSNEHexNut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.txtSSNEHexNut.Font = new System.Drawing.Font("Roboto", 14F);
+            this.txtSSNEHexNut.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSSNEHexNut.Location = new System.Drawing.Point(13, 103);
             this.txtSSNEHexNut.Name = "txtSSNEHexNut";
             this.txtSSNEHexNut.Size = new System.Drawing.Size(128, 31);
             this.txtSSNEHexNut.TabIndex = 380;
-            this.txtSSNEHexNut.Text = "200-XXXXX";
             this.txtSSNEHexNut.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txtSSNEHexNut.Click += new System.EventHandler(this.txtSSNEHexNut_Click);
             // 
             // label27
             // 
@@ -1561,6 +1716,16 @@
             this.label26.Size = new System.Drawing.Size(72, 15);
             this.label26.TabIndex = 3;
             this.label26.Text = "SSNE P/N";
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::_0510Project.Properties.Resources.NutHex;
+            this.pictureBox5.Location = new System.Drawing.Point(13, 31);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(218, 45);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 2;
+            this.pictureBox5.TabStop = false;
             // 
             // label25
             // 
@@ -1614,31 +1779,83 @@
             this.panel7.Size = new System.Drawing.Size(245, 200);
             this.panel7.TabIndex = 454;
             // 
+            // btnUrlSTEPFlat
+            // 
+            this.btnUrlSTEPFlat.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnUrlSTEPFlat.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnUrlSTEPFlat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUrlSTEPFlat.Font = new System.Drawing.Font("Roboto", 12F);
+            this.btnUrlSTEPFlat.ForeColor = System.Drawing.Color.White;
+            this.btnUrlSTEPFlat.IconChar = FontAwesome.Sharp.IconChar.FileArchive;
+            this.btnUrlSTEPFlat.IconColor = System.Drawing.Color.White;
+            this.btnUrlSTEPFlat.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.btnUrlSTEPFlat.IconSize = 20;
+            this.btnUrlSTEPFlat.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnUrlSTEPFlat.Location = new System.Drawing.Point(151, 156);
+            this.btnUrlSTEPFlat.Name = "btnUrlSTEPFlat";
+            this.btnUrlSTEPFlat.Size = new System.Drawing.Size(80, 31);
+            this.btnUrlSTEPFlat.TabIndex = 452;
+            this.btnUrlSTEPFlat.Text = "STEP";
+            this.btnUrlSTEPFlat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUrlSTEPFlat.UseVisualStyleBackColor = false;
+            this.btnUrlSTEPFlat.Click += new System.EventHandler(this.btnUrlSTEPFlat_Click);
+            // 
+            // btnUrlPDFFlat
+            // 
+            this.btnUrlPDFFlat.BackColor = System.Drawing.Color.Firebrick;
+            this.btnUrlPDFFlat.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnUrlPDFFlat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUrlPDFFlat.Font = new System.Drawing.Font("Roboto", 12F);
+            this.btnUrlPDFFlat.ForeColor = System.Drawing.Color.White;
+            this.btnUrlPDFFlat.IconChar = FontAwesome.Sharp.IconChar.FilePdf;
+            this.btnUrlPDFFlat.IconColor = System.Drawing.Color.White;
+            this.btnUrlPDFFlat.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.btnUrlPDFFlat.IconSize = 20;
+            this.btnUrlPDFFlat.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnUrlPDFFlat.Location = new System.Drawing.Point(151, 103);
+            this.btnUrlPDFFlat.Name = "btnUrlPDFFlat";
+            this.btnUrlPDFFlat.Size = new System.Drawing.Size(80, 31);
+            this.btnUrlPDFFlat.TabIndex = 451;
+            this.btnUrlPDFFlat.Text = "PDF";
+            this.btnUrlPDFFlat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUrlPDFFlat.UseVisualStyleBackColor = false;
+            this.btnUrlPDFFlat.Click += new System.EventHandler(this.btnUrlPDFFlat_Click);
+            // 
             // txtVendorFlat
             // 
             this.txtVendorFlat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(226)))), ((int)(((byte)(227)))));
             this.txtVendorFlat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtVendorFlat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.txtVendorFlat.Font = new System.Drawing.Font("Roboto", 14F);
+            this.txtVendorFlat.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtVendorFlat.Location = new System.Drawing.Point(13, 156);
             this.txtVendorFlat.Name = "txtVendorFlat";
             this.txtVendorFlat.Size = new System.Drawing.Size(128, 31);
             this.txtVendorFlat.TabIndex = 381;
-            this.txtVendorFlat.Text = "XXXXXXX";
             this.txtVendorFlat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txtVendorFlat.Click += new System.EventHandler(this.txtVendorFlat_Click);
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::_0510Project.Properties.Resources.Flat;
+            this.pictureBox7.Location = new System.Drawing.Point(13, 38);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(219, 29);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 2;
+            this.pictureBox7.TabStop = false;
             // 
             // txtSSNEFlat
             // 
             this.txtSSNEFlat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(226)))), ((int)(((byte)(227)))));
             this.txtSSNEFlat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSSNEFlat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.txtSSNEFlat.Font = new System.Drawing.Font("Roboto", 14F);
+            this.txtSSNEFlat.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSSNEFlat.Location = new System.Drawing.Point(13, 103);
             this.txtSSNEFlat.Name = "txtSSNEFlat";
             this.txtSSNEFlat.Size = new System.Drawing.Size(128, 31);
             this.txtSSNEFlat.TabIndex = 380;
-            this.txtSSNEFlat.Text = "200-XXXXX";
             this.txtSSNEFlat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txtSSNEFlat.Click += new System.EventHandler(this.txtSSNEFlat_Click);
             // 
             // label37
             // 
@@ -1715,31 +1932,73 @@
             this.panel11.Size = new System.Drawing.Size(245, 200);
             this.panel11.TabIndex = 458;
             // 
+            // btnUrlSTEPWedge
+            // 
+            this.btnUrlSTEPWedge.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnUrlSTEPWedge.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnUrlSTEPWedge.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUrlSTEPWedge.Font = new System.Drawing.Font("Roboto", 12F);
+            this.btnUrlSTEPWedge.ForeColor = System.Drawing.Color.White;
+            this.btnUrlSTEPWedge.IconChar = FontAwesome.Sharp.IconChar.FileArchive;
+            this.btnUrlSTEPWedge.IconColor = System.Drawing.Color.White;
+            this.btnUrlSTEPWedge.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.btnUrlSTEPWedge.IconSize = 20;
+            this.btnUrlSTEPWedge.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnUrlSTEPWedge.Location = new System.Drawing.Point(151, 156);
+            this.btnUrlSTEPWedge.Name = "btnUrlSTEPWedge";
+            this.btnUrlSTEPWedge.Size = new System.Drawing.Size(80, 31);
+            this.btnUrlSTEPWedge.TabIndex = 452;
+            this.btnUrlSTEPWedge.Text = "STEP";
+            this.btnUrlSTEPWedge.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUrlSTEPWedge.UseVisualStyleBackColor = false;
+            this.btnUrlSTEPWedge.Click += new System.EventHandler(this.btnUrlSTEPWedge_Click);
+            // 
+            // btnUrlPDFWedge
+            // 
+            this.btnUrlPDFWedge.BackColor = System.Drawing.Color.Firebrick;
+            this.btnUrlPDFWedge.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnUrlPDFWedge.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUrlPDFWedge.Font = new System.Drawing.Font("Roboto", 12F);
+            this.btnUrlPDFWedge.ForeColor = System.Drawing.Color.White;
+            this.btnUrlPDFWedge.IconChar = FontAwesome.Sharp.IconChar.FilePdf;
+            this.btnUrlPDFWedge.IconColor = System.Drawing.Color.White;
+            this.btnUrlPDFWedge.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.btnUrlPDFWedge.IconSize = 20;
+            this.btnUrlPDFWedge.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnUrlPDFWedge.Location = new System.Drawing.Point(151, 103);
+            this.btnUrlPDFWedge.Name = "btnUrlPDFWedge";
+            this.btnUrlPDFWedge.Size = new System.Drawing.Size(80, 31);
+            this.btnUrlPDFWedge.TabIndex = 451;
+            this.btnUrlPDFWedge.Text = "PDF";
+            this.btnUrlPDFWedge.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUrlPDFWedge.UseVisualStyleBackColor = false;
+            this.btnUrlPDFWedge.Click += new System.EventHandler(this.btnUrlPDFWedge_Click);
+            // 
             // txtVendorWedge
             // 
             this.txtVendorWedge.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(226)))), ((int)(((byte)(227)))));
             this.txtVendorWedge.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtVendorWedge.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.txtVendorWedge.Font = new System.Drawing.Font("Roboto", 14F);
+            this.txtVendorWedge.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtVendorWedge.Location = new System.Drawing.Point(13, 156);
             this.txtVendorWedge.Name = "txtVendorWedge";
             this.txtVendorWedge.Size = new System.Drawing.Size(128, 31);
             this.txtVendorWedge.TabIndex = 381;
-            this.txtVendorWedge.Text = "XXXXXXX";
             this.txtVendorWedge.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txtVendorWedge.Click += new System.EventHandler(this.txtVendorWedge_Click);
             // 
             // txtSSNEWedge
             // 
             this.txtSSNEWedge.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(226)))), ((int)(((byte)(227)))));
             this.txtSSNEWedge.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSSNEWedge.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.txtSSNEWedge.Font = new System.Drawing.Font("Roboto", 14F);
+            this.txtSSNEWedge.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSSNEWedge.Location = new System.Drawing.Point(13, 103);
             this.txtSSNEWedge.Name = "txtSSNEWedge";
             this.txtSSNEWedge.Size = new System.Drawing.Size(128, 31);
             this.txtSSNEWedge.TabIndex = 380;
-            this.txtSSNEWedge.Text = "200-XXXXX";
             this.txtSSNEWedge.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txtSSNEWedge.Click += new System.EventHandler(this.txtSSNEWedge_Click);
             // 
             // label59
             // 
@@ -1774,6 +2033,16 @@
             this.label61.Text = "Wedge Lock";
             this.label61.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = global::_0510Project.Properties.Resources.Wedge;
+            this.pictureBox11.Location = new System.Drawing.Point(13, 33);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(218, 51);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox11.TabIndex = 2;
+            this.pictureBox11.TabStop = false;
+            // 
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.LightGray;
@@ -1790,31 +2059,73 @@
             this.panel10.Size = new System.Drawing.Size(245, 200);
             this.panel10.TabIndex = 457;
             // 
+            // btnUrlSTEPSpring
+            // 
+            this.btnUrlSTEPSpring.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnUrlSTEPSpring.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnUrlSTEPSpring.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUrlSTEPSpring.Font = new System.Drawing.Font("Roboto", 12F);
+            this.btnUrlSTEPSpring.ForeColor = System.Drawing.Color.White;
+            this.btnUrlSTEPSpring.IconChar = FontAwesome.Sharp.IconChar.FileArchive;
+            this.btnUrlSTEPSpring.IconColor = System.Drawing.Color.White;
+            this.btnUrlSTEPSpring.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.btnUrlSTEPSpring.IconSize = 20;
+            this.btnUrlSTEPSpring.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnUrlSTEPSpring.Location = new System.Drawing.Point(151, 156);
+            this.btnUrlSTEPSpring.Name = "btnUrlSTEPSpring";
+            this.btnUrlSTEPSpring.Size = new System.Drawing.Size(80, 31);
+            this.btnUrlSTEPSpring.TabIndex = 452;
+            this.btnUrlSTEPSpring.Text = "STEP";
+            this.btnUrlSTEPSpring.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUrlSTEPSpring.UseVisualStyleBackColor = false;
+            this.btnUrlSTEPSpring.Click += new System.EventHandler(this.btnUrlSTEPSpring_Click);
+            // 
+            // btnUrlPDFSpring
+            // 
+            this.btnUrlPDFSpring.BackColor = System.Drawing.Color.Firebrick;
+            this.btnUrlPDFSpring.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnUrlPDFSpring.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUrlPDFSpring.Font = new System.Drawing.Font("Roboto", 12F);
+            this.btnUrlPDFSpring.ForeColor = System.Drawing.Color.White;
+            this.btnUrlPDFSpring.IconChar = FontAwesome.Sharp.IconChar.FilePdf;
+            this.btnUrlPDFSpring.IconColor = System.Drawing.Color.White;
+            this.btnUrlPDFSpring.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.btnUrlPDFSpring.IconSize = 20;
+            this.btnUrlPDFSpring.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnUrlPDFSpring.Location = new System.Drawing.Point(151, 103);
+            this.btnUrlPDFSpring.Name = "btnUrlPDFSpring";
+            this.btnUrlPDFSpring.Size = new System.Drawing.Size(80, 31);
+            this.btnUrlPDFSpring.TabIndex = 451;
+            this.btnUrlPDFSpring.Text = "PDF";
+            this.btnUrlPDFSpring.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUrlPDFSpring.UseVisualStyleBackColor = false;
+            this.btnUrlPDFSpring.Click += new System.EventHandler(this.btnUrlPDFSpring_Click);
+            // 
             // txtVendorSpring
             // 
             this.txtVendorSpring.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(226)))), ((int)(((byte)(227)))));
             this.txtVendorSpring.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtVendorSpring.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.txtVendorSpring.Font = new System.Drawing.Font("Roboto", 14F);
+            this.txtVendorSpring.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtVendorSpring.Location = new System.Drawing.Point(13, 156);
             this.txtVendorSpring.Name = "txtVendorSpring";
             this.txtVendorSpring.Size = new System.Drawing.Size(128, 31);
             this.txtVendorSpring.TabIndex = 381;
-            this.txtVendorSpring.Text = "XXXXXXX";
             this.txtVendorSpring.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txtVendorSpring.Click += new System.EventHandler(this.txtVendorSpring_Click);
             // 
             // txtSSNESpring
             // 
             this.txtSSNESpring.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(226)))), ((int)(((byte)(227)))));
             this.txtSSNESpring.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSSNESpring.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.txtSSNESpring.Font = new System.Drawing.Font("Roboto", 14F);
+            this.txtSSNESpring.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSSNESpring.Location = new System.Drawing.Point(13, 103);
             this.txtSSNESpring.Name = "txtSSNESpring";
             this.txtSSNESpring.Size = new System.Drawing.Size(128, 31);
             this.txtSSNESpring.TabIndex = 380;
-            this.txtSSNESpring.Text = "200-XXXXX";
             this.txtSSNESpring.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txtSSNESpring.Click += new System.EventHandler(this.txtSSNESpring_Click);
             // 
             // label54
             // 
@@ -1835,6 +2146,16 @@
             this.label55.Size = new System.Drawing.Size(72, 15);
             this.label55.TabIndex = 3;
             this.label55.Text = "SSNE P/N";
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = global::_0510Project.Properties.Resources.SpringLock;
+            this.pictureBox10.Location = new System.Drawing.Point(13, 41);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(218, 29);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox10.TabIndex = 2;
+            this.pictureBox10.TabStop = false;
             // 
             // label56
             // 
@@ -1865,31 +2186,73 @@
             this.panel9.Size = new System.Drawing.Size(245, 200);
             this.panel9.TabIndex = 456;
             // 
+            // btnUrlSTEPTooth
+            // 
+            this.btnUrlSTEPTooth.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnUrlSTEPTooth.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnUrlSTEPTooth.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUrlSTEPTooth.Font = new System.Drawing.Font("Roboto", 12F);
+            this.btnUrlSTEPTooth.ForeColor = System.Drawing.Color.White;
+            this.btnUrlSTEPTooth.IconChar = FontAwesome.Sharp.IconChar.FileArchive;
+            this.btnUrlSTEPTooth.IconColor = System.Drawing.Color.White;
+            this.btnUrlSTEPTooth.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.btnUrlSTEPTooth.IconSize = 20;
+            this.btnUrlSTEPTooth.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnUrlSTEPTooth.Location = new System.Drawing.Point(151, 156);
+            this.btnUrlSTEPTooth.Name = "btnUrlSTEPTooth";
+            this.btnUrlSTEPTooth.Size = new System.Drawing.Size(80, 31);
+            this.btnUrlSTEPTooth.TabIndex = 452;
+            this.btnUrlSTEPTooth.Text = "STEP";
+            this.btnUrlSTEPTooth.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUrlSTEPTooth.UseVisualStyleBackColor = false;
+            this.btnUrlSTEPTooth.Click += new System.EventHandler(this.btnUrlSTEPTooth_Click);
+            // 
+            // btnUrlPDFTooth
+            // 
+            this.btnUrlPDFTooth.BackColor = System.Drawing.Color.Firebrick;
+            this.btnUrlPDFTooth.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnUrlPDFTooth.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUrlPDFTooth.Font = new System.Drawing.Font("Roboto", 12F);
+            this.btnUrlPDFTooth.ForeColor = System.Drawing.Color.White;
+            this.btnUrlPDFTooth.IconChar = FontAwesome.Sharp.IconChar.FilePdf;
+            this.btnUrlPDFTooth.IconColor = System.Drawing.Color.White;
+            this.btnUrlPDFTooth.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.btnUrlPDFTooth.IconSize = 20;
+            this.btnUrlPDFTooth.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnUrlPDFTooth.Location = new System.Drawing.Point(151, 103);
+            this.btnUrlPDFTooth.Name = "btnUrlPDFTooth";
+            this.btnUrlPDFTooth.Size = new System.Drawing.Size(80, 31);
+            this.btnUrlPDFTooth.TabIndex = 451;
+            this.btnUrlPDFTooth.Text = "PDF";
+            this.btnUrlPDFTooth.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUrlPDFTooth.UseVisualStyleBackColor = false;
+            this.btnUrlPDFTooth.Click += new System.EventHandler(this.btnUrlPDFTooth_Click);
+            // 
             // txtVendorTooth
             // 
             this.txtVendorTooth.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(226)))), ((int)(((byte)(227)))));
             this.txtVendorTooth.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtVendorTooth.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.txtVendorTooth.Font = new System.Drawing.Font("Roboto", 14F);
+            this.txtVendorTooth.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtVendorTooth.Location = new System.Drawing.Point(13, 156);
             this.txtVendorTooth.Name = "txtVendorTooth";
             this.txtVendorTooth.Size = new System.Drawing.Size(128, 31);
             this.txtVendorTooth.TabIndex = 381;
-            this.txtVendorTooth.Text = "XXXXXXX";
             this.txtVendorTooth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txtVendorTooth.Click += new System.EventHandler(this.txtVendorTooth_Click);
             // 
             // txtSSNETooth
             // 
             this.txtSSNETooth.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(226)))), ((int)(((byte)(227)))));
             this.txtSSNETooth.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSSNETooth.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.txtSSNETooth.Font = new System.Drawing.Font("Roboto", 14F);
+            this.txtSSNETooth.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSSNETooth.Location = new System.Drawing.Point(13, 103);
             this.txtSSNETooth.Name = "txtSSNETooth";
             this.txtSSNETooth.Size = new System.Drawing.Size(128, 31);
             this.txtSSNETooth.TabIndex = 380;
-            this.txtSSNETooth.Text = "200-XXXXX";
             this.txtSSNETooth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txtSSNETooth.Click += new System.EventHandler(this.txtSSNETooth_Click);
             // 
             // label48
             // 
@@ -1924,6 +2287,16 @@
             this.label50.Text = "Tooth Lock";
             this.label50.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = global::_0510Project.Properties.Resources.Tooth;
+            this.pictureBox9.Location = new System.Drawing.Point(11, 33);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(220, 45);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 2;
+            this.pictureBox9.TabStop = false;
+            // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.LightGray;
@@ -1940,31 +2313,73 @@
             this.panel8.Size = new System.Drawing.Size(245, 200);
             this.panel8.TabIndex = 455;
             // 
+            // btnUrlSTEPSplit
+            // 
+            this.btnUrlSTEPSplit.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnUrlSTEPSplit.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnUrlSTEPSplit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUrlSTEPSplit.Font = new System.Drawing.Font("Roboto", 12F);
+            this.btnUrlSTEPSplit.ForeColor = System.Drawing.Color.White;
+            this.btnUrlSTEPSplit.IconChar = FontAwesome.Sharp.IconChar.FileArchive;
+            this.btnUrlSTEPSplit.IconColor = System.Drawing.Color.White;
+            this.btnUrlSTEPSplit.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.btnUrlSTEPSplit.IconSize = 20;
+            this.btnUrlSTEPSplit.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnUrlSTEPSplit.Location = new System.Drawing.Point(151, 156);
+            this.btnUrlSTEPSplit.Name = "btnUrlSTEPSplit";
+            this.btnUrlSTEPSplit.Size = new System.Drawing.Size(80, 31);
+            this.btnUrlSTEPSplit.TabIndex = 452;
+            this.btnUrlSTEPSplit.Text = "STEP";
+            this.btnUrlSTEPSplit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUrlSTEPSplit.UseVisualStyleBackColor = false;
+            this.btnUrlSTEPSplit.Click += new System.EventHandler(this.btnUrlSTEPSplit_Click);
+            // 
+            // btnUrlPDFSplit
+            // 
+            this.btnUrlPDFSplit.BackColor = System.Drawing.Color.Firebrick;
+            this.btnUrlPDFSplit.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnUrlPDFSplit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUrlPDFSplit.Font = new System.Drawing.Font("Roboto", 12F);
+            this.btnUrlPDFSplit.ForeColor = System.Drawing.Color.White;
+            this.btnUrlPDFSplit.IconChar = FontAwesome.Sharp.IconChar.FilePdf;
+            this.btnUrlPDFSplit.IconColor = System.Drawing.Color.White;
+            this.btnUrlPDFSplit.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.btnUrlPDFSplit.IconSize = 20;
+            this.btnUrlPDFSplit.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnUrlPDFSplit.Location = new System.Drawing.Point(151, 103);
+            this.btnUrlPDFSplit.Name = "btnUrlPDFSplit";
+            this.btnUrlPDFSplit.Size = new System.Drawing.Size(80, 31);
+            this.btnUrlPDFSplit.TabIndex = 451;
+            this.btnUrlPDFSplit.Text = "PDF";
+            this.btnUrlPDFSplit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUrlPDFSplit.UseVisualStyleBackColor = false;
+            this.btnUrlPDFSplit.Click += new System.EventHandler(this.btnUrlPDFSplit_Click);
+            // 
             // txtVendorSplit
             // 
             this.txtVendorSplit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(226)))), ((int)(((byte)(227)))));
             this.txtVendorSplit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtVendorSplit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.txtVendorSplit.Font = new System.Drawing.Font("Roboto", 14F);
+            this.txtVendorSplit.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtVendorSplit.Location = new System.Drawing.Point(13, 156);
             this.txtVendorSplit.Name = "txtVendorSplit";
             this.txtVendorSplit.Size = new System.Drawing.Size(128, 31);
             this.txtVendorSplit.TabIndex = 381;
-            this.txtVendorSplit.Text = "XXXXXXX";
             this.txtVendorSplit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txtVendorSplit.Click += new System.EventHandler(this.txtVendorSplit_Click);
             // 
             // txtSSNESplit
             // 
             this.txtSSNESplit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(226)))), ((int)(((byte)(227)))));
             this.txtSSNESplit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSSNESplit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.txtSSNESplit.Font = new System.Drawing.Font("Roboto", 14F);
+            this.txtSSNESplit.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSSNESplit.Location = new System.Drawing.Point(13, 103);
             this.txtSSNESplit.Name = "txtSSNESplit";
             this.txtSSNESplit.Size = new System.Drawing.Size(128, 31);
             this.txtSSNESplit.TabIndex = 380;
-            this.txtSSNESplit.Text = "200-XXXXX";
             this.txtSSNESplit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txtSSNESplit.Click += new System.EventHandler(this.txtSSNESplit_Click);
             // 
             // label42
             // 
@@ -1998,6 +2413,16 @@
             this.label44.TabIndex = 1;
             this.label44.Text = "Split Lock";
             this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::_0510Project.Properties.Resources.SplitLock;
+            this.pictureBox8.Location = new System.Drawing.Point(14, 27);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(217, 56);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 2;
+            this.pictureBox8.TabStop = false;
             // 
             // label51
             // 
@@ -2065,7 +2490,7 @@
             this.ss8.Name = "ss8";
             this.ss8.Size = new System.Drawing.Size(80, 35);
             this.ss8.TabIndex = 367;
-            this.ss8.Text = "5/16 -24";
+            this.ss8.Text = "5/16 - 24";
             this.ss8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.ss8.Click += new System.EventHandler(this.ss8_Click);
             // 
@@ -2201,6 +2626,25 @@
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // btnEnterGestion
+            // 
+            this.btnEnterGestion.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.btnEnterGestion.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnEnterGestion.FlatAppearance.BorderSize = 0;
+            this.btnEnterGestion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEnterGestion.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEnterGestion.ForeColor = System.Drawing.Color.White;
+            this.btnEnterGestion.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnEnterGestion.IconColor = System.Drawing.Color.Black;
+            this.btnEnterGestion.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnEnterGestion.Location = new System.Drawing.Point(388, 218);
+            this.btnEnterGestion.Name = "btnEnterGestion";
+            this.btnEnterGestion.Size = new System.Drawing.Size(109, 46);
+            this.btnEnterGestion.TabIndex = 3;
+            this.btnEnterGestion.Text = "ENTER";
+            this.btnEnterGestion.UseVisualStyleBackColor = false;
+            this.btnEnterGestion.Click += new System.EventHandler(this.btnEnterGestion_Click);
+            // 
             // txtPassword
             // 
             this.txtPassword.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2257,117 +2701,6 @@
             this.pAvailableTools3.TabIndex = 459;
             this.pAvailableTools3.Visible = false;
             // 
-            // pAvailableTools2
-            // 
-            this.pAvailableTools2.Controls.Add(this.lbTool1B);
-            this.pAvailableTools2.Controls.Add(this.picTool1B);
-            this.pAvailableTools2.Controls.Add(this.lbTool2B);
-            this.pAvailableTools2.Controls.Add(this.picTool2B);
-            this.pAvailableTools2.Location = new System.Drawing.Point(1046, 684);
-            this.pAvailableTools2.Name = "pAvailableTools2";
-            this.pAvailableTools2.Size = new System.Drawing.Size(429, 106);
-            this.pAvailableTools2.TabIndex = 460;
-            this.pAvailableTools2.Visible = false;
-            // 
-            // lbTool1B
-            // 
-            this.lbTool1B.Font = new System.Drawing.Font("Roboto", 12F);
-            this.lbTool1B.Location = new System.Drawing.Point(78, 83);
-            this.lbTool1B.Name = "lbTool1B";
-            this.lbTool1B.Size = new System.Drawing.Size(124, 22);
-            this.lbTool1B.TabIndex = 442;
-            this.lbTool1B.Text = "Allen Wrenches";
-            this.lbTool1B.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbTool2B
-            // 
-            this.lbTool2B.Font = new System.Drawing.Font("Roboto", 12F);
-            this.lbTool2B.Location = new System.Drawing.Point(220, 83);
-            this.lbTool2B.Name = "lbTool2B";
-            this.lbTool2B.Size = new System.Drawing.Size(124, 22);
-            this.lbTool2B.TabIndex = 446;
-            this.lbTool2B.Text = "T-Handle";
-            this.lbTool2B.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pAvailableTools1
-            // 
-            this.pAvailableTools1.Controls.Add(this.lbTool1C);
-            this.pAvailableTools1.Controls.Add(this.picTool1C);
-            this.pAvailableTools1.Location = new System.Drawing.Point(1481, 684);
-            this.pAvailableTools1.Name = "pAvailableTools1";
-            this.pAvailableTools1.Size = new System.Drawing.Size(429, 106);
-            this.pAvailableTools1.TabIndex = 461;
-            this.pAvailableTools1.Visible = false;
-            // 
-            // lbTool1C
-            // 
-            this.lbTool1C.Font = new System.Drawing.Font("Roboto", 12F);
-            this.lbTool1C.Location = new System.Drawing.Point(153, 83);
-            this.lbTool1C.Name = "lbTool1C";
-            this.lbTool1C.Size = new System.Drawing.Size(124, 22);
-            this.lbTool1C.TabIndex = 446;
-            this.lbTool1C.Text = "T-Handle";
-            this.lbTool1C.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtIDLength
-            // 
-            this.txtIDLength.Location = new System.Drawing.Point(775, 210);
-            this.txtIDLength.Name = "txtIDLength";
-            this.txtIDLength.Size = new System.Drawing.Size(100, 23);
-            this.txtIDLength.TabIndex = 362;
-            this.txtIDLength.Visible = false;
-            // 
-            // tTesting
-            // 
-            this.tTesting.Interval = 1000;
-            this.tTesting.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // txtIDSize
-            // 
-            this.txtIDSize.Location = new System.Drawing.Point(663, 210);
-            this.txtIDSize.Name = "txtIDSize";
-            this.txtIDSize.Size = new System.Drawing.Size(100, 23);
-            this.txtIDSize.TabIndex = 361;
-            this.txtIDSize.Visible = false;
-            // 
-            // txtIDType
-            // 
-            this.txtIDType.Location = new System.Drawing.Point(547, 210);
-            this.txtIDType.Name = "txtIDType";
-            this.txtIDType.Size = new System.Drawing.Size(100, 23);
-            this.txtIDType.TabIndex = 360;
-            this.txtIDType.Visible = false;
-            // 
-            // picTool1C
-            // 
-            this.picTool1C.Image = global::_0510Project.Properties.Resources.T_Handle;
-            this.picTool1C.Location = new System.Drawing.Point(153, 6);
-            this.picTool1C.Name = "picTool1C";
-            this.picTool1C.Size = new System.Drawing.Size(124, 74);
-            this.picTool1C.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picTool1C.TabIndex = 447;
-            this.picTool1C.TabStop = false;
-            // 
-            // picTool1B
-            // 
-            this.picTool1B.Image = global::_0510Project.Properties.Resources.Allen;
-            this.picTool1B.Location = new System.Drawing.Point(78, 6);
-            this.picTool1B.Name = "picTool1B";
-            this.picTool1B.Size = new System.Drawing.Size(124, 74);
-            this.picTool1B.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picTool1B.TabIndex = 445;
-            this.picTool1B.TabStop = false;
-            // 
-            // picTool2B
-            // 
-            this.picTool2B.Image = global::_0510Project.Properties.Resources.T_Handle;
-            this.picTool2B.Location = new System.Drawing.Point(220, 6);
-            this.picTool2B.Name = "picTool2B";
-            this.picTool2B.Size = new System.Drawing.Size(124, 74);
-            this.picTool2B.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picTool2B.TabIndex = 447;
-            this.picTool2B.TabStop = false;
-            // 
             // picTool1
             // 
             this.picTool1.Image = global::_0510Project.Properties.Resources.Allen;
@@ -2398,388 +2731,116 @@
             this.picTool2.TabIndex = 449;
             this.picTool2.TabStop = false;
             // 
-            // btnEnterGestion
+            // pAvailableTools2
             // 
-            this.btnEnterGestion.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.btnEnterGestion.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnEnterGestion.FlatAppearance.BorderSize = 0;
-            this.btnEnterGestion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEnterGestion.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEnterGestion.ForeColor = System.Drawing.Color.White;
-            this.btnEnterGestion.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnEnterGestion.IconColor = System.Drawing.Color.Black;
-            this.btnEnterGestion.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnEnterGestion.Location = new System.Drawing.Point(388, 218);
-            this.btnEnterGestion.Name = "btnEnterGestion";
-            this.btnEnterGestion.Size = new System.Drawing.Size(109, 46);
-            this.btnEnterGestion.TabIndex = 3;
-            this.btnEnterGestion.Text = "ENTER";
-            this.btnEnterGestion.UseVisualStyleBackColor = false;
-            this.btnEnterGestion.Click += new System.EventHandler(this.btnEnterGestion_Click);
+            this.pAvailableTools2.Controls.Add(this.lbTool1B);
+            this.pAvailableTools2.Controls.Add(this.picTool1B);
+            this.pAvailableTools2.Controls.Add(this.lbTool2B);
+            this.pAvailableTools2.Controls.Add(this.picTool2B);
+            this.pAvailableTools2.Location = new System.Drawing.Point(1046, 684);
+            this.pAvailableTools2.Name = "pAvailableTools2";
+            this.pAvailableTools2.Size = new System.Drawing.Size(429, 106);
+            this.pAvailableTools2.TabIndex = 460;
+            this.pAvailableTools2.Visible = false;
             // 
-            // btnUrlSTEPWedge
+            // lbTool1B
             // 
-            this.btnUrlSTEPWedge.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnUrlSTEPWedge.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnUrlSTEPWedge.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUrlSTEPWedge.Font = new System.Drawing.Font("Roboto", 12F);
-            this.btnUrlSTEPWedge.ForeColor = System.Drawing.Color.White;
-            this.btnUrlSTEPWedge.IconChar = FontAwesome.Sharp.IconChar.FileArchive;
-            this.btnUrlSTEPWedge.IconColor = System.Drawing.Color.White;
-            this.btnUrlSTEPWedge.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.btnUrlSTEPWedge.IconSize = 20;
-            this.btnUrlSTEPWedge.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnUrlSTEPWedge.Location = new System.Drawing.Point(151, 156);
-            this.btnUrlSTEPWedge.Name = "btnUrlSTEPWedge";
-            this.btnUrlSTEPWedge.Size = new System.Drawing.Size(80, 31);
-            this.btnUrlSTEPWedge.TabIndex = 452;
-            this.btnUrlSTEPWedge.Text = "STEP";
-            this.btnUrlSTEPWedge.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUrlSTEPWedge.UseVisualStyleBackColor = false;
-            this.btnUrlSTEPWedge.Click += new System.EventHandler(this.btnUrlSTEPWedge_Click);
+            this.lbTool1B.Font = new System.Drawing.Font("Roboto", 12F);
+            this.lbTool1B.Location = new System.Drawing.Point(78, 83);
+            this.lbTool1B.Name = "lbTool1B";
+            this.lbTool1B.Size = new System.Drawing.Size(124, 22);
+            this.lbTool1B.TabIndex = 442;
+            this.lbTool1B.Text = "Allen Wrenches";
+            this.lbTool1B.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnUrlPDFWedge
+            // picTool1B
             // 
-            this.btnUrlPDFWedge.BackColor = System.Drawing.Color.Firebrick;
-            this.btnUrlPDFWedge.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnUrlPDFWedge.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUrlPDFWedge.Font = new System.Drawing.Font("Roboto", 12F);
-            this.btnUrlPDFWedge.ForeColor = System.Drawing.Color.White;
-            this.btnUrlPDFWedge.IconChar = FontAwesome.Sharp.IconChar.FilePdf;
-            this.btnUrlPDFWedge.IconColor = System.Drawing.Color.White;
-            this.btnUrlPDFWedge.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.btnUrlPDFWedge.IconSize = 20;
-            this.btnUrlPDFWedge.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnUrlPDFWedge.Location = new System.Drawing.Point(151, 103);
-            this.btnUrlPDFWedge.Name = "btnUrlPDFWedge";
-            this.btnUrlPDFWedge.Size = new System.Drawing.Size(80, 31);
-            this.btnUrlPDFWedge.TabIndex = 451;
-            this.btnUrlPDFWedge.Text = "PDF";
-            this.btnUrlPDFWedge.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUrlPDFWedge.UseVisualStyleBackColor = false;
-            this.btnUrlPDFWedge.Click += new System.EventHandler(this.btnUrlPDFWedge_Click);
+            this.picTool1B.Image = global::_0510Project.Properties.Resources.Allen;
+            this.picTool1B.Location = new System.Drawing.Point(78, 6);
+            this.picTool1B.Name = "picTool1B";
+            this.picTool1B.Size = new System.Drawing.Size(124, 74);
+            this.picTool1B.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picTool1B.TabIndex = 445;
+            this.picTool1B.TabStop = false;
             // 
-            // pictureBox11
+            // lbTool2B
             // 
-            this.pictureBox11.Image = global::_0510Project.Properties.Resources.Wedge;
-            this.pictureBox11.Location = new System.Drawing.Point(13, 33);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(218, 51);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox11.TabIndex = 2;
-            this.pictureBox11.TabStop = false;
+            this.lbTool2B.Font = new System.Drawing.Font("Roboto", 12F);
+            this.lbTool2B.Location = new System.Drawing.Point(220, 83);
+            this.lbTool2B.Name = "lbTool2B";
+            this.lbTool2B.Size = new System.Drawing.Size(124, 22);
+            this.lbTool2B.TabIndex = 446;
+            this.lbTool2B.Text = "T-Handle";
+            this.lbTool2B.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnUrlSTEPSpring
+            // picTool2B
             // 
-            this.btnUrlSTEPSpring.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnUrlSTEPSpring.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnUrlSTEPSpring.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUrlSTEPSpring.Font = new System.Drawing.Font("Roboto", 12F);
-            this.btnUrlSTEPSpring.ForeColor = System.Drawing.Color.White;
-            this.btnUrlSTEPSpring.IconChar = FontAwesome.Sharp.IconChar.FileArchive;
-            this.btnUrlSTEPSpring.IconColor = System.Drawing.Color.White;
-            this.btnUrlSTEPSpring.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.btnUrlSTEPSpring.IconSize = 20;
-            this.btnUrlSTEPSpring.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnUrlSTEPSpring.Location = new System.Drawing.Point(151, 156);
-            this.btnUrlSTEPSpring.Name = "btnUrlSTEPSpring";
-            this.btnUrlSTEPSpring.Size = new System.Drawing.Size(80, 31);
-            this.btnUrlSTEPSpring.TabIndex = 452;
-            this.btnUrlSTEPSpring.Text = "STEP";
-            this.btnUrlSTEPSpring.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUrlSTEPSpring.UseVisualStyleBackColor = false;
-            this.btnUrlSTEPSpring.Click += new System.EventHandler(this.btnUrlSTEPSpring_Click);
+            this.picTool2B.Image = global::_0510Project.Properties.Resources.T_Handle;
+            this.picTool2B.Location = new System.Drawing.Point(220, 6);
+            this.picTool2B.Name = "picTool2B";
+            this.picTool2B.Size = new System.Drawing.Size(124, 74);
+            this.picTool2B.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picTool2B.TabIndex = 447;
+            this.picTool2B.TabStop = false;
             // 
-            // btnUrlPDFSpring
+            // pAvailableTools1
             // 
-            this.btnUrlPDFSpring.BackColor = System.Drawing.Color.Firebrick;
-            this.btnUrlPDFSpring.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnUrlPDFSpring.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUrlPDFSpring.Font = new System.Drawing.Font("Roboto", 12F);
-            this.btnUrlPDFSpring.ForeColor = System.Drawing.Color.White;
-            this.btnUrlPDFSpring.IconChar = FontAwesome.Sharp.IconChar.FilePdf;
-            this.btnUrlPDFSpring.IconColor = System.Drawing.Color.White;
-            this.btnUrlPDFSpring.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.btnUrlPDFSpring.IconSize = 20;
-            this.btnUrlPDFSpring.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnUrlPDFSpring.Location = new System.Drawing.Point(151, 103);
-            this.btnUrlPDFSpring.Name = "btnUrlPDFSpring";
-            this.btnUrlPDFSpring.Size = new System.Drawing.Size(80, 31);
-            this.btnUrlPDFSpring.TabIndex = 451;
-            this.btnUrlPDFSpring.Text = "PDF";
-            this.btnUrlPDFSpring.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUrlPDFSpring.UseVisualStyleBackColor = false;
-            this.btnUrlPDFSpring.Click += new System.EventHandler(this.btnUrlPDFSpring_Click);
+            this.pAvailableTools1.Controls.Add(this.lbTool1C);
+            this.pAvailableTools1.Controls.Add(this.picTool1C);
+            this.pAvailableTools1.Location = new System.Drawing.Point(1481, 684);
+            this.pAvailableTools1.Name = "pAvailableTools1";
+            this.pAvailableTools1.Size = new System.Drawing.Size(429, 106);
+            this.pAvailableTools1.TabIndex = 461;
+            this.pAvailableTools1.Visible = false;
             // 
-            // pictureBox10
+            // lbTool1C
             // 
-            this.pictureBox10.Image = global::_0510Project.Properties.Resources.SpringLock;
-            this.pictureBox10.Location = new System.Drawing.Point(13, 41);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(218, 29);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox10.TabIndex = 2;
-            this.pictureBox10.TabStop = false;
+            this.lbTool1C.Font = new System.Drawing.Font("Roboto", 12F);
+            this.lbTool1C.Location = new System.Drawing.Point(153, 83);
+            this.lbTool1C.Name = "lbTool1C";
+            this.lbTool1C.Size = new System.Drawing.Size(124, 22);
+            this.lbTool1C.TabIndex = 446;
+            this.lbTool1C.Text = "T-Handle";
+            this.lbTool1C.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnUrlSTEPTooth
+            // picTool1C
             // 
-            this.btnUrlSTEPTooth.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnUrlSTEPTooth.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnUrlSTEPTooth.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUrlSTEPTooth.Font = new System.Drawing.Font("Roboto", 12F);
-            this.btnUrlSTEPTooth.ForeColor = System.Drawing.Color.White;
-            this.btnUrlSTEPTooth.IconChar = FontAwesome.Sharp.IconChar.FileArchive;
-            this.btnUrlSTEPTooth.IconColor = System.Drawing.Color.White;
-            this.btnUrlSTEPTooth.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.btnUrlSTEPTooth.IconSize = 20;
-            this.btnUrlSTEPTooth.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnUrlSTEPTooth.Location = new System.Drawing.Point(151, 156);
-            this.btnUrlSTEPTooth.Name = "btnUrlSTEPTooth";
-            this.btnUrlSTEPTooth.Size = new System.Drawing.Size(80, 31);
-            this.btnUrlSTEPTooth.TabIndex = 452;
-            this.btnUrlSTEPTooth.Text = "STEP";
-            this.btnUrlSTEPTooth.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUrlSTEPTooth.UseVisualStyleBackColor = false;
-            this.btnUrlSTEPTooth.Click += new System.EventHandler(this.btnUrlSTEPTooth_Click);
+            this.picTool1C.Image = global::_0510Project.Properties.Resources.T_Handle;
+            this.picTool1C.Location = new System.Drawing.Point(153, 6);
+            this.picTool1C.Name = "picTool1C";
+            this.picTool1C.Size = new System.Drawing.Size(124, 74);
+            this.picTool1C.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picTool1C.TabIndex = 447;
+            this.picTool1C.TabStop = false;
             // 
-            // btnUrlPDFTooth
+            // txtIDLength
             // 
-            this.btnUrlPDFTooth.BackColor = System.Drawing.Color.Firebrick;
-            this.btnUrlPDFTooth.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnUrlPDFTooth.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUrlPDFTooth.Font = new System.Drawing.Font("Roboto", 12F);
-            this.btnUrlPDFTooth.ForeColor = System.Drawing.Color.White;
-            this.btnUrlPDFTooth.IconChar = FontAwesome.Sharp.IconChar.FilePdf;
-            this.btnUrlPDFTooth.IconColor = System.Drawing.Color.White;
-            this.btnUrlPDFTooth.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.btnUrlPDFTooth.IconSize = 20;
-            this.btnUrlPDFTooth.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnUrlPDFTooth.Location = new System.Drawing.Point(151, 103);
-            this.btnUrlPDFTooth.Name = "btnUrlPDFTooth";
-            this.btnUrlPDFTooth.Size = new System.Drawing.Size(80, 31);
-            this.btnUrlPDFTooth.TabIndex = 451;
-            this.btnUrlPDFTooth.Text = "PDF";
-            this.btnUrlPDFTooth.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUrlPDFTooth.UseVisualStyleBackColor = false;
-            this.btnUrlPDFTooth.Click += new System.EventHandler(this.btnUrlPDFTooth_Click);
+            this.txtIDLength.Location = new System.Drawing.Point(775, 210);
+            this.txtIDLength.Name = "txtIDLength";
+            this.txtIDLength.Size = new System.Drawing.Size(100, 23);
+            this.txtIDLength.TabIndex = 362;
+            this.txtIDLength.Visible = false;
             // 
-            // pictureBox9
+            // tTesting
             // 
-            this.pictureBox9.Image = global::_0510Project.Properties.Resources.Tooth;
-            this.pictureBox9.Location = new System.Drawing.Point(11, 33);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(220, 45);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 2;
-            this.pictureBox9.TabStop = false;
+            this.tTesting.Interval = 1000;
+            this.tTesting.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // btnUrlSTEPSplit
+            // txtIDSize
             // 
-            this.btnUrlSTEPSplit.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnUrlSTEPSplit.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnUrlSTEPSplit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUrlSTEPSplit.Font = new System.Drawing.Font("Roboto", 12F);
-            this.btnUrlSTEPSplit.ForeColor = System.Drawing.Color.White;
-            this.btnUrlSTEPSplit.IconChar = FontAwesome.Sharp.IconChar.FileArchive;
-            this.btnUrlSTEPSplit.IconColor = System.Drawing.Color.White;
-            this.btnUrlSTEPSplit.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.btnUrlSTEPSplit.IconSize = 20;
-            this.btnUrlSTEPSplit.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnUrlSTEPSplit.Location = new System.Drawing.Point(151, 156);
-            this.btnUrlSTEPSplit.Name = "btnUrlSTEPSplit";
-            this.btnUrlSTEPSplit.Size = new System.Drawing.Size(80, 31);
-            this.btnUrlSTEPSplit.TabIndex = 452;
-            this.btnUrlSTEPSplit.Text = "STEP";
-            this.btnUrlSTEPSplit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUrlSTEPSplit.UseVisualStyleBackColor = false;
-            this.btnUrlSTEPSplit.Click += new System.EventHandler(this.btnUrlSTEPSplit_Click);
+            this.txtIDSize.Location = new System.Drawing.Point(663, 210);
+            this.txtIDSize.Name = "txtIDSize";
+            this.txtIDSize.Size = new System.Drawing.Size(100, 23);
+            this.txtIDSize.TabIndex = 361;
+            this.txtIDSize.Visible = false;
             // 
-            // btnUrlPDFSplit
+            // txtIDType
             // 
-            this.btnUrlPDFSplit.BackColor = System.Drawing.Color.Firebrick;
-            this.btnUrlPDFSplit.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnUrlPDFSplit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUrlPDFSplit.Font = new System.Drawing.Font("Roboto", 12F);
-            this.btnUrlPDFSplit.ForeColor = System.Drawing.Color.White;
-            this.btnUrlPDFSplit.IconChar = FontAwesome.Sharp.IconChar.FilePdf;
-            this.btnUrlPDFSplit.IconColor = System.Drawing.Color.White;
-            this.btnUrlPDFSplit.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.btnUrlPDFSplit.IconSize = 20;
-            this.btnUrlPDFSplit.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnUrlPDFSplit.Location = new System.Drawing.Point(151, 103);
-            this.btnUrlPDFSplit.Name = "btnUrlPDFSplit";
-            this.btnUrlPDFSplit.Size = new System.Drawing.Size(80, 31);
-            this.btnUrlPDFSplit.TabIndex = 451;
-            this.btnUrlPDFSplit.Text = "PDF";
-            this.btnUrlPDFSplit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUrlPDFSplit.UseVisualStyleBackColor = false;
-            this.btnUrlPDFSplit.Click += new System.EventHandler(this.btnUrlPDFSplit_Click);
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::_0510Project.Properties.Resources.SplitLock;
-            this.pictureBox8.Location = new System.Drawing.Point(14, 27);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(217, 56);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 2;
-            this.pictureBox8.TabStop = false;
-            // 
-            // btnUrlSTEPFlat
-            // 
-            this.btnUrlSTEPFlat.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnUrlSTEPFlat.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnUrlSTEPFlat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUrlSTEPFlat.Font = new System.Drawing.Font("Roboto", 12F);
-            this.btnUrlSTEPFlat.ForeColor = System.Drawing.Color.White;
-            this.btnUrlSTEPFlat.IconChar = FontAwesome.Sharp.IconChar.FileArchive;
-            this.btnUrlSTEPFlat.IconColor = System.Drawing.Color.White;
-            this.btnUrlSTEPFlat.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.btnUrlSTEPFlat.IconSize = 20;
-            this.btnUrlSTEPFlat.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnUrlSTEPFlat.Location = new System.Drawing.Point(151, 156);
-            this.btnUrlSTEPFlat.Name = "btnUrlSTEPFlat";
-            this.btnUrlSTEPFlat.Size = new System.Drawing.Size(80, 31);
-            this.btnUrlSTEPFlat.TabIndex = 452;
-            this.btnUrlSTEPFlat.Text = "STEP";
-            this.btnUrlSTEPFlat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUrlSTEPFlat.UseVisualStyleBackColor = false;
-            this.btnUrlSTEPFlat.Click += new System.EventHandler(this.btnUrlSTEPFlat_Click);
-            // 
-            // btnUrlPDFFlat
-            // 
-            this.btnUrlPDFFlat.BackColor = System.Drawing.Color.Firebrick;
-            this.btnUrlPDFFlat.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnUrlPDFFlat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUrlPDFFlat.Font = new System.Drawing.Font("Roboto", 12F);
-            this.btnUrlPDFFlat.ForeColor = System.Drawing.Color.White;
-            this.btnUrlPDFFlat.IconChar = FontAwesome.Sharp.IconChar.FilePdf;
-            this.btnUrlPDFFlat.IconColor = System.Drawing.Color.White;
-            this.btnUrlPDFFlat.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.btnUrlPDFFlat.IconSize = 20;
-            this.btnUrlPDFFlat.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnUrlPDFFlat.Location = new System.Drawing.Point(151, 103);
-            this.btnUrlPDFFlat.Name = "btnUrlPDFFlat";
-            this.btnUrlPDFFlat.Size = new System.Drawing.Size(80, 31);
-            this.btnUrlPDFFlat.TabIndex = 451;
-            this.btnUrlPDFFlat.Text = "PDF";
-            this.btnUrlPDFFlat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUrlPDFFlat.UseVisualStyleBackColor = false;
-            this.btnUrlPDFFlat.Click += new System.EventHandler(this.btnUrlPDFFlat_Click);
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::_0510Project.Properties.Resources.Flat;
-            this.pictureBox7.Location = new System.Drawing.Point(13, 38);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(219, 29);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 2;
-            this.pictureBox7.TabStop = false;
-            // 
-            // btnUrlSTEPLockNut
-            // 
-            this.btnUrlSTEPLockNut.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnUrlSTEPLockNut.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnUrlSTEPLockNut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUrlSTEPLockNut.Font = new System.Drawing.Font("Roboto", 12F);
-            this.btnUrlSTEPLockNut.ForeColor = System.Drawing.Color.White;
-            this.btnUrlSTEPLockNut.IconChar = FontAwesome.Sharp.IconChar.FileArchive;
-            this.btnUrlSTEPLockNut.IconColor = System.Drawing.Color.White;
-            this.btnUrlSTEPLockNut.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.btnUrlSTEPLockNut.IconSize = 20;
-            this.btnUrlSTEPLockNut.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnUrlSTEPLockNut.Location = new System.Drawing.Point(151, 156);
-            this.btnUrlSTEPLockNut.Name = "btnUrlSTEPLockNut";
-            this.btnUrlSTEPLockNut.Size = new System.Drawing.Size(80, 31);
-            this.btnUrlSTEPLockNut.TabIndex = 452;
-            this.btnUrlSTEPLockNut.Text = "STEP";
-            this.btnUrlSTEPLockNut.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUrlSTEPLockNut.UseVisualStyleBackColor = false;
-            this.btnUrlSTEPLockNut.Click += new System.EventHandler(this.btnUrlSTEPLockNut_Click);
-            // 
-            // btnUrlPDFLockNut
-            // 
-            this.btnUrlPDFLockNut.BackColor = System.Drawing.Color.Firebrick;
-            this.btnUrlPDFLockNut.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnUrlPDFLockNut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUrlPDFLockNut.Font = new System.Drawing.Font("Roboto", 12F);
-            this.btnUrlPDFLockNut.ForeColor = System.Drawing.Color.White;
-            this.btnUrlPDFLockNut.IconChar = FontAwesome.Sharp.IconChar.FilePdf;
-            this.btnUrlPDFLockNut.IconColor = System.Drawing.Color.White;
-            this.btnUrlPDFLockNut.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.btnUrlPDFLockNut.IconSize = 20;
-            this.btnUrlPDFLockNut.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnUrlPDFLockNut.Location = new System.Drawing.Point(151, 103);
-            this.btnUrlPDFLockNut.Name = "btnUrlPDFLockNut";
-            this.btnUrlPDFLockNut.Size = new System.Drawing.Size(80, 31);
-            this.btnUrlPDFLockNut.TabIndex = 451;
-            this.btnUrlPDFLockNut.Text = "PDF";
-            this.btnUrlPDFLockNut.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUrlPDFLockNut.UseVisualStyleBackColor = false;
-            this.btnUrlPDFLockNut.Click += new System.EventHandler(this.btnUrlPDFLockNut_Click);
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::_0510Project.Properties.Resources.Crown;
-            this.pictureBox6.Location = new System.Drawing.Point(13, 31);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(218, 45);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 2;
-            this.pictureBox6.TabStop = false;
-            // 
-            // btnUrlSTEPHexNut
-            // 
-            this.btnUrlSTEPHexNut.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnUrlSTEPHexNut.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnUrlSTEPHexNut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUrlSTEPHexNut.Font = new System.Drawing.Font("Roboto", 12F);
-            this.btnUrlSTEPHexNut.ForeColor = System.Drawing.Color.White;
-            this.btnUrlSTEPHexNut.IconChar = FontAwesome.Sharp.IconChar.FileArchive;
-            this.btnUrlSTEPHexNut.IconColor = System.Drawing.Color.White;
-            this.btnUrlSTEPHexNut.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.btnUrlSTEPHexNut.IconSize = 20;
-            this.btnUrlSTEPHexNut.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnUrlSTEPHexNut.Location = new System.Drawing.Point(151, 156);
-            this.btnUrlSTEPHexNut.Name = "btnUrlSTEPHexNut";
-            this.btnUrlSTEPHexNut.Size = new System.Drawing.Size(80, 31);
-            this.btnUrlSTEPHexNut.TabIndex = 452;
-            this.btnUrlSTEPHexNut.Text = "STEP";
-            this.btnUrlSTEPHexNut.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUrlSTEPHexNut.UseVisualStyleBackColor = false;
-            this.btnUrlSTEPHexNut.Click += new System.EventHandler(this.btnUrlSTEPHexNut_Click);
-            // 
-            // btnUrlPDFHexNut
-            // 
-            this.btnUrlPDFHexNut.BackColor = System.Drawing.Color.Firebrick;
-            this.btnUrlPDFHexNut.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnUrlPDFHexNut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUrlPDFHexNut.Font = new System.Drawing.Font("Roboto", 12F);
-            this.btnUrlPDFHexNut.ForeColor = System.Drawing.Color.White;
-            this.btnUrlPDFHexNut.IconChar = FontAwesome.Sharp.IconChar.FilePdf;
-            this.btnUrlPDFHexNut.IconColor = System.Drawing.Color.White;
-            this.btnUrlPDFHexNut.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.btnUrlPDFHexNut.IconSize = 20;
-            this.btnUrlPDFHexNut.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnUrlPDFHexNut.Location = new System.Drawing.Point(151, 103);
-            this.btnUrlPDFHexNut.Name = "btnUrlPDFHexNut";
-            this.btnUrlPDFHexNut.Size = new System.Drawing.Size(80, 31);
-            this.btnUrlPDFHexNut.TabIndex = 451;
-            this.btnUrlPDFHexNut.Text = "PDF";
-            this.btnUrlPDFHexNut.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUrlPDFHexNut.UseVisualStyleBackColor = false;
-            this.btnUrlPDFHexNut.Click += new System.EventHandler(this.btnUrlPDFHexNut_Click);
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::_0510Project.Properties.Resources.NutHex;
-            this.pictureBox5.Location = new System.Drawing.Point(13, 31);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(218, 45);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 2;
-            this.pictureBox5.TabStop = false;
+            this.txtIDType.Location = new System.Drawing.Point(547, 210);
+            this.txtIDType.Name = "txtIDType";
+            this.txtIDType.Size = new System.Drawing.Size(100, 23);
+            this.txtIDType.TabIndex = 360;
+            this.txtIDType.Visible = false;
             // 
             // btnSTP
             // 
@@ -2838,61 +2899,6 @@
             this.picLength.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picLength.TabIndex = 16;
             this.picLength.TabStop = false;
-            // 
-            // btnMinin
-            // 
-            this.btnMinin.FlatAppearance.BorderSize = 0;
-            this.btnMinin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMinin.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
-            this.btnMinin.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(254)))), ((int)(((byte)(251)))));
-            this.btnMinin.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnMinin.IconSize = 30;
-            this.btnMinin.Location = new System.Drawing.Point(1775, 3);
-            this.btnMinin.Name = "btnMinin";
-            this.btnMinin.Size = new System.Drawing.Size(41, 46);
-            this.btnMinin.TabIndex = 360;
-            this.btnMinin.UseVisualStyleBackColor = true;
-            this.btnMinin.Click += new System.EventHandler(this.btnMinin_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::_0510Project.Properties.Resources.SSNE_LOGO;
-            this.pictureBox1.Location = new System.Drawing.Point(4, 1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(64, 60);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 359;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnFormSize
-            // 
-            this.btnFormSize.FlatAppearance.BorderSize = 0;
-            this.btnFormSize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFormSize.IconChar = FontAwesome.Sharp.IconChar.ExpandAlt;
-            this.btnFormSize.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(254)))), ((int)(((byte)(251)))));
-            this.btnFormSize.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnFormSize.IconSize = 30;
-            this.btnFormSize.Location = new System.Drawing.Point(1822, 3);
-            this.btnFormSize.Name = "btnFormSize";
-            this.btnFormSize.Size = new System.Drawing.Size(41, 46);
-            this.btnFormSize.TabIndex = 1;
-            this.btnFormSize.UseVisualStyleBackColor = true;
-            this.btnFormSize.Click += new System.EventHandler(this.btnFormSize_Click);
-            // 
-            // btnExit
-            // 
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.IconChar = FontAwesome.Sharp.IconChar.Code;
-            this.btnExit.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(254)))), ((int)(((byte)(251)))));
-            this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnExit.IconSize = 35;
-            this.btnExit.Location = new System.Drawing.Point(1869, 3);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(48, 46);
-            this.btnExit.TabIndex = 0;
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // picISOView
             // 
@@ -2955,6 +2961,7 @@
             this.Load += new System.EventHandler(this.FrmMain_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FrmMain_KeyDown);
             this.pNavBar.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.pSizeSelect.ResumeLayout(false);
@@ -2962,42 +2969,41 @@
             this.panel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.panel12.ResumeLayout(false);
             this.pGestion.ResumeLayout(false);
             this.pGestion.PerformLayout();
             this.pAvailableTools3.ResumeLayout(false);
-            this.pAvailableTools2.ResumeLayout(false);
-            this.pAvailableTools1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picTool1C)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picTool1B)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picTool2B)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picTool1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picTool3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picTool2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.pAvailableTools2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picTool1B)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picTool2B)).EndInit();
+            this.pAvailableTools1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picTool1C)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picTopView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLength)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picISOView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
