@@ -45,7 +45,7 @@ namespace _0510Project
                 File.Copy(sourceFilePath, databaseFilePath);
             }
 
-            Settings.Default.DBPath = databaseFolder;
+            Settings.Default.DBPath = databaseFilePath;
             Settings.Default.Save();
 
             Application.EnableVisualStyles();

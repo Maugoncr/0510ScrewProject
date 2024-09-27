@@ -1,13 +1,20 @@
-﻿using System;
+﻿using _0510Project.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity;
+using System.Diagnostics;
 using System.Drawing;
+using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Runtime.InteropServices;
+using System.Runtime.Remoting.Lifetime;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 using System.Windows.Forms;
 
 namespace _0510Project.Forms
@@ -76,6 +83,63 @@ namespace _0510Project.Forms
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void btnDownloadDataBase_Click(object sender, EventArgs e)
+        {
+            string url = "https://drive.google.com/drive/folders/1xpLU6qajLzntpgLekF8mazwrzETLhNgL?usp=drive_link";
+            try
+            {
+                Process.Start(new ProcessStartInfo
+                {
+                    FileName = url,
+                    UseShellExecute = true
+                });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
+
+        private void btnCheckUpdate_Click(object sender, EventArgs e)
+        {
+            string downloadFolderPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "Downloads");
+
+            string fileName = "0510Project.db";
+            string filePath = Path.Combine(downloadFolderPath, fileName);
+
+            if (File.Exists(filePath))
+            {
+                string oldDbPath = Settings.Default.DBPath;
+                string newDbPath = filePath;
+
+                if (File.Exists(oldDbPath) && File.Exists(newDbPath))
+                {
+                    DateTime oldDbDate = File.GetLastWriteTime(oldDbPath);
+                    DateTime newDbDate = File.GetLastWriteTime(newDbPath);
+
+                    if (newDbDate > oldDbDate)
+                    {
+                        File.Delete(oldDbPath);
+                        File.Move(newDbPath, oldDbPath);
+
+                        MessageBox.Show("The database was updated successfully.", "Information", MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("No changes were made; the database is already up to date..", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("One or both databases do not exist in the required paths", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("The downloaded database is not in the requested folder\nPlease review the instructions again.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
     }
 }

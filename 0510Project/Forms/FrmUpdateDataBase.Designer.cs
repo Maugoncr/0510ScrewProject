@@ -38,6 +38,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.btnDownloadDataBase = new FontAwesome.Sharp.IconButton();
+            this.btnCheckUpdate = new FontAwesome.Sharp.IconButton();
+            this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.pNavBar.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,12 +77,11 @@
             // 
             // lbWhoAreYou
             // 
-            this.lbWhoAreYou.AutoSize = true;
             this.lbWhoAreYou.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbWhoAreYou.ForeColor = System.Drawing.Color.Black;
-            this.lbWhoAreYou.Location = new System.Drawing.Point(429, 50);
+            this.lbWhoAreYou.Location = new System.Drawing.Point(12, 50);
             this.lbWhoAreYou.Name = "lbWhoAreYou";
-            this.lbWhoAreYou.Size = new System.Drawing.Size(43, 19);
+            this.lbWhoAreYou.Size = new System.Drawing.Size(909, 108);
             this.lbWhoAreYou.TabIndex = 149;
             this.lbWhoAreYou.Text = "Test";
             this.lbWhoAreYou.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -153,11 +155,76 @@
     "d contact the administrators for technical assistance.";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // btnDownloadDataBase
+            // 
+            this.btnDownloadDataBase.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnDownloadDataBase.FlatAppearance.BorderSize = 0;
+            this.btnDownloadDataBase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDownloadDataBase.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDownloadDataBase.ForeColor = System.Drawing.Color.White;
+            this.btnDownloadDataBase.IconChar = FontAwesome.Sharp.IconChar.Database;
+            this.btnDownloadDataBase.IconColor = System.Drawing.Color.White;
+            this.btnDownloadDataBase.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnDownloadDataBase.IconSize = 25;
+            this.btnDownloadDataBase.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDownloadDataBase.Location = new System.Drawing.Point(348, 395);
+            this.btnDownloadDataBase.Name = "btnDownloadDataBase";
+            this.btnDownloadDataBase.Size = new System.Drawing.Size(225, 37);
+            this.btnDownloadDataBase.TabIndex = 179;
+            this.btnDownloadDataBase.Text = "1. Download DataBase";
+            this.btnDownloadDataBase.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDownloadDataBase.UseVisualStyleBackColor = false;
+            this.btnDownloadDataBase.Click += new System.EventHandler(this.btnDownloadDataBase_Click);
+            // 
+            // btnCheckUpdate
+            // 
+            this.btnCheckUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.btnCheckUpdate.FlatAppearance.BorderSize = 0;
+            this.btnCheckUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCheckUpdate.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheckUpdate.ForeColor = System.Drawing.Color.White;
+            this.btnCheckUpdate.IconChar = FontAwesome.Sharp.IconChar.Database;
+            this.btnCheckUpdate.IconColor = System.Drawing.Color.White;
+            this.btnCheckUpdate.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCheckUpdate.IconSize = 25;
+            this.btnCheckUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCheckUpdate.Location = new System.Drawing.Point(364, 450);
+            this.btnCheckUpdate.Name = "btnCheckUpdate";
+            this.btnCheckUpdate.Size = new System.Drawing.Size(191, 37);
+            this.btnCheckUpdate.TabIndex = 180;
+            this.btnCheckUpdate.Text = "2. Check DataBase";
+            this.btnCheckUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCheckUpdate.UseVisualStyleBackColor = false;
+            this.btnCheckUpdate.Click += new System.EventHandler(this.btnCheckUpdate_Click);
+            // 
+            // iconButton2
+            // 
+            this.iconButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.iconButton2.FlatAppearance.BorderSize = 0;
+            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton2.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton2.ForeColor = System.Drawing.Color.White;
+            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.Database;
+            this.iconButton2.IconColor = System.Drawing.Color.White;
+            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton2.IconSize = 25;
+            this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton2.Location = new System.Drawing.Point(704, 539);
+            this.iconButton2.Name = "iconButton2";
+            this.iconButton2.Size = new System.Drawing.Size(191, 37);
+            this.iconButton2.TabIndex = 181;
+            this.iconButton2.Text = "2. Check DataBase";
+            this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton2.UseVisualStyleBackColor = false;
+            // 
             // FrmUpdateDataBase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(933, 612);
+            this.Controls.Add(this.iconButton2);
+            this.Controls.Add(this.btnCheckUpdate);
+            this.Controls.Add(this.btnDownloadDataBase);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -175,7 +242,6 @@
             this.Load += new System.EventHandler(this.FrmUpdateDataBase_Load);
             this.pNavBar.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -190,5 +256,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private FontAwesome.Sharp.IconButton btnDownloadDataBase;
+        private FontAwesome.Sharp.IconButton btnCheckUpdate;
+        private FontAwesome.Sharp.IconButton iconButton2;
     }
 }
