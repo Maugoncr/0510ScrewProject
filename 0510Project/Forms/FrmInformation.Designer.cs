@@ -45,6 +45,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.pNavBar.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -241,7 +242,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 47);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(2, 694);
+            this.panel3.Size = new System.Drawing.Size(2, 786);
             this.panel3.TabIndex = 176;
             // 
             // panel1
@@ -250,23 +251,34 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel1.Location = new System.Drawing.Point(785, 47);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(2, 694);
+            this.panel1.Size = new System.Drawing.Size(2, 786);
             this.panel1.TabIndex = 177;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.LightSeaGreen;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(2, 739);
+            this.panel2.Location = new System.Drawing.Point(2, 831);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(783, 2);
             this.panel2.TabIndex = 178;
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(143, 737);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(499, 87);
+            this.label4.TabIndex = 179;
+            this.label4.Text = resources.GetString("label4.Text");
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FrmInformation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(787, 741);
+            this.ClientSize = new System.Drawing.Size(787, 833);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
@@ -278,6 +290,7 @@
             this.Controls.Add(this.pNavBar);
             this.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "FrmInformation";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -307,5 +320,6 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label4;
     }
 }

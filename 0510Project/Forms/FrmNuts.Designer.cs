@@ -28,14 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle153 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle159 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle160 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle154 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle155 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle156 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle157 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle158 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmNuts));
             this.pNavBar = new System.Windows.Forms.Panel();
             this.btnFormSize = new FontAwesome.Sharp.IconButton();
             this.btnClose = new System.Windows.Forms.Button();
@@ -69,17 +70,17 @@
             this.txtIDNuts = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.dgvNuts = new System.Windows.Forms.DataGridView();
+            this.CIDNuts = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CSSNEPartNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CVendorPartNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CNutsTypeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CNutsSizeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtFilter = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.btnClean = new FontAwesome.Sharp.IconButton();
             this.btnDisable = new FontAwesome.Sharp.IconButton();
             this.btnSave = new FontAwesome.Sharp.IconButton();
             this.btnUpdate = new FontAwesome.Sharp.IconButton();
-            this.CIDNuts = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CSSNEPartNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CVendorPartNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CNutsTypeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CNutsSizeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pNavBar.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -514,14 +515,14 @@
             this.dgvNuts.AllowUserToDeleteRows = false;
             this.dgvNuts.AllowUserToResizeColumns = false;
             this.dgvNuts.AllowUserToResizeRows = false;
-            dataGridViewCellStyle153.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle153.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle153.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle153.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle153.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle153.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle153.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvNuts.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle153;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvNuts.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvNuts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvNuts.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.CIDNuts,
@@ -529,31 +530,85 @@
             this.CVendorPartNumber,
             this.CNutsTypeName,
             this.CNutsSizeName});
-            dataGridViewCellStyle159.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle159.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle159.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle159.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle159.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle159.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle159.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvNuts.DefaultCellStyle = dataGridViewCellStyle159;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvNuts.DefaultCellStyle = dataGridViewCellStyle7;
             this.dgvNuts.Location = new System.Drawing.Point(25, 175);
             this.dgvNuts.MultiSelect = false;
             this.dgvNuts.Name = "dgvNuts";
             this.dgvNuts.ReadOnly = true;
-            dataGridViewCellStyle160.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle160.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle160.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle160.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle160.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle160.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle160.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvNuts.RowHeadersDefaultCellStyle = dataGridViewCellStyle160;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvNuts.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dgvNuts.RowHeadersVisible = false;
             this.dgvNuts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvNuts.Size = new System.Drawing.Size(1172, 326);
             this.dgvNuts.TabIndex = 187;
             this.dgvNuts.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNuts_CellClick);
+            // 
+            // CIDNuts
+            // 
+            this.CIDNuts.DataPropertyName = "IDNuts";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CIDNuts.DefaultCellStyle = dataGridViewCellStyle2;
+            this.CIDNuts.HeaderText = "ID Nuts";
+            this.CIDNuts.Name = "CIDNuts";
+            this.CIDNuts.ReadOnly = true;
+            this.CIDNuts.Width = 120;
+            // 
+            // CSSNEPartNumber
+            // 
+            this.CSSNEPartNumber.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CSSNEPartNumber.DataPropertyName = "SSNEPartNumber";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CSSNEPartNumber.DefaultCellStyle = dataGridViewCellStyle3;
+            this.CSSNEPartNumber.HeaderText = "SSNE Part Number";
+            this.CSSNEPartNumber.Name = "CSSNEPartNumber";
+            this.CSSNEPartNumber.ReadOnly = true;
+            this.CSSNEPartNumber.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // CVendorPartNumber
+            // 
+            this.CVendorPartNumber.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CVendorPartNumber.DataPropertyName = "VendorPartNumber";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CVendorPartNumber.DefaultCellStyle = dataGridViewCellStyle4;
+            this.CVendorPartNumber.HeaderText = "Vendor Part Number";
+            this.CVendorPartNumber.Name = "CVendorPartNumber";
+            this.CVendorPartNumber.ReadOnly = true;
+            this.CVendorPartNumber.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // CNutsTypeName
+            // 
+            this.CNutsTypeName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CNutsTypeName.DataPropertyName = "NutsTypeName";
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CNutsTypeName.DefaultCellStyle = dataGridViewCellStyle5;
+            this.CNutsTypeName.HeaderText = "Type";
+            this.CNutsTypeName.Name = "CNutsTypeName";
+            this.CNutsTypeName.ReadOnly = true;
+            this.CNutsTypeName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // CNutsSizeName
+            // 
+            this.CNutsSizeName.DataPropertyName = "NutsSizeName";
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CNutsSizeName.DefaultCellStyle = dataGridViewCellStyle6;
+            this.CNutsSizeName.HeaderText = "Size";
+            this.CNutsSizeName.Name = "CNutsSizeName";
+            this.CNutsSizeName.ReadOnly = true;
+            this.CNutsSizeName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.CNutsSizeName.Width = 150;
             // 
             // txtFilter
             // 
@@ -658,60 +713,6 @@
             this.btnUpdate.UseVisualStyleBackColor = false;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
-            // CIDNuts
-            // 
-            this.CIDNuts.DataPropertyName = "IDNuts";
-            dataGridViewCellStyle154.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CIDNuts.DefaultCellStyle = dataGridViewCellStyle154;
-            this.CIDNuts.HeaderText = "ID Nuts";
-            this.CIDNuts.Name = "CIDNuts";
-            this.CIDNuts.ReadOnly = true;
-            this.CIDNuts.Width = 120;
-            // 
-            // CSSNEPartNumber
-            // 
-            this.CSSNEPartNumber.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.CSSNEPartNumber.DataPropertyName = "SSNEPartNumber";
-            dataGridViewCellStyle155.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CSSNEPartNumber.DefaultCellStyle = dataGridViewCellStyle155;
-            this.CSSNEPartNumber.HeaderText = "SSNE Part Number";
-            this.CSSNEPartNumber.Name = "CSSNEPartNumber";
-            this.CSSNEPartNumber.ReadOnly = true;
-            this.CSSNEPartNumber.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // CVendorPartNumber
-            // 
-            this.CVendorPartNumber.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.CVendorPartNumber.DataPropertyName = "VendorPartNumber";
-            dataGridViewCellStyle156.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CVendorPartNumber.DefaultCellStyle = dataGridViewCellStyle156;
-            this.CVendorPartNumber.HeaderText = "Vendor Part Number";
-            this.CVendorPartNumber.Name = "CVendorPartNumber";
-            this.CVendorPartNumber.ReadOnly = true;
-            this.CVendorPartNumber.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // CNutsTypeName
-            // 
-            this.CNutsTypeName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.CNutsTypeName.DataPropertyName = "NutsTypeName";
-            dataGridViewCellStyle157.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CNutsTypeName.DefaultCellStyle = dataGridViewCellStyle157;
-            this.CNutsTypeName.HeaderText = "Type";
-            this.CNutsTypeName.Name = "CNutsTypeName";
-            this.CNutsTypeName.ReadOnly = true;
-            this.CNutsTypeName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // CNutsSizeName
-            // 
-            this.CNutsSizeName.DataPropertyName = "NutsSizeName";
-            dataGridViewCellStyle158.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CNutsSizeName.DefaultCellStyle = dataGridViewCellStyle158;
-            this.CNutsSizeName.HeaderText = "Size";
-            this.CNutsSizeName.Name = "CNutsSizeName";
-            this.CNutsSizeName.ReadOnly = true;
-            this.CNutsSizeName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.CNutsSizeName.Width = 150;
-            // 
             // FrmNuts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -731,6 +732,7 @@
             this.Controls.Add(this.pNavBar);
             this.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "FrmNuts";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

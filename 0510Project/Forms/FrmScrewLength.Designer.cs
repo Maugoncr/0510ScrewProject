@@ -35,6 +35,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmScrewLength));
             this.pNavBar = new System.Windows.Forms.Panel();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnDisable = new FontAwesome.Sharp.IconButton();
@@ -44,6 +45,10 @@
             this.btnUpdate = new FontAwesome.Sharp.IconButton();
             this.btnSave = new FontAwesome.Sharp.IconButton();
             this.dgvScrewLengths = new System.Windows.Forms.DataGridView();
+            this.CIDScrewLength = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CLengthInch = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CLengthDecimal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CLengthMetric = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtLengthInch = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtIDScrewLength = new System.Windows.Forms.TextBox();
@@ -53,10 +58,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtLengthMetric = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.CIDScrewLength = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CLengthInch = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CLengthDecimal = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CLengthMetric = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pNavBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvScrewLengths)).BeginInit();
             this.SuspendLayout();
@@ -245,6 +246,50 @@
             this.dgvScrewLengths.TabIndex = 150;
             this.dgvScrewLengths.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvScrewLengths_CellClick);
             // 
+            // CIDScrewLength
+            // 
+            this.CIDScrewLength.DataPropertyName = "IDScrewLength";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CIDScrewLength.DefaultCellStyle = dataGridViewCellStyle2;
+            this.CIDScrewLength.HeaderText = "ID Screw Length";
+            this.CIDScrewLength.Name = "CIDScrewLength";
+            this.CIDScrewLength.ReadOnly = true;
+            this.CIDScrewLength.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.CIDScrewLength.Width = 200;
+            // 
+            // CLengthInch
+            // 
+            this.CLengthInch.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CLengthInch.DataPropertyName = "LengthInch";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CLengthInch.DefaultCellStyle = dataGridViewCellStyle3;
+            this.CLengthInch.HeaderText = "Length Inch";
+            this.CLengthInch.Name = "CLengthInch";
+            this.CLengthInch.ReadOnly = true;
+            this.CLengthInch.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // CLengthDecimal
+            // 
+            this.CLengthDecimal.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CLengthDecimal.DataPropertyName = "LengthDecimal";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CLengthDecimal.DefaultCellStyle = dataGridViewCellStyle4;
+            this.CLengthDecimal.HeaderText = "Length Decimal";
+            this.CLengthDecimal.Name = "CLengthDecimal";
+            this.CLengthDecimal.ReadOnly = true;
+            this.CLengthDecimal.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // CLengthMetric
+            // 
+            this.CLengthMetric.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CLengthMetric.DataPropertyName = "LengthMetric";
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CLengthMetric.DefaultCellStyle = dataGridViewCellStyle5;
+            this.CLengthMetric.HeaderText = "Length Metric";
+            this.CLengthMetric.Name = "CLengthMetric";
+            this.CLengthMetric.ReadOnly = true;
+            this.CLengthMetric.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
             // txtLengthInch
             // 
             this.txtLengthInch.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -333,50 +378,6 @@
             this.label4.Text = "Length Metric";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // CIDScrewLength
-            // 
-            this.CIDScrewLength.DataPropertyName = "IDScrewLength";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CIDScrewLength.DefaultCellStyle = dataGridViewCellStyle2;
-            this.CIDScrewLength.HeaderText = "ID Screw Length";
-            this.CIDScrewLength.Name = "CIDScrewLength";
-            this.CIDScrewLength.ReadOnly = true;
-            this.CIDScrewLength.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.CIDScrewLength.Width = 200;
-            // 
-            // CLengthInch
-            // 
-            this.CLengthInch.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.CLengthInch.DataPropertyName = "LengthInch";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CLengthInch.DefaultCellStyle = dataGridViewCellStyle3;
-            this.CLengthInch.HeaderText = "Length Inch";
-            this.CLengthInch.Name = "CLengthInch";
-            this.CLengthInch.ReadOnly = true;
-            this.CLengthInch.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // CLengthDecimal
-            // 
-            this.CLengthDecimal.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.CLengthDecimal.DataPropertyName = "LengthDecimal";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CLengthDecimal.DefaultCellStyle = dataGridViewCellStyle4;
-            this.CLengthDecimal.HeaderText = "Length Decimal";
-            this.CLengthDecimal.Name = "CLengthDecimal";
-            this.CLengthDecimal.ReadOnly = true;
-            this.CLengthDecimal.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // CLengthMetric
-            // 
-            this.CLengthMetric.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.CLengthMetric.DataPropertyName = "LengthMetric";
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CLengthMetric.DefaultCellStyle = dataGridViewCellStyle5;
-            this.CLengthMetric.HeaderText = "Length Metric";
-            this.CLengthMetric.Name = "CLengthMetric";
-            this.CLengthMetric.ReadOnly = true;
-            this.CLengthMetric.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
             // FrmScrewLength
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -401,6 +402,7 @@
             this.Controls.Add(this.pNavBar);
             this.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "FrmScrewLength";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

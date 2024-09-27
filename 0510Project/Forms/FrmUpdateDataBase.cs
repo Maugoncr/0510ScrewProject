@@ -165,7 +165,35 @@ namespace _0510Project.Forms
 
         private void btnGetActualDataBase_Click(object sender, EventArgs e)
         {
+            // Verificar si el archivo en la ruta existe
+            if (File.Exists(Settings.Default.DBPath))
+            {
+                // Crear un diálogo para seleccionar el destino
+                SaveFileDialog saveFileDialog = new SaveFileDialog();
+                saveFileDialog.Title = "Select where to save the file.";
+                saveFileDialog.Filter = "All files (*.*)|*.*";
+                saveFileDialog.FileName = Path.GetFileName(Settings.Default.DBPath); // Sugerir el mismo nombre
 
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    string destinationFilePath = saveFileDialog.FileName;
+
+                    try
+                    {
+                        // Copiar el archivo desde la ruta fija
+                        File.Copy(Settings.Default.DBPath, destinationFilePath, true);
+                        MessageBox.Show("File copied successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"Error copying the file: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("The source file does not exist.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

@@ -33,10 +33,13 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmNutsType));
             this.pNavBar = new System.Windows.Forms.Panel();
             this.btnClose = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.dgvNutsTypes = new System.Windows.Forms.DataGridView();
+            this.CIDNutsType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CNutsTypeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnDisable = new FontAwesome.Sharp.IconButton();
             this.checkActives = new System.Windows.Forms.CheckBox();
             this.txtFilter = new System.Windows.Forms.TextBox();
@@ -47,8 +50,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtIDNutsType = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.CIDNutsType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CNutsTypeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pNavBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNutsTypes)).BeginInit();
             this.SuspendLayout();
@@ -137,6 +138,27 @@
             this.dgvNutsTypes.Size = new System.Drawing.Size(1030, 244);
             this.dgvNutsTypes.TabIndex = 149;
             this.dgvNutsTypes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNutsTypes_CellClick);
+            // 
+            // CIDNutsType
+            // 
+            this.CIDNutsType.DataPropertyName = "IDNutsType";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CIDNutsType.DefaultCellStyle = dataGridViewCellStyle2;
+            this.CIDNutsType.HeaderText = "ID Nuts Size";
+            this.CIDNutsType.Name = "CIDNutsType";
+            this.CIDNutsType.ReadOnly = true;
+            this.CIDNutsType.Width = 200;
+            // 
+            // CNutsTypeName
+            // 
+            this.CNutsTypeName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CNutsTypeName.DataPropertyName = "NutsTypeName";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CNutsTypeName.DefaultCellStyle = dataGridViewCellStyle3;
+            this.CNutsTypeName.HeaderText = "Type Name";
+            this.CNutsTypeName.Name = "CNutsTypeName";
+            this.CNutsTypeName.ReadOnly = true;
+            this.CNutsTypeName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // btnDisable
             // 
@@ -287,27 +309,6 @@
             this.label1.Text = "ID Nuts Type";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // CIDNutsType
-            // 
-            this.CIDNutsType.DataPropertyName = "IDNutsType";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CIDNutsType.DefaultCellStyle = dataGridViewCellStyle2;
-            this.CIDNutsType.HeaderText = "ID Nuts Size";
-            this.CIDNutsType.Name = "CIDNutsType";
-            this.CIDNutsType.ReadOnly = true;
-            this.CIDNutsType.Width = 200;
-            // 
-            // CNutsTypeName
-            // 
-            this.CNutsTypeName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.CNutsTypeName.DataPropertyName = "NutsTypeName";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CNutsTypeName.DefaultCellStyle = dataGridViewCellStyle3;
-            this.CNutsTypeName.HeaderText = "Type Name";
-            this.CNutsTypeName.Name = "CNutsTypeName";
-            this.CNutsTypeName.ReadOnly = true;
-            this.CNutsTypeName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
             // FrmNutsType
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -328,6 +329,7 @@
             this.Controls.Add(this.pNavBar);
             this.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "FrmNutsType";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

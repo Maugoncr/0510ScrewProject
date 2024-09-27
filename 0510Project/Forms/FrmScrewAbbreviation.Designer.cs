@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmScrewAbbreviation));
             this.pNavBar = new System.Windows.Forms.Panel();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnDisable = new FontAwesome.Sharp.IconButton();
@@ -42,13 +43,13 @@
             this.btnUpdate = new FontAwesome.Sharp.IconButton();
             this.btnSave = new FontAwesome.Sharp.IconButton();
             this.dgvScrewAbbreviations = new System.Windows.Forms.DataGridView();
+            this.CIDScrewAbbreviation = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CAbbreviationName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtAbbreviationName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtIDScrewAbbreviation = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.CIDScrewAbbreviation = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CAbbreviationName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pNavBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvScrewAbbreviations)).BeginInit();
             this.SuspendLayout();
@@ -197,43 +198,64 @@
             this.dgvScrewAbbreviations.AllowUserToDeleteRows = false;
             this.dgvScrewAbbreviations.AllowUserToResizeColumns = false;
             this.dgvScrewAbbreviations.AllowUserToResizeRows = false;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvScrewAbbreviations.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvScrewAbbreviations.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvScrewAbbreviations.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvScrewAbbreviations.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.CIDScrewAbbreviation,
             this.CAbbreviationName});
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvScrewAbbreviations.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvScrewAbbreviations.DefaultCellStyle = dataGridViewCellStyle4;
             this.dgvScrewAbbreviations.Location = new System.Drawing.Point(35, 165);
             this.dgvScrewAbbreviations.MultiSelect = false;
             this.dgvScrewAbbreviations.Name = "dgvScrewAbbreviations";
             this.dgvScrewAbbreviations.ReadOnly = true;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvScrewAbbreviations.RowHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvScrewAbbreviations.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvScrewAbbreviations.RowHeadersVisible = false;
             this.dgvScrewAbbreviations.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvScrewAbbreviations.Size = new System.Drawing.Size(1030, 244);
             this.dgvScrewAbbreviations.TabIndex = 150;
             this.dgvScrewAbbreviations.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvScrewAbbreviations_CellClick);
+            // 
+            // CIDScrewAbbreviation
+            // 
+            this.CIDScrewAbbreviation.DataPropertyName = "IDScrewAbbreviation";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CIDScrewAbbreviation.DefaultCellStyle = dataGridViewCellStyle2;
+            this.CIDScrewAbbreviation.HeaderText = "ID Screw Abbreviation";
+            this.CIDScrewAbbreviation.Name = "CIDScrewAbbreviation";
+            this.CIDScrewAbbreviation.ReadOnly = true;
+            this.CIDScrewAbbreviation.Width = 200;
+            // 
+            // CAbbreviationName
+            // 
+            this.CAbbreviationName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CAbbreviationName.DataPropertyName = "AbbreviationName";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CAbbreviationName.DefaultCellStyle = dataGridViewCellStyle3;
+            this.CAbbreviationName.HeaderText = "Abbreviation Name";
+            this.CAbbreviationName.Name = "CAbbreviationName";
+            this.CAbbreviationName.ReadOnly = true;
+            this.CAbbreviationName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // txtAbbreviationName
             // 
@@ -285,27 +307,6 @@
             this.label7.Text = "Screw Abbreviations";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // CIDScrewAbbreviation
-            // 
-            this.CIDScrewAbbreviation.DataPropertyName = "IDScrewAbbreviation";
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CIDScrewAbbreviation.DefaultCellStyle = dataGridViewCellStyle7;
-            this.CIDScrewAbbreviation.HeaderText = "ID Screw Abbreviation";
-            this.CIDScrewAbbreviation.Name = "CIDScrewAbbreviation";
-            this.CIDScrewAbbreviation.ReadOnly = true;
-            this.CIDScrewAbbreviation.Width = 200;
-            // 
-            // CAbbreviationName
-            // 
-            this.CAbbreviationName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.CAbbreviationName.DataPropertyName = "AbbreviationName";
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CAbbreviationName.DefaultCellStyle = dataGridViewCellStyle8;
-            this.CAbbreviationName.HeaderText = "Abbreviation Name";
-            this.CAbbreviationName.Name = "CAbbreviationName";
-            this.CAbbreviationName.ReadOnly = true;
-            this.CAbbreviationName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
             // FrmScrewAbbreviation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -326,6 +327,7 @@
             this.Controls.Add(this.pNavBar);
             this.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "FrmScrewAbbreviation";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

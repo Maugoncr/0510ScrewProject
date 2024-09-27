@@ -33,6 +33,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmScrewAvailableTool));
             this.pNavBar = new System.Windows.Forms.Panel();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnDisable = new FontAwesome.Sharp.IconButton();
@@ -42,13 +43,13 @@
             this.btnUpdate = new FontAwesome.Sharp.IconButton();
             this.btnSave = new FontAwesome.Sharp.IconButton();
             this.dgvScrewAvailableTools = new System.Windows.Forms.DataGridView();
+            this.CIDScrewTool = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CToolName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtToolName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtIDScrewTool = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.CIDScrewTool = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CToolName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pNavBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvScrewAvailableTools)).BeginInit();
             this.SuspendLayout();
@@ -235,6 +236,27 @@
             this.dgvScrewAvailableTools.TabIndex = 162;
             this.dgvScrewAvailableTools.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvScrewAvailableTools_CellClick);
             // 
+            // CIDScrewTool
+            // 
+            this.CIDScrewTool.DataPropertyName = "IDScrewTool";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CIDScrewTool.DefaultCellStyle = dataGridViewCellStyle2;
+            this.CIDScrewTool.HeaderText = "ID Screw Tool";
+            this.CIDScrewTool.Name = "CIDScrewTool";
+            this.CIDScrewTool.ReadOnly = true;
+            this.CIDScrewTool.Width = 200;
+            // 
+            // CToolName
+            // 
+            this.CToolName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CToolName.DataPropertyName = "ToolName";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CToolName.DefaultCellStyle = dataGridViewCellStyle3;
+            this.CToolName.HeaderText = "Tool Name";
+            this.CToolName.Name = "CToolName";
+            this.CToolName.ReadOnly = true;
+            this.CToolName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
             // txtToolName
             // 
             this.txtToolName.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -285,27 +307,6 @@
             this.label7.Text = "Screw Available Tool";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // CIDScrewTool
-            // 
-            this.CIDScrewTool.DataPropertyName = "IDScrewTool";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CIDScrewTool.DefaultCellStyle = dataGridViewCellStyle2;
-            this.CIDScrewTool.HeaderText = "ID Screw Tool";
-            this.CIDScrewTool.Name = "CIDScrewTool";
-            this.CIDScrewTool.ReadOnly = true;
-            this.CIDScrewTool.Width = 200;
-            // 
-            // CToolName
-            // 
-            this.CToolName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.CToolName.DataPropertyName = "ToolName";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CToolName.DefaultCellStyle = dataGridViewCellStyle3;
-            this.CToolName.HeaderText = "Tool Name";
-            this.CToolName.Name = "CToolName";
-            this.CToolName.ReadOnly = true;
-            this.CToolName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
             // FrmScrewAvailableTool
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -326,6 +327,7 @@
             this.Controls.Add(this.pNavBar);
             this.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "FrmScrewAvailableTool";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

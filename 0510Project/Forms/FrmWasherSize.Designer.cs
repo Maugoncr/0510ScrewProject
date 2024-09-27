@@ -33,9 +33,12 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmWasherSize));
             this.pNavBar = new System.Windows.Forms.Panel();
             this.btnClose = new System.Windows.Forms.Button();
             this.dgvWasherSizes = new System.Windows.Forms.DataGridView();
+            this.CIDWasherSize = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CWasherSizeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.checkActives = new System.Windows.Forms.CheckBox();
             this.txtFilter = new System.Windows.Forms.TextBox();
             this.txtSizeName = new System.Windows.Forms.TextBox();
@@ -47,8 +50,6 @@
             this.btnClean = new FontAwesome.Sharp.IconButton();
             this.btnUpdate = new FontAwesome.Sharp.IconButton();
             this.btnSave = new FontAwesome.Sharp.IconButton();
-            this.CIDWasherSize = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CWasherSizeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pNavBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvWasherSizes)).BeginInit();
             this.SuspendLayout();
@@ -126,6 +127,27 @@
             this.dgvWasherSizes.Size = new System.Drawing.Size(1030, 244);
             this.dgvWasherSizes.TabIndex = 150;
             this.dgvWasherSizes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvWasherSizes_CellClick);
+            // 
+            // CIDWasherSize
+            // 
+            this.CIDWasherSize.DataPropertyName = "IDWasherSize";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CIDWasherSize.DefaultCellStyle = dataGridViewCellStyle2;
+            this.CIDWasherSize.HeaderText = "ID Washer Size";
+            this.CIDWasherSize.Name = "CIDWasherSize";
+            this.CIDWasherSize.ReadOnly = true;
+            this.CIDWasherSize.Width = 200;
+            // 
+            // CWasherSizeName
+            // 
+            this.CWasherSizeName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CWasherSizeName.DataPropertyName = "WasherSizeName";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CWasherSizeName.DefaultCellStyle = dataGridViewCellStyle3;
+            this.CWasherSizeName.HeaderText = "Size Name";
+            this.CWasherSizeName.Name = "CWasherSizeName";
+            this.CWasherSizeName.ReadOnly = true;
+            this.CWasherSizeName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // checkActives
             // 
@@ -287,27 +309,6 @@
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // CIDWasherSize
-            // 
-            this.CIDWasherSize.DataPropertyName = "IDWasherSize";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CIDWasherSize.DefaultCellStyle = dataGridViewCellStyle2;
-            this.CIDWasherSize.HeaderText = "ID Washer Size";
-            this.CIDWasherSize.Name = "CIDWasherSize";
-            this.CIDWasherSize.ReadOnly = true;
-            this.CIDWasherSize.Width = 200;
-            // 
-            // CWasherSizeName
-            // 
-            this.CWasherSizeName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.CWasherSizeName.DataPropertyName = "WasherSizeName";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CWasherSizeName.DefaultCellStyle = dataGridViewCellStyle3;
-            this.CWasherSizeName.HeaderText = "Size Name";
-            this.CWasherSizeName.Name = "CWasherSizeName";
-            this.CWasherSizeName.ReadOnly = true;
-            this.CWasherSizeName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
             // FrmWasherSize
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -328,6 +329,7 @@
             this.Controls.Add(this.pNavBar);
             this.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "FrmWasherSize";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
