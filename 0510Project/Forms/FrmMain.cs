@@ -1823,67 +1823,1351 @@ namespace _0510Project
             }
         }
 
+        string UrlPDFHexNut = "";
+        string UrlPDFLockNut = "";
+        string UrlPDFFlat = "";
+        string UrlPDFSplit = "";
+        string UrlPDFTooth = "";
+        string UrlPDFSpring = "";
+        string UrlPDFWedge = "";
+
+        string UrlSTEPHexNut = "";
+        string UrlSTEPLockNut = "";
+        string UrlSTEPFlat = "";
+        string UrlSTEPSplit = "";
+        string UrlSTEPTooth = "";
+        string UrlSTEPSpring = "";
+        string UrlSTEPWedge = "";
+
         private void ss1_Click(object sender, EventArgs e)
         {
             WhiteSSize();
             ss1.BackColor = Color.Yellow;
 
-          // MyNuts.MyNutSize.
+            MyNuts = new Nuts();
 
+            MyNuts = NutsLogic.Instancia.SelectScrewBySize("4-40","Hex Nut");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNEHexNut.Text = MyNuts.SSNEPartNumber;
+                txtVendorHexNut.Text = MyNuts.VendorPartNumber;
+                UrlPDFHexNut = MyNuts.UrlPDF;
+                UrlSTEPHexNut = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNEHexNut.Text = "---";
+                txtVendorHexNut.Text = "---";
+                UrlPDFHexNut = "";
+                UrlSTEPHexNut = "";
+            }
+
+            MyNuts = new Nuts();
+
+            MyNuts = NutsLogic.Instancia.SelectScrewBySize("4-40", "Lock Nut");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNELockNut.Text = MyNuts.SSNEPartNumber;
+                txtVendorLockNut.Text = MyNuts.VendorPartNumber;
+                UrlPDFLockNut = MyNuts.UrlPDF;
+                UrlSTEPLockNut = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNELockNut.Text = "---";
+                txtVendorLockNut.Text = "---";
+                UrlPDFLockNut = "";
+                UrlSTEPLockNut = "";
+            }
+
+            MyWashers = new Washers();
+
+            MyWashers = WashersLogic.Instancia.SelectWasherBySize("4-40", "Flat Washer");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNEFlat.Text = MyNuts.SSNEPartNumber;
+                txtVendorFlat.Text = MyNuts.VendorPartNumber;
+                UrlPDFFlat = MyNuts.UrlPDF;
+                UrlSTEPFlat = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNEFlat.Text = "---";
+                txtVendorFlat.Text = "---";
+                UrlPDFFlat = "";
+                UrlSTEPFlat = "";
+            }
+
+            MyWashers = new Washers();
+
+            MyWashers = WashersLogic.Instancia.SelectWasherBySize("4-40", "Split Lock");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNESplit.Text = MyNuts.SSNEPartNumber;
+                txtVendorSplit.Text = MyNuts.VendorPartNumber;
+                UrlPDFSplit = MyNuts.UrlPDF;
+                UrlSTEPSplit = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNESplit.Text = "---";
+                txtVendorSplit.Text = "---";
+                UrlPDFSplit = "";
+                UrlSTEPSplit = "";
+            }
+
+            MyWashers = new Washers();
+
+            MyWashers = WashersLogic.Instancia.SelectWasherBySize("4-40", "Tooth Lock");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNETooth.Text = MyNuts.SSNEPartNumber;
+                txtVendorTooth.Text = MyNuts.VendorPartNumber;
+                UrlPDFTooth = MyNuts.UrlPDF;
+                UrlSTEPTooth = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNETooth.Text = "---";
+                txtVendorTooth.Text = "---";
+                UrlPDFTooth = "";
+                UrlSTEPTooth = "";
+            }
+
+            MyWashers = new Washers();
+
+            MyWashers = WashersLogic.Instancia.SelectWasherBySize("4-40", "Spring Lock");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNESpring.Text = MyNuts.SSNEPartNumber;
+                txtVendorSpring.Text = MyNuts.VendorPartNumber;
+                UrlPDFSpring = MyNuts.UrlPDF;
+                UrlSTEPSpring = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNESpring.Text = "---";
+                txtVendorSpring.Text = "---";
+                UrlPDFSpring = "";
+                UrlSTEPSpring = "";
+            }
+
+            MyWashers = new Washers();
+
+            MyWashers = WashersLogic.Instancia.SelectWasherBySize("4-40", "Wedge Lock");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNEWedge.Text = MyNuts.SSNEPartNumber;
+                txtVendorWedge.Text = MyNuts.VendorPartNumber;
+                UrlPDFWedge = MyNuts.UrlPDF;
+                UrlSTEPWedge = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNEWedge.Text = "---";
+                txtVendorWedge.Text = "---";
+                UrlPDFWedge = "";
+                UrlSTEPWedge = "";
+            }
         }
 
         private void ss2_Click(object sender, EventArgs e)
         {
             WhiteSSize();
             ss2.BackColor = Color.Yellow;
+
+            MyNuts = new Nuts();
+
+            MyNuts = NutsLogic.Instancia.SelectScrewBySize("6-32", "Hex Nut");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNEHexNut.Text = MyNuts.SSNEPartNumber;
+                txtVendorHexNut.Text = MyNuts.VendorPartNumber;
+                UrlPDFHexNut = MyNuts.UrlPDF;
+                UrlSTEPHexNut = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNEHexNut.Text = "---";
+                txtVendorHexNut.Text = "---";
+                UrlPDFHexNut = "";
+                UrlSTEPHexNut = "";
+            }
+
+            MyNuts = new Nuts();
+
+            MyNuts = NutsLogic.Instancia.SelectScrewBySize("6-32", "Lock Nut");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNELockNut.Text = MyNuts.SSNEPartNumber;
+                txtVendorLockNut.Text = MyNuts.VendorPartNumber;
+                UrlPDFLockNut = MyNuts.UrlPDF;
+                UrlSTEPLockNut = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNELockNut.Text = "---";
+                txtVendorLockNut.Text = "---";
+                UrlPDFLockNut = "";
+                UrlSTEPLockNut = "";
+            }
+
+            MyWashers = new Washers();
+
+            MyWashers = WashersLogic.Instancia.SelectWasherBySize("6-32", "Flat Washer");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNEFlat.Text = MyNuts.SSNEPartNumber;
+                txtVendorFlat.Text = MyNuts.VendorPartNumber;
+                UrlPDFFlat = MyNuts.UrlPDF;
+                UrlSTEPFlat = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNEFlat.Text = "---";
+                txtVendorFlat.Text = "---";
+                UrlPDFFlat = "";
+                UrlSTEPFlat = "";
+            }
+
+            MyWashers = new Washers();
+
+            MyWashers = WashersLogic.Instancia.SelectWasherBySize("6-32", "Split Lock");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNESplit.Text = MyNuts.SSNEPartNumber;
+                txtVendorSplit.Text = MyNuts.VendorPartNumber;
+                UrlPDFSplit = MyNuts.UrlPDF;
+                UrlSTEPSplit = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNESplit.Text = "---";
+                txtVendorSplit.Text = "---";
+                UrlPDFSplit = "";
+                UrlSTEPSplit = "";
+            }
+
+            MyWashers = new Washers();
+
+            MyWashers = WashersLogic.Instancia.SelectWasherBySize("6-32", "Tooth Lock");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNETooth.Text = MyNuts.SSNEPartNumber;
+                txtVendorTooth.Text = MyNuts.VendorPartNumber;
+                UrlPDFTooth = MyNuts.UrlPDF;
+                UrlSTEPTooth = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNETooth.Text = "---";
+                txtVendorTooth.Text = "---";
+                UrlPDFTooth = "";
+                UrlSTEPTooth = "";
+            }
+
+            MyWashers = new Washers();
+
+            MyWashers = WashersLogic.Instancia.SelectWasherBySize("6-32", "Spring Lock");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNESpring.Text = MyNuts.SSNEPartNumber;
+                txtVendorSpring.Text = MyNuts.VendorPartNumber;
+                UrlPDFSpring = MyNuts.UrlPDF;
+                UrlSTEPSpring = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNESpring.Text = "---";
+                txtVendorSpring.Text = "---";
+                UrlPDFSpring = "";
+                UrlSTEPSpring = "";
+            }
+
+            MyWashers = new Washers();
+
+            MyWashers = WashersLogic.Instancia.SelectWasherBySize("6-32", "Wedge Lock");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNEWedge.Text = MyNuts.SSNEPartNumber;
+                txtVendorWedge.Text = MyNuts.VendorPartNumber;
+                UrlPDFWedge = MyNuts.UrlPDF;
+                UrlSTEPWedge = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNEWedge.Text = "---";
+                txtVendorWedge.Text = "---";
+                UrlPDFWedge = "";
+                UrlSTEPWedge = "";
+            }
         }
 
         private void ss3_Click(object sender, EventArgs e)
         {
             WhiteSSize();
             ss3.BackColor = Color.Yellow;
+
+            string size = "8-32";
+
+            MyNuts = new Nuts();
+
+            MyNuts = NutsLogic.Instancia.SelectScrewBySize(size, "Hex Nut");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNEHexNut.Text = MyNuts.SSNEPartNumber;
+                txtVendorHexNut.Text = MyNuts.VendorPartNumber;
+                UrlPDFHexNut = MyNuts.UrlPDF;
+                UrlSTEPHexNut = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNEHexNut.Text = "---";
+                txtVendorHexNut.Text = "---";
+                UrlPDFHexNut = "";
+                UrlSTEPHexNut = "";
+            }
+
+            MyNuts = new Nuts();
+
+            MyNuts = NutsLogic.Instancia.SelectScrewBySize(size, "Lock Nut");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNELockNut.Text = MyNuts.SSNEPartNumber;
+                txtVendorLockNut.Text = MyNuts.VendorPartNumber;
+                UrlPDFLockNut = MyNuts.UrlPDF;
+                UrlSTEPLockNut = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNELockNut.Text = "---";
+                txtVendorLockNut.Text = "---";
+                UrlPDFLockNut = "";
+                UrlSTEPLockNut = "";
+            }
+
+            MyWashers = new Washers();
+
+            MyWashers = WashersLogic.Instancia.SelectWasherBySize(size, "Flat Washer");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNEFlat.Text = MyNuts.SSNEPartNumber;
+                txtVendorFlat.Text = MyNuts.VendorPartNumber;
+                UrlPDFFlat = MyNuts.UrlPDF;
+                UrlSTEPFlat = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNEFlat.Text = "---";
+                txtVendorFlat.Text = "---";
+                UrlPDFFlat = "";
+                UrlSTEPFlat = "";
+            }
+
+            MyWashers = new Washers();
+
+            MyWashers = WashersLogic.Instancia.SelectWasherBySize(size, "Split Lock");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNESplit.Text = MyNuts.SSNEPartNumber;
+                txtVendorSplit.Text = MyNuts.VendorPartNumber;
+                UrlPDFSplit = MyNuts.UrlPDF;
+                UrlSTEPSplit = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNESplit.Text = "---";
+                txtVendorSplit.Text = "---";
+                UrlPDFSplit = "";
+                UrlSTEPSplit = "";
+            }
+
+            MyWashers = new Washers();
+
+            MyWashers = WashersLogic.Instancia.SelectWasherBySize(size, "Tooth Lock");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNETooth.Text = MyNuts.SSNEPartNumber;
+                txtVendorTooth.Text = MyNuts.VendorPartNumber;
+                UrlPDFTooth = MyNuts.UrlPDF;
+                UrlSTEPTooth = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNETooth.Text = "---";
+                txtVendorTooth.Text = "---";
+                UrlPDFTooth = "";
+                UrlSTEPTooth = "";
+            }
+
+            MyWashers = new Washers();
+
+            MyWashers = WashersLogic.Instancia.SelectWasherBySize(size, "Spring Lock");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNESpring.Text = MyNuts.SSNEPartNumber;
+                txtVendorSpring.Text = MyNuts.VendorPartNumber;
+                UrlPDFSpring = MyNuts.UrlPDF;
+                UrlSTEPSpring = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNESpring.Text = "---";
+                txtVendorSpring.Text = "---";
+                UrlPDFSpring = "";
+                UrlSTEPSpring = "";
+            }
+
+            MyWashers = new Washers();
+
+            MyWashers = WashersLogic.Instancia.SelectWasherBySize(size, "Wedge Lock");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNEWedge.Text = MyNuts.SSNEPartNumber;
+                txtVendorWedge.Text = MyNuts.VendorPartNumber;
+                UrlPDFWedge = MyNuts.UrlPDF;
+                UrlSTEPWedge = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNEWedge.Text = "---";
+                txtVendorWedge.Text = "---";
+                UrlPDFWedge = "";
+                UrlSTEPWedge = "";
+            }
         }
 
         private void ss4_Click(object sender, EventArgs e)
         {
             WhiteSSize();
             ss4.BackColor = Color.Yellow;
+
+            string size = "10-32";
+
+            MyNuts = new Nuts();
+
+            MyNuts = NutsLogic.Instancia.SelectScrewBySize(size, "Hex Nut");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNEHexNut.Text = MyNuts.SSNEPartNumber;
+                txtVendorHexNut.Text = MyNuts.VendorPartNumber;
+                UrlPDFHexNut = MyNuts.UrlPDF;
+                UrlSTEPHexNut = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNEHexNut.Text = "---";
+                txtVendorHexNut.Text = "---";
+                UrlPDFHexNut = "";
+                UrlSTEPHexNut = "";
+            }
+
+            MyNuts = new Nuts();
+
+            MyNuts = NutsLogic.Instancia.SelectScrewBySize(size, "Lock Nut");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNELockNut.Text = MyNuts.SSNEPartNumber;
+                txtVendorLockNut.Text = MyNuts.VendorPartNumber;
+                UrlPDFLockNut = MyNuts.UrlPDF;
+                UrlSTEPLockNut = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNELockNut.Text = "---";
+                txtVendorLockNut.Text = "---";
+                UrlPDFLockNut = "";
+                UrlSTEPLockNut = "";
+            }
+
+            MyWashers = new Washers();
+
+            MyWashers = WashersLogic.Instancia.SelectWasherBySize(size, "Flat Washer");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNEFlat.Text = MyNuts.SSNEPartNumber;
+                txtVendorFlat.Text = MyNuts.VendorPartNumber;
+                UrlPDFFlat = MyNuts.UrlPDF;
+                UrlSTEPFlat = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNEFlat.Text = "---";
+                txtVendorFlat.Text = "---";
+                UrlPDFFlat = "";
+                UrlSTEPFlat = "";
+            }
+
+            MyWashers = new Washers();
+
+            MyWashers = WashersLogic.Instancia.SelectWasherBySize(size, "Split Lock");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNESplit.Text = MyNuts.SSNEPartNumber;
+                txtVendorSplit.Text = MyNuts.VendorPartNumber;
+                UrlPDFSplit = MyNuts.UrlPDF;
+                UrlSTEPSplit = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNESplit.Text = "---";
+                txtVendorSplit.Text = "---";
+                UrlPDFSplit = "";
+                UrlSTEPSplit = "";
+            }
+
+            MyWashers = new Washers();
+
+            MyWashers = WashersLogic.Instancia.SelectWasherBySize(size, "Tooth Lock");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNETooth.Text = MyNuts.SSNEPartNumber;
+                txtVendorTooth.Text = MyNuts.VendorPartNumber;
+                UrlPDFTooth = MyNuts.UrlPDF;
+                UrlSTEPTooth = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNETooth.Text = "---";
+                txtVendorTooth.Text = "---";
+                UrlPDFTooth = "";
+                UrlSTEPTooth = "";
+            }
+
+            MyWashers = new Washers();
+
+            MyWashers = WashersLogic.Instancia.SelectWasherBySize(size, "Spring Lock");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNESpring.Text = MyNuts.SSNEPartNumber;
+                txtVendorSpring.Text = MyNuts.VendorPartNumber;
+                UrlPDFSpring = MyNuts.UrlPDF;
+                UrlSTEPSpring = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNESpring.Text = "---";
+                txtVendorSpring.Text = "---";
+                UrlPDFSpring = "";
+                UrlSTEPSpring = "";
+            }
+
+            MyWashers = new Washers();
+
+            MyWashers = WashersLogic.Instancia.SelectWasherBySize(size, "Wedge Lock");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNEWedge.Text = MyNuts.SSNEPartNumber;
+                txtVendorWedge.Text = MyNuts.VendorPartNumber;
+                UrlPDFWedge = MyNuts.UrlPDF;
+                UrlSTEPWedge = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNEWedge.Text = "---";
+                txtVendorWedge.Text = "---";
+                UrlPDFWedge = "";
+                UrlSTEPWedge = "";
+            }
         }
 
         private void ss5_Click(object sender, EventArgs e)
         {
             WhiteSSize();
             ss5.BackColor = Color.Yellow;
+
+            string size = "1/4-20";
+
+            MyNuts = new Nuts();
+
+            MyNuts = NutsLogic.Instancia.SelectScrewBySize(size, "Hex Nut");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNEHexNut.Text = MyNuts.SSNEPartNumber;
+                txtVendorHexNut.Text = MyNuts.VendorPartNumber;
+                UrlPDFHexNut = MyNuts.UrlPDF;
+                UrlSTEPHexNut = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNEHexNut.Text = "---";
+                txtVendorHexNut.Text = "---";
+                UrlPDFHexNut = "";
+                UrlSTEPHexNut = "";
+            }
+
+            MyNuts = new Nuts();
+
+            MyNuts = NutsLogic.Instancia.SelectScrewBySize(size, "Lock Nut");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNELockNut.Text = MyNuts.SSNEPartNumber;
+                txtVendorLockNut.Text = MyNuts.VendorPartNumber;
+                UrlPDFLockNut = MyNuts.UrlPDF;
+                UrlSTEPLockNut = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNELockNut.Text = "---";
+                txtVendorLockNut.Text = "---";
+                UrlPDFLockNut = "";
+                UrlSTEPLockNut = "";
+            }
+
+            MyWashers = new Washers();
+
+            MyWashers = WashersLogic.Instancia.SelectWasherBySize(size, "Flat Washer");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNEFlat.Text = MyNuts.SSNEPartNumber;
+                txtVendorFlat.Text = MyNuts.VendorPartNumber;
+                UrlPDFFlat = MyNuts.UrlPDF;
+                UrlSTEPFlat = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNEFlat.Text = "---";
+                txtVendorFlat.Text = "---";
+                UrlPDFFlat = "";
+                UrlSTEPFlat = "";
+            }
+
+            MyWashers = new Washers();
+
+            MyWashers = WashersLogic.Instancia.SelectWasherBySize(size, "Split Lock");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNESplit.Text = MyNuts.SSNEPartNumber;
+                txtVendorSplit.Text = MyNuts.VendorPartNumber;
+                UrlPDFSplit = MyNuts.UrlPDF;
+                UrlSTEPSplit = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNESplit.Text = "---";
+                txtVendorSplit.Text = "---";
+                UrlPDFSplit = "";
+                UrlSTEPSplit = "";
+            }
+
+            MyWashers = new Washers();
+
+            MyWashers = WashersLogic.Instancia.SelectWasherBySize(size, "Tooth Lock");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNETooth.Text = MyNuts.SSNEPartNumber;
+                txtVendorTooth.Text = MyNuts.VendorPartNumber;
+                UrlPDFTooth = MyNuts.UrlPDF;
+                UrlSTEPTooth = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNETooth.Text = "---";
+                txtVendorTooth.Text = "---";
+                UrlPDFTooth = "";
+                UrlSTEPTooth = "";
+            }
+
+            MyWashers = new Washers();
+
+            MyWashers = WashersLogic.Instancia.SelectWasherBySize(size, "Spring Lock");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNESpring.Text = MyNuts.SSNEPartNumber;
+                txtVendorSpring.Text = MyNuts.VendorPartNumber;
+                UrlPDFSpring = MyNuts.UrlPDF;
+                UrlSTEPSpring = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNESpring.Text = "---";
+                txtVendorSpring.Text = "---";
+                UrlPDFSpring = "";
+                UrlSTEPSpring = "";
+            }
+
+            MyWashers = new Washers();
+
+            MyWashers = WashersLogic.Instancia.SelectWasherBySize(size, "Wedge Lock");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNEWedge.Text = MyNuts.SSNEPartNumber;
+                txtVendorWedge.Text = MyNuts.VendorPartNumber;
+                UrlPDFWedge = MyNuts.UrlPDF;
+                UrlSTEPWedge = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNEWedge.Text = "---";
+                txtVendorWedge.Text = "---";
+                UrlPDFWedge = "";
+                UrlSTEPWedge = "";
+            }
         }
 
         private void ss6_Click(object sender, EventArgs e)
         {
             WhiteSSize();
             ss6.BackColor = Color.Yellow;
+            string size = "1/4-28";
+
+            MyNuts = new Nuts();
+
+            MyNuts = NutsLogic.Instancia.SelectScrewBySize(size, "Hex Nut");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNEHexNut.Text = MyNuts.SSNEPartNumber;
+                txtVendorHexNut.Text = MyNuts.VendorPartNumber;
+                UrlPDFHexNut = MyNuts.UrlPDF;
+                UrlSTEPHexNut = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNEHexNut.Text = "---";
+                txtVendorHexNut.Text = "---";
+                UrlPDFHexNut = "";
+                UrlSTEPHexNut = "";
+            }
+
+            MyNuts = new Nuts();
+
+            MyNuts = NutsLogic.Instancia.SelectScrewBySize(size, "Lock Nut");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNELockNut.Text = MyNuts.SSNEPartNumber;
+                txtVendorLockNut.Text = MyNuts.VendorPartNumber;
+                UrlPDFLockNut = MyNuts.UrlPDF;
+                UrlSTEPLockNut = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNELockNut.Text = "---";
+                txtVendorLockNut.Text = "---";
+                UrlPDFLockNut = "";
+                UrlSTEPLockNut = "";
+            }
+
+            MyWashers = new Washers();
+
+            MyWashers = WashersLogic.Instancia.SelectWasherBySize(size, "Flat Washer");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNEFlat.Text = MyNuts.SSNEPartNumber;
+                txtVendorFlat.Text = MyNuts.VendorPartNumber;
+                UrlPDFFlat = MyNuts.UrlPDF;
+                UrlSTEPFlat = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNEFlat.Text = "---";
+                txtVendorFlat.Text = "---";
+                UrlPDFFlat = "";
+                UrlSTEPFlat = "";
+            }
+
+            MyWashers = new Washers();
+
+            MyWashers = WashersLogic.Instancia.SelectWasherBySize(size, "Split Lock");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNESplit.Text = MyNuts.SSNEPartNumber;
+                txtVendorSplit.Text = MyNuts.VendorPartNumber;
+                UrlPDFSplit = MyNuts.UrlPDF;
+                UrlSTEPSplit = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNESplit.Text = "---";
+                txtVendorSplit.Text = "---";
+                UrlPDFSplit = "";
+                UrlSTEPSplit = "";
+            }
+
+            MyWashers = new Washers();
+
+            MyWashers = WashersLogic.Instancia.SelectWasherBySize(size, "Tooth Lock");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNETooth.Text = MyNuts.SSNEPartNumber;
+                txtVendorTooth.Text = MyNuts.VendorPartNumber;
+                UrlPDFTooth = MyNuts.UrlPDF;
+                UrlSTEPTooth = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNETooth.Text = "---";
+                txtVendorTooth.Text = "---";
+                UrlPDFTooth = "";
+                UrlSTEPTooth = "";
+            }
+
+            MyWashers = new Washers();
+
+            MyWashers = WashersLogic.Instancia.SelectWasherBySize(size, "Spring Lock");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNESpring.Text = MyNuts.SSNEPartNumber;
+                txtVendorSpring.Text = MyNuts.VendorPartNumber;
+                UrlPDFSpring = MyNuts.UrlPDF;
+                UrlSTEPSpring = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNESpring.Text = "---";
+                txtVendorSpring.Text = "---";
+                UrlPDFSpring = "";
+                UrlSTEPSpring = "";
+            }
+
+            MyWashers = new Washers();
+
+            MyWashers = WashersLogic.Instancia.SelectWasherBySize(size, "Wedge Lock");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNEWedge.Text = MyNuts.SSNEPartNumber;
+                txtVendorWedge.Text = MyNuts.VendorPartNumber;
+                UrlPDFWedge = MyNuts.UrlPDF;
+                UrlSTEPWedge = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNEWedge.Text = "---";
+                txtVendorWedge.Text = "---";
+                UrlPDFWedge = "";
+                UrlSTEPWedge = "";
+            }
         }
 
         private void ss7_Click(object sender, EventArgs e)
         {
             WhiteSSize();
             ss7.BackColor = Color.Yellow;
+            string size = "5/16-18";
+
+            MyNuts = new Nuts();
+
+            MyNuts = NutsLogic.Instancia.SelectScrewBySize(size, "Hex Nut");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNEHexNut.Text = MyNuts.SSNEPartNumber;
+                txtVendorHexNut.Text = MyNuts.VendorPartNumber;
+                UrlPDFHexNut = MyNuts.UrlPDF;
+                UrlSTEPHexNut = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNEHexNut.Text = "---";
+                txtVendorHexNut.Text = "---";
+                UrlPDFHexNut = "";
+                UrlSTEPHexNut = "";
+            }
+
+            MyNuts = new Nuts();
+
+            MyNuts = NutsLogic.Instancia.SelectScrewBySize(size, "Lock Nut");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNELockNut.Text = MyNuts.SSNEPartNumber;
+                txtVendorLockNut.Text = MyNuts.VendorPartNumber;
+                UrlPDFLockNut = MyNuts.UrlPDF;
+                UrlSTEPLockNut = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNELockNut.Text = "---";
+                txtVendorLockNut.Text = "---";
+                UrlPDFLockNut = "";
+                UrlSTEPLockNut = "";
+            }
+
+            MyWashers = new Washers();
+
+            MyWashers = WashersLogic.Instancia.SelectWasherBySize(size, "Flat Washer");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNEFlat.Text = MyNuts.SSNEPartNumber;
+                txtVendorFlat.Text = MyNuts.VendorPartNumber;
+                UrlPDFFlat = MyNuts.UrlPDF;
+                UrlSTEPFlat = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNEFlat.Text = "---";
+                txtVendorFlat.Text = "---";
+                UrlPDFFlat = "";
+                UrlSTEPFlat = "";
+            }
+
+            MyWashers = new Washers();
+
+            MyWashers = WashersLogic.Instancia.SelectWasherBySize(size, "Split Lock");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNESplit.Text = MyNuts.SSNEPartNumber;
+                txtVendorSplit.Text = MyNuts.VendorPartNumber;
+                UrlPDFSplit = MyNuts.UrlPDF;
+                UrlSTEPSplit = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNESplit.Text = "---";
+                txtVendorSplit.Text = "---";
+                UrlPDFSplit = "";
+                UrlSTEPSplit = "";
+            }
+
+            MyWashers = new Washers();
+
+            MyWashers = WashersLogic.Instancia.SelectWasherBySize(size, "Tooth Lock");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNETooth.Text = MyNuts.SSNEPartNumber;
+                txtVendorTooth.Text = MyNuts.VendorPartNumber;
+                UrlPDFTooth = MyNuts.UrlPDF;
+                UrlSTEPTooth = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNETooth.Text = "---";
+                txtVendorTooth.Text = "---";
+                UrlPDFTooth = "";
+                UrlSTEPTooth = "";
+            }
+
+            MyWashers = new Washers();
+
+            MyWashers = WashersLogic.Instancia.SelectWasherBySize(size, "Spring Lock");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNESpring.Text = MyNuts.SSNEPartNumber;
+                txtVendorSpring.Text = MyNuts.VendorPartNumber;
+                UrlPDFSpring = MyNuts.UrlPDF;
+                UrlSTEPSpring = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNESpring.Text = "---";
+                txtVendorSpring.Text = "---";
+                UrlPDFSpring = "";
+                UrlSTEPSpring = "";
+            }
+
+            MyWashers = new Washers();
+
+            MyWashers = WashersLogic.Instancia.SelectWasherBySize(size, "Wedge Lock");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNEWedge.Text = MyNuts.SSNEPartNumber;
+                txtVendorWedge.Text = MyNuts.VendorPartNumber;
+                UrlPDFWedge = MyNuts.UrlPDF;
+                UrlSTEPWedge = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNEWedge.Text = "---";
+                txtVendorWedge.Text = "---";
+                UrlPDFWedge = "";
+                UrlSTEPWedge = "";
+            }
         }
 
         private void ss8_Click(object sender, EventArgs e)
         {
             WhiteSSize();
             ss8.BackColor = Color.Yellow;
+            string size = "5/16-24";
+
+            MyNuts = new Nuts();
+
+            MyNuts = NutsLogic.Instancia.SelectScrewBySize(size, "Hex Nut");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNEHexNut.Text = MyNuts.SSNEPartNumber;
+                txtVendorHexNut.Text = MyNuts.VendorPartNumber;
+                UrlPDFHexNut = MyNuts.UrlPDF;
+                UrlSTEPHexNut = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNEHexNut.Text = "---";
+                txtVendorHexNut.Text = "---";
+                UrlPDFHexNut = "";
+                UrlSTEPHexNut = "";
+            }
+
+            MyNuts = new Nuts();
+
+            MyNuts = NutsLogic.Instancia.SelectScrewBySize(size, "Lock Nut");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNELockNut.Text = MyNuts.SSNEPartNumber;
+                txtVendorLockNut.Text = MyNuts.VendorPartNumber;
+                UrlPDFLockNut = MyNuts.UrlPDF;
+                UrlSTEPLockNut = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNELockNut.Text = "---";
+                txtVendorLockNut.Text = "---";
+                UrlPDFLockNut = "";
+                UrlSTEPLockNut = "";
+            }
+
+            MyWashers = new Washers();
+
+            MyWashers = WashersLogic.Instancia.SelectWasherBySize(size, "Flat Washer");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNEFlat.Text = MyNuts.SSNEPartNumber;
+                txtVendorFlat.Text = MyNuts.VendorPartNumber;
+                UrlPDFFlat = MyNuts.UrlPDF;
+                UrlSTEPFlat = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNEFlat.Text = "---";
+                txtVendorFlat.Text = "---";
+                UrlPDFFlat = "";
+                UrlSTEPFlat = "";
+            }
+
+            MyWashers = new Washers();
+
+            MyWashers = WashersLogic.Instancia.SelectWasherBySize(size, "Split Lock");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNESplit.Text = MyNuts.SSNEPartNumber;
+                txtVendorSplit.Text = MyNuts.VendorPartNumber;
+                UrlPDFSplit = MyNuts.UrlPDF;
+                UrlSTEPSplit = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNESplit.Text = "---";
+                txtVendorSplit.Text = "---";
+                UrlPDFSplit = "";
+                UrlSTEPSplit = "";
+            }
+
+            MyWashers = new Washers();
+
+            MyWashers = WashersLogic.Instancia.SelectWasherBySize(size, "Tooth Lock");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNETooth.Text = MyNuts.SSNEPartNumber;
+                txtVendorTooth.Text = MyNuts.VendorPartNumber;
+                UrlPDFTooth = MyNuts.UrlPDF;
+                UrlSTEPTooth = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNETooth.Text = "---";
+                txtVendorTooth.Text = "---";
+                UrlPDFTooth = "";
+                UrlSTEPTooth = "";
+            }
+
+            MyWashers = new Washers();
+
+            MyWashers = WashersLogic.Instancia.SelectWasherBySize(size, "Spring Lock");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNESpring.Text = MyNuts.SSNEPartNumber;
+                txtVendorSpring.Text = MyNuts.VendorPartNumber;
+                UrlPDFSpring = MyNuts.UrlPDF;
+                UrlSTEPSpring = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNESpring.Text = "---";
+                txtVendorSpring.Text = "---";
+                UrlPDFSpring = "";
+                UrlSTEPSpring = "";
+            }
+
+            MyWashers = new Washers();
+
+            MyWashers = WashersLogic.Instancia.SelectWasherBySize(size, "Wedge Lock");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNEWedge.Text = MyNuts.SSNEPartNumber;
+                txtVendorWedge.Text = MyNuts.VendorPartNumber;
+                UrlPDFWedge = MyNuts.UrlPDF;
+                UrlSTEPWedge = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNEWedge.Text = "---";
+                txtVendorWedge.Text = "---";
+                UrlPDFWedge = "";
+                UrlSTEPWedge = "";
+            }
         }
 
         private void ss9_Click(object sender, EventArgs e)
         {
             WhiteSSize();
             ss9.BackColor = Color.Yellow;
+            string size = "3/8-24";
+
+            MyNuts = new Nuts();
+
+            MyNuts = NutsLogic.Instancia.SelectScrewBySize(size, "Hex Nut");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNEHexNut.Text = MyNuts.SSNEPartNumber;
+                txtVendorHexNut.Text = MyNuts.VendorPartNumber;
+                UrlPDFHexNut = MyNuts.UrlPDF;
+                UrlSTEPHexNut = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNEHexNut.Text = "---";
+                txtVendorHexNut.Text = "---";
+                UrlPDFHexNut = "";
+                UrlSTEPHexNut = "";
+            }
+
+            MyNuts = new Nuts();
+
+            MyNuts = NutsLogic.Instancia.SelectScrewBySize(size, "Lock Nut");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNELockNut.Text = MyNuts.SSNEPartNumber;
+                txtVendorLockNut.Text = MyNuts.VendorPartNumber;
+                UrlPDFLockNut = MyNuts.UrlPDF;
+                UrlSTEPLockNut = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNELockNut.Text = "---";
+                txtVendorLockNut.Text = "---";
+                UrlPDFLockNut = "";
+                UrlSTEPLockNut = "";
+            }
+
+            MyWashers = new Washers();
+
+            MyWashers = WashersLogic.Instancia.SelectWasherBySize(size, "Flat Washer");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNEFlat.Text = MyNuts.SSNEPartNumber;
+                txtVendorFlat.Text = MyNuts.VendorPartNumber;
+                UrlPDFFlat = MyNuts.UrlPDF;
+                UrlSTEPFlat = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNEFlat.Text = "---";
+                txtVendorFlat.Text = "---";
+                UrlPDFFlat = "";
+                UrlSTEPFlat = "";
+            }
+
+            MyWashers = new Washers();
+
+            MyWashers = WashersLogic.Instancia.SelectWasherBySize(size, "Split Lock");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNESplit.Text = MyNuts.SSNEPartNumber;
+                txtVendorSplit.Text = MyNuts.VendorPartNumber;
+                UrlPDFSplit = MyNuts.UrlPDF;
+                UrlSTEPSplit = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNESplit.Text = "---";
+                txtVendorSplit.Text = "---";
+                UrlPDFSplit = "";
+                UrlSTEPSplit = "";
+            }
+
+            MyWashers = new Washers();
+
+            MyWashers = WashersLogic.Instancia.SelectWasherBySize(size, "Tooth Lock");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNETooth.Text = MyNuts.SSNEPartNumber;
+                txtVendorTooth.Text = MyNuts.VendorPartNumber;
+                UrlPDFTooth = MyNuts.UrlPDF;
+                UrlSTEPTooth = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNETooth.Text = "---";
+                txtVendorTooth.Text = "---";
+                UrlPDFTooth = "";
+                UrlSTEPTooth = "";
+            }
+
+            MyWashers = new Washers();
+
+            MyWashers = WashersLogic.Instancia.SelectWasherBySize(size, "Spring Lock");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNESpring.Text = MyNuts.SSNEPartNumber;
+                txtVendorSpring.Text = MyNuts.VendorPartNumber;
+                UrlPDFSpring = MyNuts.UrlPDF;
+                UrlSTEPSpring = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNESpring.Text = "---";
+                txtVendorSpring.Text = "---";
+                UrlPDFSpring = "";
+                UrlSTEPSpring = "";
+            }
+
+            MyWashers = new Washers();
+
+            MyWashers = WashersLogic.Instancia.SelectWasherBySize(size, "Wedge Lock");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNEWedge.Text = MyNuts.SSNEPartNumber;
+                txtVendorWedge.Text = MyNuts.VendorPartNumber;
+                UrlPDFWedge = MyNuts.UrlPDF;
+                UrlSTEPWedge = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNEWedge.Text = "---";
+                txtVendorWedge.Text = "---";
+                UrlPDFWedge = "";
+                UrlSTEPWedge = "";
+            }
         }
 
         private void ss10_Click(object sender, EventArgs e)
         {
             WhiteSSize();
             ss10.BackColor = Color.Yellow;
+            string size = "8-32";
+
+            MyNuts = new Nuts();
+
+            MyNuts = NutsLogic.Instancia.SelectScrewBySize(size, "Hex Nut");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNEHexNut.Text = MyNuts.SSNEPartNumber;
+                txtVendorHexNut.Text = MyNuts.VendorPartNumber;
+                UrlPDFHexNut = MyNuts.UrlPDF;
+                UrlSTEPHexNut = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNEHexNut.Text = "---";
+                txtVendorHexNut.Text = "---";
+                UrlPDFHexNut = "";
+                UrlSTEPHexNut = "";
+            }
+
+            MyNuts = new Nuts();
+
+            MyNuts = NutsLogic.Instancia.SelectScrewBySize(size, "Lock Nut");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNELockNut.Text = MyNuts.SSNEPartNumber;
+                txtVendorLockNut.Text = MyNuts.VendorPartNumber;
+                UrlPDFLockNut = MyNuts.UrlPDF;
+                UrlSTEPLockNut = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNELockNut.Text = "---";
+                txtVendorLockNut.Text = "---";
+                UrlPDFLockNut = "";
+                UrlSTEPLockNut = "";
+            }
+
+            MyWashers = new Washers();
+
+            MyWashers = WashersLogic.Instancia.SelectWasherBySize(size, "Flat Washer");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNEFlat.Text = MyNuts.SSNEPartNumber;
+                txtVendorFlat.Text = MyNuts.VendorPartNumber;
+                UrlPDFFlat = MyNuts.UrlPDF;
+                UrlSTEPFlat = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNEFlat.Text = "---";
+                txtVendorFlat.Text = "---";
+                UrlPDFFlat = "";
+                UrlSTEPFlat = "";
+            }
+
+            MyWashers = new Washers();
+
+            MyWashers = WashersLogic.Instancia.SelectWasherBySize(size, "Split Lock");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNESplit.Text = MyNuts.SSNEPartNumber;
+                txtVendorSplit.Text = MyNuts.VendorPartNumber;
+                UrlPDFSplit = MyNuts.UrlPDF;
+                UrlSTEPSplit = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNESplit.Text = "---";
+                txtVendorSplit.Text = "---";
+                UrlPDFSplit = "";
+                UrlSTEPSplit = "";
+            }
+
+            MyWashers = new Washers();
+
+            MyWashers = WashersLogic.Instancia.SelectWasherBySize(size, "Tooth Lock");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNETooth.Text = MyNuts.SSNEPartNumber;
+                txtVendorTooth.Text = MyNuts.VendorPartNumber;
+                UrlPDFTooth = MyNuts.UrlPDF;
+                UrlSTEPTooth = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNETooth.Text = "---";
+                txtVendorTooth.Text = "---";
+                UrlPDFTooth = "";
+                UrlSTEPTooth = "";
+            }
+
+            MyWashers = new Washers();
+
+            MyWashers = WashersLogic.Instancia.SelectWasherBySize(size, "Spring Lock");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNESpring.Text = MyNuts.SSNEPartNumber;
+                txtVendorSpring.Text = MyNuts.VendorPartNumber;
+                UrlPDFSpring = MyNuts.UrlPDF;
+                UrlSTEPSpring = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNESpring.Text = "---";
+                txtVendorSpring.Text = "---";
+                UrlPDFSpring = "";
+                UrlSTEPSpring = "";
+            }
+
+            MyWashers = new Washers();
+
+            MyWashers = WashersLogic.Instancia.SelectWasherBySize(size, "Wedge Lock");
+            if (MyNuts.IDNuts > 0)
+            {
+                txtSSNEWedge.Text = MyNuts.SSNEPartNumber;
+                txtVendorWedge.Text = MyNuts.VendorPartNumber;
+                UrlPDFWedge = MyNuts.UrlPDF;
+                UrlSTEPWedge = MyNuts.UrlSTEP;
+            }
+            else
+            {
+                txtSSNEWedge.Text = "---";
+                txtVendorWedge.Text = "---";
+                UrlPDFWedge = "";
+                UrlSTEPWedge = "";
+            }
         }
 
         private void WhiteSSize()
@@ -1899,6 +3183,90 @@ namespace _0510Project
             ss9.BackColor = Color.White;
             ss10.BackColor = Color.White;
         
+        }
+
+        private void btnUrlPDFHexNut_Click(object sender, EventArgs e)
+        {
+            FrmViewPDF frmScale = new FrmViewPDF(UrlPDFHexNut);
+            frmScale.ShowDialog();
+        }
+
+        private void btnUrlPDFLockNut_Click(object sender, EventArgs e)
+        {
+            FrmViewPDF frmScale = new FrmViewPDF(UrlPDFLockNut);
+            frmScale.ShowDialog();
+        }
+
+        private void btnUrlPDFFlat_Click(object sender, EventArgs e)
+        {
+            FrmViewPDF frmScale = new FrmViewPDF(UrlPDFFlat);
+            frmScale.ShowDialog();
+        }
+
+        private void btnUrlPDFSplit_Click(object sender, EventArgs e)
+        {
+            FrmViewPDF frmScale = new FrmViewPDF(UrlPDFSplit);
+            frmScale.ShowDialog();
+        }
+
+        private void btnUrlPDFTooth_Click(object sender, EventArgs e)
+        {
+            FrmViewPDF frmScale = new FrmViewPDF(UrlPDFTooth);
+            frmScale.ShowDialog();
+        }
+
+        private void btnUrlPDFSpring_Click(object sender, EventArgs e)
+        {
+            FrmViewPDF frmScale = new FrmViewPDF(UrlPDFSpring);
+            frmScale.ShowDialog();
+        }
+
+        private void btnUrlPDFWedge_Click(object sender, EventArgs e)
+        {
+            FrmViewPDF frmScale = new FrmViewPDF(UrlPDFWedge);
+            frmScale.ShowDialog();
+        }
+
+        private void btnUrlSTEPHexNut_Click(object sender, EventArgs e)
+        {
+            FrmViewPDF frmScale = new FrmViewPDF(UrlSTEPHexNut);
+            frmScale.ShowDialog();
+        }
+
+        private void btnUrlSTEPLockNut_Click(object sender, EventArgs e)
+        {
+            FrmViewPDF frmScale = new FrmViewPDF(UrlSTEPLockNut);
+            frmScale.ShowDialog();
+        }
+
+        private void btnUrlSTEPFlat_Click(object sender, EventArgs e)
+        {
+            FrmViewPDF frmScale = new FrmViewPDF(UrlSTEPFlat);
+            frmScale.ShowDialog();
+        }
+
+        private void btnUrlSTEPSplit_Click(object sender, EventArgs e)
+        {
+            FrmViewPDF frmScale = new FrmViewPDF(UrlSTEPSplit);
+            frmScale.ShowDialog();
+        }
+
+        private void btnUrlSTEPTooth_Click(object sender, EventArgs e)
+        {
+            FrmViewPDF frmScale = new FrmViewPDF(UrlSTEPTooth);
+            frmScale.ShowDialog();
+        }
+
+        private void btnUrlSTEPSpring_Click(object sender, EventArgs e)
+        {
+            FrmViewPDF frmScale = new FrmViewPDF(UrlSTEPSpring);
+            frmScale.ShowDialog();
+        }
+
+        private void btnUrlSTEPWedge_Click(object sender, EventArgs e)
+        {
+            FrmViewPDF frmScale = new FrmViewPDF(UrlSTEPWedge);
+            frmScale.ShowDialog();
         }
     }
 }

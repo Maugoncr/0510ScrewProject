@@ -127,6 +127,40 @@ namespace Logica.Logic
             return R;
         }
 
+        public Nuts SelectScrewBySize(string SizeName, string TypeName)
+        {
+            Nuts R = new Nuts();
+
+            using (SQLiteConnection conn = new SQLiteConnection(cadena))
+            using (SQLiteCommand cmd = new SQLiteCommand("SELECT * FROM View_NutsSelectedBySize WHERE Active = 1 AND NutsTypeName = @NutsTypeName AND NutsSizeName = @NutsSizeName", conn))
+            {
+                cmd.Parameters.Add(new SQLiteParameter("@NutsTypeName", TypeName));
+                cmd.Parameters.Add(new SQLiteParameter("@NutsSizeName", SizeName));
+                conn.Open();
+
+                using (SQLiteDataReader dr = cmd.ExecuteReader())
+                {
+                    if (dr.Read())
+                    {
+                        R.IDNuts = Convert.ToInt32(dr["IDNuts"].ToString());
+                        R.SSNEPartNumber = dr["SSNEPartNumber"].ToString();
+                        R.VendorPartNumber = dr["VendorPartNumber"].ToString();
+                        R.UrlPDF = dr["UrlPDF"].ToString();
+                        R.UrlSTEP = dr["UrlSTEP"].ToString();
+
+                        // Propiedades de Navegación
+
+                        R.MyNutType.IDNutsType = Convert.ToInt32(dr["IDNutsType"].ToString());
+                        R.MyNutType.NutsTypeName = dr["NutsTypeName"].ToString();
+
+                        R.MyNutSize.IDNutsSize = Convert.ToInt32(dr["IDNutsSize"].ToString());
+                        R.MyNutSize.NutsSizeName = dr["NutsSizeName"].ToString();
+                    }
+                }
+            }
+            return R;
+        }
+
         public bool Guardar(Nuts obj)
         {
             bool respuesta = true;

@@ -84,6 +84,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\FrmInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmInformation.Designer.cs">
+      <DependentUpon>FrmInformation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FrmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -314,6 +320,9 @@
     <None Include="Resources\ScrewDriver.png" />
     <None Include="Resources\Allen.png" />
     <None Include="Resources\DeleteRow.png" />
+    <EmbeddedResource Include="Forms\FrmInformation.resx">
+      <DependentUpon>FrmInformation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
       <SubType>Designer</SubType>

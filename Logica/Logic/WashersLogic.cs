@@ -127,6 +127,40 @@ namespace Logica.Logic
             return R;
         }
 
+        public Washers SelectWasherBySize(string SizeName, string TypeName)
+        {
+            Washers R = new Washers();
+
+            using (SQLiteConnection conn = new SQLiteConnection(cadena))
+            using (SQLiteCommand cmd = new SQLiteCommand("SELECT * FROM View_WasherSelectedBySize WHERE Active = 1 AND WasherTypeName = @WasherTypeName AND WasherSizeName = @WasherSizeName", conn))
+            {
+                cmd.Parameters.Add(new SQLiteParameter("@WasherTypeName", TypeName));
+                cmd.Parameters.Add(new SQLiteParameter("@WasherSizeName", SizeName));
+                conn.Open();
+
+                using (SQLiteDataReader dr = cmd.ExecuteReader())
+                {
+                    if (dr.Read())
+                    {
+                        R.IDWasher = Convert.ToInt32(dr["IDWasher"].ToString());
+                        R.SSNEPartNumber = dr["SSNEPartNumber"].ToString();
+                        R.VendorPartNumber = dr["VendorPartNumber"].ToString();
+                        R.UrlPDF = dr["UrlPDF"].ToString();
+                        R.UrlSTEP = dr["UrlSTEP"].ToString();
+
+                        // Propiedades de Navegación
+
+                        R.MyWasherType.IDWasherType = Convert.ToInt32(dr["IDWasherType"].ToString());
+                        R.MyWasherType.WasherTypeName = dr["WasherTypeName"].ToString();
+
+                        R.MyWasherSize.IDWasherSize = Convert.ToInt32(dr["IDWasherSize"].ToString());
+                        R.MyWasherSize.WasherSizeName = dr["WasherSizeName"].ToString();
+                    }
+                }
+            }
+            return R;
+        }
+
         public bool Guardar(Washers obj)
         {
             bool respuesta = true;
