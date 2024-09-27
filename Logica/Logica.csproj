@@ -61,6 +61,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Logic\DatabaseConnection.cs" />
     <Compile Include="Logic\NutsLogic.cs" />
     <Compile Include="Logic\NutsSizeLogic.cs" />
     <Compile Include="Logic\NutsTypeLogic.cs" />

@@ -7,12 +7,14 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace Logica.Logic
 {
     public class NutsLogic
     {
-        private static string cadena = ConfigurationManager.ConnectionStrings["cadena"].ConnectionString;
+
+        private static string cadena = DatabaseConnection.GetConnectionString();
 
         private static NutsLogic _instancia = null;
 

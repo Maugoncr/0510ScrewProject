@@ -12,7 +12,7 @@ namespace Logica.Logic
 {
     public class Screw_ToolLogic
     {
-        private static string cadena = ConfigurationManager.ConnectionStrings["cadena"].ConnectionString;
+        private static string cadena = DatabaseConnection.GetConnectionString();
 
         private static Screw_ToolLogic _instancia = null;
 

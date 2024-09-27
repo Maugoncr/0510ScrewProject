@@ -117,4 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>Here you will find resources that may be necessary for the proper functioning of this software:
+
+1. The Roboto font used in this software. 
+2. The WebView2 engine to preview PDF and STEP files.
+3. The semi-automated option to update the software database.</value>
+  </data>
 </root>

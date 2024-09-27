@@ -12,7 +12,7 @@ namespace Logica.Logic
     public class ScrewMaterialLogic
     {
 
-            private static string cadena = ConfigurationManager.ConnectionStrings["cadena"].ConnectionString;
+            private static string cadena = DatabaseConnection.GetConnectionString();
 
             private static ScrewMaterialLogic _instancia = null;
 

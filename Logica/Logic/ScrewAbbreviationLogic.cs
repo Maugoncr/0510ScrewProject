@@ -11,7 +11,7 @@ namespace Logica.Logic
 {
     public class ScrewAbbreviationLogic
     {
-        private static string cadena = ConfigurationManager.ConnectionStrings["cadena"].ConnectionString;
+        private static string cadena = DatabaseConnection.GetConnectionString();
 
         private static ScrewAbbreviationLogic _instancia = null;
 

@@ -11,7 +11,7 @@ namespace Logica.Logic
 {
     public class NutsSizeLogic
     {
-        private static string cadena = ConfigurationManager.ConnectionStrings["cadena"].ConnectionString;
+        private static string cadena = DatabaseConnection.GetConnectionString();
 
         private static NutsSizeLogic _instancia = null;
 

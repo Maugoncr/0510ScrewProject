@@ -5,5 +5,8 @@
     <Setting Name="GestionDB" Type="System.String" Scope="User">
       <Value Profile="(Default)">DB0510MS*</Value>
     </Setting>
+    <Setting Name="DBPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
   </Settings>
 </SettingsFile>

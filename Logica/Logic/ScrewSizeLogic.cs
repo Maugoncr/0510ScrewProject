@@ -11,7 +11,7 @@ namespace Logica.Logic
 {
     public class ScrewSizeLogic
     {
-        private static string cadena = ConfigurationManager.ConnectionStrings["cadena"].ConnectionString;
+        private static string cadena = DatabaseConnection.GetConnectionString();
 
         private static ScrewSizeLogic _instancia = null;
 
