@@ -46,5 +46,17 @@ namespace _0510Project.Properties {
                 this["DBPath"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool ViewPDFWebView2 {
+            get {
+                return ((bool)(this["ViewPDFWebView2"]));
+            }
+            set {
+                this["ViewPDFWebView2"] = value;
+            }
+        }
     }
 }

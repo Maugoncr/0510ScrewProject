@@ -144,7 +144,6 @@ namespace _0510Project
 
         // Hasta Ahora ya tengo el IDScrewType
 
-
         private void cbDriveType_SelectionChangeCommitted(object sender, EventArgs e)
         {
             if (cbScrewTypes.SelectedIndex >= 0)
@@ -398,9 +397,7 @@ namespace _0510Project
                                     btnSTP.Enabled = true;
                                 }
 
-                                cbScrewTypes.Enabled = false;
-                                pLengths.Enabled = false;
-                                pSizeSelect.Enabled = false;
+                                
                             }
                             else
                             {
@@ -618,6 +615,7 @@ namespace _0510Project
                 {
                     MyScrewMain.MyScrewSize.IDScrewSize = MyScrewSize.IDScrewSize;
                     existSize = true;
+                    
                 }
             }
             catch (Exception ex)
@@ -640,6 +638,7 @@ namespace _0510Project
                 {
                     MyScrewMain.MyScrewSize.IDScrewSize = MyScrewSize.IDScrewSize;
                     existSize = true;
+                   
                 }
             }
             catch (Exception ex)
@@ -662,6 +661,7 @@ namespace _0510Project
                 {
                     MyScrewMain.MyScrewSize.IDScrewSize = MyScrewSize.IDScrewSize;
                     existSize = true;
+                    
                 }
             }
             catch (Exception ex)
@@ -684,6 +684,7 @@ namespace _0510Project
                 {
                     MyScrewMain.MyScrewSize.IDScrewSize = MyScrewSize.IDScrewSize;
                     existSize = true;
+                   
                 }
             }
             catch (Exception ex)
@@ -706,6 +707,7 @@ namespace _0510Project
                 {
                     MyScrewMain.MyScrewSize.IDScrewSize = MyScrewSize.IDScrewSize;
                     existSize = true;
+                   
                 }
             }
             catch (Exception ex)
@@ -728,6 +730,7 @@ namespace _0510Project
                 {
                     MyScrewMain.MyScrewSize.IDScrewSize = MyScrewSize.IDScrewSize;
                     existSize = true;
+                   
                 }
             }
             catch (Exception ex)
@@ -757,6 +760,7 @@ namespace _0510Project
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
                     existLength = true;
+                   
                 }
             }
             catch (Exception ex)
@@ -779,6 +783,7 @@ namespace _0510Project
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
                     existLength = true;
+                   
                 }
             }
             catch (Exception ex)
@@ -801,6 +806,7 @@ namespace _0510Project
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
                     existLength = true;
+                    
                 }
             }
             catch (Exception ex)
@@ -823,6 +829,7 @@ namespace _0510Project
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
                     existLength = true;
+                   
                 }
             }
             catch (Exception ex)
@@ -867,6 +874,7 @@ namespace _0510Project
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
                     existLength = true;
+                    
                 }
             }
             catch (Exception ex)
@@ -889,6 +897,7 @@ namespace _0510Project
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
                     existLength = true;
+                    
                 }
             }
             catch (Exception ex)
@@ -911,6 +920,7 @@ namespace _0510Project
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
                     existLength = true;
+                   
                 }
             }
             catch (Exception ex)
@@ -933,6 +943,7 @@ namespace _0510Project
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
                     existLength = true;
+                   
                 }
             }
             catch (Exception ex)
@@ -955,6 +966,7 @@ namespace _0510Project
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
                     existLength = true;
+                   
                 }
             }
             catch (Exception ex)
@@ -977,6 +989,7 @@ namespace _0510Project
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
                     existLength = true;
+                   
                 }
             }
             catch (Exception ex)
@@ -999,6 +1012,7 @@ namespace _0510Project
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
                     existLength = true;
+                   
                 }
             }
             catch (Exception ex)
@@ -1021,6 +1035,7 @@ namespace _0510Project
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
                     existLength = true;
+                   
                 }
             }
             catch (Exception ex)
@@ -1043,6 +1058,7 @@ namespace _0510Project
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
                     existLength = true;
+                   
                 }
             }
             catch (Exception ex)
@@ -1065,6 +1081,7 @@ namespace _0510Project
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
                     existLength = true;
+                   
                 }
             }
             catch (Exception ex)
@@ -1087,6 +1104,7 @@ namespace _0510Project
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
                     existLength = true;
+                  
                 }
             }
             catch (Exception ex)
@@ -1109,6 +1127,7 @@ namespace _0510Project
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
                     existLength = true;
+                   
                 }
             }
             catch (Exception ex)
@@ -1131,6 +1150,7 @@ namespace _0510Project
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
                     existLength = true;
+                    
                 }
             }
             catch (Exception ex)
@@ -1153,6 +1173,7 @@ namespace _0510Project
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
                     existLength = true;
+                    
                 }
             }
             catch (Exception ex)
@@ -1175,6 +1196,7 @@ namespace _0510Project
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
                     existLength = true;
+                    
                 }
             }
             catch (Exception ex)
@@ -1197,6 +1219,7 @@ namespace _0510Project
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
                     existLength = true;
+                    
                 }
             }
             catch (Exception ex)
@@ -1219,6 +1242,7 @@ namespace _0510Project
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
                     existLength = true;
+                   
                 }
             }
             catch (Exception ex)
@@ -1241,6 +1265,7 @@ namespace _0510Project
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
                     existLength = true;
+                   
                 }
             }
             catch (Exception ex)
@@ -1285,6 +1310,7 @@ namespace _0510Project
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
                     existLength = true;
+                   
                 }
             }
             catch (Exception ex)
@@ -1307,6 +1333,7 @@ namespace _0510Project
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
                     existLength = true;
+                   
                 }
             }
             catch (Exception ex)
@@ -1329,6 +1356,7 @@ namespace _0510Project
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
                     existLength = true;
+                  
                 }
             }
             catch (Exception ex)
@@ -1351,6 +1379,7 @@ namespace _0510Project
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
                     existLength = true;
+                   
                 }
             }
             catch (Exception ex)
@@ -1373,6 +1402,7 @@ namespace _0510Project
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
                     existLength = true;
+                   
                 }
             }
             catch (Exception ex)
@@ -1395,6 +1425,7 @@ namespace _0510Project
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
                     existLength = true;
+                   
                 }
             }
             catch (Exception ex)
@@ -1417,6 +1448,7 @@ namespace _0510Project
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
                     existLength = true;
+                   
                 }
             }
             catch (Exception ex)
@@ -1439,6 +1471,7 @@ namespace _0510Project
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
                     existLength = true;
+                   
                 }
             }
             catch (Exception ex)
@@ -1461,6 +1494,7 @@ namespace _0510Project
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
                     existLength = true;
+                   
                 }
             }
             catch (Exception ex)
@@ -1483,6 +1517,7 @@ namespace _0510Project
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
                     existLength = true;
+                  
                 }
             }
             catch (Exception ex)
@@ -1505,6 +1540,7 @@ namespace _0510Project
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
                     existLength = true;
+                   
                 }
             }
             catch (Exception ex)
@@ -1527,6 +1563,7 @@ namespace _0510Project
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
                     existLength = true;
+                   
                 }
             }
             catch (Exception ex)
@@ -1549,6 +1586,7 @@ namespace _0510Project
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
                     existLength = true;
+                   
                 }
             }
             catch (Exception ex)
@@ -1571,6 +1609,7 @@ namespace _0510Project
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
                     existLength = true;
+                   
                 }
             }
             catch (Exception ex)
@@ -1593,6 +1632,7 @@ namespace _0510Project
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
                     existLength = true;
+                  
                 }
             }
             catch (Exception ex)
@@ -1615,6 +1655,7 @@ namespace _0510Project
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
                     existLength = true;
+                  
                 }
             }
             catch (Exception ex)
@@ -1637,6 +1678,7 @@ namespace _0510Project
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
                     existLength = true;
+                  
                 }
             }
             catch (Exception ex)
@@ -1659,6 +1701,7 @@ namespace _0510Project
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
                     existLength = true;
+                 
                 }
             }
             catch (Exception ex)
@@ -1681,6 +1724,7 @@ namespace _0510Project
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
                     existLength = true;
+                   
                 }
             }
             catch (Exception ex)
@@ -1703,6 +1747,7 @@ namespace _0510Project
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
                     existLength = true;
+                  
                 }
             }
             catch (Exception ex)
@@ -1725,6 +1770,7 @@ namespace _0510Project
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
                     existLength = true;
+                   
                 }
             }
             catch (Exception ex)
@@ -1747,6 +1793,7 @@ namespace _0510Project
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
                     existLength = true;
+                    
                 }
             }
             catch (Exception ex)
@@ -1769,6 +1816,7 @@ namespace _0510Project
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
                     existLength = true;
+                   
                 }
             }
             catch (Exception ex)
@@ -1791,6 +1839,7 @@ namespace _0510Project
                 {
                     MyScrewMain.MyScrewLength.IDScrewLength = MyScrewLength.IDScrewLength;
                     existLength = true;
+                   
                 }
             }
             catch (Exception ex)

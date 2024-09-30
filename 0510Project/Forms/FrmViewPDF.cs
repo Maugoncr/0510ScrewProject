@@ -1,8 +1,10 @@
-﻿using FontAwesome.Sharp;
+﻿using _0510Project.Properties;
+using FontAwesome.Sharp;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -33,14 +35,23 @@ namespace _0510Project.Forms
         {
             btnExit.IconChar = IconChar.ArrowRightFromBracket;
 
-            try
+            if (!Settings.Default.ViewPDFWebView2)
             {
-                webShow.Source = new Uri(pdfAddress);
+                OpenGoogleDrive(pdfAddress);
+
+                lbViewBrowser.Visible = true;
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show(ex.Message, "Alert", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                this.Close();
+                try
+                {
+                    webShow.Source = new Uri(pdfAddress);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Alert", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    this.Close();
+                }
             }
         }
 
@@ -53,6 +64,27 @@ namespace _0510Project.Forms
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void OpenGoogleDrive(string URL)
+        {
+            AbrirUrlEnNavegador(URL);
+        }
+
+        private void AbrirUrlEnNavegador(string url)
+        {
+            try
+            {
+                Process.Start(new ProcessStartInfo
+                {
+                    FileName = url,
+                    UseShellExecute = true
+                });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ocurrió un error al intentar abrir la URL: {ex.Message}");
+            }
         }
     }
 }

@@ -37,6 +37,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnExit = new FontAwesome.Sharp.IconButton();
             this.label3 = new System.Windows.Forms.Label();
+            this.lbViewBrowser = new System.Windows.Forms.Label();
             this.pCentral.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.webShow)).BeginInit();
@@ -56,6 +57,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.lbViewBrowser);
             this.panel1.Controls.Add(this.webShow);
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
@@ -133,6 +135,17 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "SSNE GROUP, INC";
             // 
+            // lbViewBrowser
+            // 
+            this.lbViewBrowser.Font = new System.Drawing.Font("Roboto", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbViewBrowser.Location = new System.Drawing.Point(3, 344);
+            this.lbViewBrowser.Name = "lbViewBrowser";
+            this.lbViewBrowser.Size = new System.Drawing.Size(1759, 83);
+            this.lbViewBrowser.TabIndex = 5;
+            this.lbViewBrowser.Text = "File opened in the browser";
+            this.lbViewBrowser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbViewBrowser.Visible = false;
+            // 
             // FrmViewPDF
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -167,5 +180,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel1;
         private Microsoft.Web.WebView2.WinForms.WebView2 webShow;
+        private System.Windows.Forms.Label lbViewBrowser;
     }
 }
